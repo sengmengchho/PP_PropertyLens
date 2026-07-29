@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# Data - too large for git, and raw HTML is huge
+data/bronze/
+data/silver/
+data/gold/
+
+# Trained models
+models/*.pkl
+
+# Node
+node_modules/
+dist/
+
+# Environment
+.env
