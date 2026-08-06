@@ -1,0 +1,2006 @@
+
+KHPROPERTYHUB CLEANING DECISION AUDIT
+=========================================================================================================
+Total Bronze records                : 840
+True manual-review flags            : 16
+Rent-only records                   : 20
+Sale/rent records                   : 18
+  Sale-like numeric profile         : 12
+  Ambiguous numeric profile         : 6
+Non-condo property types            : 9
+Multi-unit advertisements           : 3
+Missing size                        : 76
+Price below $20,000             : 47
+Price above $2,000,000          : 1
+Size below 20m²                    : 1
+Size above 500m²                   : 23
+Price/m² below $300              : 60
+Price/m² above $10,000           : 4
+Bedrooms above 10               : 2
+Bathrooms above 10              : 2
+Unit floor above 100             : 0
+Unit floor > building floors        : 0
+Property-type conflicts             : 9
+Bedroom conflicts                   : 3
+Unit-floor conflicts                : 4
+Listing/search mismatches           : 38
+Duplicate URL groups                : 0
+Duplicate property-code groups      : 0
+Records in duplicate-code groups    : 0
+
+OUT-OF-SCOPE REASONS
+---------------------------------------------------------------------------------------------------------
+explicit_rent_title_in_sale_search                                         : 20
+mixed_sale_rent_title                                                      : 17
+not_condo_or_penthouse                                                     : 9
+
+DUPLICATE PROPERTY-CODE GROUPS
+---------------------------------------------------------------------------------------------------------
+No duplicate property-code groups found.
+
+=========================================================================================================
+SALE/RENT — SALE-LIKE: 12 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_11462
+Property code  : CND-002219
+Title          : MORGAN CONDO Sale or Rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 71000
+Size           : 48.0
+Price/m²       : 1479.17
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 8
+Building floors: None
+District       : Chroy Changvar
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-11462
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_7664
+Property code  : CND-001698
+Title          : ខុនដូលក់ខាតច្រើន ឬ ជួល បន្ទប់កែង អគារ F ជាន់ទី២០ Arakawa
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 31000
+Size           : 24.0
+Price/m²       : 1291.67
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 20
+Building floors: None
+District       : Sen Sok
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-7664
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16781
+Property code  : CND-002826
+Title          : ខុនដូសម្រាប់លក់ នឹងជួល
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 39999
+Size           : 115.0
+Price/m²       : 347.82
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 4
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-16781
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13612
+Property code  : CND-002426
+Title          : 🏙️ Condo UK TK2 – For Rent & Sale
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 33000
+Size           : 37.0
+Price/m²       : 891.89
+Bedrooms       : 0
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 13
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13612
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_11609
+Property code  : CND-002251
+Title          : Condo Amanda TK lane លក់នឹងជួល( ជួលមួយខែ 300$ )
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 29000
+Size           : 30.0
+Price/m²       : 966.67
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 13
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-11609
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_15606
+Property code  : CND-002687
+Title          : Sell 2Bedrooms at Park Land Condo TK (AEON 2, MAKRO) - ខុនដូរសម្រាប់ជួលឬលក់បន្ត
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 90000
+Size           : 53.0
+Price/m²       : 1698.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 2
+Building floors: None
+District       : Russey Keo
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-15606
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_18070
+Property code  : CND-003009
+Title          : Sell 2Bedrooms at Park Land Condo TK (AEON 2, MAKRO) - ខុនដូរសម្រាប់ជួលឬលក់បន្ត
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 90000
+Size           : 53.0
+Price/m²       : 1698.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 2
+Building floors: None
+District       : Russey Keo
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-18070
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_12966
+Property code  : CND-002341
+Title          : Condo for sale/rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 201197
+Size           : 31.0
+Price/m²       : 6490.23
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-12966
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_12931
+Property code  : CND-002338
+Title          : Condo for sale/rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 310097
+Size           : 60.0
+Price/m²       : 5168.28
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 15
+Building floors: None
+District       : Chbar Ampov
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chbar-ampov-12931
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_18402
+Property code  : CND-003046
+Title          : Brand new condo for sale or rent at Vue Aston
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 139999
+Size           : 74.0
+Price/m²       : 1891.88
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 1
+Unit floor     : 11
+Building floors: None
+District       : Chbar Ampov
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chbar-ampov-18402
+
+=========================================================================================================
+SALE/RENT — AMBIGUOUS: 6 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13494
+Property code  : CND-002418
+Title          : Apartment សម្រាប់លក់ និងជួល
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 58000
+Size           : 240.0
+Price/m²       : 241.67
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 11
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13494
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6509
+Property code  : None
+Title          : Condo for Rent or Sale
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 77777
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-6509
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19760
+Property code  : CND-003317
+Title          : ✨ 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐍𝐨𝐰 🔔 Big Promotion On February Available For Sale & Rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 3800
+Size           : 168.0
+Price/m²       : 22.62
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 28
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19760
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16831
+Property code  : CND-002831
+Title          : Condo sale and rent specia price
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 1500
+Size           : 91.0
+Price/m²       : 16.48
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 7
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16831
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_12717
+Property code  : CND-002333
+Title          : J-Tower Condo for Rent/Sale 16th Floor
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 120500
+Size           : None
+Price/m²       : None
+Bedrooms       : 0
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 16
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-12717
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6814
+Property code  : CND-001606
+Title          : Hotel for sale. & Rent : បញ្ជាក់សំរាប់ ហូតែលនេះក៍មានកាជួលប្រចាំខែផងដែរ តំលៃ : 14500$
+Listing type   : sale/rent
+Property type  : Commercial
+Price          : 515000
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Chamkarmon
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-6814
+
+=========================================================================================================
+NON-CONDO PROPERTY: 9 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_22953
+Property code  : CND-004674
+Title          : អគារសណ្ឋាគារលក់<នៅបឹងកេងកង៣
+Listing type   : sale
+Property type  : Commercial
+Price          : 2800000
+Size           : 348.0
+Price/m²       : 8045.98
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 1
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-22953
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19720
+Property code  : CND-003289
+Title          : 🛎️ ដីលក់បន្ទាន់ 📐 ទំហំ + តម្លៃ • ទំហំ: 20m x 25m = 479m² • តម្លៃ: $1,100,000 (
+Listing type   : sale
+Property type  : Land
+Price          : 58000
+Size           : 479.0
+Price/m²       : 121.09
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Land
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19720
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_11039
+Property code  : CND-002165
+Title          : Condo Urgent Sale Office TS3
+Listing type   : sale
+Property type  : Commercial
+Price          : 165000
+Size           : 100.0
+Price/m²       : 1650.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 6
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-11039
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_10361
+Property code  : CND-002090
+Title          : Office Time Square 3 toul kork
+Listing type   : sale
+Property type  : Commercial
+Price          : 98000
+Size           : 50.0
+Price/m²       : 1960.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 6
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-10361
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13510
+Property code  : CND-002419
+Title          : ផ្ទះShophouse 1ជុង លក់នៅទួលគោក លើផ្លូមេ វីធីសម្តេចប៉ែននុត ផ្លូវ289 !!
+Listing type   : sale
+Property type  : Flat
+Price          : 450000
+Size           : 6.0
+Price/m²       : 75000.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Flat
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13510
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_17764
+Property code  : CND-002965
+Title          : Hotel for sell
+Listing type   : sale
+Property type  : Commercial
+Price          : 59000
+Size           : 294.0
+Price/m²       : 200.68
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 50
+Building floors: None
+District       : Prampi Makara
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-prampir-meakkakra-17764
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_11201
+Property code  : CND-002182
+Title          : land for sale
+Listing type   : sale
+Property type  : Land
+Price          : 45000
+Size           : 80.0
+Price/m²       : 562.5
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Kamboul
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Land
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-kamboul-11201
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_5814
+Property code  : CND-001415
+Title          : ផ្ទះអាជីវកម្ម ក្បែរផ្លូវធំ លក់បន្ទាន់ខ្លាំង
+Listing type   : sale
+Property type  : Flat
+Price          : 148000
+Size           : 126.0
+Price/m²       : 1174.6
+Bedrooms       : 4
+Bedroom options: None
+Bathrooms      : 4
+Unit floor     : 8
+Building floors: None
+District       : Sen Sok
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Flat
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-5814
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6814
+Property code  : CND-001606
+Title          : Hotel for sale. & Rent : បញ្ជាក់សំរាប់ ហូតែលនេះក៍មានកាជួលប្រចាំខែផងដែរ តំលៃ : 14500$
+Listing type   : sale/rent
+Property type  : Commercial
+Price          : 515000
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Chamkarmon
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-6814
+
+=========================================================================================================
+MULTI-UNIT ADVERTISEMENT: 3 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8551
+Property code  : CND-001834
+Title          : Loft 1Bedroom & 2bedroom
+Listing type   : sale
+Property type  : Condo
+Price          : 95000
+Size           : 87.0
+Price/m²       : 1091.95
+Bedrooms       : None
+Bedroom options: [1, 2]
+Bathrooms      : 2
+Unit floor     : None
+Building floors: None
+District       : Meanchey
+Review flag    : True
+Out of scope   : None
+bedrooms_conflict             : multiple bedroom options in title=[1, 2]
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8551
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_5048
+Property code  : CND-001072
+Title          : urgent sell studio/1/2 bedrooms condo @ the pinnacle
+Listing type   : sale
+Property type  : Condo
+Price          : 88000
+Size           : 55.0
+Price/m²       : 1600.0
+Bedrooms       : None
+Bedroom options: [0, 1, 2]
+Bathrooms      : 1
+Unit floor     : None
+Building floors: None
+District       : Chamkarmon
+Review flag    : True
+Out of scope   : None
+bedrooms_conflict             : multiple bedroom options in title=[0, 1, 2]
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-5048
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_5047
+Property code  : CND-001071
+Title          : Urgent Sell with low price condo, have 1/2/3 bedrooms
+Listing type   : sale
+Property type  : Condo
+Price          : 86400
+Size           : 80.0
+Price/m²       : 1080.0
+Bedrooms       : None
+Bedroom options: [1, 2, 3]
+Bathrooms      : 1
+Unit floor     : None
+Building floors: None
+District       : Pur Senchey
+Review flag    : True
+Out of scope   : None
+bedrooms_conflict             : multiple bedroom options in title=[1, 2, 3]
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-pur-senchey-5047
+
+=========================================================================================================
+LOW-PRICE: 47 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19834
+Property code  : CND-003384
+Title          : Luxury 3Bed For Rent In Bkk1 - Fresh Move In
+Listing type   : rent
+Property type  : Condo
+Price          : 1800
+Size           : 135.0
+Price/m²       : 13.33
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 3
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19834
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19833
+Property code  : CND-003383
+Title          : Prime restaurant space available - For Rent Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 10000
+Size           : 500.0
+Price/m²       : 20.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 15
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19833
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13063
+Property code  : CND-002357
+Title          : Le Conde 2 / 2Bedroom Unit
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 95.0
+Price/m²       : 28.42
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 2
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13063
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13064
+Property code  : CND-002358
+Title          : Le Conde 2 /Unit 1bedroom spacious layout
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 72.0
+Price/m²       : 37.5
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 10
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13064
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16405
+Property code  : CND-002778
+Title          : Le Conde 2 /Unit 3bedroom very beautiful
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 122.0
+Price/m²       : 22.13
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : None
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16405
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8063
+Property code  : CND-001736
+Title          : Morgen Enmaision
+Listing type   : sale
+Property type  : Condo
+Price          : 1400
+Size           : 48.0
+Price/m²       : 29.17
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 1
+Building floors: None
+District       : Chroy Changvar
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-8063
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16410
+Property code  : CND-002783
+Title          : Picasso City Garden /2Bedroom for rent
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16410
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13069
+Property code  : CND-002363
+Title          : គម្រោងខុនដូ ថ្មីអគាររចនាបែបខ្មែរផ្ការំដួលកម្ពស់63ជាន់
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 72.0
+Price/m²       : 37.5
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 10
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13069
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8128
+Property code  : CND-001752
+Title          : Condo Urban village duplex 1Bed special price 🎊🎉
+Listing type   : sale
+Property type  : Condo
+Price          : 1360
+Size           : 71.0
+Price/m²       : 19.15
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 18
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8128
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13072
+Property code  : None
+Title          : Le Conde 2 ~BKK1 ! Now open for Pre -Booking🎉
+Listing type   : sale
+Property type  : Condo
+Price          : 2200
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 10
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13072
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21644
+Property code  : CND-004268
+Title          : 2 Bedroom Lecondé 2 BKK1 fo sale
+Listing type   : sale
+Property type  : Condo
+Price          : 2200
+Size           : 116.0
+Price/m²       : 18.97
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 27
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-21644
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21637
+Property code  : CND-004261
+Title          : 🚨 BKK1’s LAST PRIME CORNER IS HERE
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-21637
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19801
+Property code  : CND-003357
+Title          : Perfect mid-level living: The last Type C for rent.‼️✨ -Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19801
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_5940
+Property code  : None
+Title          : Pre-sale Le Condé2 BKK1
+Listing type   : sale
+Property type  : Condo
+Price          : 2200
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-5940
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_17702
+Property code  : CND-002962
+Title          : 💁🏻 ♀️2房轉角戶型Unit កែង 2បន្ទប់គេង+2បន្ទប់ទឹក
+Listing type   : sale
+Property type  : Condo
+Price          : 1155
+Size           : 75.0
+Price/m²       : 15.4
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 42
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-17702
+
+=========================================================================================================
+HIGH-PRICE: 1 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_22953
+Property code  : CND-004674
+Title          : អគារសណ្ឋាគារលក់<នៅបឹងកេងកង៣
+Listing type   : sale
+Property type  : Commercial
+Price          : 2800000
+Size           : 348.0
+Price/m²       : 8045.98
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 1
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Commercial
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-22953
+
+=========================================================================================================
+SMALL-SIZE: 1 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13510
+Property code  : CND-002419
+Title          : ផ្ទះShophouse 1ជុង លក់នៅទួលគោក លើផ្លូមេ វីធីសម្តេចប៉ែននុត ផ្លូវ289 !!
+Listing type   : sale
+Property type  : Flat
+Price          : 450000
+Size           : 6.0
+Price/m²       : 75000.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Flat
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13510
+
+=========================================================================================================
+LARGE-SIZE: 23 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19827
+Property code  : CND-003378
+Title          : Luxury Sky Villa - Beuong Kok Area
+Listing type   : sale
+Property type  : Penthouse
+Price          : 58000
+Size           : 564.0
+Price/m²       : 102.84
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : None
+property_type_reference_mismatch: khpropertyhub_com_title=Villa; canonical_khpropertyhub_com_site_structured_title=Penthouse
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19827
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21489
+Property code  : CND-004118
+Title          : 46fl Sky Mansion | 5BR+1 650 Sqm From ~$2.44M at Morgan EnMansion | River + City
+Listing type   : sale
+Property type  : Condo
+Price          : 50000
+Size           : 650.0
+Price/m²       : 76.92
+Bedrooms       : 5
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 46
+Building floors: None
+District       : Chroy Changvar
+Review flag    : False
+Out of scope   : None
+property_type_reference_mismatch: khpropertyhub_com_description=Penthouse; canonical_khpropertyhub_com_site_structured_title=Condo
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-21489
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21468
+Property code  : CND-004097
+Title          : 4BR 5Bath Flat Penthouse of 588 sq.m. Sale for $2.8M - Tonle Basak, Phnom Penh K
+Listing type   : sale
+Property type  : Penthouse
+Price          : 515000
+Size           : 588.0
+Price/m²       : 875.85
+Bedrooms       : 4
+Bedroom options: None
+Bathrooms      : 5
+Unit floor     : 1
+Building floors: None
+District       : Chamkarmon
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-21468
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21462
+Property code  : CND-004091
+Title          : [Fully Furnished] 4-BR Penthouse of 564 Sq.m. on 30F for US$2.39M at City View -
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 564.0
+Price/m²       : 284.04
+Bedrooms       : 4
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 25
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21462
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21461
+Property code  : CND-004090
+Title          : [Bare Shell] Sky Mansion of Full-Floor w/t ~1,200 Sq.m. for ~US$3.65M - Phnom Pe
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 1230.0
+Price/m²       : 130.24
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 31
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21461
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21460
+Property code  : CND-004089
+Title          : [Fully Furnished] Sky Mansion of Full-Floor w/t ~1,200 Sq.m. for ~US$5M - Phnom
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 1230.0
+Price/m²       : 130.24
+Bedrooms       : 6
+Bedroom options: None
+Bathrooms      : 8
+Unit floor     : 31
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21460
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21456
+Property code  : CND-004085
+Title          : Check Out Why You Should Own This Sky Palace Penthouse of 559 Sq.m for US$2.3M i
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 559.0
+Price/m²       : 286.58
+Bedrooms       : 4
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 32
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21456
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21455
+Property code  : CND-004084
+Title          : Entire Floor: Full 24th Floor with 22 Units at MIRO Tower for $1.4M - Ideal for
+Listing type   : sale
+Property type  : Condo
+Price          : 125000
+Size           : 848.0
+Price/m²       : 147.41
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 24
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-21455
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21448
+Property code  : CND-004081
+Title          : City View Sky Mansion – The Rarest Full-Floor Penthouse | ~1,200 sq.m | $3.65M B
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 1200.0
+Price/m²       : 133.5
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : 10
+Unit floor     : 31
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21448
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21434
+Property code  : CND-004070
+Title          : ផេនហោស៍ (គ្រោងលំហរ) នៅជាន់ខ្ពស់ ទំហំ 1,200 sqm មួយជាន់ពេញ | តម្លៃ USD3.66 លាន
+Listing type   : sale
+Property type  : Penthouse
+Price          : 160200
+Size           : 1200.0
+Price/m²       : 133.5
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 31
+Building floors: None
+District       : Daun Penh
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-doun-penh-21434
+
+=========================================================================================================
+LOW PRICE/M²: 60 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19834
+Property code  : CND-003384
+Title          : Luxury 3Bed For Rent In Bkk1 - Fresh Move In
+Listing type   : rent
+Property type  : Condo
+Price          : 1800
+Size           : 135.0
+Price/m²       : 13.33
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 3
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19834
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19833
+Property code  : CND-003383
+Title          : Prime restaurant space available - For Rent Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 10000
+Size           : 500.0
+Price/m²       : 20.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 15
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19833
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19720
+Property code  : CND-003289
+Title          : 🛎️ ដីលក់បន្ទាន់ 📐 ទំហំ + តម្លៃ • ទំហំ: 20m x 25m = 479m² • តម្លៃ: $1,100,000 (
+Listing type   : sale
+Property type  : Land
+Price          : 58000
+Size           : 479.0
+Price/m²       : 121.09
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Land
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19720
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19827
+Property code  : CND-003378
+Title          : Luxury Sky Villa - Beuong Kok Area
+Listing type   : sale
+Property type  : Penthouse
+Price          : 58000
+Size           : 564.0
+Price/m²       : 102.84
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : None
+property_type_reference_mismatch: khpropertyhub_com_title=Villa; canonical_khpropertyhub_com_site_structured_title=Penthouse
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19827
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19825
+Property code  : CND-003376
+Title          : 💎 Ultra-Luxury Duplex Penthouse at GATO Tower - Bkk1
+Listing type   : sale
+Property type  : Penthouse
+Price          : 59900
+Size           : 443.0
+Price/m²       : 135.21
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19825
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13063
+Property code  : CND-002357
+Title          : Le Conde 2 / 2Bedroom Unit
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 95.0
+Price/m²       : 28.42
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 2
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13063
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13064
+Property code  : CND-002358
+Title          : Le Conde 2 /Unit 1bedroom spacious layout
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 72.0
+Price/m²       : 37.5
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 10
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13064
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16405
+Property code  : CND-002778
+Title          : Le Conde 2 /Unit 3bedroom very beautiful
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 122.0
+Price/m²       : 22.13
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : None
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16405
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8063
+Property code  : CND-001736
+Title          : Morgen Enmaision
+Listing type   : sale
+Property type  : Condo
+Price          : 1400
+Size           : 48.0
+Price/m²       : 29.17
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 1
+Building floors: None
+District       : Chroy Changvar
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-8063
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16410
+Property code  : CND-002783
+Title          : Picasso City Garden /2Bedroom for rent
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16410
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13069
+Property code  : CND-002363
+Title          : គម្រោងខុនដូ ថ្មីអគាររចនាបែបខ្មែរផ្ការំដួលកម្ពស់63ជាន់
+Listing type   : sale
+Property type  : Condo
+Price          : 2700
+Size           : 72.0
+Price/m²       : 37.5
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 10
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-13069
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8128
+Property code  : CND-001752
+Title          : Condo Urban village duplex 1Bed special price 🎊🎉
+Listing type   : sale
+Property type  : Condo
+Price          : 1360
+Size           : 71.0
+Price/m²       : 19.15
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 18
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8128
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21644
+Property code  : CND-004268
+Title          : 2 Bedroom Lecondé 2 BKK1 fo sale
+Listing type   : sale
+Property type  : Condo
+Price          : 2200
+Size           : 116.0
+Price/m²       : 18.97
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 27
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-21644
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_21402
+Property code  : CND-004056
+Title          : 5-Bedroom Sky Villas | ~350–370 sqm | From ~$1.2M-$1.5M | Le Condé 2 BKK1
+Listing type   : sale
+Property type  : Condo
+Price          : 59900
+Size           : 350.0
+Price/m²       : 171.14
+Bedrooms       : 5
+Bedroom options: None
+Bathrooms      : 4
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-21402
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19801
+Property code  : CND-003357
+Title          : Perfect mid-level living: The last Type C for rent.‼️✨ -Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19801
+
+=========================================================================================================
+HIGH PRICE/M²: 4 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6310
+Property code  : CND-001488
+Title          : Condo for Sale
+Listing type   : sale
+Property type  : Condo
+Price          : 650000
+Size           : 53.0
+Price/m²       : 12264.15
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : 1
+Unit floor     : 19
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-6310
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6118
+Property code  : CND-001466
+Title          : L Tower 271 (លក់ប្រញាប់លុយតម្លៃពិសេស)
+Listing type   : sale
+Property type  : Condo
+Price          : 650000
+Size           : 53.0
+Price/m²       : 12264.15
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : 1
+Unit floor     : 13
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-6118
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13510
+Property code  : CND-002419
+Title          : ផ្ទះShophouse 1ជុង លក់នៅទួលគោក លើផ្លូមេ វីធីសម្តេចប៉ែននុត ផ្លូវ289 !!
+Listing type   : sale
+Property type  : Flat
+Price          : 450000
+Size           : 6.0
+Price/m²       : 75000.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : not_condo_or_penthouse
+property_type_conflict        : search_scope=Condo; explicit title=Flat
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13510
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_15426
+Property code  : CND-002676
+Title          : Condo for sale
+Listing type   : sale
+Property type  : Condo
+Price          : 700000
+Size           : 54.0
+Price/m²       : 12962.96
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Sen Sok
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-15426
+
+=========================================================================================================
+BEDROOMS ABOVE LIMIT: 2 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13405
+Property code  : CND-002409
+Title          : Condo for sale 13 units
+Listing type   : sale
+Property type  : Condo
+Price          : 850000
+Size           : 130.0
+Price/m²       : 6538.46
+Bedrooms       : 13
+Bedroom options: None
+Bathrooms      : 13
+Unit floor     : 19
+Building floors: None
+District       : Sen Sok
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-13405
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_14751
+Property code  : CND-002573
+Title          : Apartment for sale
+Listing type   : sale
+Property type  : Condo
+Price          : 850000
+Size           : None
+Price/m²       : None
+Bedrooms       : 11
+Bedroom options: None
+Bathrooms      : 14
+Unit floor     : 2
+Building floors: None
+District       : Russey Keo
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-14751
+
+=========================================================================================================
+BATHROOMS ABOVE LIMIT: 2 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13405
+Property code  : CND-002409
+Title          : Condo for sale 13 units
+Listing type   : sale
+Property type  : Condo
+Price          : 850000
+Size           : 130.0
+Price/m²       : 6538.46
+Bedrooms       : 13
+Bedroom options: None
+Bathrooms      : 13
+Unit floor     : 19
+Building floors: None
+District       : Sen Sok
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-13405
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_14751
+Property code  : CND-002573
+Title          : Apartment for sale
+Listing type   : sale
+Property type  : Condo
+Price          : 850000
+Size           : None
+Price/m²       : None
+Bedrooms       : 11
+Bedroom options: None
+Bathrooms      : 14
+Unit floor     : 2
+Building floors: None
+District       : Russey Keo
+Review flag    : False
+Out of scope   : None
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-14751
+
+=========================================================================================================
+UNIT-FLOOR CONFLICT: 4 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_10450
+Property code  : CND-002102
+Title          : 🏙 Condo កណ្តាលក្រុង | លក់បន្ទាន់📐 58m² | ជាន់ទី 9 | Furnished ពេញ
+Listing type   : sale
+Property type  : Condo
+Price          : 59000
+Size           : 58.0
+Price/m²       : 1017.24
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 6
+Building floors: None
+District       : Russey Keo
+Review flag    : True
+Out of scope   : None
+unit_floor_conflict           : khpropertyhub_com_title=9; replaced by khpropertyhub_com_site_structured_description_floor=6
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-10450
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_7773
+Property code  : CND-001708
+Title          : 🙌ខុនដូរជប៉ុន Arakawa ជាន់ទី3 2បន្ទប់គេង អគារ G តម្លៃ$64000 បូករួមសំភារះទាំងអស់ និងកាត់ប្លង់ជូន
+Listing type   : sale
+Property type  : Condo
+Price          : 64000
+Size           : 47.0
+Price/m²       : 1361.7
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 17
+Building floors: None
+District       : Sen Sok
+Review flag    : True
+Out of scope   : None
+unit_floor_conflict           : khpropertyhub_com_title=3; replaced by khpropertyhub_com_site_structured_description_floor=17
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-7773
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13775
+Property code  : CND-002440
+Title          : ខនដូ លក់ឡៃឡុង បន្ទាន់ ខាត60% ជាន់ទី 6
+Listing type   : sale
+Property type  : Condo
+Price          : 27500
+Size           : 33.0
+Price/m²       : 833.33
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 11
+Building floors: None
+District       : Toul Kork
+Review flag    : True
+Out of scope   : None
+unit_floor_conflict           : khpropertyhub_com_title=6; replaced by khpropertyhub_com_site_structured_description_floor=11
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13775
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_7121
+Property code  : CND-001641
+Title          : 🏙 ខុនដូស្អាត ជិតទន្លេ ខ្យល់បរិសុទ្ធ (ជាន់ទី 21) លក់
+Listing type   : sale
+Property type  : Condo
+Price          : 59999
+Size           : 42.0
+Price/m²       : 1428.55
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 1
+Building floors: None
+District       : Chroy Changvar
+Review flag    : True
+Out of scope   : None
+unit_floor_conflict           : khpropertyhub_com_title=21; replaced by khpropertyhub_com_site_structured_description_floor=1
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-7121
+
+=========================================================================================================
+LISTING/SEARCH MISMATCH: 38 records
+=========================================================================================================
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19834
+Property code  : CND-003384
+Title          : Luxury 3Bed For Rent In Bkk1 - Fresh Move In
+Listing type   : rent
+Property type  : Condo
+Price          : 1800
+Size           : 135.0
+Price/m²       : 13.33
+Bedrooms       : 3
+Bedroom options: None
+Bathrooms      : 3
+Unit floor     : 31
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19834
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19833
+Property code  : CND-003383
+Title          : Prime restaurant space available - For Rent Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 10000
+Size           : 500.0
+Price/m²       : 20.0
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 15
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19833
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_16410
+Property code  : CND-002783
+Title          : Picasso City Garden /2Bedroom for rent
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-16410
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19801
+Property code  : CND-003357
+Title          : Perfect mid-level living: The last Type C for rent.‼️✨ -Bkk1
+Listing type   : rent
+Property type  : Condo
+Price          : 2100
+Size           : 95.0
+Price/m²       : 22.11
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : 2
+Unit floor     : 3
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19801
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_13494
+Property code  : CND-002418
+Title          : Apartment សម្រាប់លក់ និងជួល
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 58000
+Size           : 240.0
+Price/m²       : 241.67
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 11
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13494
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_7117
+Property code  : CND-001638
+Title          : 💰 តម្លៃជួល៖ $370/ខែ (Condo urband village phase 2)
+Listing type   : rent
+Property type  : Condo
+Price          : 139999
+Size           : 39.0
+Price/m²       : 3589.72
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 7
+Building floors: None
+District       : Chbar Ampov
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chbar-ampov-7117
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6381
+Property code  : CND-001503
+Title          : Studio condo for rent near TK avenue
+Listing type   : rent
+Property type  : Condo
+Price          : 190752
+Size           : 55.0
+Price/m²       : 3468.22
+Bedrooms       : 0
+Bedroom options: None
+Bathrooms      : 1
+Unit floor     : 2
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-6381
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8341
+Property code  : CND-001795
+Title          : 1 bedroom easy for rent L Residence BTP
+Listing type   : rent
+Property type  : Condo
+Price          : 39500
+Size           : 43.0
+Price/m²       : 918.6
+Bedrooms       : 1
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8341
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_11462
+Property code  : CND-002219
+Title          : MORGAN CONDO Sale or Rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 71000
+Size           : 48.0
+Price/m²       : 1479.17
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 8
+Building floors: None
+District       : Chroy Changvar
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-11462
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_6509
+Property code  : None
+Title          : Condo for Rent or Sale
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 77777
+Size           : None
+Price/m²       : None
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : None
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-6509
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_7664
+Property code  : CND-001698
+Title          : ខុនដូលក់ខាតច្រើន ឬ ជួល បន្ទប់កែង អគារ F ជាន់ទី២០ Arakawa
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 31000
+Size           : 24.0
+Price/m²       : 1291.67
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 20
+Building floors: None
+District       : Sen Sok
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-7664
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19760
+Property code  : CND-003317
+Title          : ✨ 𝐁𝐨𝐨𝐤𝐢𝐧𝐠 𝐍𝐨𝐰 🔔 Big Promotion On February Available For Sale & Rent
+Listing type   : sale/rent
+Property type  : Condo
+Price          : 3800
+Size           : 168.0
+Price/m²       : 22.62
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 28
+Building floors: None
+District       : Boeung Keng Kang
+Review flag    : False
+Out of scope   : mixed_sale_rent_title
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=sale/rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-19760
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_19753
+Property code  : CND-003310
+Title          : Urgent Condo for rent & resale at Time Square 3
+Listing type   : rent
+Property type  : Condo
+Price          : 79999
+Size           : 67.0
+Price/m²       : 1194.01
+Bedrooms       : 2
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 9
+Building floors: None
+District       : Toul Kork
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19753
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8139
+Property code  : CND-001757
+Title          : ខុនដូជួល តំលៃធូរ សំភារះពេញ
+Listing type   : rent
+Property type  : Condo
+Price          : 49999
+Size           : 32.0
+Price/m²       : 1562.47
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 27
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8139
+
+---------------------------------------------------------------------------------------------------------
+ID             : khpropertyhub.com_8141
+Property code  : CND-001758
+Title          : ខុនដូជួលតំលៃធូ មានសំភារះពេញ
+Listing type   : rent
+Property type  : Condo
+Price          : 49999
+Size           : 32.0
+Price/m²       : 1562.47
+Bedrooms       : None
+Bedroom options: None
+Bathrooms      : None
+Unit floor     : 27
+Building floors: None
+District       : Meanchey
+Review flag    : False
+Out of scope   : explicit_rent_title_in_sale_search
+listing_type_search_mismatch  : search_scope=sale; canonical_khpropertyhub_com_site_structured_title=rent
+URL            : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8141
+
+=========================================================================================================
+KHPropertyHub decision audit completed.
+=========================================================================================================

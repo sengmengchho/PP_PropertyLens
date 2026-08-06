@@ -1,0 +1,193 @@
+
+REALESTATE.COM.KH RAW DATA INSPECTION
+====================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\realestate\raw_listings.json
+Total rows : 1,000
+
+ALL RAW COLUMNS
+====================================================================================================
+Column                                       Non-missing     Missing  Data types
+----------------------------------------------------------------------------------------------------
+address                                             1000           0  str:1000
+bathrooms                                            901          99  int:901
+bathrooms_description_value                           11         989  int:11
+bathrooms_source                                     901          99  str:901
+bathrooms_title_value                                 10         990  int:10
+bedrooms                                             987          13  int:987
+bedrooms_confidence                                   55         945  str:55
+bedrooms_conflict                                    132         868  str:132
+bedrooms_description_value                           117         883  int:117
+bedrooms_source                                      987          13  str:987
+bedrooms_text_raw                                     55         945  str:55
+bedrooms_title_value                                 792         208  int:792
+building_total_floors                                 38         962  int:38
+building_total_floors_source                          38         962  str:38
+commune                                              998           2  str:998
+created_at                                          1000           0  str:1000
+description                                          998           2  str:998
+description_source                                   998           2  str:998
+detail_json_exact_match                             1000           0  bool:1000
+detail_parsed_at                                    1000           0  str:1000
+detail_scraped                                      1000           0  bool:1000
+detail_title                                        1000           0  str:1000
+display_as_project                                  1000           0  bool:1000
+district                                            1000           0  str:1000
+highlights                                           486         514  str:486
+is_featured                                         1000           0  bool:1000
+listed_date_text                                    1000           0  str:1000
+listing_id                                          1000           0  str:1000
+listing_type                                        1000           0  str:1000
+needs_manual_review                                  132         868  bool:132
+price_display                                        999           1  str:999
+price_is_displayed                                  1000           0  bool:1000
+price_usd                                            992           8  int:992
+project_id                                           458         542  int:458
+project_name                                         458         542  str:458
+property_type                                       1000           0  str:1000
+ribbon                                               788         212  str:788
+scraped_at                                          1000           0  str:1000
+site_estimate_diff                                    42         958  str:42
+site_estimate_usd                                     42         958  int:42
+size_m2                                              948          52  float:948
+source                                              1000           0  str:1000
+source_page                                         1000           0  int:1000
+title                                               1000           0  str:1000
+unit_floor                                           855         145  int:855
+unit_floor_confidence                                  2         998  str:2
+unit_floor_description_value                          12         988  int:12
+unit_floor_source                                    855         145  str:855
+unit_floor_text_raw                                    2         998  str:2
+unit_floor_title_value                                34         966  int:34
+url                                                 1000           0  str:1000
+
+IMPORTANT COLUMN MISSING VALUES
+================================================================================
+Column                             Non-missing     Missing    Coverage
+--------------------------------------------------------------------------------
+listing_id                                1000           0      100.0%
+source                                    1000           0      100.0%
+url                                       1000           0      100.0%
+title                                     1000           0      100.0%
+description                                998           2       99.8%
+listing_type                              1000           0      100.0%
+property_type                             1000           0      100.0%
+price_usd                                  992           8       99.2%
+size_m2                                    948          52       94.8%
+bedrooms                                   987          13       98.7%
+bathrooms                                  901          99       90.1%
+unit_floor                                 855         145       85.5%
+building_total_floors                       38         962        3.8%
+district                                  1000           0      100.0%
+commune                                    998           2       99.8%
+address                                   1000           0      100.0%
+project_name                               458         542       45.8%
+latitude                                     0        1000        0.0%
+longitude                                    0        1000        0.0%
+created_at                                1000           0      100.0%
+scraped_at                                1000           0      100.0%
+
+LISTING_TYPE VALUES
+======================================================================
+sale                                               798
+sale/rent                                          201
+rent                                                 1
+
+PROPERTY_TYPE VALUES
+======================================================================
+Condo                                              788
+Studio                                              96
+Apartment                                           82
+Project                                             27
+Penthouse                                            6
+Serviced Apartment                                   1
+
+DISTRICT VALUES
+======================================================================
+Meanchey                                           190
+Boeng Keng Kang                                    183
+Chamkarmon                                         164
+Chroy Changvar                                     113
+Sen Sok                                            103
+Toul Kork                                           80
+Chbar Ampov                                         57
+7 Makara                                            41
+Daun Penh                                           38
+Russey Keo                                          25
+Por Sen Chey                                         6
+
+NUMERIC RANGES
+================================================================================
+Column                             Count        Minimum        Maximum
+--------------------------------------------------------------------------------
+price_usd                            992       1,250.00   2,919,977.00
+size_m2                              948           3.00       9,523.00
+bedrooms                             987           0.00          27.00
+bathrooms                            901           1.00          21.00
+unit_floor                           855           1.00          60.00
+building_total_floors                 38           9.00          77.00
+
+IDENTITY DUPLICATE CHECK
+======================================================================
+Duplicate listing IDs : 0
+Duplicate URLs        : 0
+
+SAMPLE RECORDS
+====================================================================================================
+
+RECORD 1
+----------------------------------------------------------------------------------------------------
+listing_id                  : 246560
+title                       : RARE 1-Bedroom Condo | Sale | Time Square 2 | TK Area
+listing_type                : sale
+property_type               : Condo
+price_usd                   : 74000
+size_m2                     : 35.0
+bedrooms                    : 1
+bathrooms                   : 1
+unit_floor                  : 24
+building_total_floors       : None
+district                    : Toul Kork
+commune                     : Boeung Kak 1
+project_name                : Time Square II
+needs_manual_review         : None
+url                         : https://www.realestate.com.kh/new-developments/time-square-ii/1-bed-1-bath-condo-246560/
+
+RECORD 2
+----------------------------------------------------------------------------------------------------
+listing_id                  : 259257
+title                       : 💁‍♂️ Amazing Design 2 Bedrooms Renovated House for Sale Near Riverside
+listing_type                : sale
+property_type               : Apartment
+price_usd                   : 155000
+size_m2                     : 110.0
+bedrooms                    : 2
+bathrooms                   : 2
+unit_floor                  : 3
+building_total_floors       : None
+district                    : Daun Penh
+commune                     : Phsar Chas
+project_name                : None
+needs_manual_review         : None
+url                         : https://www.realestate.com.kh/buy/phsar-chas/2-bed-2-bath-apartment-259257/
+
+RECORD 3
+----------------------------------------------------------------------------------------------------
+listing_id                  : 259255
+title                       : 2-Bedroom Condo for Sale at Chipmong Parkland TK Condo – High Floor | Fully Furnished
+listing_type                : sale
+property_type               : Condo
+price_usd                   : 97000
+size_m2                     : 53.0
+bedrooms                    : 2
+bathrooms                   : 2
+unit_floor                  : 10
+building_total_floors       : None
+district                    : Sen Sok
+commune                     : Phnom Penh Thmey
+project_name                : Chip Mong | Park Land TK Condo
+needs_manual_review         : None
+url                         : https://www.realestate.com.kh/new-developments/chip-mong-park-land-tk-condo/2-bed-2-bath-condo-259255/
+
+====================================================================================================
+Inspection completed.
+====================================================================================================

@@ -1,0 +1,550 @@
+
+REALESTATE CLEANING DECISION AUDIT
+====================================================================================================
+Total Bronze records                    : 1,000
+display_as_project=True                 : 41
+Sale/rent records                       : 201
+  Sale-like numeric profile             : 178
+  Suspicious/ambiguous numeric profile  : 23
+  Price below $20,000                   : 7
+Bedroom conflicts                       : 132
+  Studio-related                        : 128
+  Project-page related                  : 7
+  Other                                 : 3
+Ambiguous raw property types            : 110
+  Explicit condo/penthouse evidence     : 43
+  No condo/penthouse evidence           : 67
+
+PROJECT-PAGE PROPERTY TYPES
+Project                       : 27
+Condo                         : 14
+
+====================================================================================================
+PROJECT-LEVEL PAGE EXAMPLES: 41 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 259061
+Title       : Time Square 11 BKK3
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 64000
+Size        : 38.0
+Price/m²    : 1684.21
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/time-square-11-bkk3/
+
+----------------------------------------------------------------------------------------------------
+ID          : 255491
+Title       : G.A.T.O Tower
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 3165
+Size        : 31.0
+Price/m²    : 102.1
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/gato-tower/
+
+----------------------------------------------------------------------------------------------------
+ID          : 252266
+Title       : Kingston Royale
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 52500
+Size        : 43.0
+Price/m²    : 1220.93
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/kingston-royale/
+
+----------------------------------------------------------------------------------------------------
+ID          : 251410
+Title       : Time Square 9 BKK1
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 1700
+Size        : 60.0
+Price/m²    : 28.33
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/time-square-9-bkk1/
+
+----------------------------------------------------------------------------------------------------
+ID          : 226757
+Title       : J Tower 3 Condominium
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 345000
+Size        : 166.0
+Price/m²    : 2078.31
+Bedrooms    : 3
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/j-tower-3-condominium/
+
+====================================================================================================
+SALE/RENT — SALE-LIKE EXAMPLES: 178 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 236155
+Title       : Fully-Furnished One Bedroom Unit at Urban Village | Sky Prime Tower H
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 103000
+Size        : 54.0
+Price/m²    : 1907.41
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/urban-village-phase-2/1-bed-1-bath-condo-236155/
+
+----------------------------------------------------------------------------------------------------
+ID          : 212205
+Title       : J Tower 2 Condominium
+Listing type: sale/rent
+Property    : Condo
+Project page: True
+Price       : 183645
+Size        : 65.0
+Price/m²    : 2825.31
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/j-tower-2-condominium/
+
+----------------------------------------------------------------------------------------------------
+ID          : 267310
+Title       : 🏙 High Floor 1-Bedroom Condo for Sale/Rent at Urban Village Phase 2
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 82000
+Size        : 41.0
+Price/m²    : 2000.0
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/chak-angrae-leu/1-bed-1-bath-condo-267310/
+
+----------------------------------------------------------------------------------------------------
+ID          : 267229
+Title       : ✨ANATA RESIDENCE | A Studio Condo With Fully Furnished | Stueng Mean Chey
+Listing type: sale/rent
+Property    : Studio
+Project page: False
+Price       : 34900
+Size        : 30.0
+Price/m²    : 1163.33
+Bedrooms    : 1
+Conflict    : title=0 from 'Studio' || title=0 from 'Studio'; description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/anata-residence/1-bed-1-bath-studio-267229/
+
+----------------------------------------------------------------------------------------------------
+ID          : 267228
+Title       : ✨ANATA RESIDENCE | 32SQM STUDIO CONDO FOR SALE/RENT | Phnom Penh
+Listing type: sale/rent
+Property    : Studio
+Project page: False
+Price       : 35900
+Size        : 32.0
+Price/m²    : 1121.88
+Bedrooms    : 1
+Conflict    : title=0 from 'STUDIO' || title=0 from 'STUDIO'; description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/anata-residence/1-bed-1-bath-studio-267228/
+
+====================================================================================================
+SALE/RENT — SUSPICIOUS EXAMPLES: 23 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 267225
+Title       : 🏠 Condo for sale 48000$ / Rent 300$
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 48000
+Size        : None
+Price/m²    : None
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/boeung-trabek/103-267225/
+
+----------------------------------------------------------------------------------------------------
+ID          : 265632
+Title       : Morgan Enmaison Mekong River – Smart loft 2-bedroom for Rent
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 100000
+Size        : None
+Price/m²    : None
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/chroy-changvar/mekong-river-no88-street-265632/
+
+----------------------------------------------------------------------------------------------------
+ID          : 264958
+Title       : 🏙️ Stylish 1 Bedroom Condo in Koh Norea | Rent $550 | Sale $130K
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 130000
+Size        : None
+Price/m²    : None
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/vue-aston/1-bed-1-bath-condo-264958/
+
+----------------------------------------------------------------------------------------------------
+ID          : 264207
+Title       : ✨Affordable Condo for Sale in Phnom Penh City Center | Olympia City C4
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 85000
+Size        : None
+Price/m²    : None
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/olympia-city/1-bed-2-bath-condo-264207/
+
+----------------------------------------------------------------------------------------------------
+ID          : 263435
+Title       : 2-Bedroom Residence Sale or Rent | Olympia City
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 250000
+Size        : None
+Price/m²    : None
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/olympic/2-bed-2-bath-condo-263435/
+
+====================================================================================================
+STUDIO BEDROOM-CONFLICT EXAMPLES: 128 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 255491
+Title       : G.A.T.O Tower
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 3165
+Size        : 31.0
+Price/m²    : 102.1
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/gato-tower/
+
+----------------------------------------------------------------------------------------------------
+ID          : 247259
+Title       : Studio Condo for Sale | Tk Star Project
+Listing type: sale
+Property    : Condo
+Project page: False
+Price       : 53000
+Size        : 37.0
+Price/m²    : 1432.43
+Bedrooms    : 1
+Conflict    : title=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/tk-star-international/1-bed-1-bath-condo-247259/
+
+----------------------------------------------------------------------------------------------------
+ID          : 151181
+Title       : R&F CITY MIRO
+Listing type: sale
+Property    : Condo
+Project page: True
+Price       : 86013
+Size        : 38.0
+Price/m²    : 2263.5
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/rf-city-miro/
+
+----------------------------------------------------------------------------------------------------
+ID          : 267322
+Title       : Urgent High-Floor Studio Sale at Urban Village Phase 2 | Fixed Price USD 35,000
+Listing type: sale
+Property    : Condo
+Project page: False
+Price       : 35000
+Size        : 29.0
+Price/m²    : 1206.9
+Bedrooms    : 1
+Conflict    : title=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/urban-village-phase-2/1-bed-1-bath-condo-267322/
+
+----------------------------------------------------------------------------------------------------
+ID          : 267234
+Title       : ✨ Fully Furnished Studio for Sale | 47th Floor | Urban Village Phase 2
+Listing type: sale
+Property    : Condo
+Project page: False
+Price       : 89000
+Size        : 38.0
+Price/m²    : 2342.11
+Bedrooms    : 1
+Conflict    : title=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/urban-village-phase-2/1-bed-1-bath-condo-267234/
+
+====================================================================================================
+PROJECT-PAGE BEDROOM-CONFLICT EXAMPLES: 7 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 255491
+Title       : G.A.T.O Tower
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 3165
+Size        : 31.0
+Price/m²    : 102.1
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/gato-tower/
+
+----------------------------------------------------------------------------------------------------
+ID          : 151181
+Title       : R&F CITY MIRO
+Listing type: sale
+Property    : Condo
+Project page: True
+Price       : 86013
+Size        : 38.0
+Price/m²    : 2263.5
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/rf-city-miro/
+
+----------------------------------------------------------------------------------------------------
+ID          : 234611
+Title       : Anata Residence
+Listing type: sale
+Property    : Condo
+Project page: True
+Price       : 54000
+Size        : 30.0
+Price/m²    : 1800.0
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/anata-residence/
+
+----------------------------------------------------------------------------------------------------
+ID          : 235668
+Title       : Time Square 302
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : None
+Size        : 50.0
+Price/m²    : None
+Bedrooms    : 1
+Conflict    : description=2 from '2-Bed'
+URL         : https://www.realestate.com.kh/new-developments/time-square-302/
+
+----------------------------------------------------------------------------------------------------
+ID          : 223183
+Title       : Real Hope Condo
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 86142
+Size        : 37.0
+Price/m²    : 2328.16
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/real-hope-condo/
+
+====================================================================================================
+OTHER BEDROOM-CONFLICT EXAMPLES: 3 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 263571
+Title       : ONE BEDROOM CONDO FOR SALE IN POLARIS-23
+Listing type: sale
+Property    : Condo
+Project page: False
+Price       : 90000
+Size        : 60.0
+Price/m²    : 1500.0
+Bedrooms    : 2
+Conflict    : title=1 from 'ONE BEDROOM'
+URL         : https://www.realestate.com.kh/buy/nirouth/2-bed-2-bath-condo-263571/
+
+----------------------------------------------------------------------------------------------------
+ID          : 262598
+Title       : 3+1 Bedroom Condo for Urgent Sale/Rent in Toul Kork
+Listing type: sale/rent
+Property    : Condo
+Project page: False
+Price       : 210000
+Size        : 148.0
+Price/m²    : 1418.92
+Bedrooms    : 4
+Conflict    : title=1 from '1 Bedroom'
+URL         : https://www.realestate.com.kh/buy/boeung-kak-1/4-bed-3-bath-condo-262598/
+
+----------------------------------------------------------------------------------------------------
+ID          : 245562
+Title       : 3+1 Bedroom Penthouse for Sale/Rent I Rose Condo
+Listing type: sale/rent
+Property    : Penthouse
+Project page: False
+Price       : 750000
+Size        : 195.0
+Price/m²    : 3846.15
+Bedrooms    : 4
+Conflict    : title=1 from '1 Bedroom'
+URL         : https://www.realestate.com.kh/buy/tonle-bassac/4-bed-3-bath-penthouse-245562/
+
+====================================================================================================
+AMBIGUOUS TYPES WITH CONDO EVIDENCE: 43 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 259061
+Title       : Time Square 11 BKK3
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 64000
+Size        : 38.0
+Price/m²    : 1684.21
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/time-square-11-bkk3/
+
+----------------------------------------------------------------------------------------------------
+ID          : 255491
+Title       : G.A.T.O Tower
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 3165
+Size        : 31.0
+Price/m²    : 102.1
+Bedrooms    : 1
+Conflict    : description=0 from 'Studio'
+URL         : https://www.realestate.com.kh/new-developments/gato-tower/
+
+----------------------------------------------------------------------------------------------------
+ID          : 252266
+Title       : Kingston Royale
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 52500
+Size        : 43.0
+Price/m²    : 1220.93
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/kingston-royale/
+
+----------------------------------------------------------------------------------------------------
+ID          : 251410
+Title       : Time Square 9 BKK1
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 1700
+Size        : 60.0
+Price/m²    : 28.33
+Bedrooms    : 1
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/time-square-9-bkk1/
+
+----------------------------------------------------------------------------------------------------
+ID          : 226757
+Title       : J Tower 3 Condominium
+Listing type: sale
+Property    : Project
+Project page: True
+Price       : 345000
+Size        : 166.0
+Price/m²    : 2078.31
+Bedrooms    : 3
+Conflict    : None
+URL         : https://www.realestate.com.kh/new-developments/j-tower-3-condominium/
+
+====================================================================================================
+AMBIGUOUS TYPES WITHOUT CONDO EVIDENCE: 67 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID          : 259257
+Title       : 💁‍♂️ Amazing Design 2 Bedrooms Renovated House for Sale Near Riverside
+Listing type: sale
+Property    : Apartment
+Project page: False
+Price       : 155000
+Size        : 110.0
+Price/m²    : 1409.09
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/phsar-chas/2-bed-2-bath-apartment-259257/
+
+----------------------------------------------------------------------------------------------------
+ID          : 266797
+Title       : Fully Renovated 3-Room Apartment with Private Rooftop in Phnom Penh
+Listing type: sale
+Property    : Apartment
+Project page: False
+Price       : 135000
+Size        : 80.0
+Price/m²    : 1687.5
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/phsar-chas/2-bed-1-bath-apartment-266797/
+
+----------------------------------------------------------------------------------------------------
+ID          : 266488
+Title       : Renovated 2 Bedroom Apartment Near Oressey market
+Listing type: sale
+Property    : Apartment
+Project page: False
+Price       : 82000
+Size        : None
+Price/m²    : None
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/boeung-prolit/2-bed-2-bath-apartment-266488/
+
+----------------------------------------------------------------------------------------------------
+ID          : 264582
+Title       : Stylish Renovated Duplex Near Riverside Walking Street | 2 Bedrooms | Only $90,000
+Listing type: sale
+Property    : Apartment
+Project page: False
+Price       : 90000
+Size        : None
+Price/m²    : None
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/chey-chumneah/apartment-264582/
+
+----------------------------------------------------------------------------------------------------
+ID          : 264358
+Title       : Renovated 2-Bedroom Apartment with Private Rooftop – Near Central Market | Phnom Penh
+Listing type: sale/rent
+Property    : Apartment
+Project page: False
+Price       : 130000
+Size        : 100.0
+Price/m²    : 1300.0
+Bedrooms    : 2
+Conflict    : None
+URL         : https://www.realestate.com.kh/buy/phsar-thmei-i/2-bed-1-bath-apartment-264358/
+
+====================================================================================================
+Decision audit completed.
+====================================================================================================

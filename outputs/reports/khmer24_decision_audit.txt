@@ -1,0 +1,1141 @@
+
+KHMER24 CLEANING DECISION AUDIT
+====================================================================================================
+Total Bronze records                  : 126
+Phnom Penh records                    : 124
+Non-Phnom Penh records                : 2
+Rent-only records                     : 12
+Sale/rent records                     : 3
+  Sale-like numeric profile           : 3
+  Ambiguous numeric profile           : 0
+Missing size                          : 10
+Price below $20,000                : 18
+Price above $2,000,000             : 3
+Size below 20m²                    : 0
+Size above 500m²                   : 9
+Property-type conflicts               : 4
+  Explicit House/Flat/etc.            : 4
+Bedroom conflicts                     : 4
+  Resolvable from current title       : 4
+  Still unresolved                    : 0
+Titles with Khmer24 age suffix        : 65
+District labels needing normalization : 35
+Records without parsed detail page    : 14
+
+DISTRICT NORMALIZATION PREVIEW
+----------------------------------------------------------------------------------------------------
+Chrouy Changva                             -> Chroy Changvar            (25)
+Por Senchey                                -> Pur Senchey               (2)
+Condo Chrouy Changva                       -> Chroy Changvar            (1)
+relax Chrouy Changva                       -> Chroy Changvar            (1)
+Riverside Chrouy Changva                   -> Chroy Changvar            (1)
+Floor Chrouy Changva                       -> Chroy Changvar            (1)
+Promotion Chrouy Changva                   -> Chroy Changvar            (1)
+sale Chrouy Changva                        -> Chroy Changvar            (1)
+lifestyle Chrouy Changva                   -> Chroy Changvar            (1)
+Views Chrouy Changva                       -> Chroy Changvar            (1)
+
+====================================================================================================
+NON-PHNOM PENH: 2 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 12870250
+Title raw     : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Title cleaned : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Listing type  : sale
+Province      : Preah Sihanouk
+District raw  : Krong Preah Sihanouk
+District clean: Krong Preah Sihanouk
+Price         : 1500.0
+Size          : 26523.0
+Price/m²      : 0.06
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-12870250
+
+----------------------------------------------------------------------------------------------------
+ID            : 13781375
+Title raw     : ផ្ទះឆ្លាតវ៉ៃ (Smart Home) E0, E1, E2 (កំពត)
+Title cleaned : ផ្ទះឆ្លាតវ៉ៃ (Smart Home) E0, E1, E2 (កំពត)
+Listing type  : sale
+Province      : Kampot
+District raw  : Krong Kampot
+District clean: Krong Kampot
+Price         : 95000.0
+Size          : 220.0
+Price/m²      : 431.82
+Bedrooms      : 3
+Title bedroom : None
+Bathrooms     : 3
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/smart-home-e0-e1-e2-adid-13781375
+
+====================================================================================================
+RENT-ONLY: 12 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 13816200
+Title raw     : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Title cleaned : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Meanchey
+District clean: Meanchey
+Price         : 380.0
+Size          : 45.0
+Price/m²      : 8.44
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/2-bedrooms-with-swimming-pool-at-btp-area-close-to-russian-market-adid-13816200
+
+----------------------------------------------------------------------------------------------------
+ID            : 12369304
+Title raw     : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Title cleaned : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 350.0
+Size          : 70.0
+Price/m²      : 5.0
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/bali-3-condo-for-rent-1br-fully-furnished-only-350-adid-12369304
+
+----------------------------------------------------------------------------------------------------
+ID            : 13825508
+Title raw     : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Title cleaned : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 200.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/n323-beautiful-bright-and-clean-1-bedroom-apartment-for-rent-in-bkk3-free-wifi-adid-13825508
+
+----------------------------------------------------------------------------------------------------
+ID            : 13144309
+Title raw     : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee 41m •
+Title cleaned : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 5500.0
+Size          : 462.0
+Price/m²      : 11.9
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/villa-for-rent-located-in-bkk1-st294-near-brown-coffee-adid-13144309
+
+----------------------------------------------------------------------------------------------------
+ID            : 13806038
+Title raw     : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Title cleaned : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Toul Kork
+District clean: Toul Kork
+Price         : 2200.0
+Size          : 600.0
+Price/m²      : 3.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/nice-swimming-pool-villa-for-rent-located-in-toul-kork-area-adid-13806038
+
+----------------------------------------------------------------------------------------------------
+ID            : 13746246
+Title raw     : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Title cleaned : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Preaek Pnov
+District clean: Preaek Pnov
+Price         : 500.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : None
+Bathrooms     : 3
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/the-anajak-5-adid-13746246
+
+----------------------------------------------------------------------------------------------------
+ID            : 13821899
+Title raw     : Modern Studio Room Apartment For Rent in Phsar Daeum Thkov
+Title cleaned : Modern Studio Room Apartment For Rent in Phsar Daeum Thkov
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chamkarmon
+District clean: Chamkarmon
+Price         : 360.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 0
+Title bedroom : 0
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/modern-studio-room-apartment-for-rent-in-phsar-daeum-thkov-adid-13821899
+
+----------------------------------------------------------------------------------------------------
+ID            : 13813319
+Title raw     : 1 & 2 Bedrooms Rent ( Next to MC Park )
+Title cleaned : 1 & 2 Bedrooms Rent ( Next to MC Park )
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Meanchey
+District clean: Meanchey
+Price         : 250.0
+Size          : 46.0
+Price/m²      : 5.43
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/1-2-bedrooms-rent-next-to-mc-park-adid-13813319
+
+----------------------------------------------------------------------------------------------------
+ID            : 13812640
+Title raw     : (ផ្ទះជួល) ផ្ទះអជីវកម្មជួលនៅជិតសាលាបាក់ទូក ទល់មុខ Condo មានផ្សាជុំវិញ
+Title cleaned : (ផ្ទះជួល) ផ្ទះអជីវកម្មជួលនៅជិតសាលាបាក់ទូក ទល់មុខ Condo មានផ្សាជុំវិញ
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Prampi Makara
+District clean: Prampi Makara
+Price         : 450.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : None
+Bathrooms     : 2
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/condo-adid-13812640
+
+----------------------------------------------------------------------------------------------------
+ID            : 13504458
+Title raw     : 22 Room Building For Rent Near Independence Monument | Naga-world 7m •
+Title cleaned : 22 Room Building For Rent Near Independence Monument | Naga-world
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chamkarmon
+District clean: Chamkarmon
+Price         : 5000.0
+Size          : 1320.0
+Price/m²      : 3.79
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/22-room-building-for-rent-near-independence-monument-naga-world-adid-13504458
+
+====================================================================================================
+SALE/RENT — SALE-LIKE: 3 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 13796715
+Title raw     : Sky31, TK, 2 bedroom, 8th floor $175,000. Rent $850/m 1d •
+Title cleaned : Sky31, TK, 2 bedroom, 8th floor $175,000. Rent $850/m
+Listing type  : sale/rent
+Province      : Phnom Penh
+District raw  : Toul Kork
+District clean: Toul Kork
+Price         : 175000.0
+Size          : 102.0
+Price/m²      : 1715.69
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : None
+Unit floor    : 8
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/sky31-tk-2-bedroom-8th-floor-175000-rent-850m-adid-13796715
+
+----------------------------------------------------------------------------------------------------
+ID            : 13508234
+Title raw     : Become rental Condo for sale | Time Square
+Title cleaned : Become rental Condo for sale | Time Square
+Listing type  : sale/rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 57000.0
+Size          : 36.0
+Price/m²      : 1583.33
+Bedrooms      : 1
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/become-rental-condo-for-sale-time-square-3-adid-13508234
+
+----------------------------------------------------------------------------------------------------
+ID            : 12549364
+Title raw     : #SC032 #SCL028 👉 BEST PRICE 👉 RENT 👉 SALE Condo One Bedroom At Borey Peng Hout Beung Snor 42m •
+Title cleaned : #SC032 #SCL028 👉 BEST PRICE 👉 RENT 👉 SALE Condo One Bedroom At Borey Peng Hout Beung Snor
+Listing type  : sale/rent
+Province      : Phnom Penh
+District raw  : Chbar Ampov
+District clean: Chbar Ampov
+Price         : 49500.0
+Size          : 30.0
+Price/m²      : 1650.0
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/sc032-scl028-best-price-rent-sale-condo-one-bedroom-at-borey-peng-hout-beung-snor-adid-12549364
+
+====================================================================================================
+SALE/RENT — AMBIGUOUS: 0 records
+====================================================================================================
+
+====================================================================================================
+LOW-PRICE: 18 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 13817582
+Title raw     : Piphupthmey Condo Sensok 3d •
+Title cleaned : Piphupthmey Condo Sensok
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 320.0
+Size          : 78.0
+Price/m²      : 4.1
+Bedrooms      : 2
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/piphupthmey-condo-sensok-adid-13817582
+
+----------------------------------------------------------------------------------------------------
+ID            : 13816200
+Title raw     : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Title cleaned : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Meanchey
+District clean: Meanchey
+Price         : 380.0
+Size          : 45.0
+Price/m²      : 8.44
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/2-bedrooms-with-swimming-pool-at-btp-area-close-to-russian-market-adid-13816200
+
+----------------------------------------------------------------------------------------------------
+ID            : 12870250
+Title raw     : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Title cleaned : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Listing type  : sale
+Province      : Preah Sihanouk
+District raw  : Krong Preah Sihanouk
+District clean: Krong Preah Sihanouk
+Price         : 1500.0
+Size          : 26523.0
+Price/m²      : 0.06
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-12870250
+
+----------------------------------------------------------------------------------------------------
+ID            : 12369304
+Title raw     : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Title cleaned : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 350.0
+Size          : 70.0
+Price/m²      : 5.0
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/bali-3-condo-for-rent-1br-fully-furnished-only-350-adid-12369304
+
+----------------------------------------------------------------------------------------------------
+ID            : 13825508
+Title raw     : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Title cleaned : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 200.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/n323-beautiful-bright-and-clean-1-bedroom-apartment-for-rent-in-bkk3-free-wifi-adid-13825508
+
+----------------------------------------------------------------------------------------------------
+ID            : 13144309
+Title raw     : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee 41m •
+Title cleaned : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 5500.0
+Size          : 462.0
+Price/m²      : 11.9
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/villa-for-rent-located-in-bkk1-st294-near-brown-coffee-adid-13144309
+
+----------------------------------------------------------------------------------------------------
+ID            : 13806038
+Title raw     : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Title cleaned : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Toul Kork
+District clean: Toul Kork
+Price         : 2200.0
+Size          : 600.0
+Price/m²      : 3.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/nice-swimming-pool-villa-for-rent-located-in-toul-kork-area-adid-13806038
+
+----------------------------------------------------------------------------------------------------
+ID            : 13782220
+Title raw     : ដីលក់ បន្ទាន់ នៅជិតអគ្គនាយកដ្ឋានពន្ធដារថ្មី
+Title cleaned : ដីលក់ បន្ទាន់ នៅជិតអគ្គនាយកដ្ឋានពន្ធដារថ្មី
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 1550.0
+Size          : 2300.0
+Price/m²      : 0.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-13782220
+
+----------------------------------------------------------------------------------------------------
+ID            : 13771952
+Title raw     : 📣ដីលក់350$ក្នុង1ម៉ែត្រការ៉េ(ចរចា)ប្លុកទួលពង្រ
+Title cleaned : 📣ដីលក់350$ក្នុង1ម៉ែត្រការ៉េ(ចរចា)ប្លុកទួលពង្រ
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Por Senchey
+District clean: Pur Senchey
+Price         : 350.0
+Size          : 2763.0
+Price/m²      : 0.13
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/3501-adid-13771952
+
+----------------------------------------------------------------------------------------------------
+ID            : 13746246
+Title raw     : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Title cleaned : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Preaek Pnov
+District clean: Preaek Pnov
+Price         : 500.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : None
+Bathrooms     : 3
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/the-anajak-5-adid-13746246
+
+====================================================================================================
+HIGH-PRICE: 3 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 12584529
+Title raw     : Size: 608. Sqm, Luxurious 4-Bedroom
+Title cleaned : Size: 608. Sqm, Luxurious 4-Bedroom
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 2666656.0
+Size          : 608.0
+Price/m²      : 4385.95
+Bedrooms      : 4
+Title bedroom : 4
+Bathrooms     : None
+Unit floor    : 38
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/size-608-sqm-luxurious-4-bedroom-adid-12584529
+
+----------------------------------------------------------------------------------------------------
+ID            : 13659601
+Title raw     : Building sale $5.7M 24m •
+Title cleaned : Building sale $5.7M
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 5700000.0
+Size          : 25.0
+Price/m²      : 228000.0
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/building-sale-57m-adid-13659601
+
+----------------------------------------------------------------------------------------------------
+ID            : 12541024
+Title raw     : Morgan Enmaison 48m •
+Title cleaned : Morgan Enmaison
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 2580000.0
+Size          : 651.0
+Price/m²      : 3963.13
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/morgan-enmaison-adid-12541024
+
+====================================================================================================
+LARGE-SIZE: 9 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 12870250
+Title raw     : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Title cleaned : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Listing type  : sale
+Province      : Preah Sihanouk
+District raw  : Krong Preah Sihanouk
+District clean: Krong Preah Sihanouk
+Price         : 1500.0
+Size          : 26523.0
+Price/m²      : 0.06
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-12870250
+
+----------------------------------------------------------------------------------------------------
+ID            : 12584529
+Title raw     : Size: 608. Sqm, Luxurious 4-Bedroom
+Title cleaned : Size: 608. Sqm, Luxurious 4-Bedroom
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 2666656.0
+Size          : 608.0
+Price/m²      : 4385.95
+Bedrooms      : 4
+Title bedroom : 4
+Bathrooms     : None
+Unit floor    : 38
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/size-608-sqm-luxurious-4-bedroom-adid-12584529
+
+----------------------------------------------------------------------------------------------------
+ID            : 13806038
+Title raw     : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Title cleaned : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Toul Kork
+District clean: Toul Kork
+Price         : 2200.0
+Size          : 600.0
+Price/m²      : 3.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/nice-swimming-pool-villa-for-rent-located-in-toul-kork-area-adid-13806038
+
+----------------------------------------------------------------------------------------------------
+ID            : 13782220
+Title raw     : ដីលក់ បន្ទាន់ នៅជិតអគ្គនាយកដ្ឋានពន្ធដារថ្មី
+Title cleaned : ដីលក់ បន្ទាន់ នៅជិតអគ្គនាយកដ្ឋានពន្ធដារថ្មី
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 1550.0
+Size          : 2300.0
+Price/m²      : 0.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-13782220
+
+----------------------------------------------------------------------------------------------------
+ID            : 13771952
+Title raw     : 📣ដីលក់350$ក្នុង1ម៉ែត្រការ៉េ(ចរចា)ប្លុកទួលពង្រ
+Title cleaned : 📣ដីលក់350$ក្នុង1ម៉ែត្រការ៉េ(ចរចា)ប្លុកទួលពង្រ
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Por Senchey
+District clean: Pur Senchey
+Price         : 350.0
+Size          : 2763.0
+Price/m²      : 0.13
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/3501-adid-13771952
+
+----------------------------------------------------------------------------------------------------
+ID            : 13522147
+Title raw     : ដីលក់ នៅជ្រោយចង្វារ ជាប់មាត់ទន្លេ 1d •
+Title cleaned : ដីលក់ នៅជ្រោយចង្វារ ជាប់មាត់ទន្លេ
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 445968.0
+Size          : 1672.0
+Price/m²      : 266.73
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-13522147
+
+----------------------------------------------------------------------------------------------------
+ID            : 13504458
+Title raw     : 22 Room Building For Rent Near Independence Monument | Naga-world 7m •
+Title cleaned : 22 Room Building For Rent Near Independence Monument | Naga-world
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chamkarmon
+District clean: Chamkarmon
+Price         : 5000.0
+Size          : 1320.0
+Price/m²      : 3.79
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/22-room-building-for-rent-near-independence-monument-naga-world-adid-13504458
+
+----------------------------------------------------------------------------------------------------
+ID            : 12779682
+Title raw     : ទំហំដីចំការទុរ៉េនមាន 2000ដេីម ( ម្ចាស់ផ្ទាល់) Mar 3 • Krong Saen Monourom, Mondulkiri Sale • 300000m² $6.99
+Title cleaned : ទំហំដីចំការទុរ៉េនមាន 2000ដេីម ( ម្ចាស់ផ្ទាល់) Mar 3 • Krong Saen Monourom, Mondulkiri Sale • 300000m² $6.99
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : None
+District clean: None
+Price         : 6.0
+Size          : 300000.0
+Price/m²      : 0.0
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/2000-adid-12779682
+
+----------------------------------------------------------------------------------------------------
+ID            : 12541024
+Title raw     : Morgan Enmaison 48m •
+Title cleaned : Morgan Enmaison
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 2580000.0
+Size          : 651.0
+Price/m²      : 3963.13
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/morgan-enmaison-adid-12541024
+
+====================================================================================================
+EXPLICIT NON-CONDO PROPERTY: 4 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 12785088
+Title raw     : តម្លៃក្រោមទីផ្សារ! ផ្ទះអាជីវកម្មច្រើនល្វែង លក់ជិត Aeon 2 !
+Title cleaned : តម្លៃក្រោមទីផ្សារ! ផ្ទះអាជីវកម្មច្រើនល្វែង លក់ជិត Aeon 2 !
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 200000.0
+Size          : 258.0
+Price/m²      : 775.19
+Bedrooms      : 4
+Title bedroom : None
+Bathrooms     : 5
+Unit floor    : None
+Property      : Condo
+Detail type   : House
+property_type_conflict        : detail_structured=House; kept search category=Condo
+bathrooms_conflict            : description=4 from '4 Bathroom'
+URL           : https://www.khmer24.com/en/aeon-2-adid-12785088
+
+----------------------------------------------------------------------------------------------------
+ID            : 13793469
+Title raw     : 🏘 វីឡាព្រីន កែង(Prince-A) ក្នុងបុរី ប៉េងហួតបឹងស្នោ ត្រូវការលក់បន្ទាន់ខ្លាំង (កូដ: A01-122068)
+Title cleaned : 🏘 វីឡាព្រីន កែង(Prince-A) ក្នុងបុរី ប៉េងហួតបឹងស្នោ ត្រូវការលក់បន្ទាន់ខ្លាំង (កូដ: A01-122068)
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chbar Ampov
+District clean: Chbar Ampov
+Price         : 850000.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 5
+Title bedroom : None
+Bathrooms     : 6
+Unit floor    : None
+Property      : Condo
+Detail type   : House
+property_type_conflict        : detail_structured=House; kept search category=Condo
+bathrooms_conflict            : description=5 from '5 Bathroom'
+URL           : https://www.khmer24.com/en/prince-a-a01-122068-adid-13793469
+
+----------------------------------------------------------------------------------------------------
+ID            : 13805290
+Title raw     : វីឡាឃ្វីន (Queen-A) ក្នុងបុរី ឌឹផ្លរ៉ា ផ្លូវជាតិលេខ6A ត្រូវការលក់បន្ទាន់ខ្លាំង
+Title cleaned : វីឡាឃ្វីន (Queen-A) ក្នុងបុរី ឌឹផ្លរ៉ា ផ្លូវជាតិលេខ6A ត្រូវការលក់បន្ទាន់ខ្លាំង
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 470000.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 5
+Title bedroom : None
+Bathrooms     : 6
+Unit floor    : None
+Property      : Condo
+Detail type   : House
+property_type_conflict        : detail_structured=House; kept search category=Condo
+bathrooms_conflict            : description=5 from '5 Bathroom'
+URL           : https://www.khmer24.com/en/queen-a-6a-adid-13805290
+
+----------------------------------------------------------------------------------------------------
+ID            : 13802386
+Title raw     : ផ្ទះល្វែងលក់បន្ទាន់
+Title cleaned : ផ្ទះល្វែងលក់បន្ទាន់
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Dangkao
+District clean: Dangkao
+Price         : 129900.0
+Size          : 77.0
+Price/m²      : 1687.01
+Bedrooms      : 4
+Title bedroom : None
+Bathrooms     : 5
+Unit floor    : None
+Property      : Condo
+Detail type   : Flat
+property_type_conflict        : detail_structured=Flat; kept search category=Condo
+bathrooms_conflict            : description=4 from '4 Bathroom'
+URL           : https://www.khmer24.com/en/house-for-sale-adid-13802386
+
+====================================================================================================
+TITLE-RESOLVABLE BEDROOM CONFLICT: 4 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 13653241
+Title raw     : Studio Room For Sell Urgently 21h •
+Title cleaned : Studio Room For Sell Urgently
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 45000.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 0
+Title bedroom : 0
+Bathrooms     : 1
+Unit floor    : 11
+Property      : Condo
+Detail type   : None
+bedrooms_conflict             : description=11 from '១១ បន្ទប់គេង'
+URL           : https://www.khmer24.com/en/studio-room-for-sell-urgently-adid-13653241
+
+----------------------------------------------------------------------------------------------------
+ID            : 13556898
+Title raw     : Time Square 11 BKK3 (Time Castle XI) | Modern 1 Bedroom Condo For Sale in Phnom Penh 1h •
+Title cleaned : Time Square 11 BKK3 (Time Castle XI) | Modern 1 Bedroom Condo For Sale in Phnom Penh
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 56894.0
+Size          : 50.0
+Price/m²      : 1137.88
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : 7
+Property      : Condo
+Detail type   : None
+bedrooms_conflict             : description=2 from '2 Bedrooms'
+URL           : https://www.khmer24.com/en/time-square-11-bkk3-time-castle-xi-modern-1-bedroom-condo-for-sale-in-phnom-penh-adid-13556898
+
+----------------------------------------------------------------------------------------------------
+ID            : 13537234
+Title raw     : Orkide 3 bed លក់ខាតខ្លាំង 24m •
+Title cleaned : Orkide 3 bed លក់ខាតខ្លាំង
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 180000.0
+Size          : 120.0
+Price/m²      : 1500.0
+Bedrooms      : 3
+Title bedroom : 3
+Bathrooms     : None
+Unit floor    : 3
+Property      : Condo
+Detail type   : None
+bedrooms_conflict             : description=2 from 'Two Bedroom'
+URL           : https://www.khmer24.com/en/orkide-3-bed-adid-13537234
+
+----------------------------------------------------------------------------------------------------
+ID            : 13735452
+Title raw     : Orkide The Royal Condominiums Studio Room 35 sqm2 (Floor 11th) លក់ខាតជិត1ម៉ឹន 52m •
+Title cleaned : Orkide The Royal Condominiums Studio Room 35 sqm2 (Floor 11th) លក់ខាតជិត1ម៉ឹន
+Listing type  : sale
+Province      : Phnom Penh
+District raw  : Sen Sok
+District clean: Sen Sok
+Price         : 65000.0
+Size          : 35.0
+Price/m²      : 1857.14
+Bedrooms      : 0
+Title bedroom : 0
+Bathrooms     : None
+Unit floor    : 11
+Property      : Condo
+Detail type   : None
+bedrooms_conflict             : description=1 from 'One Bedroom'
+URL           : https://www.khmer24.com/en/orkide-the-royal-condominiums-studio-room-35-sqm2-floor-11th-1-adid-13735452
+
+====================================================================================================
+UNRESOLVED BEDROOM CONFLICT: 0 records
+====================================================================================================
+
+====================================================================================================
+MISSING DETAIL PAGE: 14 records
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+ID            : 13816200
+Title raw     : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Title cleaned : 2 bedrooms with swimming pool at BTP area close to Russian Market
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Meanchey
+District clean: Meanchey
+Price         : 380.0
+Size          : 45.0
+Price/m²      : 8.44
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/2-bedrooms-with-swimming-pool-at-btp-area-close-to-russian-market-adid-13816200
+
+----------------------------------------------------------------------------------------------------
+ID            : 12870250
+Title raw     : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Title cleaned : ដីកែងលក់នៅទល់ជាប់ឆ្នេរអូត្រេស ទំហំ2.6ហិកតាជាង
+Listing type  : sale
+Province      : Preah Sihanouk
+District raw  : Krong Preah Sihanouk
+District clean: Krong Preah Sihanouk
+Price         : 1500.0
+Size          : 26523.0
+Price/m²      : 0.06
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/land-for-sale-adid-12870250
+
+----------------------------------------------------------------------------------------------------
+ID            : 12369304
+Title raw     : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Title cleaned : Verified Account 11 Bali 3 Condo for Rent | 1BR | Fully Furnished | Only $350
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chrouy Changva
+District clean: Chroy Changvar
+Price         : 350.0
+Size          : 70.0
+Price/m²      : 5.0
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/bali-3-condo-for-rent-1br-fully-furnished-only-350-adid-12369304
+
+----------------------------------------------------------------------------------------------------
+ID            : 13781375
+Title raw     : ផ្ទះឆ្លាតវ៉ៃ (Smart Home) E0, E1, E2 (កំពត)
+Title cleaned : ផ្ទះឆ្លាតវ៉ៃ (Smart Home) E0, E1, E2 (កំពត)
+Listing type  : sale
+Province      : Kampot
+District raw  : Krong Kampot
+District clean: Krong Kampot
+Price         : 95000.0
+Size          : 220.0
+Price/m²      : 431.82
+Bedrooms      : 3
+Title bedroom : None
+Bathrooms     : 3
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/smart-home-e0-e1-e2-adid-13781375
+
+----------------------------------------------------------------------------------------------------
+ID            : 13825508
+Title raw     : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Title cleaned : N323 | Beautiful Bright and Clean 1 Bedroom Apartment For Rent in BKK3 Free Wifi
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 200.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : 1
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/n323-beautiful-bright-and-clean-1-bedroom-apartment-for-rent-in-bkk3-free-wifi-adid-13825508
+
+----------------------------------------------------------------------------------------------------
+ID            : 13144309
+Title raw     : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee 41m •
+Title cleaned : Verified Account 22 Villa for Rent located in BKK1, St294 near Brown Coffee
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Boeung Keng Kang
+District clean: Boeung Keng Kang
+Price         : 5500.0
+Size          : 462.0
+Price/m²      : 11.9
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/villa-for-rent-located-in-bkk1-st294-near-brown-coffee-adid-13144309
+
+----------------------------------------------------------------------------------------------------
+ID            : 13806038
+Title raw     : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Title cleaned : Verified Account 22 Nice Swimming Pool Villa for Rent Located In Toul Kork Area
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Toul Kork
+District clean: Toul Kork
+Price         : 2200.0
+Size          : 600.0
+Price/m²      : 3.67
+Bedrooms      : None
+Title bedroom : None
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/nice-swimming-pool-villa-for-rent-located-in-toul-kork-area-adid-13806038
+
+----------------------------------------------------------------------------------------------------
+ID            : 13746246
+Title raw     : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Title cleaned : ផ្ទះអាជីវកម្មថ្មីជួល - បុរី The Anajak ផ្លូវជាតិលេខ
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Preaek Pnov
+District clean: Preaek Pnov
+Price         : 500.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 1
+Title bedroom : None
+Bathrooms     : 3
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/the-anajak-5-adid-13746246
+
+----------------------------------------------------------------------------------------------------
+ID            : 13821899
+Title raw     : Modern Studio Room Apartment For Rent in Phsar Daeum Thkov
+Title cleaned : Modern Studio Room Apartment For Rent in Phsar Daeum Thkov
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Chamkarmon
+District clean: Chamkarmon
+Price         : 360.0
+Size          : None
+Price/m²      : None
+Bedrooms      : 0
+Title bedroom : 0
+Bathrooms     : None
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/modern-studio-room-apartment-for-rent-in-phsar-daeum-thkov-adid-13821899
+
+----------------------------------------------------------------------------------------------------
+ID            : 13813319
+Title raw     : 1 & 2 Bedrooms Rent ( Next to MC Park )
+Title cleaned : 1 & 2 Bedrooms Rent ( Next to MC Park )
+Listing type  : rent
+Province      : Phnom Penh
+District raw  : Meanchey
+District clean: Meanchey
+Price         : 250.0
+Size          : 46.0
+Price/m²      : 5.43
+Bedrooms      : 2
+Title bedroom : 2
+Bathrooms     : 1
+Unit floor    : None
+Property      : Condo
+Detail type   : None
+URL           : https://www.khmer24.com/en/1-2-bedrooms-rent-next-to-mc-park-adid-13813319
+
+====================================================================================================
+Khmer24 decision audit completed.
+====================================================================================================

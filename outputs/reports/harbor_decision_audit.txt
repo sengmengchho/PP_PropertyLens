@@ -1,0 +1,2455 @@
+
+HARBOR PROPERTY CLEANING DECISION AUDIT
+==============================================================================================================
+Total Bronze records               : 961
+Missing price                      : 6
+Missing size                       : 193
+Missing district                   : 371
+  Resolvable from unique commune   : 0
+  Ambiguous commune mapping        : 0
+  Unmapped/no commune              : 371
+Price below $20,000                : 0
+Price above $2,000,000             : 8
+Size below 20m²                       : 5
+Size above 500m²                      : 4
+Price/m² below $300                 : 1
+Price/m² above $10,000              : 2
+Bedrooms above 10                  : 1
+Bathrooms above 10                 : 2
+Unit floor above 100                : 0
+Unit floor > building total floors : 0
+Bedroom reference mismatches        : 63
+Bathroom reference mismatches       : 20
+Unit-floor reference mismatches     : 15
+Exact title+price+size+commune groups: 54
+Same numeric/property value groups : 50
+
+MISSING-DISTRICT COMMUNES
+--------------------------------------------------------------------------------------------------------------
+Phnom Penh                                                  : 181
+Chroy Chongva                                               : 104
+Tuek Thla                                                   : 31
+Nirouth                                                     : 10
+Tuol Tompoung 1                                             : 10
+Phsar Thmey I                                               : 6
+Russei Keo                                                  : 4
+Tuol Sangkae I                                              : 3
+Preaek Lieb                                                 : 2
+Orussey I                                                   : 2
+Kiloumaetr Lekh Prammuoy                                    : 2
+Phsar Depo I                                                : 2
+Bak Khaeng                                                  : 2
+Kakab I                                                     : 2
+Kantaok                                                     : 1
+Prateah Lang                                                : 1
+Orussey Ii                                                  : 1
+Tuol Sangkae Ii                                             : 1
+Boeng Reang                                                 : 1
+Tuol Tompoung 2                                             : 1
+Prey Sa                                                     : 1
+7 Makara                                                    : 1
+Boeng Prolit                                                : 1
+Phsar Daem Thkov                                            : 1
+
+==============================================================================================================
+MISSING PRICE: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113557
+Title              : Condo for Sale, Boeung Kak II, $550_1Bedroom_71m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 71.0
+Price/m²           : None
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak Ii
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113557/boeung-kak-ii/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113549
+Title              : Condo for Sale, Boeung Kak II, $450_50m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 50.0
+Price/m²           : None
+Bedrooms           : 0
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak Ii
+Current bed source : harbor-property_com_description
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113549/boeung-kak-ii/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113548
+Title              : Condo for Sale, Phnom Penh Thmei, $500_50m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 50.0
+Price/m²           : None
+Bedrooms           : 0
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Sen Sok
+Commune            : Phnom Penh Thmei
+Current bed source : harbor-property_com_description
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113548/phnom-penh-thmei/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113467
+Title              : Condo for Sale, BKK1, $400_39.13m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 39.13
+Price/m²           : None
+Bedrooms           : 0
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_description
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113467/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113459
+Title              : Condo for Sale, Bak Khaeng, $500_47.29m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 47.29
+Price/m²           : None
+Bedrooms           : 0
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Bak Khaeng
+Current bed source : harbor-property_com_description
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113459/bak-khaeng/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113458
+Title              : Condo for Sale, Bak Khaeng, $500_47.29m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : None
+Size               : 47.29
+Price/m²           : None
+Bedrooms           : 0
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Bak Khaeng
+Current bed source : harbor-property_com_description
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113458/bak-khaeng/condo
+
+==============================================================================================================
+MISSING SIZE: 193 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115487
+Title              : Condo for Sale, BKK1, $79999_1Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 79999
+Size               : None
+Price/m²           : None
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 12
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/115487/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_116145
+Title              : Condo for Sale, Chak Angrae Leu, $55000_2Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 55000
+Size               : None
+Price/m²           : None
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 12
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/116145/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115931
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 105378
+Size               : None
+Price/m²           : None
+Bedrooms           : 3
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : harbor-property_com_description
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115931/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_110436
+Title              : Condo for Sale, Stueng Mean Chey I, $210000_2Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 210000
+Size               : None
+Price/m²           : None
+Bedrooms           : 2
+Bathrooms          : 3
+Unit floor         : 8
+Building floors    : None
+District           : Meanchey
+Commune            : Stueng Mean Chey I
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/110436/stueng-mean-chey-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115557
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 105378
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115557/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100299
+Title              : Condo for Sale, Chroy Chongva, $120000_1Bedroom_3.7m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 120000
+Size               : None
+Price/m²           : None
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 19
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/100299/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115416
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 105378
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115416/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100311
+Title              : Condo for Sale, Chroy Chongva, $160000_2Bedroom_3.7m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 160000
+Size               : None
+Price/m²           : None
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 23
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/100311/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115388
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 105378
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115388/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115230
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 276600
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115230/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_110976
+Title              : Condo for Sale, Chamkarmon, $250000_2Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 250000
+Size               : None
+Price/m²           : None
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : None
+Building floors    : None
+District           : Chamkarmon
+Commune            : Chamkarmon
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/110976/chamkarmon/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115065
+Title              : Condo for Sale, Phnom Penh, | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 105378
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115065/phnom-penh/condo
+
+==============================================================================================================
+LOW PRICE: 0 records
+==============================================================================================================
+
+==============================================================================================================
+HIGH PRICE: 8 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_96084
+Title              : Condo for Sale, Tonle Bassac, $2470000_4Bedroom_474m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 2470000
+Size               : 474.0
+Price/m²           : 5210.97
+Bedrooms           : 4
+Bathrooms          : 4
+Unit floor         : None
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/96084/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115352
+Title              : Condo for Sale, BKK1, $9450_3Bedroom_378m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2124061
+Size               : 378.0
+Price/m²           : 5619.21
+Bedrooms           : 3
+Bathrooms          : 3
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/115352/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114877
+Title              : Condo for Sale, BKK1, $2153387_5Bedroom_306.86m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 2153387
+Size               : 306.86
+Price/m²           : 7017.49
+Bedrooms           : 5
+Bathrooms          : 4
+Unit floor         : 26
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/114877/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113624
+Title              : Condo for Sale, Tonle Bassac, $2450000_3Bedroom_128m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2450000
+Size               : 128.0
+Price/m²           : 19140.62
+Bedrooms           : 3
+Bathrooms          : 3
+Unit floor         : 31
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+URL                : https://www.harbor-property.com/house/detail/113624/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114005
+Title              : Condo for Sale, BKK1, $2124061_5Bedroom_396.65m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2124061
+Size               : 396.65
+Price/m²           : 5355.0
+Bedrooms           : 5
+Bathrooms          : 4
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/114005/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_86231
+Title              : Condo for Sale, Tonle Bassac, $5000000_5Bedroom_1100m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 5000000
+Size               : 1100.0
+Price/m²           : 4545.45
+Bedrooms           : 5
+Bathrooms          : 5
+Unit floor         : 38
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 41
+unit_floor_reference_mismatch   : harbor-property_com_description=41; project_overview=38
+URL                : https://www.harbor-property.com/house/detail/86231/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_110306
+Title              : Condo for Sale, Prey Sa, $2300000_10350m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2300000
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Prey Sa
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/110306/prey-sa/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105507
+Title              : Condo for Sale, Phnom Penh Thmei, $10210200_4862m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 10210200
+Size               : None
+Price/m²           : None
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : Sen Sok
+Commune            : Phnom Penh Thmei
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/105507/phnom-penh-thmei/condo
+
+==============================================================================================================
+SMALL SIZE: 5 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100295
+Title              : Condo for Sale, Boeung Kak I, $130000_2Bedroom_18m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 130000
+Size               : 18.0
+Price/m²           : 7222.22
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 18
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/100295/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100288
+Title              : Condo for Sale, Preaek Lieb, $110000_1Bedroom_6m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 110000
+Size               : 6.0
+Price/m²           : 18333.33
+Bedrooms           : 1
+Bathrooms          : None
+Unit floor         : 6
+Building floors    : None
+District           : None
+Commune            : Preaek Lieb
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/100288/preaek-lieb/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113899
+Title              : Condo for Sale, Tuek Thla, $30000_1Bedroom_10m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 30000
+Size               : 10.0
+Price/m²           : 3000.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Tuek Thla
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113899/tuek-thla/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113670
+Title              : Condo for Sale, Chroy Chongva, $63000_1Bedroom_19m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 63000
+Size               : 19.0
+Price/m²           : 3315.79
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 19
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/113670/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_112901
+Title              : Condo for Sale, Tuol Tompoung 2, $47000_1Bedroom_15m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 47000
+Size               : 15.0
+Price/m²           : 3133.33
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 15
+Building floors    : None
+District           : None
+Commune            : Tuol Tompoung 2
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/112901/tuol-tompoung-2/condo
+
+==============================================================================================================
+LARGE SIZE: 4 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_109763
+Title              : Condo for Sale, Kantaok, $980000_8Bedroom_682.5m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 980000
+Size               : 682.5
+Price/m²           : 1435.9
+Bedrooms           : 8
+Bathrooms          : 8
+Unit floor         : 3
+Building floors    : None
+District           : None
+Commune            : Kantaok
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/109763/kantaok/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114384
+Title              : Condo for Sale, Phsar Thmey I, $2000000_4Bedroom_563.75m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2000000
+Size               : 563.75
+Price/m²           : 3547.67
+Bedrooms           : 4
+Bathrooms          : 5
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Phsar Thmey I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/114384/phsar-thmey-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_86231
+Title              : Condo for Sale, Tonle Bassac, $5000000_5Bedroom_1100m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 5000000
+Size               : 1100.0
+Price/m²           : 4545.45
+Bedrooms           : 5
+Bathrooms          : 5
+Unit floor         : 38
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 41
+unit_floor_reference_mismatch   : harbor-property_com_description=41; project_overview=38
+URL                : https://www.harbor-property.com/house/detail/86231/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105558
+Title              : Condo for Sale, Kakab I, $1500 | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 73000
+Size               : 1889.0
+Price/m²           : 38.64
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Kakab I
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/105558/kakab-i/condo
+
+==============================================================================================================
+LOW PRICE/M²: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105558
+Title              : Condo for Sale, Kakab I, $1500 | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 73000
+Size               : 1889.0
+Price/m²           : 38.64
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Kakab I
+Current bed source : None
+Current bath source: None
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/105558/kakab-i/condo
+
+==============================================================================================================
+HIGH PRICE/M²: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100288
+Title              : Condo for Sale, Preaek Lieb, $110000_1Bedroom_6m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 110000
+Size               : 6.0
+Price/m²           : 18333.33
+Bedrooms           : 1
+Bathrooms          : None
+Unit floor         : 6
+Building floors    : None
+District           : None
+Commune            : Preaek Lieb
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/100288/preaek-lieb/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113624
+Title              : Condo for Sale, Tonle Bassac, $2450000_3Bedroom_128m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 2450000
+Size               : 128.0
+Price/m²           : 19140.62
+Bedrooms           : 3
+Bathrooms          : 3
+Unit floor         : 31
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+URL                : https://www.harbor-property.com/house/detail/113624/tonle-bassac/condo
+
+==============================================================================================================
+BEDROOMS ABOVE LIMIT: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105466
+Title              : Condo for Sale, Phnom Penh Thmei, $1950000_43Bedroom_435m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 1950000
+Size               : 435.0
+Price/m²           : 4482.76
+Bedrooms           : 43
+Bathrooms          : 47
+Unit floor         : 5
+Building floors    : None
+District           : Sen Sok
+Commune            : Phnom Penh Thmei
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/105466/phnom-penh-thmei/condo
+
+==============================================================================================================
+BATHROOMS ABOVE LIMIT: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_96063
+Title              : Condo for Sale, Chak Angrae Leu, $115000_2Bedroom_70m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 115000
+Size               : 70.0
+Price/m²           : 1642.86
+Bedrooms           : 2
+Bathrooms          : 11
+Unit floor         : None
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=11
+URL                : https://www.harbor-property.com/house/detail/96063/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105466
+Title              : Condo for Sale, Phnom Penh Thmei, $1950000_43Bedroom_435m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 1950000
+Size               : 435.0
+Price/m²           : 4482.76
+Bedrooms           : 43
+Bathrooms          : 47
+Unit floor         : 5
+Building floors    : None
+District           : Sen Sok
+Commune            : Phnom Penh Thmei
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/105466/phnom-penh-thmei/condo
+
+==============================================================================================================
+BEDROOM REFERENCE MISMATCH: 63 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_110586
+Title              : Condo for Sale, Chak Angrae Leu, $48000_1Bedroom_38m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 48000
+Size               : 38.0
+Price/m²           : 1263.16
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 17
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/110586/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_90082
+Title              : Condo for Sale, Tonle Bassac, $127646_1Bedroom_45m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 127646
+Size               : 45.0
+Price/m²           : 2836.58
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/90082/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_109421
+Title              : Condo for Sale, Chroy Chongva, $155000_1Bedroom_46m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 155000
+Size               : 46.0
+Price/m²           : 3369.57
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/109421/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_116095
+Title              : Condo for Sale, Boeung Kak I, $36000_1Bedroom_44m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 36000
+Size               : 44.0
+Price/m²           : 818.18
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 17
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/116095/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114076
+Title              : Condo for Sale, Boeung Kak I, $45000_1Bedroom_30m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 45000
+Size               : 30.0
+Price/m²           : 1500.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 2
+bedrooms_reference_mismatch     : harbor-property_com_description=2; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/114076/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_112565
+Title              : Condo for Sale, Nirouth, $90000_1Bedroom_46m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 90000
+Size               : 46.0
+Price/m²           : 1956.52
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Nirouth
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 2
+bedrooms_reference_mismatch     : harbor-property_com_description=2; project_overview=1
+bathrooms_previous_value        : 2
+bathrooms_reference_mismatch    : harbor-property_com_description=2; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/112565/nirouth/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115925
+Title              : Condo for Sale, Chak Angrae Leu, $44000_1Bedroom_38m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 44000
+Size               : 38.0
+Price/m²           : 1157.89
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/115925/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_104471
+Title              : Condo for Sale, Boeung Kak II, $180000_2Bedroom_29m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 180000
+Size               : 29.0
+Price/m²           : 6206.9
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 17
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak Ii
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/104471/boeung-kak-ii/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_105835
+Title              : Condo for Sale, Boeung Kak I, $190000_3Bedroom_130m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 190000
+Size               : 130.0
+Price/m²           : 1461.54
+Bedrooms           : 3
+Bathrooms          : 3
+Unit floor         : 33
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 2
+bedrooms_reference_mismatch     : harbor-property_com_description=2; project_overview=3
+URL                : https://www.harbor-property.com/house/detail/105835/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_111423
+Title              : Condo for Sale, BKK1, $85000_1Bedroom_60m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 85000
+Size               : 60.0
+Price/m²           : 1416.67
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 13
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 4
+bedrooms_reference_mismatch     : harbor-property_com_description=4; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/111423/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100311
+Title              : Condo for Sale, Chroy Chongva, $160000_2Bedroom_3.7m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 160000
+Size               : None
+Price/m²           : None
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 23
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/100311/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115344
+Title              : Condo for Sale, BKK1, $3000_2Bedroom_186.8m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 230000
+Size               : 186.8
+Price/m²           : 1231.26
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 3
+bedrooms_reference_mismatch     : harbor-property_com_description=3; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115344/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100295
+Title              : Condo for Sale, Boeung Kak I, $130000_2Bedroom_18m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 130000
+Size               : 18.0
+Price/m²           : 7222.22
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 18
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/100295/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_100347
+Title              : Condo for Sale, Tonle Bassac, $90000_2Bedroom_74m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 90000
+Size               : 74.0
+Price/m²           : 1216.22
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 23
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/100347/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114709
+Title              : Condo for Sale, BKK1, $700000_4Bedroom_233m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 700000
+Size               : 233.0
+Price/m²           : 3004.29
+Bedrooms           : 4
+Bathrooms          : 4
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 1
+bedrooms_reference_mismatch     : harbor-property_com_description=1; project_overview=4
+URL                : https://www.harbor-property.com/house/detail/114709/bkk1/condo
+
+==============================================================================================================
+BATHROOM REFERENCE MISMATCH: 20 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_96063
+Title              : Condo for Sale, Chak Angrae Leu, $115000_2Bedroom_70m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 115000
+Size               : 70.0
+Price/m²           : 1642.86
+Bedrooms           : 2
+Bathrooms          : 11
+Unit floor         : None
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=11
+URL                : https://www.harbor-property.com/house/detail/96063/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_112565
+Title              : Condo for Sale, Nirouth, $90000_1Bedroom_46m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 90000
+Size               : 46.0
+Price/m²           : 1956.52
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Nirouth
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 2
+bedrooms_reference_mismatch     : harbor-property_com_description=2; project_overview=1
+bathrooms_previous_value        : 2
+bathrooms_reference_mismatch    : harbor-property_com_description=2; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/112565/nirouth/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115234
+Title              : Condo for Sale, Chroy Chongva, $160_2Bedroom_82m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 89000
+Size               : 82.0
+Price/m²           : 1085.37
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115234/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115700
+Title              : Condo for Sale, Chak Angrae Leu, $96012_1Bedroom_83.59m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 96012
+Size               : 83.59
+Price/m²           : 1148.61
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115700/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115696
+Title              : Condo for Sale, Chak Angrae Leu, $91210_1Bedroom_79.41m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 91210
+Size               : 79.41
+Price/m²           : 1148.6
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115696/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115695
+Title              : Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 93100
+Size               : 81.0
+Price/m²           : 1149.38
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115695/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115683
+Title              : Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 93100
+Size               : 81.0
+Price/m²           : 1149.38
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115683/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115688
+Title              : Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81.06m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 93100
+Size               : 81.06
+Price/m²           : 1148.53
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115688/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_115684
+Title              : Condo for Sale, Chak Angrae Leu, $91210_1Bedroom_79.41m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 91210
+Size               : 79.41
+Price/m²           : 1148.6
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 51
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+URL                : https://www.harbor-property.com/house/detail/115684/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114127
+Title              : Condo for Sale, BKK1, $660000_4Bedroom_250m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 660000
+Size               : 250.0
+Price/m²           : 2640.0
+Bedrooms           : 4
+Bathrooms          : 3
+Unit floor         : None
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bathrooms_previous_value        : 4
+bathrooms_reference_mismatch    : harbor-property_com_description=4; project_overview=3
+URL                : https://www.harbor-property.com/house/detail/114127/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_59232
+Title              : Condo for Sale, Tonle Bassac, $975000_5Bedroom_349m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 975000
+Size               : 349.0
+Price/m²           : 2793.7
+Bedrooms           : 5
+Bathrooms          : 3
+Unit floor         : 29
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 3
+bedrooms_reference_mismatch     : harbor-property_com_description=3; project_overview=5
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=3
+URL                : https://www.harbor-property.com/house/detail/59232/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113223
+Title              : Condo for Sale, Phnom Penh, $62000_2Bedroom_50m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 62000
+Size               : 50.0
+Price/m²           : 1240.0
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 8
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 2
+bathrooms_reference_mismatch    : harbor-property_com_description=2; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/113223/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_94146
+Title              : Condo for Sale, BKK1, $520000_4Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 520000
+Size               : 153.0
+Price/m²           : 3398.69
+Bedrooms           : 4
+Bathrooms          : 3
+Unit floor         : 39
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+bathrooms_previous_value        : 2
+bathrooms_reference_mismatch    : harbor-property_com_description=2; project_overview=3
+URL                : https://www.harbor-property.com/house/detail/94146/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_94171
+Title              : Condo for Sale, BKK1, $1600000_4Bedroom | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 1600000
+Size               : 411.58
+Price/m²           : 3887.46
+Bedrooms           : 4
+Bathrooms          : 5
+Unit floor         : 26
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_title
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+bathrooms_previous_value        : 4
+bathrooms_reference_mismatch    : harbor-property_com_description=4; project_overview=5
+URL                : https://www.harbor-property.com/house/detail/94171/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_112982
+Title              : Condo for Sale, Chamkarmon, $62000_2Bedroom_50m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 62000
+Size               : 50.0
+Price/m²           : 1240.0
+Bedrooms           : 2
+Bathrooms          : 1
+Unit floor         : 8
+Building floors    : None
+District           : Chamkarmon
+Commune            : Chamkarmon
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 2
+bathrooms_reference_mismatch    : harbor-property_com_description=2; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/112982/chamkarmon/condo
+
+==============================================================================================================
+UNIT-FLOOR REFERENCE MISMATCH: 15 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_87132
+Title              : Condo for Sale, BKK1, $367000_3Bedroom_178m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 367000
+Size               : 178.0
+Price/m²           : 2061.8
+Bedrooms           : 3
+Bathrooms          : 2
+Unit floor         : 50
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk1
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 49
+unit_floor_reference_mismatch   : harbor-property_com_description=49; project_overview=50
+URL                : https://www.harbor-property.com/house/detail/87132/bkk1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114597
+Title              : Condo for Sale, Chak Angrae Leu, $63000_1Bedroom_48m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 63000
+Size               : 48.0
+Price/m²           : 1312.5
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 7
+Building floors    : None
+District           : Meanchey
+Commune            : Chak Angrae Leu
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 10
+unit_floor_reference_mismatch   : harbor-property_com_description=10; project_overview=7
+URL                : https://www.harbor-property.com/house/detail/114597/chak-angrae-leu/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114109
+Title              : Condo for Sale, Boeung Kak I, $160000_2Bedroom_111m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 160000
+Size               : 111.0
+Price/m²           : 1441.44
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 30
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 12
+unit_floor_reference_mismatch   : harbor-property_com_description=12; project_overview=30
+URL                : https://www.harbor-property.com/house/detail/114109/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114117
+Title              : Condo for Sale, Boeung Kak I, $231808_3Bedroom_144.88m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 231808
+Size               : 144.88
+Price/m²           : 1600.0
+Bedrooms           : 3
+Bathrooms          : None
+Unit floor         : 9
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 8
+unit_floor_reference_mismatch   : harbor-property_com_description=8; project_overview=9
+URL                : https://www.harbor-property.com/house/detail/114117/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114113
+Title              : Condo for Sale, Boeung Kak I, $190752_2Bedroom_119m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 190752
+Size               : 119.0
+Price/m²           : 1602.96
+Bedrooms           : 2
+Bathrooms          : None
+Unit floor         : 9
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 8
+unit_floor_reference_mismatch   : harbor-property_com_description=8; project_overview=9
+URL                : https://www.harbor-property.com/house/detail/114113/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114111
+Title              : Condo for Sale, Boeung Kak I, $118816_1Bedroom_74m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 118816
+Size               : 74.0
+Price/m²           : 1605.62
+Bedrooms           : 1
+Bathrooms          : None
+Unit floor         : 9
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 8
+unit_floor_reference_mismatch   : harbor-property_com_description=8; project_overview=9
+URL                : https://www.harbor-property.com/house/detail/114111/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113119
+Title              : Condo for Sale, Tuol Tompoung 1, $133684_100m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 133684
+Size               : 100.0
+Price/m²           : 1336.84
+Bedrooms           : 2
+Bathrooms          : None
+Unit floor         : 17
+Building floors    : None
+District           : None
+Commune            : Tuol Tompoung 1
+Current bed source : harbor-property_com_description
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 39
+unit_floor_reference_mismatch   : harbor-property_com_description=39; project_overview=17
+URL                : https://www.harbor-property.com/house/detail/113119/tuol-tompoung-1/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_86160
+Title              : Condo for Sale, Veal Vong, $48000_35m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 48000
+Size               : 35.0
+Price/m²           : 1371.43
+Bedrooms           : None
+Bathrooms          : None
+Unit floor         : 10
+Building floors    : None
+District           : Prampi Makara
+Commune            : Veal Vong
+Current bed source : None
+Current bath source: None
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 6
+unit_floor_reference_mismatch   : harbor-property_com_description=6; project_overview=10
+URL                : https://www.harbor-property.com/house/detail/86160/veal-vong/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113068
+Title              : Condo for Sale, Phnom Penh, $85000_1Bedroom_63m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 85000
+Size               : 63.0
+Price/m²           : 1349.21
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 15
+Building floors    : None
+District           : None
+Commune            : Phnom Penh
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+unit_floor_previous_value       : 27
+unit_floor_reference_mismatch   : harbor-property_com_description=27; project_overview=15
+URL                : https://www.harbor-property.com/house/detail/113068/phnom-penh/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_86231
+Title              : Condo for Sale, Tonle Bassac, $5000000_5Bedroom_1100m² | Harbor Property
+Listing type       : sale
+Property type      : Penthouse
+Price              : 5000000
+Size               : 1100.0
+Price/m²           : 4545.45
+Bedrooms           : 5
+Bathrooms          : 5
+Unit floor         : 38
+Building floors    : None
+District           : Chamkarmon
+Commune            : Tonle Bassac
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 41
+unit_floor_reference_mismatch   : harbor-property_com_description=41; project_overview=38
+URL                : https://www.harbor-property.com/house/detail/86231/tonle-bassac/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_108049
+Title              : Condo for Sale, Boeung Kak I, $60000_1Bedroom_48m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 60000
+Size               : 48.0
+Price/m²           : 1250.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 10
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 8
+unit_floor_reference_mismatch   : harbor-property_com_description=8; project_overview=10
+URL                : https://www.harbor-property.com/house/detail/108049/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_107055
+Title              : Condo for Sale, Boeung Kak I, $90000_2Bedroom_53m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 90000
+Size               : 53.0
+Price/m²           : 1698.11
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 6
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 7
+unit_floor_reference_mismatch   : harbor-property_com_description=7; project_overview=6
+URL                : https://www.harbor-property.com/house/detail/107055/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_99852
+Title              : Condo for Sale, Boeung Kak I, $65000_2Bedroom_46m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 65000
+Size               : 46.0
+Price/m²           : 1413.04
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 29
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+bathrooms_previous_value        : 1
+bathrooms_reference_mismatch    : harbor-property_com_description=1; project_overview=2
+unit_floor_previous_value       : 8
+unit_floor_reference_mismatch   : harbor-property_com_description=8; project_overview=29
+URL                : https://www.harbor-property.com/house/detail/99852/boeung-kak-i/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_98862
+Title              : Condo for Sale, BKK3, $50000_1Bedroom_47m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 50000
+Size               : 47.0
+Price/m²           : 1063.83
+Bedrooms           : 1
+Bathrooms          : 2
+Unit floor         : 50
+Building floors    : None
+District           : Boeung Keng Kang
+Commune            : Bkk3
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 40
+unit_floor_reference_mismatch   : harbor-property_com_description=40; project_overview=50
+URL                : https://www.harbor-property.com/house/detail/98862/bkk3/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_98320
+Title              : Condo for Sale, Boeung Kak I, $157000_3Bedroom_100m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 157000
+Size               : 100.0
+Price/m²           : 1570.0
+Bedrooms           : 3
+Bathrooms          : 2
+Unit floor         : 33
+Building floors    : None
+District           : Toul Kork
+Commune            : Boeung Kak I
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+unit_floor_previous_value       : 31
+unit_floor_reference_mismatch   : harbor-property_com_description=31; project_overview=33
+URL                : https://www.harbor-property.com/house/detail/98320/boeung-kak-i/condo
+
+==============================================================================================================
+MISSING DISTRICT — RESOLVABLE: 0 records
+==============================================================================================================
+
+==============================================================================================================
+MISSING DISTRICT — AMBIGUOUS: 0 records
+==============================================================================================================
+
+==============================================================================================================
+MISSING DISTRICT — UNMAPPED: 371 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_109763
+Title              : Condo for Sale, Kantaok, $980000_8Bedroom_682.5m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 980000
+Size               : 682.5
+Price/m²           : 1435.9
+Bedrooms           : 8
+Bathrooms          : 8
+Unit floor         : 3
+Building floors    : None
+District           : None
+Commune            : Kantaok
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/109763/kantaok/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_109770
+Title              : Condo for Sale, Prateah Lang, $149000_1Bedroom_412m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 149000
+Size               : 412.0
+Price/m²           : 361.65
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 1
+Building floors    : None
+District           : None
+Commune            : Prateah Lang
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/109770/prateah-lang/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_103533
+Title              : Condo for Sale, Chroy Chongva, $99900_1Bedroom_60m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 99900
+Size               : 60.0
+Price/m²           : 1665.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/103533/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_103532
+Title              : Condo for Sale, Chroy Chongva, $72000_1Bedroom_65m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 72000
+Size               : 65.0
+Price/m²           : 1107.69
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/103532/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_110922
+Title              : Condo for Sale, Chroy Chongva, $200000_3Bedroom_101m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 200000
+Size               : 101.0
+Price/m²           : 1980.2
+Bedrooms           : 3
+Bathrooms          : 2
+Unit floor         : 9
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+URL                : https://www.harbor-property.com/house/detail/110922/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_109421
+Title              : Condo for Sale, Chroy Chongva, $155000_1Bedroom_46m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 155000
+Size               : 46.0
+Price/m²           : 3369.57
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+bedrooms_previous_value         : 0
+bedrooms_reference_mismatch     : harbor-property_com_description=0; project_overview=1
+URL                : https://www.harbor-property.com/house/detail/109421/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114213
+Title              : Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 63000
+Size               : 63.0
+Price/m²           : 1000.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 17
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+URL                : https://www.harbor-property.com/house/detail/114213/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114133
+Title              : Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 63000
+Size               : 63.0
+Price/m²           : 1000.0
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : 17
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_description
+URL                : https://www.harbor-property.com/house/detail/114133/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113791
+Title              : Condo for Sale, Chroy Chongva, $90000_1Bedroom_61m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 90000
+Size               : 61.0
+Price/m²           : 1475.41
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113791/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_113992
+Title              : Condo for Sale, Chroy Chongva, $55000_1Bedroom_65m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 55000
+Size               : 65.0
+Price/m²           : 846.15
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/113992/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_114151
+Title              : Condo for Sale, Chroy Chongva, $63000_1Bedroom_65m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 63000
+Size               : 65.0
+Price/m²           : 969.23
+Bedrooms           : 1
+Bathrooms          : 1
+Unit floor         : None
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : None
+URL                : https://www.harbor-property.com/house/detail/114151/chroy-chongva/condo
+
+--------------------------------------------------------------------------------------------------------------
+ID                 : harbor-property.com_116149
+Title              : Condo for Sale, Chroy Chongva, $89000_2Bedroom_63.69m² | Harbor Property
+Listing type       : sale
+Property type      : Condo
+Price              : 89000
+Size               : 63.69
+Price/m²           : 1397.39
+Bedrooms           : 2
+Bathrooms          : 2
+Unit floor         : 32
+Building floors    : None
+District           : None
+Commune            : Chroy Chongva
+Current bed source : harbor-property_com_project_overview_structured
+Current bath source: harbor-property_com_project_overview_structured
+Current floor src  : harbor-property_com_project_overview_structured
+URL                : https://www.harbor-property.com/house/detail/116149/chroy-chongva/condo
+
+==============================================================================================================
+EXACT LISTING-SIGNATURE DUPLICATES: 54 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale phnom penh harbor property', 105378.0, None, 'Phnom Penh')
+Records  : 126
+  - harbor-property.com_115931 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_115557 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_115416 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_115388 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_115065 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114940 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114854 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114828 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114737 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114736 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114713 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114696 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114680 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114679 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114649 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114564 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114560 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114376 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114323 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114322 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114166 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114123 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114092 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114065 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_114009 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113976 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113968 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113958 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113949 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113948 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113896 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113879 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113873 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113846 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113813 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113781 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113722 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113694 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113690 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113669 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113631 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113630 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113629 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113575 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113554 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113534 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113511 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113496 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113495 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113492 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113487 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113444 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113401 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113347 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113317 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113259 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113082 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113066 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113002 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_113001 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112946 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112945 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112879 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112835 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112808 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112729 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112715 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112714 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112695 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112637 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112594 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112478 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112424 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112420 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112318 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112288 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112143 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112076 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112073 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_112037 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111993 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111972 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111944 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111918 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111884 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111865 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111843 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111805 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111794 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111682 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111661 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111616 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111601 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111571 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111562 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111539 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111511 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111479 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111441 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111416 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111370 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111365 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111350 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111320 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111296 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111272 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111264 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111262 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111234 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111167 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111067 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_111034 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110895 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110733 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110730 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110689 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110646 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110536 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110213 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110078 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_110004 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_109918 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_109883 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_109794 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_109654 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+  - harbor-property.com_108093 | Condo for Sale, Phnom Penh, | Harbor Property | price= 105378 | size= None | commune= Phnom Penh
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chak angrae leu 50000_1bedroom_38m² harbor property', 50000.0, 38.0, 'Chak Angrae Leu')
+Records  : 12
+  - harbor-property.com_112943 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_114371 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110173 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110258 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110390 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_108654 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_108806 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_106829 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_106224 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_102562 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_104138 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_105827 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale boeung kak i 70000_1bedroom_60m² harbor property', 70000.0, 60.0, 'Boeung Kak I')
+Records  : 11
+  - harbor-property.com_114125 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_110028 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_110350 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105126 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105127 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105512 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105713 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_98798 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105744 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105347 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_104101 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale srah chak 83000_1bedroom_40m² harbor property', 83000.0, 40.0, 'Srah Chak')
+Records  : 5
+  - harbor-property.com_108144 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_108733 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_108589 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_104476 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_104496 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chroy chongva 240000_2bedroom_104m² harbor property', 240000.0, 104.0, 'Chroy Chongva')
+Records  : 4
+  - harbor-property.com_113125 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113118 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113090 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113088 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chak angrae leu 93100_1bedroom_81m² harbor property', 93100.0, 81.0, 'Chak Angrae Leu')
+Records  : 3
+  - harbor-property.com_115702 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+  - harbor-property.com_115695 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+  - harbor-property.com_115683 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale bkk1 80000_1bedroom_60m² harbor property', 80000.0, 60.0, 'Bkk1')
+Records  : 3
+  - harbor-property.com_114377 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+  - harbor-property.com_113512 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+  - harbor-property.com_113683 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale bkk3 86922 harbor property', 86922.0, 75.0, 'Bkk3')
+Records  : 3
+  - harbor-property.com_113745 | Condo for Sale, BKK3, $86922 | Harbor Property | price= 86922 | size= 75.0 | commune= Bkk3
+  - harbor-property.com_113741 | Condo for Sale, BKK3, $86922 | Harbor Property | price= 86922 | size= 75.0 | commune= Bkk3
+  - harbor-property.com_113484 | Condo for Sale, BKK3, $86922 | Harbor Property | price= 86922 | size= 75.0 | commune= Bkk3
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale boeung kak i 70000_2bedroom_76m² harbor property', 70000.0, 76.0, 'Boeung Kak I')
+Records  : 3
+  - harbor-property.com_108085 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+  - harbor-property.com_107078 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+  - harbor-property.com_106244 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale phnom penh thmei 80000_2bedroom_52m² harbor property', 80000.0, 52.0, 'Phnom Penh Thmei')
+Records  : 2
+  - harbor-property.com_115244 | Condo for Sale, Phnom Penh Thmei, $80000_2Bedroom_52m² | Harbor Property | price= 80000 | size= 52.0 | commune= Phnom Penh Thmei
+  - harbor-property.com_111101 | Condo for Sale, Phnom Penh Thmei, $80000_2Bedroom_52m² | Harbor Property | price= 80000 | size= 52.0 | commune= Phnom Penh Thmei
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chroy chongva 63000_1bedroom_63m² harbor property', 63000.0, 63.0, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_114213 | Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property | price= 63000 | size= 63.0 | commune= Chroy Chongva
+  - harbor-property.com_114133 | Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property | price= 63000 | size= 63.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chroy chongva 55000_1bedroom_65m² harbor property', 55000.0, 65.0, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_113992 | Condo for Sale, Chroy Chongva, $55000_1Bedroom_65m² | Harbor Property | price= 55000 | size= 65.0 | commune= Chroy Chongva
+  - harbor-property.com_113985 | Condo for Sale, Chroy Chongva, $55000_1Bedroom_65m² | Harbor Property | price= 55000 | size= 65.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale boeng tompun i 55000_1bedroom_53m² harbor property', 55000.0, 53.0, 'Boeng Tompun I')
+Records  : 2
+  - harbor-property.com_114080 | Condo for Sale, Boeng Tompun I, $55000_1Bedroom_53m² | Harbor Property | price= 55000 | size= 53.0 | commune= Boeng Tompun I
+  - harbor-property.com_110907 | Condo for Sale, Boeng Tompun I, $55000_1Bedroom_53m² | Harbor Property | price= 55000 | size= 53.0 | commune= Boeng Tompun I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale tonle bassac 190000_1bedroom_59m² harbor property', 190000.0, 59.0, 'Tonle Bassac')
+Records  : 2
+  - harbor-property.com_115110 | Condo for Sale, Tonle Bassac, $190000_1Bedroom_59m² | Harbor Property | price= 190000 | size= 59.0 | commune= Tonle Bassac
+  - harbor-property.com_115150 | Condo for Sale, Tonle Bassac, $190000_1Bedroom_59m² | Harbor Property | price= 190000 | size= 59.0 | commune= Tonle Bassac
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('condo for sale chroy chongva 89000_2bedroom_63 69m² harbor property', 89000.0, 63.69, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_116149 | Condo for Sale, Chroy Chongva, $89000_2Bedroom_63.69m² | Harbor Property | price= 89000 | size= 63.69 | commune= Chroy Chongva
+  - harbor-property.com_115537 | Condo for Sale, Chroy Chongva, $89000_2Bedroom_63.69m² | Harbor Property | price= 89000 | size= 63.69 | commune= Chroy Chongva
+
+==============================================================================================================
+SAME NUMERIC/PROPERTY SIGNATURE: 50 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (50000.0, 38.0, 1.0, 1.0, None, 'Chak Angrae Leu')
+Records  : 12
+  - harbor-property.com_112943 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_114371 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110173 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110258 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_110390 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_108654 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_108806 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_106829 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_106224 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_102562 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_104138 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+  - harbor-property.com_105827 | Condo for Sale, Chak Angrae Leu, $50000_1Bedroom_38m² | Harbor Property | price= 50000 | size= 38.0 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (70000.0, 60.0, 1.0, 1.0, None, 'Boeung Kak I')
+Records  : 5
+  - harbor-property.com_114125 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105512 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105713 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105744 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105347 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (240000.0, 104.0, 2.0, 3.0, 37.0, 'Chroy Chongva')
+Records  : 4
+  - harbor-property.com_113125 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113118 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113090 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+  - harbor-property.com_113088 | Condo for Sale, Chroy Chongva, $240000_2Bedroom_104m² | Harbor Property | price= 240000 | size= 104.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (83000.0, 40.0, 1.0, 1.0, None, 'Srah Chak')
+Records  : 4
+  - harbor-property.com_108144 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_108733 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_104476 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+  - harbor-property.com_104496 | Condo for Sale, Srah Chak, $83000_1Bedroom_40m² | Harbor Property | price= 83000 | size= 40.0 | commune= Srah Chak
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (93100.0, 81.0, 1.0, 2.0, 51.0, 'Chak Angrae Leu')
+Records  : 3
+  - harbor-property.com_115702 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+  - harbor-property.com_115695 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+  - harbor-property.com_115683 | Condo for Sale, Chak Angrae Leu, $93100_1Bedroom_81m² | Harbor Property | price= 93100 | size= 81.0 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (80000.0, 60.0, 1.0, 1.0, None, 'Bkk1')
+Records  : 3
+  - harbor-property.com_114377 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+  - harbor-property.com_113512 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+  - harbor-property.com_113683 | Condo for Sale, BKK1, $80000_1Bedroom_60m² | Harbor Property | price= 80000 | size= 60.0 | commune= Bkk1
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (70000.0, 76.0, 2.0, 2.0, None, 'Boeung Kak I')
+Records  : 3
+  - harbor-property.com_108085 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+  - harbor-property.com_107078 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+  - harbor-property.com_106244 | Condo for Sale, Boeung Kak I, $70000_2Bedroom_76m² | Harbor Property | price= 70000 | size= 76.0 | commune= Boeung Kak I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (70000.0, 60.0, 1.0, 2.0, None, 'Boeung Kak I')
+Records  : 3
+  - harbor-property.com_105126 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_105127 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+  - harbor-property.com_104101 | Condo for Sale, Boeung Kak I, $70000_1Bedroom_60m² | Harbor Property | price= 70000 | size= 60.0 | commune= Boeung Kak I
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (80000.0, 52.0, 2.0, 2.0, 9.0, 'Phnom Penh Thmei')
+Records  : 2
+  - harbor-property.com_115244 | Condo for Sale, Phnom Penh Thmei, $80000_2Bedroom_52m² | Harbor Property | price= 80000 | size= 52.0 | commune= Phnom Penh Thmei
+  - harbor-property.com_111101 | Condo for Sale, Phnom Penh Thmei, $80000_2Bedroom_52m² | Harbor Property | price= 80000 | size= 52.0 | commune= Phnom Penh Thmei
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (63000.0, 63.0, 1.0, 1.0, 17.0, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_114213 | Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property | price= 63000 | size= 63.0 | commune= Chroy Chongva
+  - harbor-property.com_114133 | Condo for Sale, Chroy Chongva, $63000_1Bedroom_63m² | Harbor Property | price= 63000 | size= 63.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (55000.0, 65.0, 1.0, 1.0, None, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_113992 | Condo for Sale, Chroy Chongva, $55000_1Bedroom_65m² | Harbor Property | price= 55000 | size= 65.0 | commune= Chroy Chongva
+  - harbor-property.com_113985 | Condo for Sale, Chroy Chongva, $55000_1Bedroom_65m² | Harbor Property | price= 55000 | size= 65.0 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (89000.0, 63.69, 2.0, 2.0, 32.0, 'Chroy Chongva')
+Records  : 2
+  - harbor-property.com_116149 | Condo for Sale, Chroy Chongva, $89000_2Bedroom_63.69m² | Harbor Property | price= 89000 | size= 63.69 | commune= Chroy Chongva
+  - harbor-property.com_115537 | Condo for Sale, Chroy Chongva, $89000_2Bedroom_63.69m² | Harbor Property | price= 89000 | size= 63.69 | commune= Chroy Chongva
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (96726.0, 84.22, 1.0, 2.0, 51.0, 'Chak Angrae Leu')
+Records  : 2
+  - harbor-property.com_115705 | Condo for Sale, Chak Angrae Leu, $96726_1Bedroom_84.22m² | Harbor Property | price= 96726 | size= 84.22 | commune= Chak Angrae Leu
+  - harbor-property.com_115690 | Condo for Sale, Chak Angrae Leu, $96726_1Bedroom_84.22m² | Harbor Property | price= 96726 | size= 84.22 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (93604.0, 81.5, 1.0, 2.0, 51.0, 'Chak Angrae Leu')
+Records  : 2
+  - harbor-property.com_115703 | Condo for Sale, Chak Angrae Leu, $93604_1Bedroom_81.5m² | Harbor Property | price= 93604 | size= 81.5 | commune= Chak Angrae Leu
+  - harbor-property.com_115689 | Condo for Sale, Chak Angrae Leu, $93604_1Bedroom_81.5m² | Harbor Property | price= 93604 | size= 81.5 | commune= Chak Angrae Leu
+
+--------------------------------------------------------------------------------------------------------------
+Signature: (96012.0, 83.59, 1.0, 2.0, 51.0, 'Chak Angrae Leu')
+Records  : 2
+  - harbor-property.com_115700 | Condo for Sale, Chak Angrae Leu, $96012_1Bedroom_83.59m² | Harbor Property | price= 96012 | size= 83.59 | commune= Chak Angrae Leu
+  - harbor-property.com_115686 | Condo for Sale, Chak Angrae Leu, $96012_1Bedroom_83.59m² | Harbor Property | price= 96012 | size= 83.59 | commune= Chak Angrae Leu
+
+==============================================================================================================
+Harbor Property decision audit completed.
+==============================================================================================================

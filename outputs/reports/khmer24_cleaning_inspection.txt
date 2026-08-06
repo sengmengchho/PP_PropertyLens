@@ -1,0 +1,361 @@
+
+KHMER24 RAW DATA INSPECTION
+=========================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\khmer24\raw_listings.json
+Total rows : 126
+
+ALL RAW COLUMNS
+=========================================================================================================
+Column                                         Non-missing     Missing    Coverage  Types
+---------------------------------------------------------------------------------------------------------
+address                                                125           1       99.2%  str:125
+bathrooms                                               43          83       34.1%  int:43
+bathrooms_confidence                                    43          83       34.1%  str:43
+bathrooms_conflict                                       4         122        3.2%  str:4
+bathrooms_description_value                             34          92       27.0%  int:34
+bathrooms_source                                        43          83       34.1%  str:43
+bathrooms_text_raw                                      43          83       34.1%  str:43
+bathrooms_title_value                                    3         123        2.4%  int:3
+bedrooms                                                98          28       77.8%  int:98
+bedrooms_confidence                                     98          28       77.8%  str:98
+bedrooms_conflict                                        4         122        3.2%  str:4
+bedrooms_description_value                              81          45       64.3%  int:81
+bedrooms_source                                         98          28       77.8%  str:98
+bedrooms_text_raw                                       98          28       77.8%  str:98
+bedrooms_title_value                                    57          69       45.2%  int:57
+building_total_floors                                    1         125        0.8%  int:1
+building_total_floors_confidence                         1         125        0.8%  str:1
+building_total_floors_description_value                  1         125        0.8%  int:1
+building_total_floors_source                             1         125        0.8%  str:1
+building_total_floors_text_raw                           1         125        0.8%  str:1
+card_text                                              126           0      100.0%  str:126
+created_at                                             112          14       88.9%  str:112
+description                                            112          14       88.9%  str:112
+description_source                                     112          14       88.9%  str:112
+detail_parsed_at                                       112          14       88.9%  str:112
+detail_scraped                                         126           0      100.0%  bool:126
+detail_title                                           112          14       88.9%  str:112
+district                                               125           1       99.2%  str:125
+listing_id                                             126           0      100.0%  str:126
+listing_type                                           126           0      100.0%  str:126
+listing_type_source                                    126           0      100.0%  str:126
+needs_manual_review                                      8         118        6.3%  bool:8
+price_usd                                              126           0      100.0%  int:126
+property_type                                          126           0      100.0%  str:126
+property_type_conflict                                   4         122        3.2%  str:4
+property_type_detail_value                               4         122        3.2%  str:4
+property_type_raw                                        4         122        3.2%  str:4
+property_type_source                                   126           0      100.0%  str:126
+province                                               126           0      100.0%  str:126
+province_source                                        126           0      100.0%  str:126
+scraped_at                                             126           0      100.0%  str:126
+size_m2                                                116          10       92.1%  float:116
+source                                                 126           0      100.0%  str:126
+source_page                                            126           0      100.0%  int:126
+title                                                  126           0      100.0%  str:126
+title_changed_on_detail                                 72          54       57.1%  bool:72
+unit_floor                                              48          78       38.1%  int:48
+unit_floor_confidence                                   48          78       38.1%  str:48
+unit_floor_description_value                            45          81       35.7%  int:45
+unit_floor_source                                       48          78       38.1%  str:48
+unit_floor_text_raw                                     48          78       38.1%  str:48
+unit_floor_title_value                                   4         122        3.2%  int:4
+url                                                    126           0      100.0%  str:126
+
+IMPORTANT COLUMN COVERAGE
+=====================================================================================
+Column                               Non-missing     Missing    Coverage
+-------------------------------------------------------------------------------------
+listing_id                                   126           0      100.0%
+source                                       126           0      100.0%
+url                                          126           0      100.0%
+title                                        126           0      100.0%
+description                                  112          14       88.9%
+listing_type                                 126           0      100.0%
+property_type                                126           0      100.0%
+category                                       0         126        0.0%
+price_usd                                    126           0      100.0%
+size_m2                                      116          10       92.1%
+bedrooms                                      98          28       77.8%
+bathrooms                                     43          83       34.1%
+unit_floor                                    48          78       38.1%
+building_total_floors                          1         125        0.8%
+province                                     126           0      100.0%
+district                                     125           1       99.2%
+commune                                        0         126        0.0%
+location_text                                  0         126        0.0%
+address                                      125           1       99.2%
+seller_name                                    0         126        0.0%
+seller_type                                    0         126        0.0%
+created_at                                   112          14       88.9%
+scraped_at                                   126           0      100.0%
+needs_manual_review                            8         118        6.3%
+
+LISTING_TYPE VALUES
+===========================================================================
+sale                                                   : 111
+rent                                                   : 12
+sale/rent                                              : 3
+
+PROPERTY_TYPE VALUES
+===========================================================================
+Condo                                                  : 126
+
+CATEGORY VALUES
+===========================================================================
+No values found.
+
+PROVINCE VALUES
+===========================================================================
+Phnom Penh                                             : 124
+Preah Sihanouk                                         : 1
+Kampot                                                 : 1
+
+DISTRICT VALUES
+===========================================================================
+Chrouy Changva                                         : 25
+Boeung Keng Kang                                       : 25
+Toul Kork                                              : 14
+Meanchey                                               : 14
+Sen Sok                                                : 12
+Chamkarmon                                             : 11
+Chbar Ampov                                            : 4
+Daun Penh                                              : 2
+Prampi Makara                                          : 2
+Por Senchey                                            : 2
+Russey Keo                                             : 2
+Condo Chrouy Changva                                   : 1
+relax Chrouy Changva                                   : 1
+Krong Preah Sihanouk                                   : 1
+Krong Kampot                                           : 1
+Riverside Chrouy Changva                               : 1
+Floor Chrouy Changva                                   : 1
+Promotion Chrouy Changva                               : 1
+Preaek Pnov                                            : 1
+sale Chrouy Changva                                    : 1
+lifestyle Chrouy Changva                               : 1
+Views Chrouy Changva                                   : 1
+Dangkao                                                : 1
+
+COMMUNE VALUES
+===========================================================================
+No values found.
+
+SELLER_TYPE VALUES
+===========================================================================
+No values found.
+
+NUMERIC RANGES
+=====================================================================================
+Column                               Count         Minimum         Maximum
+-------------------------------------------------------------------------------------
+price_usd                              126            6.00    5,700,000.00
+size_m2                                116           25.00      300,000.00
+bedrooms                                98            0.00            5.00
+bathrooms                               43            1.00            6.00
+unit_floor                              48            2.00           50.00
+building_total_floors                    1           39.00           39.00
+
+IDENTITY DUPLICATE CHECK
+===========================================================================
+Duplicate listing IDs : 0
+Duplicate URLs        : 0
+
+BRONZE REVIEW RECORDS
+===============================================================================================
+Review records: 8
+
+-----------------------------------------------------------------------------------------------
+ID          : 13653241
+Title       : Studio Room For Sell Urgently 21h •
+Listing type: sale
+Property    : Condo
+Price       : 45000
+Size        : None
+Bedrooms    : 0
+Bathrooms   : 1
+Unit floor  : 11
+bedrooms_conflict           : description=11 from '១១ បន្ទប់គេង'
+URL         : https://www.khmer24.com/en/studio-room-for-sell-urgently-adid-13653241
+
+-----------------------------------------------------------------------------------------------
+ID          : 13556898
+Title       : Time Square 11 BKK3 (Time Castle XI) | Modern 1 Bedroom Condo For Sale in Phnom Penh 1h •
+Listing type: sale
+Property    : Condo
+Price       : 56894
+Size        : 50.0
+Bedrooms    : 1
+Bathrooms   : 1
+Unit floor  : 7
+bedrooms_conflict           : description=2 from '2 Bedrooms'
+URL         : https://www.khmer24.com/en/time-square-11-bkk3-time-castle-xi-modern-1-bedroom-condo-for-sale-in-phnom-penh-adid-13556898
+
+-----------------------------------------------------------------------------------------------
+ID          : 12785088
+Title       : តម្លៃក្រោមទីផ្សារ! ផ្ទះអាជីវកម្មច្រើនល្វែង លក់ជិត Aeon 2 !
+Listing type: sale
+Property    : Condo
+Price       : 200000
+Size        : 258.0
+Bedrooms    : 4
+Bathrooms   : 5
+Unit floor  : None
+property_type_conflict      : detail_structured=House; kept search category=Condo
+bathrooms_conflict          : description=4 from '4 Bathroom'
+URL         : https://www.khmer24.com/en/aeon-2-adid-12785088
+
+-----------------------------------------------------------------------------------------------
+ID          : 13793469
+Title       : 🏘 វីឡាព្រីន កែង(Prince-A) ក្នុងបុរី ប៉េងហួតបឹងស្នោ ត្រូវការលក់បន្ទាន់ខ្លាំង (កូដ: A01-122068)
+Listing type: sale
+Property    : Condo
+Price       : 850000
+Size        : None
+Bedrooms    : 5
+Bathrooms   : 6
+Unit floor  : None
+property_type_conflict      : detail_structured=House; kept search category=Condo
+bathrooms_conflict          : description=5 from '5 Bathroom'
+URL         : https://www.khmer24.com/en/prince-a-a01-122068-adid-13793469
+
+-----------------------------------------------------------------------------------------------
+ID          : 13805290
+Title       : វីឡាឃ្វីន (Queen-A) ក្នុងបុរី ឌឹផ្លរ៉ា ផ្លូវជាតិលេខ6A ត្រូវការលក់បន្ទាន់ខ្លាំង
+Listing type: sale
+Property    : Condo
+Price       : 470000
+Size        : None
+Bedrooms    : 5
+Bathrooms   : 6
+Unit floor  : None
+property_type_conflict      : detail_structured=House; kept search category=Condo
+bathrooms_conflict          : description=5 from '5 Bathroom'
+URL         : https://www.khmer24.com/en/queen-a-6a-adid-13805290
+
+-----------------------------------------------------------------------------------------------
+ID          : 13802386
+Title       : ផ្ទះល្វែងលក់បន្ទាន់
+Listing type: sale
+Property    : Condo
+Price       : 129900
+Size        : 77.0
+Bedrooms    : 4
+Bathrooms   : 5
+Unit floor  : None
+property_type_conflict      : detail_structured=Flat; kept search category=Condo
+bathrooms_conflict          : description=4 from '4 Bathroom'
+URL         : https://www.khmer24.com/en/house-for-sale-adid-13802386
+
+-----------------------------------------------------------------------------------------------
+ID          : 13537234
+Title       : Orkide 3 bed លក់ខាតខ្លាំង 24m •
+Listing type: sale
+Property    : Condo
+Price       : 180000
+Size        : 120.0
+Bedrooms    : 3
+Bathrooms   : None
+Unit floor  : 3
+bedrooms_conflict           : description=2 from 'Two Bedroom'
+URL         : https://www.khmer24.com/en/orkide-3-bed-adid-13537234
+
+-----------------------------------------------------------------------------------------------
+ID          : 13735452
+Title       : Orkide The Royal Condominiums Studio Room 35 sqm2 (Floor 11th) លក់ខាតជិត1ម៉ឹន 52m •
+Listing type: sale
+Property    : Condo
+Price       : 65000
+Size        : 35.0
+Bedrooms    : 0
+Bathrooms   : None
+Unit floor  : 11
+bedrooms_conflict           : description=1 from 'One Bedroom'
+URL         : https://www.khmer24.com/en/orkide-the-royal-condominiums-studio-room-35-sqm2-floor-11th-1-adid-13735452
+
+SAMPLE RECORDS
+===============================================================================================
+
+RECORD 1
+-----------------------------------------------------------------------------------------------
+listing_id                 : 13817582
+title                      : Piphupthmey Condo Sensok 3d •
+listing_type               : sale
+property_type              : Condo
+price_usd                  : 320
+size_m2                    : 78.0
+bedrooms                   : 2
+bathrooms                  : None
+unit_floor                 : None
+district                   : Sen Sok
+commune                    : None
+needs_manual_review        : None
+url                        : https://www.khmer24.com/en/piphupthmey-condo-sensok-adid-13817582
+
+RECORD 2
+-----------------------------------------------------------------------------------------------
+listing_id                 : 13796715
+title                      : Sky31, TK, 2 bedroom, 8th floor $175,000. Rent $850/m 1d •
+listing_type               : sale/rent
+property_type              : Condo
+price_usd                  : 175000
+size_m2                    : 102.0
+bedrooms                   : 2
+bathrooms                  : None
+unit_floor                 : 8
+district                   : Toul Kork
+commune                    : None
+needs_manual_review        : None
+url                        : https://www.khmer24.com/en/sky31-tk-2-bedroom-8th-floor-175000-rent-850m-adid-13796715
+
+RECORD 3
+-----------------------------------------------------------------------------------------------
+listing_id                 : 13647185
+title                      : Modern 2 bedroom, 2 bathroom Condo - reduced offer! Jun 14 •
+listing_type               : sale
+property_type              : Condo
+price_usd                  : 164500
+size_m2                    : 104.0
+bedrooms                   : 2
+bathrooms                  : 2
+unit_floor                 : None
+district                   : Chrouy Changva
+commune                    : None
+needs_manual_review        : None
+url                        : https://www.khmer24.com/en/modern-2-bedroom-2-bathroom-condo-reduced-offer-adid-13647185
+
+RECORD 4
+-----------------------------------------------------------------------------------------------
+listing_id                 : 13653241
+title                      : Studio Room For Sell Urgently 21h •
+listing_type               : sale
+property_type              : Condo
+price_usd                  : 45000
+size_m2                    : None
+bedrooms                   : 0
+bathrooms                  : 1
+unit_floor                 : 11
+district                   : Sen Sok
+commune                    : None
+needs_manual_review        : True
+url                        : https://www.khmer24.com/en/studio-room-for-sell-urgently-adid-13653241
+
+RECORD 5
+-----------------------------------------------------------------------------------------------
+listing_id                 : 13821912
+title                      : One-bedroom Condo for sale on Hun Sen Boulevard 2d •
+listing_type               : sale
+property_type              : Condo
+price_usd                  : 39999
+size_m2                    : 38.0
+bedrooms                   : 1
+bathrooms                  : None
+unit_floor                 : 22
+district                   : Meanchey
+commune                    : None
+needs_manual_review        : None
+url                        : https://www.khmer24.com/en/one-bedroom-condo-for-sale-on-hun-sen-boulevard-adid-13821912
+
+=========================================================================================================
+Khmer24 inspection completed.
+=========================================================================================================

@@ -1,20 +1,45 @@
 # Python
 venv/
+.venv/
+env/
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
+*.pyd
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 .ipynb_checkpoints/
 
-# Data - too large for git, and raw HTML is huge
+# Data - large generated layers
 data/bronze/
 data/silver/
 data/gold/
 
-# Trained models
+# Trained models and experiment artifacts
 models/*.pkl
+models/*.joblib
+models/*.pickle
 
-# Node
+# Node / frontend build output
 node_modules/
 dist/
+.next/
+coverage/
 
-# Environment
+# Local environment and secrets
 .env
+.env.*
+!.env.example
+
+# OS / editor clutter
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp

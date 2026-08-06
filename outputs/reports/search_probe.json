@@ -1,0 +1,22 @@
+[
+  {
+    "domain": "camrealtyservice.com",
+    "url": "https://camrealtyservice.com/property-search/?search_for=house&status%5B%5D=for-sale&location%5B%5D=phnom-penh&type%5B%5D=resale-condominium",
+    "ok": true,
+    "page1_listings": 9,
+    "stated_total": null,
+    "pagination": "path_page",
+    "needs_browser": true,
+    "rendering": "js-app",
+    "effort": "MEDIUM (browser)",
+    "verdict": "SKIP - too few",
+    "sample": [
+      "https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1472168/",
+      "https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1471168/",
+      "https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1470168/",
+      "https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1468168/",
+      "https://camrealtyservice.com/property/36th-floor-luxurious-4-bedroom-penthouse-for-sale-in-tonle-basak-s1468168/"
+    ],
+    "notes": []
+  }
+]
