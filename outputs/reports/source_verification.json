@@ -1,0 +1,204 @@
+[
+  {
+    "domain": "aps.com.kh",
+    "total": 791,
+    "listings": 791,
+    "phnom_penh": 608,
+    "condo": 459,
+    "sale": 265,
+    "rent": 489,
+    "strict": 104,
+    "loose": 114,
+    "unknown": 162,
+    "shapes": [
+      [
+        "/properties/*",
+        782
+      ],
+      [
+        "/*",
+        2
+      ],
+      [
+        "/properties",
+        1
+      ],
+      [
+        "/properties/ftb-tower",
+        1
+      ],
+      [
+        "/properties/k-mall-2",
+        1
+      ],
+      [
+        "/properties/mc-park-2",
+        1
+      ],
+      [
+        "/properties/samai-square-2",
+        1
+      ],
+      [
+        "/properties/the-heritage-walk-2",
+        1
+      ]
+    ],
+    "sample_urls": [
+      "https://aps.com.kh/properties/1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2/",
+      "https://aps.com.kh/properties/1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh/",
+      "https://aps.com.kh/properties/1-bedroom-condo-for-sale-bodaiju-residences-russian-blvd-phnom-penh-2/",
+      "https://aps.com.kh/properties/1-bedroom-condo-for-sale-bodaiju-russian-federation-phnom-penh-2/",
+      "https://aps.com.kh/properties/1-bedroom-condo-for-sale-la-vista-one-chroy-changva-phnom-penh/"
+    ]
+  },
+  {
+    "domain": "camrealtyservice.com",
+    "total": 11381,
+    "listings": 11381,
+    "phnom_penh": 2840,
+    "condo": 4082,
+    "sale": 1391,
+    "rent": 7478,
+    "strict": 50,
+    "loose": 397,
+    "unknown": 6162,
+    "shapes": [
+      [
+        "/property/*",
+        9411
+      ],
+      [
+        "/ja/property/*",
+        1941
+      ],
+      [
+        "/*",
+        7
+      ],
+      [
+        "/apartment-list",
+        1
+      ],
+      [
+        "/condo-for-sale",
+        1
+      ],
+      [
+        "/ja/property",
+        1
+      ],
+      [
+        "/property-status/for-sale",
+        1
+      ],
+      [
+        "/property-type/condominium",
+        1
+      ]
+    ],
+    "sample_urls": [
+      "https://camrealtyservice.com/apartments-bkk1-phnom-penh/",
+      "https://camrealtyservice.com/apartments-in-toul-tom-poung-phnom-penh/",
+      "https://camrealtyservice.com/condo-sale-in-bkk1-phnom-penh/",
+      "https://camrealtyservice.com/property/1-bedroom-condo-in-nice-echo-complex-building-for-sale-in-bkk1-phnom-penh/",
+      "https://camrealtyservice.com/property/1-bedroom-serviced-apartment-in-phnom-penh-n1211168/"
+    ]
+  },
+  {
+    "domain": "harbor-property.com",
+    "total": 38042,
+    "listings": 38040,
+    "phnom_penh": 624,
+    "condo": 15192,
+    "sale": 0,
+    "rent": 22848,
+    "strict": 624,
+    "loose": 15192,
+    "unknown": 22848,
+    "shapes": [
+      [
+        "/en/house/*",
+        26613
+      ],
+      [
+        "/km/house/*",
+        11424
+      ],
+      [
+        "/en/wiki/*",
+        3
+      ]
+    ],
+    "sample_urls": [
+      "https://www.harbor-property.com/en/house/detail/100175/phnom-penh-thmei/condo",
+      "https://www.harbor-property.com/en/house/detail/100529/phnom-penh-thmei/condo",
+      "https://www.harbor-property.com/en/house/detail/100663/phnom-penh-thmei/condo",
+      "https://www.harbor-property.com/en/house/detail/100860/phnom-penh-thmei/condo",
+      "https://www.harbor-property.com/en/house/detail/101064/phnom-penh-thmei/condo"
+    ]
+  },
+  {
+    "domain": "khpropertyhub.com",
+    "total": 2,
+    "listings": 2,
+    "phnom_penh": 0,
+    "condo": 2,
+    "sale": 1,
+    "rent": 0,
+    "strict": 0,
+    "loose": 2,
+    "unknown": 0,
+    "shapes": [
+      [
+        "/discover/condos-pool-gym",
+        1
+      ],
+      [
+        "/guides/condo-buying-guide",
+        1
+      ]
+    ],
+    "sample_urls": [
+      "https://khpropertyhub.com/discover/condos-pool-gym",
+      "https://khpropertyhub.com/guides/condo-buying-guide"
+    ]
+  },
+  {
+    "domain": "pointerasia.com",
+    "total": 2305,
+    "listings": 2305,
+    "phnom_penh": 1607,
+    "condo": 1046,
+    "sale": 16,
+    "rent": 22,
+    "strict": 829,
+    "loose": 1030,
+    "unknown": 493,
+    "shapes": [
+      [
+        "/property/*",
+        2278
+      ],
+      [
+        "/property-for-rent/condo/*",
+        14
+      ],
+      [
+        "/property-for-sale/condo/*",
+        12
+      ],
+      [
+        "/rent",
+        1
+      ]
+    ],
+    "sample_urls": [
+      "https://pointerasia.com/property-for-sale/condo/phnom-penh/",
+      "https://pointerasia.com/property-for-sale/condo/phnom-penh/khan-boeng-keng-kang/",
+      "https://pointerasia.com/property-for-sale/condo/phnom-penh/khan-chamkar-mon/",
+      "https://pointerasia.com/property-for-sale/condo/phnom-penh/khan-chbar-ampov/",
+      "https://pointerasia.com/property-for-sale/condo/phnom-penh/khan-chraoy-chongvar/"
+    ]
+  }
+]

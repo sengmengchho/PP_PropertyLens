@@ -1,0 +1,629 @@
+
+KHPROPERTYHUB RAW DATA INSPECTION
+==============================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\khpropertyhub_com\raw_listings.json
+Total rows : 840
+
+ALL RAW COLUMNS
+==============================================================================================================
+Column                                            Non-missing     Missing    Coverage  Types
+--------------------------------------------------------------------------------------------------------------
+bathrooms                                                 331         509       39.4%  int:331
+bathrooms_confidence                                      331         509       39.4%  str:331
+bathrooms_description_source                              269         571       32.0%  str:269
+bathrooms_description_text_raw                            269         571       32.0%  str:269
+bathrooms_description_value                               269         571       32.0%  int:269
+bathrooms_detail_source                                    95         745       11.3%  str:95
+bathrooms_detail_text_raw                                  95         745       11.3%  str:95
+bathrooms_detail_value                                     95         745       11.3%  int:95
+bathrooms_invalid_source                                  570         270       67.9%  str:570
+bathrooms_invalid_text_raw                                570         270       67.9%  str:570
+bathrooms_invalid_value                                   570         270       67.9%  int:570
+bathrooms_source                                          331         509       39.4%  str:331
+bathrooms_text_raw                                        331         509       39.4%  str:331
+bathrooms_title_source                                     27         813        3.2%  str:27
+bathrooms_title_text_raw                                   27         813        3.2%  str:27
+bathrooms_title_value                                      27         813        3.2%  int:27
+bedroom_options                                             3         837        0.4%  list:3
+bedrooms                                                  631         209       75.1%  int:631
+bedrooms_confidence                                       631         209       75.1%  str:631
+bedrooms_conflict                                           3         837        0.4%  str:3
+bedrooms_description_source                               566         274       67.4%  str:566
+bedrooms_description_text_raw                             566         274       67.4%  str:566
+bedrooms_description_value                                566         274       67.4%  int:566
+bedrooms_detail_source                                     98         742       11.7%  str:98
+bedrooms_detail_text_raw                                   98         742       11.7%  str:98
+bedrooms_detail_value                                      98         742       11.7%  int:98
+bedrooms_invalid_source                                   569         271       67.7%  str:569
+bedrooms_invalid_text_raw                                 569         271       67.7%  str:569
+bedrooms_invalid_value                                    569         271       67.7%  int:569
+bedrooms_reference_mismatch                                 7         833        0.8%  str:7
+bedrooms_source                                           631         209       75.1%  str:631
+bedrooms_text_raw                                         634         206       75.5%  str:634
+bedrooms_title_source                                     326         514       38.8%  str:326
+bedrooms_title_text_raw                                   326         514       38.8%  str:326
+bedrooms_title_value                                      326         514       38.8%  int:326
+building_total_floors                                       2         838        0.2%  int:2
+building_total_floors_confidence                            2         838        0.2%  str:2
+building_total_floors_description_source                    2         838        0.2%  str:2
+building_total_floors_description_text_raw                  2         838        0.2%  str:2
+building_total_floors_description_value                     2         838        0.2%  int:2
+building_total_floors_source                                2         838        0.2%  str:2
+building_total_floors_text_raw                              2         838        0.2%  str:2
+commune                                                     0         840        0.0%  
+condition                                                   0         840        0.0%  
+created_at                                                797          43       94.9%  str:797
+description                                               780          60       92.9%  str:780
+description_source                                        780          60       92.9%  str:780
+detail_parsed_at                                          840           0      100.0%  str:840
+detail_scraped                                            840           0      100.0%  bool:840
+display_as_project                                        840           0      100.0%  bool:840
+district                                                  840           0      100.0%  str:840
+district_confidence                                       840           0      100.0%  str:840
+district_source                                           840           0      100.0%  str:840
+district_url_source                                       840           0      100.0%  str:840
+district_url_value                                        840           0      100.0%  str:840
+is_studio                                                 329         511       39.2%  bool:329
+land_area_m2                                                0         840        0.0%  
+latitude                                                    0         840        0.0%  
+listing_id                                                840           0      100.0%  str:840
+listing_type                                              840           0      100.0%  str:840
+listing_type_confidence                                   840           0      100.0%  str:840
+listing_type_description_hint                             103         737       12.3%  str:103
+listing_type_description_source                           103         737       12.3%  str:103
+listing_type_description_value                            103         737       12.3%  str:103
+listing_type_search_mismatch                               38         802        4.5%  str:38
+listing_type_source                                       840           0      100.0%  str:840
+listing_type_text_raw                                     448         392       53.3%  str:448
+location_text                                               0         840        0.0%  
+longitude                                                   0         840        0.0%  
+multi_unit_options                                          3         837        0.4%  bool:3
+needs_manual_review                                       840           0      100.0%  bool:840
+out_of_scope_reason                                        46         794        5.5%  str:46
+parking                                                     0         840        0.0%  
+price_original_usd                                        746          94       88.8%  int:746
+price_reduced                                               3         837        0.4%  float:3
+price_usd                                                 840           0      100.0%  int:840
+price_usd_candidate_source                                800          40       95.2%  str:800
+price_usd_candidate_value                                 800          40       95.2%  int:800
+price_usd_confidence                                      840           0      100.0%  str:840
+price_usd_detail_value                                    825          15       98.2%  int:825
+price_usd_source                                          840           0      100.0%  str:840
+project_name                                                0         840        0.0%  
+property_code                                             797          43       94.9%  str:797
+property_type                                             840           0      100.0%  str:840
+property_type_confidence                                  685         155       81.5%  str:685
+property_type_conflict                                      9         831        1.1%  str:9
+property_type_description_source                          522         318       62.1%  str:522
+property_type_description_text_raw                        522         318       62.1%  str:522
+property_type_description_value                           522         318       62.1%  str:522
+property_type_previous_source                             102         738       12.1%  str:102
+property_type_previous_value                              102         738       12.1%  str:102
+property_type_raw                                           0         840        0.0%  
+property_type_reference_mismatch                           25         815        3.0%  str:25
+property_type_source                                      840           0      100.0%  str:840
+property_type_text_raw                                    685         155       81.5%  str:685
+property_type_title_source                                490         350       58.3%  str:490
+property_type_title_text_raw                              490         350       58.3%  str:490
+property_type_title_value                                 490         350       58.3%  str:490
+property_type_url_source                                  840           0      100.0%  str:840
+property_type_url_value                                   840           0      100.0%  str:840
+province                                                  840           0      100.0%  str:840
+province_confidence                                       840           0      100.0%  str:840
+province_source                                           840           0      100.0%  str:840
+province_url_source                                       840           0      100.0%  str:840
+province_url_value                                        840           0      100.0%  str:840
+scraped_at                                                840           0      100.0%  str:840
+size_m2                                                   764          76       91.0%  float:764
+size_m2_confidence                                        764          76       91.0%  str:764
+size_m2_detail_source                                     764          76       91.0%  str:764
+size_m2_detail_text_raw                                   764          76       91.0%  str:764
+size_m2_detail_value                                      764          76       91.0%  float:764
+size_m2_source                                            764          76       91.0%  str:764
+size_m2_text_raw                                          764          76       91.0%  str:764
+source                                                    840           0      100.0%  str:840
+title                                                     840           0      100.0%  str:840
+unit_floor                                                662         178       78.8%  int:662
+unit_floor_confidence                                     662         178       78.8%  str:662
+unit_floor_conflict                                         4         836        0.5%  str:4
+unit_floor_description_source                             641         199       76.3%  str:641
+unit_floor_description_text_raw                           641         199       76.3%  str:641
+unit_floor_description_value                              641         199       76.3%  int:641
+unit_floor_detail_source                                   48         792        5.7%  str:48
+unit_floor_detail_text_raw                                 48         792        5.7%  str:48
+unit_floor_detail_value                                    48         792        5.7%  int:48
+unit_floor_generic_description_text_raw                   221         619       26.3%  str:221
+unit_floor_generic_description_value                      221         619       26.3%  int:221
+unit_floor_kind                                           662         178       78.8%  str:662
+unit_floor_previous_source                                  4         836        0.5%  str:4
+unit_floor_previous_value                                   4         836        0.5%  int:4
+unit_floor_reference_mismatch                               4         836        0.5%  str:4
+unit_floor_source                                         662         178       78.8%  str:662
+unit_floor_text_raw                                       662         178       78.8%  str:662
+unit_floor_title_source                                    17         823        2.0%  str:17
+unit_floor_title_text_raw                                  17         823        2.0%  str:17
+unit_floor_title_value                                     17         823        2.0%  int:17
+url                                                       840           0      100.0%  str:840
+year_built                                                  0         840        0.0%  
+
+IMPORTANT COLUMN COVERAGE
+========================================================================================
+Column                                  Non-missing     Missing    Coverage
+----------------------------------------------------------------------------------------
+listing_id                                      840           0      100.0%
+source                                          840           0      100.0%
+url                                             840           0      100.0%
+title                                           840           0      100.0%
+description                                     780          60       92.9%
+listing_type                                    840           0      100.0%
+property_type                                   840           0      100.0%
+price_usd                                       840           0      100.0%
+size_m2                                         764          76       91.0%
+bedrooms                                        631         209       75.1%
+bathrooms                                       331         509       39.4%
+unit_floor                                      662         178       78.8%
+building_total_floors                             2         838        0.2%
+bedroom_options                                   3         837        0.4%
+multi_unit_options                                3         837        0.4%
+district                                        840           0      100.0%
+commune                                           0         840        0.0%
+address                                           0         840        0.0%
+location_text                                     0         840        0.0%
+project_name                                      0         840        0.0%
+created_at                                      797          43       94.9%
+scraped_at                                      840           0      100.0%
+needs_manual_review                             840           0      100.0%
+
+LISTING_TYPE VALUES
+==============================================================================
+sale                                                      : 802
+rent                                                      : 20
+sale/rent                                                 : 18
+
+PROPERTY_TYPE VALUES
+==============================================================================
+Condo                                                     : 753
+Penthouse                                                 : 78
+Commercial                                                : 5
+Land                                                      : 2
+Flat                                                      : 2
+
+DISTRICT VALUES
+==============================================================================
+Boeung Keng Kang                                          : 241
+Meanchey                                                  : 120
+Sen Sok                                                   : 114
+Toul Kork                                                 : 94
+Chroy Changvar                                            : 92
+Chamkarmon                                                : 71
+Chbar Ampov                                               : 40
+Daun Penh                                                 : 34
+Russey Keo                                                : 20
+Prampi Makara                                             : 7
+Pur Senchey                                               : 6
+Kamboul                                                   : 1
+
+NUMERIC RANGES
+========================================================================================
+Column                                  Count          Minimum          Maximum
+----------------------------------------------------------------------------------------
+price_usd                                 840         1,000.00     2,800,000.00
+size_m2                                   764             6.00         1,800.00
+bedrooms                                  631             0.00            13.00
+bathrooms                                 331             1.00            14.00
+unit_floor                                662             1.00            72.00
+building_total_floors                       2            17.00            67.00
+
+SPECIAL GROUP COUNTS
+================================================================================
+Rent-only records       : 20
+Sale/rent records       : 18
+Multi-unit records      : 3
+Missing price           : 0
+Missing size            : 76
+
+CONFLICT COUNTS
+================================================================================
+property_type_conflict                                 : 9
+unit_floor_conflict                                    : 4
+bedrooms_conflict                                      : 3
+
+PRICE_USD_SOURCE
+=====================================================================================
+khpropertyhub_com_site_current_price                                : 825
+khpropertyhub_com_detail_price_body                                 : 15
+
+SIZE_M2_SOURCE
+=====================================================================================
+khpropertyhub_com_detail_structured                                 : 764
+
+BEDROOMS_SOURCE
+=====================================================================================
+khpropertyhub_com_site_structured_title                             : 329
+khpropertyhub_com_description                                       : 273
+khpropertyhub_com_detail_structured                                 : 27
+khpropertyhub_com_title                                             : 2
+
+BATHROOMS_SOURCE
+=====================================================================================
+khpropertyhub_com_description                                       : 212
+khpropertyhub_com_detail_structured                                 : 95
+khpropertyhub_com_title                                             : 24
+
+UNIT_FLOOR_SOURCE
+=====================================================================================
+khpropertyhub_com_site_structured_description_floor                 : 614
+khpropertyhub_com_detail_structured                                 : 48
+
+PROPERTY_TYPE_SOURCE
+=====================================================================================
+khpropertyhub_com_site_structured_title                             : 667
+search_scope                                                        : 155
+khpropertyhub_com_description                                       : 18
+
+LISTING_TYPE_SOURCE
+=====================================================================================
+khpropertyhub_com_site_structured_title                             : 448
+search_scope                                                        : 392
+
+IDENTITY DUPLICATE CHECK
+==============================================================================
+Duplicate listing IDs : 0
+Duplicate URLs        : 0
+
+BRONZE REVIEW RECORDS
+====================================================================================================
+Review records: 16
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_22953
+Title       : អគារសណ្ឋាគារលក់<នៅបឹងកេងកង៣
+Listing type: sale
+Property    : Commercial
+Price       : 2800000
+Size        : 348.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 1
+District    : Boeung Keng Kang
+property_type_conflict            : search_scope=Condo; explicit title=Commercial
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-22953
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_19720
+Title       : 🛎️ ដីលក់បន្ទាន់ 📐 ទំហំ + តម្លៃ • ទំហំ: 20m x 25m = 479m² • តម្លៃ: $1,100,000 (
+Listing type: sale
+Property    : Land
+Price       : 58000
+Size        : 479.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : None
+District    : Toul Kork
+property_type_conflict            : search_scope=Condo; explicit title=Land
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-19720
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_11039
+Title       : Condo Urgent Sale Office TS3
+Listing type: sale
+Property    : Commercial
+Price       : 165000
+Size        : 100.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 6
+District    : Toul Kork
+property_type_conflict            : search_scope=Condo; explicit title=Commercial
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-11039
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_8551
+Title       : Loft 1Bedroom & 2bedroom
+Listing type: sale
+Property    : Condo
+Price       : 95000
+Size        : 87.0
+Bedrooms    : None
+Bed options : [1, 2]
+Multi-unit  : True
+Bathrooms   : 2
+Unit floor  : None
+District    : Meanchey
+bedrooms_conflict                 : multiple bedroom options in title=[1, 2]
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-mean-chey-8551
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_10361
+Title       : Office Time Square 3 toul kork
+Listing type: sale
+Property    : Commercial
+Price       : 98000
+Size        : 50.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 6
+District    : Toul Kork
+property_type_conflict            : search_scope=Condo; explicit title=Commercial
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-10361
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_5048
+Title       : urgent sell studio/1/2 bedrooms condo @ the pinnacle
+Listing type: sale
+Property    : Condo
+Price       : 88000
+Size        : 55.0
+Bedrooms    : None
+Bed options : [0, 1, 2]
+Multi-unit  : True
+Bathrooms   : 1
+Unit floor  : None
+District    : Chamkarmon
+bedrooms_conflict                 : multiple bedroom options in title=[0, 1, 2]
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-5048
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_5047
+Title       : Urgent Sell with low price condo, have 1/2/3 bedrooms
+Listing type: sale
+Property    : Condo
+Price       : 86400
+Size        : 80.0
+Bedrooms    : None
+Bed options : [1, 2, 3]
+Multi-unit  : True
+Bathrooms   : 1
+Unit floor  : None
+District    : Pur Senchey
+bedrooms_conflict                 : multiple bedroom options in title=[1, 2, 3]
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-pur-senchey-5047
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_13510
+Title       : ផ្ទះShophouse 1ជុង លក់នៅទួលគោក លើផ្លូមេ វីធីសម្តេចប៉ែននុត ផ្លូវ289 !!
+Listing type: sale
+Property    : Flat
+Price       : 450000
+Size        : 6.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : None
+District    : Toul Kork
+property_type_conflict            : search_scope=Condo; explicit title=Flat
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13510
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_17764
+Title       : Hotel for sell
+Listing type: sale
+Property    : Commercial
+Price       : 59000
+Size        : 294.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 50
+District    : Prampi Makara
+property_type_conflict            : search_scope=Condo; explicit title=Commercial
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-prampir-meakkakra-17764
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_10450
+Title       : 🏙 Condo កណ្តាលក្រុង | លក់បន្ទាន់📐 58m² | ជាន់ទី 9 | Furnished ពេញ
+Listing type: sale
+Property    : Condo
+Price       : 59000
+Size        : 58.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 6
+District    : Russey Keo
+unit_floor_conflict               : khpropertyhub_com_title=9; replaced by khpropertyhub_com_site_structured_description_floor=6
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-russey-keo-10450
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_11201
+Title       : land for sale
+Listing type: sale
+Property    : Land
+Price       : 45000
+Size        : 80.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : None
+District    : Kamboul
+property_type_conflict            : search_scope=Condo; explicit title=Land
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-kamboul-11201
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_7773
+Title       : 🙌ខុនដូរជប៉ុន Arakawa ជាន់ទី3 2បន្ទប់គេង អគារ G តម្លៃ$64000 បូករួមសំភារះទាំងអស់ និងកាត់ប្លង់ជូន
+Listing type: sale
+Property    : Condo
+Price       : 64000
+Size        : 47.0
+Bedrooms    : 2
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 17
+District    : Sen Sok
+unit_floor_conflict               : khpropertyhub_com_title=3; replaced by khpropertyhub_com_site_structured_description_floor=17
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-7773
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_5814
+Title       : ផ្ទះអាជីវកម្ម ក្បែរផ្លូវធំ លក់បន្ទាន់ខ្លាំង
+Listing type: sale
+Property    : Flat
+Price       : 148000
+Size        : 126.0
+Bedrooms    : 4
+Bed options : None
+Multi-unit  : None
+Bathrooms   : 4
+Unit floor  : 8
+District    : Sen Sok
+property_type_conflict            : search_scope=Condo; explicit title=Flat
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-5814
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_6814
+Title       : Hotel for sale. & Rent : បញ្ជាក់សំរាប់ ហូតែលនេះក៍មានកាជួលប្រចាំខែផងដែរ តំលៃ : 14500$
+Listing type: sale/rent
+Property    : Commercial
+Price       : 515000
+Size        : None
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : None
+District    : Chamkarmon
+property_type_conflict            : search_scope=Condo; explicit title=Commercial
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-chamkar-mon-6814
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_13775
+Title       : ខនដូ លក់ឡៃឡុង បន្ទាន់ ខាត60% ជាន់ទី 6
+Listing type: sale
+Property    : Condo
+Price       : 27500
+Size        : 33.0
+Bedrooms    : None
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 11
+District    : Toul Kork
+unit_floor_conflict               : khpropertyhub_com_title=6; replaced by khpropertyhub_com_site_structured_description_floor=11
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-13775
+
+----------------------------------------------------------------------------------------------------
+ID          : khpropertyhub.com_7121
+Title       : 🏙 ខុនដូស្អាត ជិតទន្លេ ខ្យល់បរិសុទ្ធ (ជាន់ទី 21) លក់
+Listing type: sale
+Property    : Condo
+Price       : 59999
+Size        : 42.0
+Bedrooms    : 1
+Bed options : None
+Multi-unit  : None
+Bathrooms   : None
+Unit floor  : 1
+District    : Chroy Changvar
+unit_floor_conflict               : khpropertyhub_com_title=21; replaced by khpropertyhub_com_site_structured_description_floor=1
+URL         : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-7121
+
+SAMPLE RECORDS
+====================================================================================================
+
+RECORD 1
+----------------------------------------------------------------------------------------------------
+listing_id                    : khpropertyhub.com_5517
+title                         : 1 Bedroom Condo at Saen Sok for sale
+listing_type                  : sale
+property_type                 : Condo
+price_usd                     : 64999
+size_m2                       : 52.0
+bedrooms                      : 1
+bathrooms                     : None
+unit_floor                    : None
+building_total_floors         : None
+district                      : Sen Sok
+bedroom_options               : None
+multi_unit_options            : None
+needs_manual_review           : False
+url                           : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-5517
+
+RECORD 2
+----------------------------------------------------------------------------------------------------
+listing_id                    : khpropertyhub.com_23338
+title                         : Urban Loft- 1Bedroom for Sale Corner Type
+listing_type                  : sale
+property_type                 : Condo
+price_usd                     : 75000
+size_m2                       : 62.0
+bedrooms                      : 1
+bathrooms                     : 2
+unit_floor                    : None
+building_total_floors         : None
+district                      : Sen Sok
+bedroom_options               : None
+multi_unit_options            : None
+needs_manual_review           : False
+url                           : https://khpropertyhub.com/en/property/condo-phnom-penh-saensokh-23338
+
+RECORD 3
+----------------------------------------------------------------------------------------------------
+listing_id                    : khpropertyhub.com_23419
+title                         : 2 bedroom urgent sale
+listing_type                  : sale
+property_type                 : Condo
+price_usd                     : 95000
+size_m2                       : 103.0
+bedrooms                      : 2
+bathrooms                     : 2
+unit_floor                    : 15
+building_total_floors         : None
+district                      : Chroy Changvar
+bedroom_options               : None
+multi_unit_options            : None
+needs_manual_review           : False
+url                           : https://khpropertyhub.com/en/property/condo-phnom-penh-chraoy-chongvar-23419
+
+RECORD 4
+----------------------------------------------------------------------------------------------------
+listing_id                    : khpropertyhub.com_23406
+title                         : Luxury 2 Bedroom Condo for Sale in BKK1
+listing_type                  : sale
+property_type                 : Condo
+price_usd                     : 270000
+size_m2                       : 91.0
+bedrooms                      : 2
+bathrooms                     : 2
+unit_floor                    : 37
+building_total_floors         : None
+district                      : Boeung Keng Kang
+bedroom_options               : None
+multi_unit_options            : None
+needs_manual_review           : False
+url                           : https://khpropertyhub.com/en/property/condo-phnom-penh-boeng-keng-kang-23406
+
+RECORD 5
+----------------------------------------------------------------------------------------------------
+listing_id                    : khpropertyhub.com_23371
+title                         : Luxury 3Bedroom Penthouse for Sale at Time Square 2
+listing_type                  : sale
+property_type                 : Penthouse
+price_usd                     : 680000
+size_m2                       : 270.0
+bedrooms                      : 3
+bathrooms                     : 4
+unit_floor                    : 29
+building_total_floors         : None
+district                      : Toul Kork
+bedroom_options               : None
+multi_unit_options            : None
+needs_manual_review           : False
+url                           : https://khpropertyhub.com/en/property/condo-phnom-penh-tuol-kouk-23371
+
+==============================================================================================================
+KHPropertyHub inspection completed.
+==============================================================================================================

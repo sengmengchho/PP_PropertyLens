@@ -1,85 +1,102 @@
 # PP PropertyLens
 
-Phnom Penh condominium price analytics and prediction.
+PP PropertyLens is a Phnom Penh property data project that collects public condo listings, cleans and standardises them, and prepares the data for pricing analysis and a future prediction app.
 
-**One line:** collect real Phnom Penh condo listings, use machine learning to
-predict fair prices, and show it all on an interactive city map.
+## Project Snapshot
 
----
+Current focus: Phnom Penh condominiums for sale.
 
-## Status
+What is already in place:
 
-- [ ] Week 1-2  Data collection (scraping)
-- [ ] Week 3    Cleaning and deduplication
-- [ ] Week 4    Exploratory data analysis
-- [ ] Week 5    Feature engineering
-- [ ] Week 6    Model training and evaluation
-- [ ] Week 7    Flask API and React dashboard
-- [ ] Week 8    Report, screenshots, demo
+- Public listing sources have been identified, verified, and scraped.
+- Raw data has been inspected source by source.
+- The bronze-to-silver cleaning pipeline is implemented and documented.
+- A cleaned dataset and duplicate log have already been produced.
+- Supporting recon, audit, and inspection reports are saved in `outputs/reports/`.
 
-## Setup
+## Completed Work
+
+### 1. Source discovery and scraping
+
+- Site recon and source verification were completed for the target property websites.
+- Scrapers exist for the main sources in `src/`, including realestate.com.kh and Khmer24.
+- Additional agency sources are also present in the project structure for later consolidation.
+
+### 2. Raw data inspection
+
+- Source-specific inspection scripts were run for raw listing files.
+- The realestate.com.kh raw dataset inspection completed successfully and produced a detailed report.
+- The Khmer24 inspection and decision-audit reports are also saved for review.
+
+### 3. Cleaning and deduplication
+
+- The bronze-to-silver cleaning pipeline is implemented in `src/clean.py`.
+- Districts are standardised, missing fields are recovered where possible, and duplicates are removed.
+- Cleaning output and a written report are available in `data/silver/` and `outputs/reports/`.
+
+### 4. Current cleaned-data summary
+
+- Collected from all sources: 3,476 records
+- After scope filtering and validation: 2,931 records
+- Unique properties after deduplication: 2,463 records
+- Main excluded rows: rentals, outside Phnom Penh, missing or impossible price/size values, and duplicates
+
+## Repository Structure
+
+```text
+config/      Project settings, district mappings, landmark data
+data/        Bronze, silver, and geo datasets
+docs/        Supporting notes and documentation
+outputs/     Reports, audits, recon results, and figures
+src/         Scrapers, recon scripts, cleaning scripts, and utilities
+```
+
+## How To Run
+
+Set up the environment:
 
 ```bash
 python -m venv venv
-source venv/Scripts/activate      # Git Bash on Windows
+source venv/Scripts/activate
 pip install -r requirements.txt
 playwright install chromium
 ```
 
-## Pipeline
-
-Data moves through three layers and is never edited in place.
-
-```
-bronze  ->  silver  ->  gold  ->  model
-(raw)      (clean)    (features)
-```
+Run the main pipeline steps:
 
 ```bash
-python src/scrape_realestate.py    # bronze
-python src/scrape_khmer24.py       # bronze
-python src/clean.py                # bronze -> silver
-python src/deduplicate.py          # silver
-python src/features.py             # silver -> gold
-python src/train_model.py          # gold  -> models/
-python src/evaluate.py
-python src/explain.py
-
-python backend/app.py              # terminal 1
-cd frontend && npm run dev         # terminal 2
+python src/scrape_realestate.py
+python src/scrape_khmer24.py
+python src/clean.py
 ```
 
-## Results
+If you want to generate the realestate inspection report on Windows, use:
 
-_To be filled in after Week 6._
+```bash
+PYTHONIOENCODING=utf-8 python src/cleaning/inspect_realestate.py > outputs/reports/realestate_cleaning_inspection.txt
+```
 
-| Model | RMSE | MAPE | R2 |
-|---|---|---|---|
-| District median (baseline) | | | |
-| Linear Regression | | | |
-| Random Forest | | | |
-| XGBoost | | | |
+## What Comes Next
 
-## Known limitations
+1. Exploratory data analysis on the cleaned silver dataset.
+2. Feature engineering, including location and property features.
+3. Model training and evaluation with a baseline and comparison models.
+4. Build the API and dashboard for price lookup and visualization.
+5. Prepare the final report, screenshots, and demo materials.
 
-- The dataset contains **asking prices**, not final transaction prices.
-  In the current market, condos often sell 10-15% below the listed price.
-  The model therefore predicts a fair *listing* value, useful as a
-  negotiation benchmark, not a certified valuation.
-- Scope is condominiums and apartments for sale in Phnom Penh only.
-  Land, borey houses, villas, and commercial property are excluded.
-- Some listings lack exact coordinates; the district centroid is used as a
-  fallback and flagged via `coord_precision`.
+## Known Limitations
 
-## Data sources
+- The dataset contains asking prices, not final transaction prices.
+- The project scope is condominiums and apartments for sale in Phnom Penh only.
+- Some listings still lack exact coordinates, so district-level fallback logic is used.
 
-- realestate.com.kh (public listing pages)
-- Khmer24.com (public listing pages)
-- OpenStreetMap (ODbL) - landmark coordinates and khan boundaries
+## Data Sources
 
-Only publicly visible pages are collected. No personal data (agent names,
-phone numbers, emails) is stored. Requests are throttled to avoid burdening
-the source websites. Academic, non-commercial use.
+- realestate.com.kh
+- Khmer24.com
+- OpenStreetMap landmark and boundary data
+
+Only publicly visible pages are collected. No personal contact data is stored. Requests are throttled to avoid burdening the source websites.
 
 ## Author
 

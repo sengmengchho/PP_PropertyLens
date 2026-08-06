@@ -1,0 +1,18 @@
+[
+  {
+    "name": "condo",
+    "extra": "categories=Condo",
+    "enabled": true
+  },
+  {
+    "name": "penthouse",
+    "extra": "categories=Penthouse",
+    "enabled": true
+  },
+  {
+    "name": "_example_district",
+    "extra": "locations=toul-kork",
+    "enabled": false,
+    "comment": "Filter by district on the website, copy the query string from the URL bar into 'extra', set enabled true"
+  }
+]

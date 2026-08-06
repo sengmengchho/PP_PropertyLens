@@ -1,0 +1,386 @@
+
+HARBOR PROPERTY RAW DATA INSPECTION
+================================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\harbor-property_com\raw_listings.json
+Total rows : 961
+
+ALL RAW COLUMNS
+================================================================================================================
+Column                                              Non-missing     Missing    Coverage  Types
+----------------------------------------------------------------------------------------------------------------
+bathrooms                                                   716         245       74.5%  int:716
+bathrooms_confidence                                        716         245       74.5%  str:716
+bathrooms_description_source                                309         652       32.2%  str:309
+bathrooms_description_text_raw                              309         652       32.2%  str:309
+bathrooms_description_value                                 309         652       32.2%  int:309
+bathrooms_overview_source                                   694         267       72.2%  str:694
+bathrooms_overview_text_raw                                 694         267       72.2%  str:694
+bathrooms_overview_value                                    694         267       72.2%  int:694
+bathrooms_previous_source                                    20         941        2.1%  str:20
+bathrooms_previous_value                                     20         941        2.1%  int:20
+bathrooms_reference_mismatch                                 20         941        2.1%  str:20
+bathrooms_source                                            716         245       74.5%  str:716
+bathrooms_text_raw                                          716         245       74.5%  str:716
+bedrooms                                                    848         113       88.2%  int:848
+bedrooms_confidence                                         848         113       88.2%  str:848
+bedrooms_description_source                                 745         216       77.5%  str:745
+bedrooms_description_text_raw                               745         216       77.5%  str:745
+bedrooms_description_value                                  745         216       77.5%  int:745
+bedrooms_overview_source                                    732         229       76.2%  str:732
+bedrooms_overview_text_raw                                  732         229       76.2%  str:732
+bedrooms_overview_value                                     732         229       76.2%  int:732
+bedrooms_previous_source                                     63         898        6.6%  str:63
+bedrooms_previous_value                                      63         898        6.6%  int:63
+bedrooms_reference_mismatch                                  63         898        6.6%  str:63
+bedrooms_source                                             848         113       88.2%  str:848
+bedrooms_text_raw                                           848         113       88.2%  str:848
+bedrooms_title_source                                       141         820       14.7%  str:141
+bedrooms_title_text_raw                                     141         820       14.7%  str:141
+bedrooms_title_value                                        141         820       14.7%  int:141
+building_total_floors                                         1         960        0.1%  int:1
+building_total_floors_confidence                              1         960        0.1%  str:1
+building_total_floors_description_source                      1         960        0.1%  str:1
+building_total_floors_description_text_raw                    1         960        0.1%  str:1
+building_total_floors_description_value                       1         960        0.1%  int:1
+building_total_floors_source                                  1         960        0.1%  str:1
+building_total_floors_text_raw                                1         960        0.1%  str:1
+commune                                                     961           0      100.0%  str:961
+commune_confidence                                          961           0      100.0%  str:961
+commune_source                                              961           0      100.0%  str:961
+commune_url_source                                          961           0      100.0%  str:961
+commune_url_value                                           961           0      100.0%  str:961
+condition                                                     0         961        0.0%  
+created_at                                                  785         176       81.7%  str:785
+created_at_source                                           785         176       81.7%  str:785
+created_at_text_raw                                         785         176       81.7%  str:785
+description                                                 961           0      100.0%  str:961
+description_source                                          961           0      100.0%  str:961
+detail_parsed_at                                            961           0      100.0%  str:961
+detail_scraped                                              961           0      100.0%  bool:961
+display_as_project                                          961           0      100.0%  bool:961
+district                                                    590         371       61.4%  str:590
+district_confidence                                         590         371       61.4%  str:590
+district_source                                             590         371       61.4%  str:590
+district_url_source                                         590         371       61.4%  str:590
+district_url_value                                          590         371       61.4%  str:590
+land_area_m2                                                  0         961        0.0%  
+latitude                                                      0         961        0.0%  
+listing_id                                                  961           0      100.0%  str:961
+listing_type                                                961           0      100.0%  str:961
+listing_type_confidence                                     961           0      100.0%  str:961
+listing_type_description_source                             120         841       12.5%  str:120
+listing_type_description_value                              120         841       12.5%  str:120
+listing_type_source                                         961           0      100.0%  str:961
+location_text                                                 0         961        0.0%  
+longitude                                                     0         961        0.0%  
+needs_manual_review                                         961           0      100.0%  bool:961
+parking                                                       0         961        0.0%  
+price_original_usd                                            0         961        0.0%  
+price_reduced                                                 0         961        0.0%  
+price_usd                                                   955           6       99.4%  int:955
+price_usd_candidate_source                                  955           6       99.4%  str:955
+price_usd_candidate_value                                   955           6       99.4%  int:955
+price_usd_confidence                                        955           6       99.4%  str:955
+price_usd_source                                            955           6       99.4%  str:955
+project_name                                                  0         961        0.0%  
+project_overview_source                                     786         175       81.8%  str:786
+project_overview_text                                       786         175       81.8%  str:786
+property_code                                                 0         961        0.0%  
+property_type                                               961           0      100.0%  str:961
+property_type_confidence                                     54         907        5.6%  str:54
+property_type_description_source                            676         285       70.3%  str:676
+property_type_description_text_raw                          676         285       70.3%  str:676
+property_type_description_value                             676         285       70.3%  str:676
+property_type_previous_source                                54         907        5.6%  str:54
+property_type_previous_value                                 54         907        5.6%  str:54
+property_type_raw                                             0         961        0.0%  
+property_type_source                                        961           0      100.0%  str:961
+property_type_text_raw                                       54         907        5.6%  str:54
+property_type_title_source                                  961           0      100.0%  str:961
+property_type_title_text_raw                                961           0      100.0%  str:961
+property_type_title_value                                   961           0      100.0%  str:961
+property_type_url_source                                    961           0      100.0%  str:961
+property_type_url_value                                     961           0      100.0%  str:961
+province                                                    961           0      100.0%  str:961
+province_confidence                                         961           0      100.0%  str:961
+province_source                                             961           0      100.0%  str:961
+province_url_source                                         961           0      100.0%  str:961
+province_url_value                                          961           0      100.0%  str:961
+scraped_at                                                  961           0      100.0%  str:961
+size_m2                                                     768         193       79.9%  float:768
+size_m2_candidate_source                                    135         826       14.0%  str:135
+size_m2_candidate_text_raw                                  135         826       14.0%  str:135
+size_m2_candidate_value                                     135         826       14.0%  float:135
+size_m2_confidence                                          768         193       79.9%  str:768
+size_m2_overview_source                                     633         328       65.9%  str:633
+size_m2_overview_text_raw                                   633         328       65.9%  str:633
+size_m2_overview_value                                      633         328       65.9%  float:633
+size_m2_source                                              768         193       79.9%  str:768
+size_m2_text_raw                                            768         193       79.9%  str:768
+source                                                      961           0      100.0%  str:961
+title                                                       961           0      100.0%  str:961
+unit_floor                                                  460         501       47.9%  int:460
+unit_floor_confidence                                       460         501       47.9%  str:460
+unit_floor_description_source                               231         730       24.0%  str:231
+unit_floor_description_text_raw                             231         730       24.0%  str:231
+unit_floor_description_value                                231         730       24.0%  int:231
+unit_floor_overview_source                                  366         595       38.1%  str:366
+unit_floor_overview_text_raw                                366         595       38.1%  str:366
+unit_floor_overview_value                                   366         595       38.1%  int:366
+unit_floor_previous_source                                   15         946        1.6%  str:15
+unit_floor_previous_value                                    15         946        1.6%  int:15
+unit_floor_reference_mismatch                                15         946        1.6%  str:15
+unit_floor_source                                           460         501       47.9%  str:460
+unit_floor_text_raw                                         460         501       47.9%  str:460
+url                                                         961           0      100.0%  str:961
+year_built                                                    0         961        0.0%  
+
+IMPORTANT COLUMN COVERAGE
+==========================================================================================
+Column                                    Non-missing     Missing    Coverage
+------------------------------------------------------------------------------------------
+listing_id                                        961           0      100.0%
+source                                            961           0      100.0%
+url                                               961           0      100.0%
+title                                             961           0      100.0%
+description                                       961           0      100.0%
+listing_type                                      961           0      100.0%
+property_type                                     961           0      100.0%
+price_usd                                         955           6       99.4%
+size_m2                                           768         193       79.9%
+bedrooms                                          848         113       88.2%
+bathrooms                                         716         245       74.5%
+unit_floor                                        460         501       47.9%
+building_total_floors                               1         960        0.1%
+bedroom_options                                     0         961        0.0%
+multi_unit_options                                  0         961        0.0%
+province                                          961           0      100.0%
+city                                                0         961        0.0%
+district                                          590         371       61.4%
+commune                                           961           0      100.0%
+address                                             0         961        0.0%
+location_text                                       0         961        0.0%
+project_name                                        0         961        0.0%
+property_code                                       0         961        0.0%
+created_at                                        785         176       81.7%
+updated_at                                          0         961        0.0%
+scraped_at                                        961           0      100.0%
+detail_scraped                                    961           0      100.0%
+display_as_project                                961           0      100.0%
+needs_manual_review                               961           0      100.0%
+
+LISTING_TYPE VALUES
+================================================================================
+sale                                                        : 961
+
+PROPERTY_TYPE VALUES
+================================================================================
+Condo                                                       : 907
+Penthouse                                                   : 54
+
+PROVINCE VALUES
+================================================================================
+Phnom Penh                                                  : 961
+
+CITY VALUES
+================================================================================
+No values found.
+
+DISTRICT VALUES
+================================================================================
+Boeung Keng Kang                                            : 161
+Toul Kork                                                   : 151
+Meanchey                                                    : 115
+Chamkarmon                                                  : 86
+Sen Sok                                                     : 32
+Daun Penh                                                   : 25
+Prampi Makara                                               : 14
+Chbar Ampov                                                 : 6
+
+NUMERIC RANGES
+==========================================================================================
+Column                                   Count           Minimum           Maximum
+------------------------------------------------------------------------------------------
+price_usd                                  955         23,000.00     10,210,200.00
+size_m2                                    768              6.00          1,889.00
+bedrooms                                   848              0.00             43.00
+bathrooms                                  716              1.00             47.00
+unit_floor                                 460              1.00             92.00
+building_total_floors                        1             25.00             25.00
+
+SPECIAL GROUP COUNTS
+==================================================================================
+Rent-only records          : 0
+Sale/rent records          : 0
+Missing price              : 6
+Missing size               : 193
+Project-level records      : 0
+Multi-unit/config records  : 0
+True manual-review flags   : 0
+Detail scrape false        : 0
+
+CONFLICT AND MISMATCH COUNTS
+==================================================================================
+bedrooms_reference_mismatch                                 : 63
+bathrooms_reference_mismatch                                : 20
+unit_floor_reference_mismatch                               : 15
+
+PRICE_USD_SOURCE
+========================================================================================
+harbor-property_com_detail_price_element                              : 800
+harbor-property_com_detail_price_body                                 : 155
+
+SIZE_M2_SOURCE
+========================================================================================
+harbor-property_com_project_overview_structured                       : 633
+harbor-property_com_site_structured                                   : 135
+
+BEDROOMS_SOURCE
+========================================================================================
+harbor-property_com_project_overview_structured                       : 591
+harbor-property_com_title                                             : 141
+harbor-property_com_description                                       : 116
+
+BATHROOMS_SOURCE
+========================================================================================
+harbor-property_com_project_overview_structured                       : 694
+harbor-property_com_description                                       : 22
+
+UNIT_FLOOR_SOURCE
+========================================================================================
+harbor-property_com_project_overview_structured                       : 366
+harbor-property_com_description                                       : 94
+
+BUILDING_TOTAL_FLOORS_SOURCE
+========================================================================================
+harbor-property_com_description                                       : 1
+
+PROPERTY_TYPE_SOURCE
+========================================================================================
+search_scope                                                          : 907
+harbor-property_com_description                                       : 54
+
+LISTING_TYPE_SOURCE
+========================================================================================
+harbor-property_com_buy_search_scope                                  : 961
+
+DISTRICT_SOURCE
+========================================================================================
+harbor-property_com_url                                               : 590
+
+DESCRIPTION_SOURCE
+========================================================================================
+description_heading                                                   : 889
+meta_description                                                      : 72
+
+IDENTITY DUPLICATE CHECK
+==================================================================================
+Duplicate listing-ID groups : 0
+Duplicate URL groups        : 0
+Duplicate property-code groups: 0
+
+BRONZE REVIEW RECORDS
+======================================================================================================
+Review records: 0
+
+SAMPLE RECORDS
+======================================================================================================
+
+RECORD 1
+------------------------------------------------------------------------------------------------------
+listing_id                     : harbor-property.com_110586
+property_code                  : None
+title                          : Condo for Sale, Chak Angrae Leu, $48000_1Bedroom_38m² | Harbor Property
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 48000
+size_m2                        : 38.0
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : 17
+building_total_floors          : None
+district                       : Meanchey
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://www.harbor-property.com/house/detail/110586/chak-angrae-leu/condo
+
+RECORD 2
+------------------------------------------------------------------------------------------------------
+listing_id                     : harbor-property.com_115487
+property_code                  : None
+title                          : Condo for Sale, BKK1, $79999_1Bedroom | Harbor Property
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 79999
+size_m2                        : None
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : 12
+building_total_floors          : None
+district                       : Boeung Keng Kang
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://www.harbor-property.com/house/detail/115487/bkk1/condo
+
+RECORD 3
+------------------------------------------------------------------------------------------------------
+listing_id                     : harbor-property.com_115244
+property_code                  : None
+title                          : Condo for Sale, Phnom Penh Thmei, $80000_2Bedroom_52m² | Harbor Property
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 80000
+size_m2                        : 52.0
+bedrooms                       : 2
+bathrooms                      : 2
+unit_floor                     : 9
+building_total_floors          : None
+district                       : Sen Sok
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://www.harbor-property.com/house/detail/115244/phnom-penh-thmei/condo
+
+RECORD 4
+------------------------------------------------------------------------------------------------------
+listing_id                     : harbor-property.com_103375
+property_code                  : None
+title                          : Condo for Sale, Boeng Tompun I, $50000_1Bedroom_47m² | Harbor Property
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 50000
+size_m2                        : 47.0
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : 11
+building_total_floors          : None
+district                       : Meanchey
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://www.harbor-property.com/house/detail/103375/boeng-tompun-i/condo
+
+RECORD 5
+------------------------------------------------------------------------------------------------------
+listing_id                     : harbor-property.com_111337
+property_code                  : None
+title                          : Condo for Sale, Boeung Trobaek, $96000_1Bedroom_52m² | Harbor Property
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 96000
+size_m2                        : 52.0
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : 29
+building_total_floors          : None
+district                       : Chamkarmon
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://www.harbor-property.com/house/detail/111337/boeung-trobaek/condo
+
+================================================================================================================
+Harbor Property inspection completed.
+================================================================================================================

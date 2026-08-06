@@ -1,0 +1,325 @@
+{
+  "id": 246560,
+  "highlights": [
+    {
+      "label": "High Return Yield",
+      "iconCharcode": ""
+    },
+    {
+      "label": "Brand Developer",
+      "iconCharcode": ""
+    },
+    {
+      "label": "Project Complete",
+      "iconCharcode": ""
+    }
+  ],
+  "images": [
+    {
+      "id": 53180122,
+      "title": "photo_2026-02-25_10-58-53 (2).jpg",
+      "alt": "Condo For Sale in Boeung Kak 1, Toul Kork, Phnom Penh",
+      "url": "https://images.realestate.com.kh/__sized__/listings/original/2026-02/photo_2026-02-25_10-58-53-2-thumbnail-1040x780-70.jpeg",
+      "width": 1050,
+      "thumbnails": [
+        {
+          "url": "https://images.realestate.com.kh/__sized__/listings/original/2026-02/photo_2026-02-25_10-58-53-2-thumbnail-400x300-70.jpeg",
+          "width": 400,
+          "height": 300
+        },
+        {
+          "url": "https://images.realestate.com.kh/__sized__/listings/original/2026-02/photo_2026-02-25_10-58-53-2-thumbnail-750x562-70.jpeg",
+          "width": 750,
+          "height": 562
+        },
+        {
+          "url": "https://images.realestate.com.kh/__sized__/listings/original/2026-02/photo_2026-02-25_10-58-53-2-thumbnail-1040x780-70.jpeg",
+          "width": 1040,
+          "height": 780
+        }
+      ],
+      "sortOrder": 0,
+      "isFeatured": true
+    }
+  ],
+  "url": "/new-developments/time-square-ii/1-bed-1-bath-condo-246560/",
+  "owners": [
+    {
+      "pk": 577581,
+      "owner": {
+        "pk": 38125,
+        "email": "tom.osullivan@realestate.com.kh",
+        "displayPhone": "+855 92 921 000",
+        "image": {
+          "url": "https://images.realestate.com.kh/users/2024-06/horizontal-logo-bg.png",
+          "thumbnails": [
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-64x48.png",
+              "width": 64,
+              "height": 48
+            },
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-128x96.png",
+              "width": 128,
+              "height": 96
+            },
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-270x202.png",
+              "width": 270,
+              "height": 202
+            }
+          ]
+        },
+        "isSocialMediaEnabled": false,
+        "firstNameEn": "realestate.com.kh",
+        "firstNameKm": "គេហទំព័រអចលនទ្រព្យកម្ពុជា",
+        "firstNameZhHans": "柬埔寨房地产网",
+        "firstNameFr": "realestate.com.kh",
+        "firstNameTh": "realestate.com.kh",
+        "firstNameJa": null,
+        "firstNameRu": null,
+        "firstNameKo": null,
+        "firstNamePl": null,
+        "lastNameEn": "(main account)",
+        "lastNameKm": null,
+        "lastNameZhHans": null,
+        "lastNameFr": null,
+        "lastNameTh": null,
+        "lastNameJa": null,
+        "lastNameRu": null,
+        "lastNameKo": null,
+        "lastNamePl": null
+      },
+      "order": 0,
+      "iovoxEnabled": false
+    },
+    {
+      "pk": 577582,
+      "owner": {
+        "pk": 57448,
+        "email": "Sayvisal1012@gmail.com",
+        "displayPhone": "+855 85 222 816",
+        "image": {
+          "url": "https://images.realestate.com.kh/users/2023-03/vi-sal.jpg",
+          "thumbnails": [
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-64x48-70.jpg",
+              "width": 64,
+              "height": 48
+            },
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-128x96-70.jpg",
+              "width": 128,
+              "height": 96
+            },
+            {
+              "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-270x202-70.jpg",
+              "width": 270,
+              "height": 202
+            }
+          ]
+        },
+        "isSocialMediaEnabled": false,
+        "firstNameEn": "Visal",
+        "firstNameKm": null,
+        "firstNameZhHans": null,
+        "firstNameFr": null,
+        "firstNameTh": null,
+        "firstNameJa": null,
+        "firstNameRu": null,
+        "firstNameKo": null,
+        "firstNamePl": null,
+        "lastNameEn": "Say (Listing)",
+        "lastNameKm": null,
+        "lastNameZhHans": null,
+        "lastNameFr": null,
+        "lastNameTh": null,
+        "lastNameJa": null,
+        "lastNameRu": null,
+        "lastNameKo": null,
+        "lastNamePl": null
+      },
+      "order": 0,
+      "iovoxEnabled": false
+    }
+  ],
+  "agents": [
+    {
+      "pk": 43087,
+      "email": "Sayvisal1012@gmail.com",
+      "image": {
+        "url": "https://images.realestate.com.kh/users/2023-03/vi-sal.jpg",
+        "thumbnails": [
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-64x48-70.jpg",
+            "width": 64,
+            "height": 48
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-128x96-70.jpg",
+            "width": 128,
+            "height": 96
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2023-03/vi-sal-thumbnail-270x202-70.jpg",
+            "width": 270,
+            "height": 202
+          }
+        ]
+      },
+      "firstName": "Visal",
+      "lastName": "Say (Listing)",
+      "displayTelephone": "+855 85 222 816",
+      "award": null
+    }
+  ],
+  "offices": [
+    {
+      "pk": 6927,
+      "logo": {
+        "url": "https://images.realestate.com.kh/users/2024-06/horizontal-logo-bg.png",
+        "thumbnails": [
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-64x48.png",
+            "width": 64,
+            "height": 48
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-128x96.png",
+            "width": 128,
+            "height": 96
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2024-06/horizontal-logo-bg-thumbnail-270x202.png",
+            "width": 270,
+            "height": 202
+          }
+        ]
+      },
+      "phone": "+85592921000",
+      "email": "tom.osullivan@realestate.com.kh",
+      "firstName": "realestate.com.kh",
+      "url": "/offices/realestatecomkh-main-account-mls-6927/",
+      "displayPhone": "+855 92 921 000",
+      "award": null
+    },
+    {
+      "pk": 7337,
+      "logo": {
+        "url": "https://images.realestate.com.kh/users/2025-10/photo_2025-10-30_13-33-24.jpg",
+        "thumbnails": [
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2025-10/photo_2025-10-30_13-33-24-thumbnail-64x48-70.jpg",
+            "width": 64,
+            "height": 48
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2025-10/photo_2025-10-30_13-33-24-thumbnail-128x96-70.jpg",
+            "width": 128,
+            "height": 96
+          },
+          {
+            "url": "https://images.realestate.com.kh/__sized__/users/2025-10/photo_2025-10-30_13-33-24-thumbnail-270x202-70.jpg",
+            "width": 270,
+            "height": 202
+          }
+        ]
+      },
+      "phone": "+85585222816",
+      "email": "visal@realestate.com.kh",
+      "firstName": "Visal-REAKH",
+      "url": "/offices/visal-reakh-visalrealestatecomkh-7337/",
+      "displayPhone": "+855 85 222 816",
+      "award": null
+    }
+  ],
+  "address": "Boeung Kak 1, Toul Kork, Phnom Penh",
+  "nested": [],
+  "upgrades": [
+    "featured"
+  ],
+  "displayPrice": "$74,000",
+  "categoryName": "Condo",
+  "titleImgAlt": "residential Condo for sale in Boeung Kak 1 ID 246560",
+  "headline": "RARE 1-Bedroom Condo | Sale | Time Square 2 | TK Area",
+  "hasOnlineChatter": false,
+  "createdAt": "2024-10-28T15:59:53.026661+07:00",
+  "priceIsDisplayed": true,
+  "rentIsDisplayed": false,
+  "displayDate": "5 months ago",
+  "listedDate": "1 year, 9 months ago",
+  "displayRent": "POA",
+  "specifications": {
+    "general": [],
+    "detail": [
+      {
+        "iconCharcode": "",
+        "label": "Bedrooms: 1",
+        "shortLabel": "1",
+        "type": "bedrooms"
+      },
+      {
+        "iconCharcode": "",
+        "label": "Bathrooms: 1",
+        "shortLabel": "1",
+        "type": "bathrooms"
+      },
+      {
+        "iconCharcode": "",
+        "label": "Floor area: 35m²",
+        "shortLabel": "35m²",
+        "type": "floor_area"
+      },
+      {
+        "iconCharcode": "",
+        "label": "Floor level: 24",
+        "shortLabel": "24",
+        "type": "floor_level"
+      }
+    ]
+  },
+  "labels": [
+    {
+      "label": "Featured",
+      "kind": "featured",
+      "translucent": false
+    }
+  ],
+  "hasVideo": false,
+  "hasVirtualTour": false,
+  "displayAsProject": false,
+  "chatAppUrl": "reakh://chat/246560",
+  "currencySign": "$",
+  "displayPricePerSqmWithUnit": "POA",
+  "displayPricePerSqm": false,
+  "displayRentPerSqmWithUnit": "POA",
+  "displayRentPerSqm": false,
+  "project": {
+    "id": 154818,
+    "projectName": "Time Square II",
+    "url": "/new-developments/time-square-ii/"
+  },
+  "phoneUrl": "tel:85592921000",
+  "whatsappUrl": "https://wa.me/85592921000",
+  "telegramUrl": "https://t.me/realestatecomkh",
+  "wechatUrl": "weixin://dl/chat?REAKH2016",
+  "socialMedia": {
+    "phoneUrl": "tel:85592921000",
+    "whatsappUrl": "https://wa.me/85592921000?text=I%20am%20interested%20in%20this%20property%20found%20on%20www.realestate.com.kh.%20Could%20you%20contact%20me%20as%20soon%20as%20possible%3F Link to property: /new-developments/time-square-ii/1-bed-1-bath-condo-246560/",
+    "telegramUrl": "https://t.me/realestatecomkh",
+    "wechatUrl": "weixin://dl/chat?REAKH2016"
+  },
+  "ribbonKey": "under_market_value",
+  "ribbon": "Under Market Value",
+  "listingType": "sale",
+  "undermarketPrice": "$69,500",
+  "undermarketRent": "",
+  "undermarketPricePerSqm": "",
+  "undermarketRentPerSqm": "",
+  "undermarketPriceDiff": "6.08%",
+  "undermarketRentDiff": "",
+  "undermarketPricePerSqmDiff": "",
+  "undermarketRentPerSqmDiff": "",
+  "rentMinProjectCommercial": "",
+  "rentPerSqmProjectCommercial": ""
+}
