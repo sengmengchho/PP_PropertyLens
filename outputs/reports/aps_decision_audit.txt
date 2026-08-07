@@ -1,0 +1,885 @@
+
+APS CLEANING DECISION AUDIT
+==============================================================================================================
+Total Bronze records                 : 137
+Rent-only records                    : 1
+Missing price                        : 6
+Missing price recoverable from title : 0
+Missing size                         : 7
+Missing size recoverable from title  : 0
+Price below $20,000                  : 1
+Price above $2,000,000               : 0
+Size below 20m²                         : 0
+Size above 500m²                        : 1
+Price/m² below $300                   : 1
+Price/m² above $10,000                : 0
+Bedrooms above 10                    : 0
+Bathrooms above 10                   : 0
+Unit floor above 100                  : 0
+Unit floor > building total floors   : 0
+Size reference mismatches             : 6
+Bedroom URL mismatches                : 2
+Listing-type URL mismatches          : 1
+Unit-floor reference mismatches       : 1
+Duplicate APS-code groups             : 7
+Expected duplicate rows by APS code  : 9
+Duplicate property-code groups        : 7
+Exact listing-signature groups        : 7
+
+==============================================================================================================
+RENT-ONLY: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_38-35sqm-1-bedroom-condo-for-rent-norea-square-condominium-koh-norea-phnom-penh
+APS listing code      : 363354
+Property code         : S-10437
+Title                 : 38.35sqm 1 Bedroom Condo For Rent - Norea Square Condominium | Koh Norea | Phnom Penh - APS Cambodia 363354
+Listing type          : rent
+Property type         : Condo
+Price                 : 63446
+Title price candidates: []
+Size                  : 38.35
+Title size candidates : [38.35]
+Price/m²              : 1654.39
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 25
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : rent_listing_in_sale_search
+URL                   : https://aps.com.kh/properties/38-35sqm-1-bedroom-condo-for-rent-norea-square-condominium-koh-norea-phnom-penh/
+
+==============================================================================================================
+MISSING PRICE: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_2-bedroom-condo-type-r-for-sale-diamond-bay-garden-koh-pich-phnom-penh
+APS listing code      : 357241
+Property code         : S-09426
+Title                 : 2 Bedroom Condo (Type R) For Sale - Diamond Bay Garden | Koh Pich | Phnom Penh - APS Cambodia 357241
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : 80.0
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 2
+Bathrooms             : None
+Unit floor            : 29
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/2-bedroom-condo-type-r-for-sale-diamond-bay-garden-koh-pich-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_gato-tower-elevate-your-lifestyle-67-floors-710-units-bkk1-phnom-penh
+APS listing code      : 357372
+Property code         : B-00992
+Title                 : GATO Tower – Elevate Your Lifestyle 67 Floors | 710 Units | BKK1, Phnom Penh - APS Cambodia 357372
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 67
+Previous unit floor   : None
+Building total floors : 67
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/gato-tower-elevate-your-lifestyle-67-floors-710-units-bkk1-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_1-bedroom-condo-type-k-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2
+APS listing code      : 354196
+Property code         : S-09705
+Title                 : 1 Bedroom Condo ( Type K ) For Sale - Kingstone Royal Condominium | Meanchey | Phnom Penh - APS Cambodia 354196
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : 32.93
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 8
+Previous unit floor   : None
+Building total floors : None
+District              : Meanchey
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/1-bedroom-condo-type-k-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_2-bedroom-condo-type-c-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2
+APS listing code      : 354198
+Property code         : S-09713
+Title                 : 2 Bedroom Condo (Type C) For Sale - Kingstone Royal Condominium | Meanchey | Phnom Penh - APS Cambodia 354198
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : 49.94
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 2
+Bathrooms             : None
+Unit floor            : 16
+Previous unit floor   : None
+Building total floors : None
+District              : Meanchey
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/2-bedroom-condo-type-c-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_2-bedroom-condo-type-a-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2
+APS listing code      : 354200
+Property code         : S-09715
+Title                 : 2 Bedroom Condo (Type A) For Sale - Kingstone Royal Condominium | Meanchey | Phnom Penh - APS Cambodia 354200
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : 64.88
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 2
+Bathrooms             : None
+Unit floor            : 16
+Previous unit floor   : None
+Building total floors : None
+District              : Meanchey
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/2-bedroom-condo-type-a-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_time-square-9-redefining-urban-luxury-creating-comfort-in-the-heart-of-bkk1
+APS listing code      : 356581
+Property code         : B-00986
+Title                 : Time Square 9 – Redefining Urban Luxury, Creating Comfort in the Heart of BKK1 - APS Cambodia 356581
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 0
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 39
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/time-square-9-redefining-urban-luxury-creating-comfort-in-the-heart-of-bkk1/
+
+==============================================================================================================
+MISSING SIZE: 7 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_1-bedroom-condo-for-sale-mekong-view-6-chroy-chongvar-phnom-penh
+APS listing code      : 364439
+Property code         : S-10472
+Title                 : 1 Bedroom Condo For Sale - Mekong View 6 | Chroy Chongvar | Phnom Penh - APS Cambodia 364439
+Listing type          : sale
+Property type         : Condo
+Price                 : 54580
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 9
+Previous unit floor   : None
+Building total floors : None
+District              : Chroy Changvar
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/1-bedroom-condo-for-sale-mekong-view-6-chroy-chongvar-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_gato-tower-elevate-your-lifestyle-67-floors-710-units-bkk1-phnom-penh
+APS listing code      : 357372
+Property code         : B-00992
+Title                 : GATO Tower – Elevate Your Lifestyle 67 Floors | 710 Units | BKK1, Phnom Penh - APS Cambodia 357372
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 67
+Previous unit floor   : None
+Building total floors : 67
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/gato-tower-elevate-your-lifestyle-67-floors-710-units-bkk1-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_odom-living-a-landmark-address-for-life-and-investment
+APS listing code      : 357518
+Property code         : B-00745
+Title                 : Odom Living: A Landmark Address for Life and Investment - APS Cambodia 357518
+Listing type          : sale
+Property type         : Condo
+Price                 : 759550
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 0
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 22
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/odom-living-a-landmark-address-for-life-and-investment/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_kingston-royale-a-higher-quality-of-living
+APS listing code      : 357516
+Property code         : B-00925
+Title                 : Kingston Royale: A Higher Quality of Living - APS Cambodia 357516
+Listing type          : sale
+Property type         : Condo
+Price                 : 55000
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 36
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/kingston-royale-a-higher-quality-of-living/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_j-tower-3-soaring-77-stories-high-poised-to-become-one-of-cambodias-tallest-residential-landmarks-2
+APS listing code      : 356937
+Property code         : B-00712
+Title                 : J Tower 3: Soaring 77 Stories High, Poised to Become One of Cambodia's Tallest Residential Landmarks - APS Cambodia 356937
+Listing type          : sale
+Property type         : Condo
+Price                 : 330000
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 3
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 77
+Previous unit floor   : None
+Building total floors : 77
+District              : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/j-tower-3-soaring-77-stories-high-poised-to-become-one-of-cambodias-tallest-residential-landmarks-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_time-square-9-redefining-urban-luxury-creating-comfort-in-the-heart-of-bkk1
+APS listing code      : 356581
+Property code         : B-00986
+Title                 : Time Square 9 – Redefining Urban Luxury, Creating Comfort in the Heart of BKK1 - APS Cambodia 356581
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 0
+Title bedrooms        : None
+URL bedrooms          : None
+Bathrooms             : None
+Unit floor            : 39
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/time-square-9-redefining-urban-luxury-creating-comfort-in-the-heart-of-bkk1/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_1-bedroom-condo-for-sale-casa-madeiran-koh-pich-2
+APS listing code      : 354914
+Property code         : S-09748
+Title                 : 1 Bedroom Condo For Sale - Casa Madeiran | Koh Pich - APS Cambodia 354914
+Listing type          : sale
+Property type         : Condo
+Price                 : 108000
+Title price candidates: []
+Size                  : None
+Title size candidates : []
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 28
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/1-bedroom-condo-for-sale-casa-madeiran-koh-pich-2/
+
+==============================================================================================================
+LOW PRICE: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_1-bedroom-condo-type-h-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2
+APS listing code      : 354194
+Property code         : S-09708
+Title                 : 1 Bedroom Condo ( Type H ) For Sale - Kingstone Royal Condominium | Meanchey | Phnom Penh - APS Cambodia 354194
+Listing type          : sale
+Property type         : Condo
+Price                 : 5500
+Title price candidates: []
+Size                  : 36.38
+Title size candidates : []
+Price/m²              : 151.18
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 16
+Previous unit floor   : None
+Building total floors : None
+District              : Meanchey
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/1-bedroom-condo-type-h-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2/
+
+==============================================================================================================
+HIGH PRICE: 0 records
+==============================================================================================================
+
+==============================================================================================================
+SMALL SIZE: 0 records
+==============================================================================================================
+
+==============================================================================================================
+LARGE SIZE: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_penthouse-4-bedroom-condo-for-sale-de-castle-royal-bkk1-phnom-penh-2
+APS listing code      : 359956
+Property code         : S-10251
+Title                 : Penthouse 4 Bedroom Condo For Sale - De Castle Royal | BKK1 | Phnom Penh - APS Cambodia 359956
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 1500000
+Title price candidates: []
+Size                  : 650.0
+Title size candidates : []
+Price/m²              : 2307.69
+Bedrooms              : 4
+Title bedrooms        : 4
+URL bedrooms          : 4
+Bathrooms             : None
+Unit floor            : 32
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/penthouse-4-bedroom-condo-for-sale-de-castle-royal-bkk1-phnom-penh-2/
+
+==============================================================================================================
+LOW PRICE/M²: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_1-bedroom-condo-type-h-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2
+APS listing code      : 354194
+Property code         : S-09708
+Title                 : 1 Bedroom Condo ( Type H ) For Sale - Kingstone Royal Condominium | Meanchey | Phnom Penh - APS Cambodia 354194
+Listing type          : sale
+Property type         : Condo
+Price                 : 5500
+Title price candidates: []
+Size                  : 36.38
+Title size candidates : []
+Price/m²              : 151.18
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 16
+Previous unit floor   : None
+Building total floors : None
+District              : Meanchey
+Manual review         : False
+Out of scope          : None
+URL                   : https://aps.com.kh/properties/1-bedroom-condo-type-h-for-sale-kingstone-royal-condominium-meanchey-phnom-penh-2/
+
+==============================================================================================================
+HIGH PRICE/M²: 0 records
+==============================================================================================================
+
+==============================================================================================================
+SIZE REFERENCE MISMATCH: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_60-sqm-1-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh-2
+APS listing code      : 356624
+Property code         : S-09938
+Title                 : 60 SQM 1 Bedroom Condo For Sale - Time Square 8 | Toul Tumpung | Phnom Penh - APS Cambodia 356624
+Listing type          : sale
+Property type         : Condo
+Price                 : 73000
+Title price candidates: []
+Size                  : 45.0
+Title size candidates : [60.0]
+Price/m²              : 1622.22
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 22
+Previous unit floor   : None
+Building total floors : None
+District              : Chamkarmon
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : url=60.0; title=60.0; canonical_unit_size=45.0
+URL                   : https://aps.com.kh/properties/60-sqm-1-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_46sqm-studio-condo-type-sr-for-sale-diamond-bay-garden-koh-pich-phnom-penh
+APS listing code      : 357239
+Property code         : S-09421
+Title                 : 45SQM Studio Condo (Type SR) For Sale - Diamond Bay Garden | Koh Pich | Phnom Penh - APS Cambodia 357239
+Listing type          : sale
+Property type         : Condo
+Price                 : 157000
+Title price candidates: []
+Size                  : 47.0
+Title size candidates : [45.0]
+Price/m²              : 3340.43
+Bedrooms              : 0
+Title bedrooms        : 0
+URL bedrooms          : 0
+Bathrooms             : None
+Unit floor            : 15
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : title=45.0; canonical_unit_size=47.0
+URL                   : https://aps.com.kh/properties/46sqm-studio-condo-type-sr-for-sale-diamond-bay-garden-koh-pich-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_35sqm-studio-for-sale-uc88-bkk1-phnom-penh
+APS listing code      : 357473
+Property code         : S-10096
+Title                 : 39SQM Studio For Sale - UC88 | BKK1 | Phnom Penh - APS Cambodia 357473
+Listing type          : sale
+Property type         : Condo
+Price                 : 152843
+Title price candidates: []
+Size                  : 35.0
+Title size candidates : [39.0]
+Price/m²              : 4366.94
+Bedrooms              : 0
+Title bedrooms        : 0
+URL bedrooms          : 0
+Bathrooms             : None
+Unit floor            : 7
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : title=39.0; canonical_unit_size=35.0
+URL                   : https://aps.com.kh/properties/35sqm-studio-for-sale-uc88-bkk1-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_50-sqm-studio-condo-for-sale-royal-platinum-toul-kork-phnom-penh
+APS listing code      : 357531
+Property code         : S-09140
+Title                 : 50 SQM - Studio Condo for Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357531
+Listing type          : sale
+Property type         : Condo
+Price                 : 146500
+Title price candidates: []
+Size                  : 40.0
+Title size candidates : [50.0]
+Price/m²              : 3662.5
+Bedrooms              : 0
+Title bedrooms        : 0
+URL bedrooms          : 0
+Bathrooms             : None
+Unit floor            : 27
+Previous unit floor   : None
+Building total floors : None
+District              : Toul Kork
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : url=50.0; title=50.0; canonical_unit_size=40.0
+URL                   : https://aps.com.kh/properties/50-sqm-studio-condo-for-sale-royal-platinum-toul-kork-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_88-sqm-2-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh
+APS listing code      : 356622
+Property code         : S-09196
+Title                 : 88 SQM 2 Bedroom Condo For Sale - Time Square 8 | Toul Tumpung | Phnom Penh - APS Cambodia 356622
+Listing type          : sale
+Property type         : Condo
+Price                 : 105600
+Title price candidates: []
+Size                  : 66.0
+Title size candidates : [88.0]
+Price/m²              : 1600.0
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 2
+Bathrooms             : None
+Unit floor            : 15
+Previous unit floor   : None
+Building total floors : None
+District              : Chamkarmon
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : url=88.0; title=88.0; canonical_unit_size=66.0
+URL                   : https://aps.com.kh/properties/88-sqm-2-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_47-sqm-1-bedroom-condo-for-sale-time-square-8-russian-market-phnom-penh
+APS listing code      : 356618
+Property code         : S-09193
+Title                 : 47 SQM 1 Bedroom Condo For Sale - Time Square 8 | Russian Market | Phnom Penh - APS Cambodia 356618
+Listing type          : sale
+Property type         : Condo
+Price                 : 69125
+Title price candidates: []
+Size                  : 35.0
+Title size candidates : [47.0]
+Price/m²              : 1975.0
+Bedrooms              : 1
+Title bedrooms        : 1
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 30
+Previous unit floor   : None
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+size_m2_reference_mismatch            : url=47.0; title=47.0; canonical_unit_size=35.0
+URL                   : https://aps.com.kh/properties/47-sqm-1-bedroom-condo-for-sale-time-square-8-russian-market-phnom-penh/
+
+==============================================================================================================
+BEDROOM URL MISMATCH: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2
+APS listing code      : 359088
+Property code         : S-10188
+Title                 : Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+Listing type          : sale
+Property type         : Condo
+Price                 : 230472
+Title price candidates: []
+Size                  : 79.98
+Title size candidates : []
+Price/m²              : 2881.62
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 63
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+bedrooms_url_mismatch                 : url=1; current_title=2
+URL                   : https://aps.com.kh/properties/presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh
+APS listing code      : 359088
+Property code         : S-10188
+Title                 : Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+Listing type          : sale
+Property type         : Condo
+Price                 : 230472
+Title price candidates: []
+Size                  : 79.98
+Title size candidates : []
+Price/m²              : 2881.62
+Bedrooms              : 2
+Title bedrooms        : 2
+URL bedrooms          : 1
+Bathrooms             : None
+Unit floor            : 63
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+bedrooms_url_mismatch                 : url=1; current_title=2
+URL                   : https://aps.com.kh/properties/presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh/
+
+==============================================================================================================
+LISTING-TYPE URL MISMATCH: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_21st-floor-1-bedroom-condo-for-rent-time-square-5-bkk1-phnom-penh
+APS listing code      : 359855
+Property code         : S-10249
+Title                 : 21st Floor 1 Bedroom Condo For Sale - Time Square 5 | BKK1 | Phnom Penh - APS Cambodia 359855
+Listing type          : sale
+Property type         : Condo
+Price                 : 78000
+Title price candidates: []
+Size                  : 32.5
+Title size candidates : []
+Price/m²              : 2400.0
+Bedrooms              : 1
+Title bedrooms        : None
+URL bedrooms          : 1
+Bathrooms             : 1
+Unit floor            : 21
+Previous unit floor   : None
+Building total floors : None
+District              : Boeung Keng Kang
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://aps.com.kh/properties/21st-floor-1-bedroom-condo-for-rent-time-square-5-bkk1-phnom-penh/
+
+==============================================================================================================
+UNIT-FLOOR REFERENCE MISMATCH: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : aps.com.kh_28th-floor-1-bedroom-condo-for-sale-urban-village-phase-2
+APS listing code      : 361969
+Property code         : S-10351
+Title                 : 28th Floor 1 Bedroom Condo For Sale - Urban Village Phase 2 - APS Cambodia 361969
+Listing type          : sale
+Property type         : Condo
+Price                 : 60000
+Title price candidates: []
+Size                  : 37.0
+Title size candidates : []
+Price/m²              : 1621.62
+Bedrooms              : 1
+Title bedrooms        : None
+URL bedrooms          : 1
+Bathrooms             : 1
+Unit floor            : 39
+Previous unit floor   : 28
+Building total floors : None
+District              : None
+Manual review         : False
+Out of scope          : None
+unit_floor_reference_mismatch         : url=28; canonical_level=39
+URL                   : https://aps.com.kh/properties/28th-floor-1-bedroom-condo-for-sale-urban-village-phase-2/
+
+==============================================================================================================
+DUPLICATE APS LISTING CODE: 7 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 364114
+Records    : 4
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-4 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-3 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-2 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 363854
+Records    : 2
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-14 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-13 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 363124
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh-2 | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 361048
+Records    : 2
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 361040
+Records    : 2
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 359088
+Records    : 2
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2 | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+
+--------------------------------------------------------------------------------------------------------------
+Group value: 357527
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh-2 | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+
+==============================================================================================================
+DUPLICATE PROPERTY CODE: 7 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-10485
+Records    : 4
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-4 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-3 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-2 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-09537
+Records    : 2
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-14 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-13 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-10413
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh-2 | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-10313
+Records    : 2
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-10312
+Records    : 2
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-10188
+Records    : 2
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2 | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+
+--------------------------------------------------------------------------------------------------------------
+Group value: S-09145
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh-2 | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+
+==============================================================================================================
+EXACT LISTING SIGNATURE: 7 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114', 96726.0, 69.09, 1.0, None, 51.0)
+Records    : 4
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-4 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-3 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-2 | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh | APS= 364114 | property_code= S-10485 | price= 96726 | size= 69.09 | floor= 51 | title= 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854', 439000.0, 166.0, 3.0, None, 38.0)
+Records    : 2
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-14 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-13 | APS= 363854 | property_code= S-09537 | price= 439000 | size= 166.0 | floor= 38 | title= 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124', 66314.0, 51.0, 2.0, None, None)
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh-2 | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh | APS= 363124 | property_code= S-10413 | price= 66314 | size= 51.0 | floor= None | title= 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048', 248599.0, 137.37, 2.0, None, 23.0)
+Records    : 2
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361048 | property_code= S-10313 | price= 248599 | size= 137.37 | floor= 23 | title= Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040', 96242.0, 55.46, 1.0, None, 22.0)
+Records    : 2
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | APS= 361040 | property_code= S-10312 | price= 96242 | size= 55.46 | floor= 22 | title= 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088', 230472.0, 79.98, 2.0, None, 63.0)
+Records    : 2
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2 | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh | APS= 359088 | property_code= S-10188 | price= 230472 | size= 79.98 | floor= 63 | title= Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088
+
+--------------------------------------------------------------------------------------------------------------
+Group value: ('2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527', 341700.0, 92.0, 2.0, None, None)
+Records    : 2
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh-2 | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh | APS= 357527 | property_code= S-09145 | price= 341700 | size= 92.0 | floor= None | title= 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527
+
+==============================================================================================================
+APS decision audit completed.
+==============================================================================================================

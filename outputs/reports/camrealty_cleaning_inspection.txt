@@ -1,0 +1,470 @@
+
+CAMREALTY SERVICE RAW DATA INSPECTION
+================================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\camrealtyservice_com\raw_listings.json
+Total rows : 221
+
+ALL RAW COLUMNS
+================================================================================================================
+Column                                              Non-missing     Missing    Coverage  Types
+----------------------------------------------------------------------------------------------------------------
+additional_room_count                                         2         219        0.9%  int:2
+bathrooms                                                   220           1       99.5%  int:220
+bathrooms_candidate_source                                  220           1       99.5%  str:220
+bathrooms_candidate_text_raw                                220           1       99.5%  str:220
+bathrooms_candidate_value                                   220           1       99.5%  int:220
+bathrooms_confidence                                        220           1       99.5%  str:220
+bathrooms_description_source                                211          10       95.5%  str:211
+bathrooms_description_text_raw                              211          10       95.5%  str:211
+bathrooms_description_value                                 211          10       95.5%  int:211
+bathrooms_source                                            220           1       99.5%  str:220
+bathrooms_text_raw                                          220           1       99.5%  str:220
+bathrooms_title_source                                        3         218        1.4%  str:3
+bathrooms_title_text_raw                                      3         218        1.4%  str:3
+bathrooms_title_value                                         3         218        1.4%  int:3
+bedroom_layout_text                                           2         219        0.9%  str:2
+bedrooms                                                    220           1       99.5%  int:220
+bedrooms_candidate_source                                   198          23       89.6%  str:198
+bedrooms_candidate_text_raw                                 198          23       89.6%  str:198
+bedrooms_candidate_value                                    198          23       89.6%  int:198
+bedrooms_confidence                                         220           1       99.5%  str:220
+bedrooms_conflict                                             2         219        0.9%  str:2
+bedrooms_description_source                                 219           2       99.1%  str:219
+bedrooms_description_text_raw                               219           2       99.1%  str:219
+bedrooms_description_value                                  219           2       99.1%  int:219
+bedrooms_previous_source                                      6         215        2.7%  str:6
+bedrooms_previous_value                                       6         215        2.7%  int:6
+bedrooms_reference_mismatch                                   6         215        2.7%  str:6
+bedrooms_source                                             220           1       99.5%  str:220
+bedrooms_text_raw                                           220           1       99.5%  str:220
+bedrooms_title_source                                        99         122       44.8%  str:99
+bedrooms_title_text_raw                                      99         122       44.8%  str:99
+bedrooms_title_value                                         99         122       44.8%  int:99
+bedrooms_url_source                                         170          51       76.9%  str:170
+bedrooms_url_value                                          170          51       76.9%  int:170
+building_total_floors                                        30         191       13.6%  int:30
+building_total_floors_confidence                             30         191       13.6%  str:30
+building_total_floors_description_source                     30         191       13.6%  str:30
+building_total_floors_description_text_raw                   30         191       13.6%  str:30
+building_total_floors_description_value                      30         191       13.6%  int:30
+building_total_floors_source                                 30         191       13.6%  str:30
+building_total_floors_text_raw                               30         191       13.6%  str:30
+commune                                                       5         216        2.3%  str:5
+commune_confidence                                            5         216        2.3%  str:5
+commune_source                                                5         216        2.3%  str:5
+commune_url_source                                            5         216        2.3%  str:5
+commune_url_value                                             5         216        2.3%  str:5
+condition                                                     0         221        0.0%  
+created_at                                                    0         221        0.0%  
+description                                                 220           1       99.5%  str:220
+description_source                                          220           1       99.5%  str:220
+detail_parsed_at                                            221           0      100.0%  str:221
+detail_scraped                                              221           0      100.0%  bool:221
+display_as_project                                          221           0      100.0%  bool:221
+district                                                     35         186       15.8%  str:35
+district_confidence                                          35         186       15.8%  str:35
+district_source                                              35         186       15.8%  str:35
+district_url_source                                          35         186       15.8%  str:35
+district_url_value                                           35         186       15.8%  str:35
+land_area_m2                                                  0         221        0.0%  
+latitude                                                      0         221        0.0%  
+listing_id                                                  221           0      100.0%  str:221
+listing_type                                                221           0      100.0%  str:221
+listing_type_confidence                                     221           0      100.0%  str:221
+listing_type_previous_source                                 14         207        6.3%  str:14
+listing_type_previous_value                                  14         207        6.3%  str:14
+listing_type_source                                         221           0      100.0%  str:221
+listing_type_text_raw                                       215           6       97.3%  str:215
+listing_type_url_mismatch                                     6         215        2.7%  str:6
+listing_type_url_source                                     202          19       91.4%  str:202
+listing_type_url_value                                      202          19       91.4%  str:202
+location_text                                                 0         221        0.0%  
+longitude                                                     0         221        0.0%  
+needs_manual_review                                         221           0      100.0%  bool:221
+out_of_scope_reason                                           8         213        3.6%  str:8
+parking                                                       0         221        0.0%  
+price_original_usd                                            0         221        0.0%  
+price_reduced                                                 0         221        0.0%  
+price_usd                                                   219           2       99.1%  int:219
+price_usd_candidate_source                                  219           2       99.1%  str:219
+price_usd_candidate_value                                   219           2       99.1%  int:219
+price_usd_confidence                                        219           2       99.1%  str:219
+price_usd_source                                            219           2       99.1%  str:219
+project_name                                                  0         221        0.0%  
+property_code                                               220           1       99.5%  str:220
+property_type                                               221           0      100.0%  str:221
+property_type_confidence                                     68         153       30.8%  str:68
+property_type_conflict                                        2         219        0.9%  str:2
+property_type_description_source                            220           1       99.5%  str:220
+property_type_description_text_raw                          220           1       99.5%  str:220
+property_type_description_value                             220           1       99.5%  str:220
+property_type_invalid_raw                                     6         215        2.7%  str:6
+property_type_previous_source                                68         153       30.8%  str:68
+property_type_previous_value                                 68         153       30.8%  str:68
+property_type_raw                                             0         221        0.0%  
+property_type_reference_mismatch                              2         219        0.9%  str:2
+property_type_source                                        221           0      100.0%  str:221
+property_type_text_raw                                       57         164       25.8%  str:57
+property_type_title_source                                  204          17       92.3%  str:204
+property_type_title_text_raw                                204          17       92.3%  str:204
+property_type_title_value                                   204          17       92.3%  str:204
+property_type_url_source                                     11         210        5.0%  str:11
+property_type_url_value                                      11         210        5.0%  str:11
+province                                                    221           0      100.0%  str:221
+province_source                                             221           0      100.0%  str:221
+scraped_at                                                  221           0      100.0%  str:221
+size_m2                                                     218           3       98.6%  float:218
+size_m2_candidate_source                                    218           3       98.6%  str:218
+size_m2_candidate_text_raw                                  218           3       98.6%  str:218
+size_m2_candidate_value                                     218           3       98.6%  float:218
+size_m2_confidence                                          218           3       98.6%  str:218
+size_m2_kind                                                218           3       98.6%  str:218
+size_m2_source                                              218           3       98.6%  str:218
+size_m2_text_raw                                            218           3       98.6%  str:218
+source                                                      221           0      100.0%  str:221
+title                                                       221           0      100.0%  str:221
+unit_floor                                                  183          38       82.8%  int:183
+unit_floor_confidence                                       183          38       82.8%  str:183
+unit_floor_description_source                               178          43       80.5%  str:178
+unit_floor_description_text_raw                             178          43       80.5%  str:178
+unit_floor_description_value                                178          43       80.5%  int:178
+unit_floor_source                                           183          38       82.8%  str:183
+unit_floor_text_raw                                          87         134       39.4%  str:87
+unit_floor_title_source                                     151          70       68.3%  str:151
+unit_floor_title_text_raw                                   151          70       68.3%  str:151
+unit_floor_title_value                                      151          70       68.3%  int:151
+unit_floor_url_source                                        96         125       43.4%  str:96
+unit_floor_url_value                                         96         125       43.4%  int:96
+url                                                         221           0      100.0%  str:221
+year_built                                                    0         221        0.0%  
+
+IMPORTANT COLUMN COVERAGE
+==========================================================================================
+Column                                    Non-missing     Missing    Coverage
+------------------------------------------------------------------------------------------
+listing_id                                        221           0      100.0%
+source                                            221           0      100.0%
+url                                               221           0      100.0%
+title                                             221           0      100.0%
+description                                       220           1       99.5%
+listing_type                                      221           0      100.0%
+property_type                                     221           0      100.0%
+price_usd                                         219           2       99.1%
+size_m2                                           218           3       98.6%
+bedrooms                                          220           1       99.5%
+bathrooms                                         220           1       99.5%
+unit_floor                                        183          38       82.8%
+building_total_floors                              30         191       13.6%
+bedroom_options                                     0         221        0.0%
+multi_unit_options                                  0         221        0.0%
+province                                          221           0      100.0%
+city                                                0         221        0.0%
+district                                           35         186       15.8%
+commune                                             5         216        2.3%
+address                                             0         221        0.0%
+location_text                                       0         221        0.0%
+project_name                                        0         221        0.0%
+property_code                                     220           1       99.5%
+created_at                                          0         221        0.0%
+updated_at                                          0         221        0.0%
+scraped_at                                        221           0      100.0%
+detail_scraped                                    221           0      100.0%
+display_as_project                                221           0      100.0%
+needs_manual_review                               221           0      100.0%
+
+LISTING_TYPE VALUES
+================================================================================
+sale                                                        : 213
+rent                                                        : 8
+
+PROPERTY_TYPE VALUES
+================================================================================
+Condo                                                       : 153
+Penthouse                                                   : 66
+Commercial                                                  : 1
+House                                                       : 1
+
+PROVINCE VALUES
+================================================================================
+Phnom Penh                                                  : 221
+
+CITY VALUES
+================================================================================
+No values found.
+
+DISTRICT VALUES
+================================================================================
+Chamkarmon                                                  : 11
+Chroy Changvar                                              : 10
+Sen Sok                                                     : 4
+Boeung Keng Kang                                            : 4
+Toul Kork                                                   : 4
+Daun Penh                                                   : 2
+
+NUMERIC RANGES
+==========================================================================================
+Column                                   Count           Minimum           Maximum
+------------------------------------------------------------------------------------------
+price_usd                                  219         20,000.00      3,121,250.00
+size_m2                                    218             22.95            588.00
+bedrooms                                   220              0.00              5.00
+bathrooms                                  220              1.00              6.00
+unit_floor                                 183              1.00             45.00
+building_total_floors                       30             12.00             49.00
+
+SPECIAL GROUP COUNTS
+==================================================================================
+Rent-only records          : 8
+Sale/rent records          : 0
+Missing price              : 2
+Missing size               : 3
+Project-level records      : 0
+Multi-unit/config records  : 0
+True manual-review flags   : 4
+Detail scrape false        : 0
+
+CONFLICT AND MISMATCH COUNTS
+==================================================================================
+bedrooms_reference_mismatch                                 : 6
+property_type_reference_mismatch                            : 2
+property_type_conflict                                      : 2
+bedrooms_conflict                                           : 2
+
+PRICE_USD_SOURCE
+========================================================================================
+camrealtyservice_com_detail_price_element                             : 219
+
+SIZE_M2_SOURCE
+========================================================================================
+camrealtyservice_com_site_structured                                  : 218
+
+BEDROOMS_SOURCE
+========================================================================================
+camrealtyservice_com_site_structured_title                            : 173
+camrealtyservice_com_site_structured                                  : 46
+camrealtyservice_com_title                                            : 1
+
+BATHROOMS_SOURCE
+========================================================================================
+camrealtyservice_com_site_structured                                  : 220
+
+UNIT_FLOOR_SOURCE
+========================================================================================
+camrealtyservice_com_url                                              : 96
+camrealtyservice_com_title                                            : 57
+camrealtyservice_com_description                                      : 30
+
+BUILDING_TOTAL_FLOORS_SOURCE
+========================================================================================
+camrealtyservice_com_description                                      : 30
+
+PROPERTY_TYPE_SOURCE
+========================================================================================
+search_scope                                                          : 153
+camrealtyservice_com_description                                      : 49
+camrealtyservice_com_url                                              : 11
+camrealtyservice_com_title                                            : 5
+camrealtyservice_com_site_structured_title                            : 3
+
+LISTING_TYPE_SOURCE
+========================================================================================
+camrealtyservice_com_site_structured_title                            : 215
+search_scope                                                          : 6
+
+DISTRICT_SOURCE
+========================================================================================
+camrealtyservice_com_url                                              : 35
+
+DESCRIPTION_SOURCE
+========================================================================================
+description_heading                                                   : 220
+
+IDENTITY DUPLICATE CHECK
+==================================================================================
+Duplicate listing-ID groups   : 0
+Duplicate URL groups          : 0
+Duplicate property-code groups: 4
+
+DUPLICATE PROPERTY-CODE EXAMPLES
+SearchNearbyMainRoadDirectionFeatureSearch: 6
+S1454168: 2
+S1376168: 2
+S1098168: 3
+
+BRONZE REVIEW RECORDS
+======================================================================================================
+Review records: 4
+
+------------------------------------------------------------------------------------------------------
+ID          : camrealtyservice.com_37th-floor-office-space-for-sale-in-tonle-basak--26294a4d47f8
+Code        : S1437168
+Title       : 37th Floor office Space For Sale in The Bridge Soho
+Listing type: sale
+Property    : Commercial
+Price       : 89000
+Size        : 54.31
+Bedrooms    : 1
+Bed options : None
+Bathrooms   : 1
+Unit floor  : 37
+Total floors: None
+District    : Chamkarmon
+Project page: False
+property_type_conflict            : search_scope=Condo; reclassified by camrealtyservice_com_title=Commercial
+URL         : https://camrealtyservice.com/property/37th-floor-office-space-for-sale-in-tonle-basak-s1437168/
+
+------------------------------------------------------------------------------------------------------
+ID          : camrealtyservice.com_time-square-11-bkk3-hermes-2-bed-s1392168-1dd3e743541b
+Code        : S1393168
+Title       : Time Square 11 BKK3 | 2 BR Type A1-A5
+Listing type: sale
+Property    : Condo
+Price       : 96000
+Size        : 56.0
+Bedrooms    : 1
+Bed options : None
+Bathrooms   : 1
+Unit floor  : None
+Total floors: None
+District    : None
+Project page: False
+bedrooms_conflict                 : camrealtyservice_com_title=2; kept camrealtyservice_com_site_structured=1
+URL         : https://camrealtyservice.com/property/time-square-11-bkk3-hermes-2-bed-s1392168/
+
+------------------------------------------------------------------------------------------------------
+ID          : camrealtyservice.com_penthouse-on-39th-floor-with-amazing-river-view--e4356e008152
+Code        : S1075168
+Title       : In front of Aeon mall Phnom Penh | Fully furnished 4 bedrooms penthouse on 39th floor for sale | Pool, Gym & Sky-bar | 970,000 USD
+Listing type: sale
+Property    : Penthouse
+Price       : 970000
+Size        : 180.0
+Bedrooms    : 3
+Bed options : None
+Bathrooms   : 3
+Unit floor  : 39
+Total floors: None
+District    : None
+Project page: False
+bedrooms_conflict                 : camrealtyservice_com_title=4; kept camrealtyservice_com_site_structured=3
+URL         : https://camrealtyservice.com/property/penthouse-on-39th-floor-with-amazing-river-view-for-sale-in-aeon-mall-area/
+
+------------------------------------------------------------------------------------------------------
+ID          : camrealtyservice.com_worldbridge-sport-village-1bed-condo-for-sale-in-db2fa1b1c678
+Code        : None
+Title       : House for sale in Phnom Penh Cambodia
+Listing type: sale
+Property    : House
+Price       : 280000
+Size        : None
+Bedrooms    : None
+Bed options : None
+Bathrooms   : None
+Unit floor  : None
+Total floors: None
+District    : None
+Project page: False
+property_type_conflict            : search_scope=Condo; reclassified by camrealtyservice_com_title=House
+URL         : https://camrealtyservice.com/property/worldbridge-sport-village-1bed-condo-for-sale-in-phnom-penh-next-to-morodok-techo-national-stadium-area/
+
+SAMPLE RECORDS
+======================================================================================================
+
+RECORD 1
+------------------------------------------------------------------------------------------------------
+listing_id                     : camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--42b2fa989181
+property_code                  : S1472168
+title                          : 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 86500
+size_m2                        : 56.22
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : None
+building_total_floors          : None
+district                       : Sen Sok
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1472168/
+
+RECORD 2
+------------------------------------------------------------------------------------------------------
+listing_id                     : camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--3784bdafc14c
+property_code                  : S1471168
+title                          : 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 84000
+size_m2                        : 49.19
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : None
+building_total_floors          : None
+district                       : Sen Sok
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1471168/
+
+RECORD 3
+------------------------------------------------------------------------------------------------------
+listing_id                     : camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--c28b0b90e413
+property_code                  : S1470168
+title                          : 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 86500
+size_m2                        : 56.38
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : None
+building_total_floors          : None
+district                       : Sen Sok
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1470168/
+
+RECORD 4
+------------------------------------------------------------------------------------------------------
+listing_id                     : camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--afe44609a3b1
+property_code                  : S1469168
+title                          : 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 87400
+size_m2                        : 56.22
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : None
+building_total_floors          : None
+district                       : Sen Sok
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1468168/
+
+RECORD 5
+------------------------------------------------------------------------------------------------------
+listing_id                     : camrealtyservice.com_36th-floor-luxurious-4-bedroom-penthouse-for-sal-74551e42f538
+property_code                  : S1468168
+title                          : 36th Floor Luxurious 4 Bedroom Penthouse For Sale in Tonle Basak
+listing_type                   : sale
+property_type                  : Penthouse
+price_usd                      : 3100000
+size_m2                        : 588.0
+bedrooms                       : 4
+bathrooms                      : 5
+unit_floor                     : 36
+building_total_floors          : None
+district                       : Chamkarmon
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://camrealtyservice.com/property/36th-floor-luxurious-4-bedroom-penthouse-for-sale-in-tonle-basak-s1468168/
+
+================================================================================================================
+CamRealty Service inspection completed.
+================================================================================================================
