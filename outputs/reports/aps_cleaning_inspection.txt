@@ -1,0 +1,459 @@
+
+APS RAW DATA INSPECTION
+================================================================================================================
+Input file : D:\Internship\Data Insign Cambodia\pp-propertylens\data\bronze\aps_com_kh\raw_listings.json
+Total rows : 137
+
+ALL RAW COLUMNS
+================================================================================================================
+Column                                              Non-missing     Missing    Coverage  Types
+----------------------------------------------------------------------------------------------------------------
+aps_listing_code                                            137           0      100.0%  str:137
+bathrooms                                                     4         133        2.9%  int:4
+bathrooms_confidence                                          4         133        2.9%  str:4
+bathrooms_description_source                                  4         133        2.9%  str:4
+bathrooms_description_text_raw                                4         133        2.9%  str:4
+bathrooms_description_value                                   4         133        2.9%  int:4
+bathrooms_source                                              4         133        2.9%  str:4
+bathrooms_text_raw                                            4         133        2.9%  str:4
+bedrooms                                                    135           2       98.5%  int:135
+bedrooms_confidence                                         135           2       98.5%  str:135
+bedrooms_description_source                                  80          57       58.4%  str:80
+bedrooms_description_text_raw                                80          57       58.4%  str:80
+bedrooms_description_value                                   80          57       58.4%  int:80
+bedrooms_previous_source                                      2         135        1.5%  str:2
+bedrooms_previous_value                                       2         135        1.5%  int:2
+bedrooms_source                                             135           2       98.5%  str:135
+bedrooms_text_raw                                           132           5       96.4%  str:132
+bedrooms_title_source                                       129           8       94.2%  str:129
+bedrooms_title_text_raw                                     129           8       94.2%  str:129
+bedrooms_title_value                                        129           8       94.2%  int:129
+bedrooms_url_mismatch                                         2         135        1.5%  str:2
+bedrooms_url_source                                         132           5       96.4%  str:132
+bedrooms_url_value                                          132           5       96.4%  int:132
+building_total_floors                                         2         135        1.5%  int:2
+building_total_floors_confidence                              2         135        1.5%  str:2
+building_total_floors_description_source                      2         135        1.5%  str:2
+building_total_floors_description_text_raw                    2         135        1.5%  str:2
+building_total_floors_description_value                       2         135        1.5%  int:2
+building_total_floors_source                                  2         135        1.5%  str:2
+building_total_floors_text_raw                                2         135        1.5%  str:2
+building_total_floors_title_source                            1         136        0.7%  str:1
+building_total_floors_title_text_raw                          1         136        0.7%  str:1
+building_total_floors_title_value                             1         136        0.7%  int:1
+commune                                                       0         137        0.0%  
+condition                                                     0         137        0.0%  
+created_at                                                    0         137        0.0%  
+description                                                 137           0      100.0%  str:137
+description_source                                          137           0      100.0%  str:137
+detail_parsed_at                                            137           0      100.0%  str:137
+detail_scraped                                              137           0      100.0%  bool:137
+display_as_project                                          137           0      100.0%  bool:137
+district                                                    100          37       73.0%  str:100
+district_confidence                                         100          37       73.0%  str:100
+district_source                                             100          37       73.0%  str:100
+district_url_source                                         100          37       73.0%  str:100
+district_url_value                                          100          37       73.0%  str:100
+land_area_m2                                                  0         137        0.0%  
+latitude                                                      0         137        0.0%  
+listing_id                                                  137           0      100.0%  str:137
+listing_type                                                137           0      100.0%  str:137
+listing_type_confidence                                     130           7       94.9%  str:130
+listing_type_description_source                               1         136        0.7%  str:1
+listing_type_description_value                                1         136        0.7%  str:1
+listing_type_previous_source                                  2         135        1.5%  str:2
+listing_type_previous_value                                   2         135        1.5%  str:2
+listing_type_source                                         137           0      100.0%  str:137
+listing_type_text_raw                                       130           7       94.9%  str:130
+listing_type_title_source                                   130           7       94.9%  str:130
+listing_type_title_text_raw                                 130           7       94.9%  str:130
+listing_type_title_value                                    130           7       94.9%  str:130
+listing_type_url_mismatch                                     1         136        0.7%  str:1
+listing_type_url_source                                     130           7       94.9%  str:130
+listing_type_url_value                                      130           7       94.9%  str:130
+location_text                                                 0         137        0.0%  
+longitude                                                     0         137        0.0%  
+needs_manual_review                                         137           0      100.0%  bool:137
+out_of_scope_reason                                           1         136        0.7%  str:1
+parking                                                       0         137        0.0%  
+price_original_usd                                            0         137        0.0%  
+price_reduced                                                 0         137        0.0%  
+price_usd                                                   131           6       95.6%  int:131
+price_usd_candidate_source                                  131           6       95.6%  str:131
+price_usd_candidate_value                                   131           6       95.6%  int:131
+price_usd_confidence                                        131           6       95.6%  str:131
+price_usd_source                                            131           6       95.6%  str:131
+project_name                                                  0         137        0.0%  
+property_code                                               137           0      100.0%  str:137
+property_type                                               137           0      100.0%  str:137
+property_type_confidence                                     10         127        7.3%  str:10
+property_type_description_source                            119          18       86.9%  str:119
+property_type_description_text_raw                          119          18       86.9%  str:119
+property_type_description_value                             119          18       86.9%  str:119
+property_type_previous_source                                10         127        7.3%  str:10
+property_type_previous_value                                 10         127        7.3%  str:10
+property_type_raw                                             0         137        0.0%  
+property_type_source                                        137           0      100.0%  str:137
+property_type_text_raw                                        4         133        2.9%  str:4
+property_type_title_source                                  109          28       79.6%  str:109
+property_type_title_text_raw                                109          28       79.6%  str:109
+property_type_title_value                                   109          28       79.6%  str:109
+property_type_url_source                                      6         131        4.4%  str:6
+property_type_url_value                                       6         131        4.4%  str:6
+province                                                    137           0      100.0%  str:137
+province_source                                             137           0      100.0%  str:137
+scraped_at                                                  137           0      100.0%  str:137
+size_m2                                                     130           7       94.9%  float:130
+size_m2_confidence                                          130           7       94.9%  str:130
+size_m2_detail_source                                       130           7       94.9%  str:130
+size_m2_detail_text_raw                                     130           7       94.9%  str:130
+size_m2_detail_value                                        130           7       94.9%  float:130
+size_m2_kind                                                130           7       94.9%  str:130
+size_m2_previous_source                                       6         131        4.4%  str:6
+size_m2_previous_value                                        6         131        4.4%  float:6
+size_m2_reference_mismatch                                    6         131        4.4%  str:6
+size_m2_source                                              130           7       94.9%  str:130
+size_m2_text_raw                                            130           7       94.9%  str:130
+size_m2_title_source                                         25         112       18.2%  str:25
+size_m2_title_text_raw                                       25         112       18.2%  str:25
+size_m2_title_value                                          25         112       18.2%  float:25
+size_m2_url_source                                           24         113       17.5%  str:24
+size_m2_url_value                                            24         113       17.5%  float:24
+source                                                      137           0      100.0%  str:137
+title                                                       137           0      100.0%  str:137
+unit_floor                                                  126          11       92.0%  int:126
+unit_floor_confidence                                       126          11       92.0%  str:126
+unit_floor_description_source                               126          11       92.0%  str:126
+unit_floor_description_text_raw                             126          11       92.0%  str:126
+unit_floor_description_value                                126          11       92.0%  int:126
+unit_floor_previous_source                                    1         136        0.7%  str:1
+unit_floor_previous_value                                     1         136        0.7%  int:1
+unit_floor_reference_mismatch                                 1         136        0.7%  str:1
+unit_floor_source                                           126          11       92.0%  str:126
+unit_floor_text_raw                                         126          11       92.0%  str:126
+unit_floor_url_source                                         4         133        2.9%  str:4
+unit_floor_url_value                                          4         133        2.9%  int:4
+url                                                         137           0      100.0%  str:137
+year_built                                                    0         137        0.0%  
+
+IMPORTANT COLUMN COVERAGE
+==========================================================================================
+Column                                    Non-missing     Missing    Coverage
+------------------------------------------------------------------------------------------
+listing_id                                        137           0      100.0%
+source                                            137           0      100.0%
+url                                               137           0      100.0%
+title                                             137           0      100.0%
+description                                       137           0      100.0%
+listing_type                                      137           0      100.0%
+property_type                                     137           0      100.0%
+price_usd                                         131           6       95.6%
+size_m2                                           130           7       94.9%
+bedrooms                                          135           2       98.5%
+bathrooms                                           4         133        2.9%
+unit_floor                                        126          11       92.0%
+building_total_floors                               2         135        1.5%
+bedroom_options                                     0         137        0.0%
+multi_unit_options                                  0         137        0.0%
+province                                          137           0      100.0%
+city                                                0         137        0.0%
+district                                          100          37       73.0%
+commune                                             0         137        0.0%
+address                                             0         137        0.0%
+location_text                                       0         137        0.0%
+project_name                                        0         137        0.0%
+property_code                                     137           0      100.0%
+aps_listing_code                                  137           0      100.0%
+created_at                                          0         137        0.0%
+updated_at                                          0         137        0.0%
+scraped_at                                        137           0      100.0%
+detail_scraped                                    137           0      100.0%
+display_as_project                                137           0      100.0%
+needs_manual_review                               137           0      100.0%
+
+LISTING_TYPE VALUES
+================================================================================
+sale                                                        : 136
+rent                                                        : 1
+
+PROPERTY_TYPE VALUES
+================================================================================
+Condo                                                       : 127
+Penthouse                                                   : 10
+
+PROVINCE VALUES
+================================================================================
+Phnom Penh                                                  : 137
+
+CITY VALUES
+================================================================================
+No values found.
+
+DISTRICT VALUES
+================================================================================
+Boeung Keng Kang                                            : 47
+Meanchey                                                    : 30
+Chamkarmon                                                  : 9
+Toul Kork                                                   : 7
+Chroy Changvar                                              : 4
+Sen Sok                                                     : 2
+Daun Penh                                                   : 1
+
+NUMERIC RANGES
+==========================================================================================
+Column                                   Count           Minimum           Maximum
+------------------------------------------------------------------------------------------
+price_usd                                  131          5,500.00      1,500,000.00
+size_m2                                    130             28.00            650.00
+bedrooms                                   135              0.00              5.00
+bathrooms                                    4              1.00              2.00
+unit_floor                                 126              1.00             77.00
+building_total_floors                        2             67.00             77.00
+
+SPECIAL GROUP COUNTS
+==================================================================================
+Rent-only records          : 1
+Sale/rent records          : 0
+Missing price              : 6
+Missing size               : 7
+Project-level records      : 0
+Multi-unit/config records  : 0
+True manual-review flags   : 0
+Detail scrape false        : 0
+
+CONFLICT AND MISMATCH COUNTS
+==================================================================================
+size_m2_reference_mismatch                                  : 6
+bedrooms_url_mismatch                                       : 2
+listing_type_url_mismatch                                   : 1
+unit_floor_reference_mismatch                               : 1
+
+PRICE_USD_SOURCE
+========================================================================================
+aps_com_kh_json_ld_price                                              : 131
+
+SIZE_M2_SOURCE
+========================================================================================
+aps_com_kh_detail_structured_unit_size                                : 130
+
+BEDROOMS_SOURCE
+========================================================================================
+aps_com_kh_site_structured_title                                      : 129
+aps_com_kh_url                                                        : 3
+aps_com_kh_description                                                : 3
+
+BATHROOMS_SOURCE
+========================================================================================
+aps_com_kh_description                                                : 4
+
+UNIT_FLOOR_SOURCE
+========================================================================================
+aps_com_kh_overview_level                                             : 126
+
+BUILDING_TOTAL_FLOORS_SOURCE
+========================================================================================
+aps_com_kh_description                                                : 1
+aps_com_kh_title                                                      : 1
+
+PROPERTY_TYPE_SOURCE
+========================================================================================
+search_scope                                                          : 127
+aps_com_kh_url                                                        : 6
+aps_com_kh_description                                                : 4
+
+LISTING_TYPE_SOURCE
+========================================================================================
+aps_com_kh_site_structured_title                                      : 130
+search_scope                                                          : 7
+
+DISTRICT_SOURCE
+========================================================================================
+aps_com_kh_url                                                        : 100
+
+DESCRIPTION_SOURCE
+========================================================================================
+description_heading                                                   : 137
+
+IDENTITY DUPLICATE CHECK
+==================================================================================
+Duplicate listing-ID groups : 0
+Duplicate URL groups        : 0
+Duplicate property-code groups: 7
+Duplicate APS-code groups     : 7
+
+DUPLICATE APS CODE EXAMPLES
+--------------------------------------------------------------------------------------------
+
+364114: 4 records
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-4 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-3 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-2 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+
+363854: 2 records
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-14 | 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854 | 439000 | 166.0
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-13 | 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854 | 439000 | 166.0
+
+363124: 2 records
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh-2 | 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124 | 66314 | 51.0
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh | 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124 | 66314 | 51.0
+
+361048: 2 records
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048 | 248599 | 137.37
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048 | 248599 | 137.37
+
+361040: 2 records
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040 | 96242 | 55.46
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040 | 96242 | 55.46
+
+359088: 2 records
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2 | Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088 | 230472 | 79.98
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh | Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088 | 230472 | 79.98
+
+357527: 2 records
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh-2 | 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527 | 341700 | 92.0
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh | 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527 | 341700 | 92.0
+
+DUPLICATE PROPERTY CODE EXAMPLES
+--------------------------------------------------------------------------------------------
+
+S-10485: 4 records
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-4 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-3 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh-2 | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+  - aps.com.kh_1-bedroom-duplex-for-sale-urban-village-2-mean-chey-phnom-penh | 1 Bedroom Duplex Condo For Sale - Urban Village 2 | Mean Chey | Phnom Penh - APS Cambodia 364114 | 96726 | 69.09
+
+S-09537: 2 records
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-14 | 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854 | 439000 | 166.0
+  - aps.com.kh_3-bedroom-condo-for-sale-j-tower-3-tonle-bassac-phnom-penh-13 | 3 Bedroom Condo For Sale - J Tower 3 | Tonle Bassac | Phnom Penh - APS Cambodia 363854 | 439000 | 166.0
+
+S-10413: 2 records
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh-2 | 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124 | 66314 | 51.0
+  - aps.com.kh_2-bedroom-condo-for-sale-morgan-central-city-toul-sangke-phnom-penh | 2 Bedroom Condo For Sale - Morgan Central City | Toul Sangke | Phnom Penh - APS Cambodia 363124 | 66314 | 51.0
+
+S-10313: 2 records
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048 | 248599 | 137.37
+  - aps.com.kh_penthouse-2-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | Penthouse 2 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361048 | 248599 | 137.37
+
+S-10312: 2 records
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh | 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040 | 96242 | 55.46
+  - aps.com.kh_1-bedroom-condo-for-sale-anata-residence-steung-mean-chey-phnom-penh-2 | 1 Bedroom Condo For Sale - Anata Residence | Steung Mean Chey | Phnom Penh - APS Cambodia 361040 | 96242 | 55.46
+
+S-10188: 2 records
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh-2 | Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088 | 230472 | 79.98
+  - aps.com.kh_presale-1-bedroom-for-sale-type-a-le-conde-2-bkk1-phnom-penh | Presale 2 Bedroom For Sale (Type B1) - Le Condé 2 | BKK1 | Phnom Penh - APS Cambodia 359088 | 230472 | 79.98
+
+S-09145: 2 records
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh-2 | 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527 | 341700 | 92.0
+  - aps.com.kh_2-bedroom-condo-type-a-for-sale-royal-platinum-toul-kork-phnom-penh | 2 Bedroom Condo (Type A) For Sale - Royal Platinum | Toul Kork | Phnom Penh - APS Cambodia 357527 | 341700 | 92.0
+
+BRONZE REVIEW RECORDS
+======================================================================================================
+Review records: 0
+
+SAMPLE RECORDS
+======================================================================================================
+
+RECORD 1
+------------------------------------------------------------------------------------------------------
+listing_id                     : aps.com.kh_36-sqm-studio-condo-for-sale-morgan-enmaison-chroy-changvar-phnom-penh
+aps_listing_code               : 361066
+property_code                  : S-10329
+title                          : 36 SQM Studio Condo For Sale - Morgan EnMaison | Chroy Changvar | Phnom Penh - APS Cambodia 361066
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 45000
+size_m2                        : 36.69
+bedrooms                       : 0
+bathrooms                      : None
+unit_floor                     : 22
+building_total_floors          : None
+district                       : Chroy Changvar
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://aps.com.kh/properties/36-sqm-studio-condo-for-sale-morgan-enmaison-chroy-changvar-phnom-penh/
+
+RECORD 2
+------------------------------------------------------------------------------------------------------
+listing_id                     : aps.com.kh_21st-floor-1-bedroom-condo-for-rent-time-square-5-bkk1-phnom-penh
+aps_listing_code               : 359855
+property_code                  : S-10249
+title                          : 21st Floor 1 Bedroom Condo For Sale - Time Square 5 | BKK1 | Phnom Penh - APS Cambodia 359855
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 78000
+size_m2                        : 32.5
+bedrooms                       : 1
+bathrooms                      : 1
+unit_floor                     : 21
+building_total_floors          : None
+district                       : Boeung Keng Kang
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://aps.com.kh/properties/21st-floor-1-bedroom-condo-for-rent-time-square-5-bkk1-phnom-penh/
+
+RECORD 3
+------------------------------------------------------------------------------------------------------
+listing_id                     : aps.com.kh_60-sqm-1-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh-2
+aps_listing_code               : 356624
+property_code                  : S-09938
+title                          : 60 SQM 1 Bedroom Condo For Sale - Time Square 8 | Toul Tumpung | Phnom Penh - APS Cambodia 356624
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 73000
+size_m2                        : 45.0
+bedrooms                       : 1
+bathrooms                      : None
+unit_floor                     : 22
+building_total_floors          : None
+district                       : Chamkarmon
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://aps.com.kh/properties/60-sqm-1-bedroom-condo-for-sale-time-square-8-toul-tumpung-phnom-penh-2/
+
+RECORD 4
+------------------------------------------------------------------------------------------------------
+listing_id                     : aps.com.kh_1-bedroom-condo-for-sale-mekong-view-6-chroy-chongvar-phnom-penh
+aps_listing_code               : 364439
+property_code                  : S-10472
+title                          : 1 Bedroom Condo For Sale - Mekong View 6 | Chroy Chongvar | Phnom Penh - APS Cambodia 364439
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 54580
+size_m2                        : None
+bedrooms                       : 1
+bathrooms                      : None
+unit_floor                     : 9
+building_total_floors          : None
+district                       : Chroy Changvar
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://aps.com.kh/properties/1-bedroom-condo-for-sale-mekong-view-6-chroy-chongvar-phnom-penh/
+
+RECORD 5
+------------------------------------------------------------------------------------------------------
+listing_id                     : aps.com.kh_studio-bedroom-for-sale-golden-one-bkk-phnom-penh
+aps_listing_code               : 364115
+property_code                  : S-10463
+title                          : 35SQM Studio Condo For Sale - Golden One | BKK3 | Phnom Penh - APS Cambodia 364115
+listing_type                   : sale
+property_type                  : Condo
+price_usd                      : 58000
+size_m2                        : 35.7
+bedrooms                       : 0
+bathrooms                      : None
+unit_floor                     : 12
+building_total_floors          : None
+district                       : Boeung Keng Kang
+project_name                   : None
+display_as_project             : False
+needs_manual_review            : False
+url                            : https://aps.com.kh/properties/studio-bedroom-for-sale-golden-one-bkk-phnom-penh/
+
+================================================================================================================
+APS inspection completed.
+================================================================================================================

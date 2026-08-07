@@ -1,0 +1,1628 @@
+
+CAMREALTY CLEANING DECISION AUDIT
+==============================================================================================================
+Total Bronze records                : 221
+Rent-only records                   : 8
+Non-condo property records          : 2
+Missing price                       : 2
+Missing size                        : 3
+Missing district                    : 186
+Price below $20,000                 : 0
+Price above $2,000,000              : 6
+Size below 20m²                        : 0
+Size above 500m²                       : 1
+Price/m² below $300                  : 3
+Price/m² above $10,000               : 0
+Bedrooms above 10                   : 0
+Bathrooms above 10                  : 0
+Unit floor above 100                 : 0
+Unit floor > building total floors  : 0
+Bedroom conflicts                    : 2
+Bedroom reference mismatches         : 6
+Property-type conflicts              : 2
+Listing-type URL mismatches         : 6
+Invalid raw property-code records   : 12
+Raw-code versus URL-code mismatches : 9
+Duplicate valid raw-code groups     : 3
+Duplicate URL-code groups           : 3
+Exact listing-signature groups      : 6
+
+OUT-OF-SCOPE REASONS
+--------------------------------------------------------------------------------------------------------------
+rent_listing                                                               : 8
+
+==============================================================================================================
+RENT-ONLY: 8 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_2-bedroom-serviced-apartment-for-rent-in-phnom-p-3e9132caa45b
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 2 Bedroom Serviced Apartment For Rent in BKK3 – near BKK1
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 102.0
+Price/m²              : 196.08
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 2
+Unit floor            : 8
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/2-bedroom-serviced-apartment-for-rent-in-phnom-penh-n3415168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_1-bedroom-serviced-apartment-for-rent-in-chroy-c-feab0f17a17a
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Changvar area| 1 bedroom serviced apartment for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 61.0
+Price/m²              : 327.87
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : Chroy Changvar
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/1-bedroom-serviced-apartment-for-rent-in-chroy-changvar-phnom-penh-th1399168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_1-bedroom-apartment-for-rent-in-chroy-changvar-a-2a798e29b499
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 1 Bedroom Serviced Apartment For Rent in Chroy Changvar
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 64.0
+Price/m²              : 312.5
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : None
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : Chroy Changvar
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/1-bedroom-apartment-for-rent-in-chroy-changvar-area-phnom-penh-th1397168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_lattrait-beoung-keng-kang-1-s1425168-566dee4ac6dd
+Raw property code     : S1425168
+Normalized raw code   : S1425168
+URL property code     : S1425168
+Title                 : 23rd Floor 1 Bedroom Condo For Rent in L’attrait BEOUNG KENG KANG 1
+Listing type          : rent
+Property type         : Penthouse
+Price                 : 155000
+Size                  : 49.84
+Price/m²              : 3109.95
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 23
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/lattrait-beoung-keng-kang-1-s1425168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_boeng-trabaek-area-modern-style-2-bedrooms-apart-9bec95cffd50
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : Boeng Trabaek area| 2 bedrooms apartment for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 67.0
+Price/m²              : 298.51
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/boeng-trabaek-area-modern-style-2-bedrooms-apartment-for-rent-in-phnom-penh-small-gym/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_tuol-kork-area-studio-condominium-on-18th-floor--16f80e8ad166
+Raw property code     : S1103168
+Normalized raw code   : S1103168
+URL property code     : None
+Title                 : Tuol Kork area| Studio condominium on 18th floor for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 47000
+Size                  : 37.0
+Price/m²              : 1270.27
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : 18
+Building total floors : None
+District              : Toul Kork
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/tuol-kork-area-studio-condominium-on-18th-floor-for-rent-in-phnom-penh/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_modern-style-2-bedrooms-condominium-for-rent-in--22fba0117f4f
+Raw property code     : N3187168
+Normalized raw code   : None
+URL property code     : None
+Title                 : 15th Floor 2 Bedroom Condo For Rent in Toul Kork
+Listing type          : rent
+Property type         : Condo
+Price                 : 200000
+Size                  : 75.96
+Price/m²              : 2632.96
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 15
+Building total floors : None
+District              : Toul Kork
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/modern-style-2-bedrooms-condominium-for-rent-in-tuol-kork-area/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_beautiful-penthouse-on-top-floor-of-the-bridge-c-998d26092d0d
+Raw property code     : S1018168
+Normalized raw code   : S1018168
+URL property code     : None
+Title                 : Beautiful penthouse on top floor of The Bridge condominium in Tonle Bassac area, close to Naga Casino for rent in Phnom Penh
+Listing type          : rent
+Property type         : Penthouse
+Price                 : 750000
+Size                  : 145.0
+Price/m²              : 5172.41
+Bedrooms              : 4
+Title bedrooms        : None
+Structured bedrooms   : 4
+Bathrooms             : 3
+Unit floor            : 33
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/beautiful-penthouse-on-top-floor-of-the-bridge-condominium-in-tonle-bassac-area-close-to-naga-casino-for-rent-in-phnom-penh/
+
+==============================================================================================================
+NON-CONDO PROPERTY: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_37th-floor-office-space-for-sale-in-tonle-basak--26294a4d47f8
+Raw property code     : S1437168
+Normalized raw code   : S1437168
+URL property code     : S1437168
+Title                 : 37th Floor office Space For Sale in The Bridge Soho
+Listing type          : sale
+Property type         : Commercial
+Price                 : 89000
+Size                  : 54.31
+Price/m²              : 1638.74
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 37
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : True
+Out of scope          : None
+property_type_conflict                : search_scope=Condo; reclassified by camrealtyservice_com_title=Commercial
+URL                   : https://camrealtyservice.com/property/37th-floor-office-space-for-sale-in-tonle-basak-s1437168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_worldbridge-sport-village-1bed-condo-for-sale-in-db2fa1b1c678
+Raw property code     : None
+Normalized raw code   : None
+URL property code     : None
+Title                 : House for sale in Phnom Penh Cambodia
+Listing type          : sale
+Property type         : House
+Price                 : 280000
+Size                  : None
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+Structured bedrooms   : None
+Bathrooms             : None
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+property_type_conflict                : search_scope=Condo; reclassified by camrealtyservice_com_title=House
+URL                   : https://camrealtyservice.com/property/worldbridge-sport-village-1bed-condo-for-sale-in-phnom-penh-next-to-morodok-techo-national-stadium-area/
+
+==============================================================================================================
+MISSING PRICE: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_chroy-chongva-area-brand-new-modern-style-fully--471ed0a5f82c
+Raw property code     : SL1302168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Chongva area| Brand new modern style fully furnished 1 bedrooms 2bathroom condominium for sale 170,800$ (Negotiable)
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Size                  : 61.0
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : 1
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/chroy-chongva-area-brand-new-modern-style-fully-furnished-1-bedrooms-2bathroom-condominium-for-sale-170800-negotiable/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_chroy-chongva-area-modern-style-fully-serviced-2-76b6781d2fa3
+Raw property code     : SL1300168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Chongva area| Modern style fully 2 bedrooms 2bathroom condominium for sale 282,800$ (Negotiable)
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Size                  : 101.0
+Price/m²              : None
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/chroy-chongva-area-modern-style-fully-serviced-2-bedrooms-condominium-for-sale-282800-negotiable/
+
+==============================================================================================================
+MISSING SIZE: 3 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_15th-floor-1-bedrooms-for-sale-in-the-star-polar-27526c424cf6
+Raw property code     : N4404168
+Normalized raw code   : None
+URL property code     : None
+Title                 : 15th Floor 1 Bedroom For Sale in The Star Polaris 23 Condominium
+Listing type          : sale
+Property type         : Condo
+Price                 : 46500
+Size                  : None
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 15
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/15th-floor-1-bedrooms-for-sale-in-the-star-polaris-23-condominium-n4404168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_3-bedroom-duplex-penthouse-for-sale-in-tonle-bas-2fccd9816102
+Raw property code     : S1220168
+Normalized raw code   : S1220168
+URL property code     : S1220168
+Title                 : 25th Floor 3 Bedroom Duplex Penthouse For Sale in The Penthouse Residence
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 2375000
+Size                  : None
+Price/m²              : None
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : 3
+Bathrooms             : 3
+Unit floor            : 25
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/3-bedroom-duplex-penthouse-for-sale-in-tonle-basak-s1220168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_worldbridge-sport-village-1bed-condo-for-sale-in-db2fa1b1c678
+Raw property code     : None
+Normalized raw code   : None
+URL property code     : None
+Title                 : House for sale in Phnom Penh Cambodia
+Listing type          : sale
+Property type         : House
+Price                 : 280000
+Size                  : None
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+Structured bedrooms   : None
+Bathrooms             : None
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+property_type_conflict                : search_scope=Condo; reclassified by camrealtyservice_com_title=House
+URL                   : https://camrealtyservice.com/property/worldbridge-sport-village-1bed-condo-for-sale-in-phnom-penh-next-to-morodok-techo-national-stadium-area/
+
+==============================================================================================================
+HIGH PRICE: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_36th-floor-luxurious-4-bedroom-penthouse-for-sal-74551e42f538
+Raw property code     : S1468168
+Normalized raw code   : S1468168
+URL property code     : S1468168
+Title                 : 36th Floor Luxurious 4 Bedroom Penthouse For Sale in Tonle Basak
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 3100000
+Size                  : 588.0
+Price/m²              : 5272.11
+Bedrooms              : 4
+Title bedrooms        : 4
+Structured bedrooms   : 4
+Bathrooms             : 5
+Unit floor            : 36
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/36th-floor-luxurious-4-bedroom-penthouse-for-sale-in-tonle-basak-s1468168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_picasso-sky-garden-s1073168-fe04969b6d01
+Raw property code     : S1073168
+Normalized raw code   : S1073168
+URL property code     : S1073168
+Title                 : Duplex 5 Bedroom Penthouse For Sale in Picasso Sky Garden
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 2136378
+Size                  : 306.86
+Price/m²              : 6962.06
+Bedrooms              : 5
+Title bedrooms        : 5
+Structured bedrooms   : 5
+Bathrooms             : 4
+Unit floor            : 26
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/picasso-sky-garden-s1073168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_sky-villa-for-sale-in-morgan-tower-s1265168-d6a7fbd9aeab
+Raw property code     : S1265168
+Normalized raw code   : S1265168
+URL property code     : S1265168
+Title                 : 45th Floor 5 Bedroom Sky Villa For Sale in Morgan Tower
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 3121250
+Size                  : 471.66
+Price/m²              : 6617.58
+Bedrooms              : 5
+Title bedrooms        : None
+Structured bedrooms   : 5
+Bathrooms             : 6
+Unit floor            : 45
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+property_type_reference_mismatch      : previous=Villa; current_title=Penthouse
+URL                   : https://camrealtyservice.com/property/sky-villa-for-sale-in-morgan-tower-s1265168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_duplex-condo-for-sale-the-penthouse-residence-s1-b288a1a9f6cb
+Raw property code     : S1200168
+Normalized raw code   : S1200168
+URL property code     : S1200168
+Title                 : 25th Floor 3 Bedroom Duplex Condo For Sale The Penthouse Residence
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 2500000
+Size                  : 412.0
+Price/m²              : 6067.96
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : 3
+Bathrooms             : 3
+Unit floor            : 25
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/duplex-condo-for-sale-the-penthouse-residence-s1200168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_3-bedroom-duplex-penthouse-for-sale-in-tonle-bas-2fccd9816102
+Raw property code     : S1220168
+Normalized raw code   : S1220168
+URL property code     : S1220168
+Title                 : 25th Floor 3 Bedroom Duplex Penthouse For Sale in The Penthouse Residence
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 2375000
+Size                  : None
+Price/m²              : None
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : 3
+Bathrooms             : 3
+Unit floor            : 25
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/3-bedroom-duplex-penthouse-for-sale-in-tonle-basak-s1220168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_4-bedroom-duplex-penthouse-for-sale-in-tonle-bas-cfd89fe987f8
+Raw property code     : S1134168
+Normalized raw code   : S1134168
+URL property code     : S1134168
+Title                 : 23rd Floor 4 Bedroom Duplex Penthouse For Sale in The Penthouse Residence
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 2470000
+Size                  : 474.0
+Price/m²              : 5210.97
+Bedrooms              : 4
+Title bedrooms        : None
+Structured bedrooms   : 4
+Bathrooms             : 4
+Unit floor            : 23
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/4-bedroom-duplex-penthouse-for-sale-in-tonle-basak-s1134168/
+
+==============================================================================================================
+LARGE SIZE: 1 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_36th-floor-luxurious-4-bedroom-penthouse-for-sal-74551e42f538
+Raw property code     : S1468168
+Normalized raw code   : S1468168
+URL property code     : S1468168
+Title                 : 36th Floor Luxurious 4 Bedroom Penthouse For Sale in Tonle Basak
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 3100000
+Size                  : 588.0
+Price/m²              : 5272.11
+Bedrooms              : 4
+Title bedrooms        : 4
+Structured bedrooms   : 4
+Bathrooms             : 5
+Unit floor            : 36
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/36th-floor-luxurious-4-bedroom-penthouse-for-sale-in-tonle-basak-s1468168/
+
+==============================================================================================================
+LOW PRICE/M²: 3 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_2-bedroom-serviced-apartment-for-rent-in-phnom-p-3e9132caa45b
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 2 Bedroom Serviced Apartment For Rent in BKK3 – near BKK1
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 102.0
+Price/m²              : 196.08
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 2
+Unit floor            : 8
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/2-bedroom-serviced-apartment-for-rent-in-phnom-penh-n3415168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_3-bedroom-duplex-condo-for-sale-in-north-park-co-9349e0ef692a
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : S1239168
+Title                 : 6th Floor 3 Bedroom Duplex Condo For Sale in North Park Condominium
+Listing type          : sale
+Property type         : Condo
+Price                 : 20000
+Size                  : 183.3
+Price/m²              : 109.11
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : None
+Bathrooms             : 3
+Unit floor            : 6
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/3-bedroom-duplex-condo-for-sale-in-north-park-condominium-s1239168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_boeng-trabaek-area-modern-style-2-bedrooms-apart-9bec95cffd50
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : Boeng Trabaek area| 2 bedrooms apartment for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 67.0
+Price/m²              : 298.51
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/boeng-trabaek-area-modern-style-2-bedrooms-apartment-for-rent-in-phnom-penh-small-gym/
+
+==============================================================================================================
+HIGH PRICE/M²: 0 records
+==============================================================================================================
+
+==============================================================================================================
+BEDROOM CONFLICT: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_time-square-11-bkk3-hermes-2-bed-s1392168-1dd3e743541b
+Raw property code     : S1393168
+Normalized raw code   : S1393168
+URL property code     : S1392168
+Title                 : Time Square 11 BKK3 | 2 BR Type A1-A5
+Listing type          : sale
+Property type         : Condo
+Price                 : 96000
+Size                  : 56.0
+Price/m²              : 1714.29
+Bedrooms              : 1
+Title bedrooms        : 2
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+bedrooms_conflict                     : camrealtyservice_com_title=2; kept camrealtyservice_com_site_structured=1
+URL                   : https://camrealtyservice.com/property/time-square-11-bkk3-hermes-2-bed-s1392168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_penthouse-on-39th-floor-with-amazing-river-view--e4356e008152
+Raw property code     : S1075168
+Normalized raw code   : S1075168
+URL property code     : None
+Title                 : In front of Aeon mall Phnom Penh | Fully furnished 4 bedrooms penthouse on 39th floor for sale | Pool, Gym & Sky-bar | 970,000 USD
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 970000
+Size                  : 180.0
+Price/m²              : 5388.89
+Bedrooms              : 3
+Title bedrooms        : 4
+Structured bedrooms   : 3
+Bathrooms             : 3
+Unit floor            : 39
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+bedrooms_conflict                     : camrealtyservice_com_title=4; kept camrealtyservice_com_site_structured=3
+URL                   : https://camrealtyservice.com/property/penthouse-on-39th-floor-with-amazing-river-view-for-sale-in-aeon-mall-area/
+
+==============================================================================================================
+BEDROOM REFERENCE MISMATCH: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_studio-room-serviced-apartment-for-rent-in-wealt-5a1b032dbed6
+Raw property code     : S1357168
+Normalized raw code   : S1357168
+URL property code     : S1357168
+Title                 : Studio Room Serviced Apartment For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 126000
+Size                  : 45.89
+Price/m²              : 2745.7
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 29
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/studio-room-serviced-apartment-for-rent-in-wealth-mansion-s1357168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-c3bb4d2743e2
+Raw property code     : S1454168
+Normalized raw code   : S1454168
+URL property code     : S1454168
+Title                 : 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 145000
+Size                  : 45.89
+Price/m²              : 3159.73
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 17
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/17th-floor-studio-room-serviced-apartment-for-sale-in-wealth-mansion-s1454168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-57028701b9cd
+Raw property code     : S1454168
+Normalized raw code   : S1454168
+URL property code     : S1453168
+Title                 : 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 145000
+Size                  : 45.89
+Price/m²              : 3159.73
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 17
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/17th-floor-studio-room-serviced-apartment-for-sale-in-wealth-mansion-s1453168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_for-sale-in-skylar-by-meridian-s1295168-bd498e99a393
+Raw property code     : S1295168
+Normalized raw code   : S1295168
+URL property code     : S1295168
+Title                 : Studio Condo For Sale in Skylar by Meridian
+Listing type          : sale
+Property type         : Condo
+Price                 : 125800
+Size                  : 49.77
+Price/m²              : 2527.63
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/for-sale-in-skylar-by-meridian-s1295168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_modern-style-studio-condominium-for-sale-in-sout-d2cefe8ca2f7
+Raw property code     : S1050168
+Normalized raw code   : S1050168
+URL property code     : None
+Title                 : Southern of BKK1 area| Modern style studio condominium on 18th floor for sale in Phnom Penh| Pool & Gym
+Listing type          : sale
+Property type         : Condo
+Price                 : 120000
+Size                  : 45.0
+Price/m²              : 2666.67
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 18
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/modern-style-studio-condominium-for-sale-in-southern-part-of-bkk1-area/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_very-nice-studio-condominium-on-10th-floor-for-s-ebcc4d85281b
+Raw property code     : S1037168
+Normalized raw code   : S1037168
+URL property code     : None
+Title                 : Olympia City| Very nice studio condominium on 10th floor for sale in Phnom Penh| Pool & Gym
+Listing type          : sale
+Property type         : Condo
+Price                 : 123000
+Size                  : 58.0
+Price/m²              : 2120.69
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 10
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/very-nice-studio-condominium-on-10th-floor-for-sale-in-olympia-city/
+
+==============================================================================================================
+PROPERTY-TYPE CONFLICT: 2 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_37th-floor-office-space-for-sale-in-tonle-basak--26294a4d47f8
+Raw property code     : S1437168
+Normalized raw code   : S1437168
+URL property code     : S1437168
+Title                 : 37th Floor office Space For Sale in The Bridge Soho
+Listing type          : sale
+Property type         : Commercial
+Price                 : 89000
+Size                  : 54.31
+Price/m²              : 1638.74
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 37
+Building total floors : None
+District              : Chamkarmon
+Commune               : None
+Manual review         : True
+Out of scope          : None
+property_type_conflict                : search_scope=Condo; reclassified by camrealtyservice_com_title=Commercial
+URL                   : https://camrealtyservice.com/property/37th-floor-office-space-for-sale-in-tonle-basak-s1437168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_worldbridge-sport-village-1bed-condo-for-sale-in-db2fa1b1c678
+Raw property code     : None
+Normalized raw code   : None
+URL property code     : None
+Title                 : House for sale in Phnom Penh Cambodia
+Listing type          : sale
+Property type         : House
+Price                 : 280000
+Size                  : None
+Price/m²              : None
+Bedrooms              : None
+Title bedrooms        : None
+Structured bedrooms   : None
+Bathrooms             : None
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+property_type_conflict                : search_scope=Condo; reclassified by camrealtyservice_com_title=House
+URL                   : https://camrealtyservice.com/property/worldbridge-sport-village-1bed-condo-for-sale-in-phnom-penh-next-to-morodok-techo-national-stadium-area/
+
+==============================================================================================================
+LISTING-TYPE URL MISMATCH: 6 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_studio-room-serviced-apartment-for-rent-in-wealt-5a1b032dbed6
+Raw property code     : S1357168
+Normalized raw code   : S1357168
+URL property code     : S1357168
+Title                 : Studio Room Serviced Apartment For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 126000
+Size                  : 45.89
+Price/m²              : 2745.7
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 29
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/studio-room-serviced-apartment-for-rent-in-wealth-mansion-s1357168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_10th-floor-3-bedroom-condo-for-rent-in-morgan-en-31f603c6f0de
+Raw property code     : S1343168
+Normalized raw code   : S1343168
+URL property code     : None
+Title                 : 10th Floor 3 Bedrooms Condo For Sale in Morgan EnMaison
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 187000
+Size                  : 86.0
+Price/m²              : 2174.42
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : 3
+Bathrooms             : 3
+Unit floor            : 10
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://camrealtyservice.com/property/10th-floor-3-bedroom-condo-for-rent-in-morgan-enmaison-s1343168-2/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_27th-floor-studio-condo-for-rent-in-skylar-by-me-bf523f6e22aa
+Raw property code     : S1196168
+Normalized raw code   : S1196168
+URL property code     : S1196168
+Title                 : 27th Floor Studio Condo For Sale in Skylar by Meridian
+Listing type          : sale
+Property type         : Condo
+Price                 : 220000
+Size                  : 47.15
+Price/m²              : 4665.96
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : 27
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://camrealtyservice.com/property/27th-floor-studio-condo-for-rent-in-skylar-by-meridian-s1196168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_27th-floor-1-bedroom-condo-for-rent-in-skylar-by-997d52919978
+Raw property code     : S1194168
+Normalized raw code   : S1194168
+URL property code     : None
+Title                 : 27th Floor 1 Bedroom Condo For Sale in Skylar by Meridian
+Listing type          : sale
+Property type         : Condo
+Price                 : 135000
+Size                  : 54.69
+Price/m²              : 2468.46
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 27
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://camrealtyservice.com/property/27th-floor-1-bedroom-condo-for-rent-in-skylar-by-meridian/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_27th-floor-2-bedroom-condo-for-rent-in-skylar-by-abb269e343d8
+Raw property code     : S1193168
+Normalized raw code   : S1193168
+URL property code     : None
+Title                 : 27th Floor 2 Bedroom Condo For Sale in Skylar by Meridian
+Listing type          : sale
+Property type         : Condo
+Price                 : 200000
+Size                  : 81.33
+Price/m²              : 2459.12
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 27
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://camrealtyservice.com/property/27th-floor-2-bedroom-condo-for-rent-in-skylar-by-meridian-168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_24th-floor-1-bedroom-condo-for-rent-in-skylar-by-03748f1d43d6
+Raw property code     : S1191168
+Normalized raw code   : S1191168
+URL property code     : None
+Title                 : 24th Floor 1 Bedroom Condo For Sale in Skylar by Meridian
+Listing type          : sale
+Property type         : Condo
+Price                 : 220000
+Size                  : 60.08
+Price/m²              : 3661.78
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 24
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+listing_type_url_mismatch             : url=rent; current_title=sale
+URL                   : https://camrealtyservice.com/property/24th-floor-1-bedroom-condo-for-rent-in-skylar-by-meridian/
+
+==============================================================================================================
+INVALID RAW PROPERTY CODE: 12 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_condo-for-sale-in-bodaiju-residences-7ce85829b605
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 1 Bedroom Condo For Sale in Bodaiju Residences
+Listing type          : sale
+Property type         : Condo
+Price                 : 20000
+Size                  : 65.8
+Price/m²              : 303.95
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/condo-for-sale-in-bodaiju-residences/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_2-bedroom-serviced-apartment-for-rent-in-phnom-p-3e9132caa45b
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 2 Bedroom Serviced Apartment For Rent in BKK3 – near BKK1
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 102.0
+Price/m²              : 196.08
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 2
+Unit floor            : 8
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/2-bedroom-serviced-apartment-for-rent-in-phnom-penh-n3415168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_1-bedroom-serviced-apartment-for-rent-in-chroy-c-feab0f17a17a
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Changvar area| 1 bedroom serviced apartment for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 61.0
+Price/m²              : 327.87
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : Chroy Changvar
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/1-bedroom-serviced-apartment-for-rent-in-chroy-changvar-phnom-penh-th1399168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_1-bedroom-apartment-for-rent-in-chroy-changvar-a-2a798e29b499
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : 1 Bedroom Serviced Apartment For Rent in Chroy Changvar
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 64.0
+Price/m²              : 312.5
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : None
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : Chroy Changvar
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/1-bedroom-apartment-for-rent-in-chroy-changvar-area-phnom-penh-th1397168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_15th-floor-1-bedrooms-for-sale-in-the-star-polar-27526c424cf6
+Raw property code     : N4404168
+Normalized raw code   : None
+URL property code     : None
+Title                 : 15th Floor 1 Bedroom For Sale in The Star Polaris 23 Condominium
+Listing type          : sale
+Property type         : Condo
+Price                 : 46500
+Size                  : None
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : None
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 15
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/15th-floor-1-bedrooms-for-sale-in-the-star-polaris-23-condominium-n4404168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_3-bedroom-duplex-condo-for-sale-in-north-park-co-9349e0ef692a
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : S1239168
+Title                 : 6th Floor 3 Bedroom Duplex Condo For Sale in North Park Condominium
+Listing type          : sale
+Property type         : Condo
+Price                 : 20000
+Size                  : 183.3
+Price/m²              : 109.11
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : None
+Bathrooms             : 3
+Unit floor            : 6
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/3-bedroom-duplex-condo-for-sale-in-north-park-condominium-s1239168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_boeng-trabaek-area-modern-style-2-bedrooms-apart-9bec95cffd50
+Raw property code     : SearchNearbyMainRoadDirectionFeatureSearch
+Normalized raw code   : None
+URL property code     : None
+Title                 : Boeng Trabaek area| 2 bedrooms apartment for rent in Phnom Penh
+Listing type          : rent
+Property type         : Condo
+Price                 : 20000
+Size                  : 67.0
+Price/m²              : 298.51
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : None
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/boeng-trabaek-area-modern-style-2-bedrooms-apartment-for-rent-in-phnom-penh-small-gym/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_modern-style-2-bedrooms-condominium-for-rent-in--22fba0117f4f
+Raw property code     : N3187168
+Normalized raw code   : None
+URL property code     : None
+Title                 : 15th Floor 2 Bedroom Condo For Rent in Toul Kork
+Listing type          : rent
+Property type         : Condo
+Price                 : 200000
+Size                  : 75.96
+Price/m²              : 2632.96
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 15
+Building total floors : None
+District              : Toul Kork
+Commune               : None
+Manual review         : False
+Out of scope          : rent_listing
+URL                   : https://camrealtyservice.com/property/modern-style-2-bedrooms-condominium-for-rent-in-tuol-kork-area/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_resale-unit-condo-in-urban-villagest-60m-2bedroo-78a360670590
+Raw property code     : SL1514168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Resale unit condo in Urban Village(st.60m) | 2bedrooms |fully furnished|140,000$ ( provide fully furnished)
+Listing type          : sale
+Property type         : Condo
+Price                 : 140000
+Size                  : 93.0
+Price/m²              : 1505.38
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : 2
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/resale-unit-condo-in-urban-villagest-60m-2bedrooms-fully-furnished-provide-fully-furnished/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_chroy-chongva-area-brand-new-modern-style-fully--471ed0a5f82c
+Raw property code     : SL1302168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Chongva area| Brand new modern style fully furnished 1 bedrooms 2bathroom condominium for sale 170,800$ (Negotiable)
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Size                  : 61.0
+Price/m²              : None
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : 1
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/chroy-chongva-area-brand-new-modern-style-fully-furnished-1-bedrooms-2bathroom-condominium-for-sale-170800-negotiable/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_chroy-chongva-area-brand-new-modern-style-fully--d1cc42564ee4
+Raw property code     : SL1301168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Chongva area| Brand new modern style fully furnished 2 bedrooms 2bathrooms condominium for sale 291,200$ (Negotiable)
+Listing type          : sale
+Property type         : Condo
+Price                 : 291200
+Size                  : 104.0
+Price/m²              : 2800.0
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/chroy-chongva-area-brand-new-modern-style-fully-furnished-2-bedrooms-2bathrooms-condominium-for-sale-291200-negotiable/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_chroy-chongva-area-modern-style-fully-serviced-2-76b6781d2fa3
+Raw property code     : SL1300168
+Normalized raw code   : None
+URL property code     : None
+Title                 : Chroy Chongva area| Modern style fully 2 bedrooms 2bathroom condominium for sale 282,800$ (Negotiable)
+Listing type          : sale
+Property type         : Condo
+Price                 : None
+Size                  : 101.0
+Price/m²              : None
+Bedrooms              : 2
+Title bedrooms        : 2
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/chroy-chongva-area-modern-style-fully-serviced-2-bedrooms-condominium-for-sale-282800-negotiable/
+
+==============================================================================================================
+RAW CODE VS URL CODE MISMATCH: 9 records
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--afe44609a3b1
+Raw property code     : S1469168
+Normalized raw code   : S1469168
+URL property code     : S1468168
+Title                 : 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+Listing type          : sale
+Property type         : Condo
+Price                 : 87400
+Size                  : 56.22
+Price/m²              : 1554.61
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : Sen Sok
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/1-bedroom-condo-for-sale-near-aeon-mall-sen-sok-city-s1468168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_for-sale-in-wealth-mansion-s1320168-d180d51b9780
+Raw property code     : S1321168
+Normalized raw code   : S1321168
+URL property code     : S1320168
+Title                 : 26th Floor 2 Bedroom Condo For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 275000
+Size                  : 92.34
+Price/m²              : 2978.12
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 26
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/for-sale-in-wealth-mansion-s1320168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-57028701b9cd
+Raw property code     : S1454168
+Normalized raw code   : S1454168
+URL property code     : S1453168
+Title                 : 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 145000
+Size                  : 45.89
+Price/m²              : 3159.73
+Bedrooms              : 0
+Title bedrooms        : 0
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 17
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+bedrooms_reference_mismatch           : camrealtyservice_com_site_structured=1; current_title=0
+URL                   : https://camrealtyservice.com/property/17th-floor-studio-room-serviced-apartment-for-sale-in-wealth-mansion-s1453168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_time-square-11-bkk3-hermes-2-bed-s1392168-1dd3e743541b
+Raw property code     : S1393168
+Normalized raw code   : S1393168
+URL property code     : S1392168
+Title                 : Time Square 11 BKK3 | 2 BR Type A1-A5
+Listing type          : sale
+Property type         : Condo
+Price                 : 96000
+Size                  : 56.0
+Price/m²              : 1714.29
+Bedrooms              : 1
+Title bedrooms        : 2
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : True
+Out of scope          : None
+bedrooms_conflict                     : camrealtyservice_com_title=2; kept camrealtyservice_com_site_structured=1
+URL                   : https://camrealtyservice.com/property/time-square-11-bkk3-hermes-2-bed-s1392168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_time-square-11-bkk3-chanel-1-bed-s1391168-14709f8cfaac
+Raw property code     : S1392168
+Normalized raw code   : S1392168
+URL property code     : S1391168
+Title                 : Time Square 11 BKK3 | 1 BR Type B1-B3 | North Direction
+Listing type          : sale
+Property type         : Condo
+Price                 : 63000
+Size                  : 36.0
+Price/m²              : 1750.0
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : None
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/time-square-11-bkk3-chanel-1-bed-s1391168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_2-bedroom-condo-on-2nd-floor-for-sale-in-embassy-361ba176b392
+Raw property code     : S1423168
+Normalized raw code   : S1423168
+URL property code     : S1337168
+Title                 : 2nd Floor 2 Bedroom Condo For Sale in Embassy Residences
+Listing type          : sale
+Property type         : Condo
+Price                 : 162000
+Size                  : 107.16
+Price/m²              : 1511.76
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 2
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/2-bedroom-condo-on-2nd-floor-for-sale-in-embassy-residences-s1337168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_2-bedroom-condo-for-sale-in-j-tower-2-s1249168-ec048af68327
+Raw property code     : S1251168
+Normalized raw code   : S1251168
+URL property code     : S1249168
+Title                 : 12th Floor 2 Bedroom Condo For Sale in J Tower 2
+Listing type          : sale
+Property type         : Penthouse
+Price                 : 180000
+Size                  : 65.0
+Price/m²              : 2769.23
+Bedrooms              : 2
+Title bedrooms        : None
+Structured bedrooms   : 2
+Bathrooms             : 2
+Unit floor            : 12
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/2-bedroom-condo-for-sale-in-j-tower-2-s1249168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_24th-floor-3-bedroom-condo-for-sale-in-embassy-c-3475fa267d3c
+Raw property code     : S1243168
+Normalized raw code   : S1243168
+URL property code     : S1137168
+Title                 : 24th Floor 3 Bedroom Condo For Sale in Embassy Central
+Listing type          : sale
+Property type         : Condo
+Price                 : 795000
+Size                  : 203.0
+Price/m²              : 3916.26
+Bedrooms              : 3
+Title bedrooms        : None
+Structured bedrooms   : 3
+Bathrooms             : 4
+Unit floor            : 24
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/24th-floor-3-bedroom-condo-for-sale-in-embassy-central-s1137168/
+
+--------------------------------------------------------------------------------------------------------------
+ID                    : camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-a085cb9f952c
+Raw property code     : S1098168
+Normalized raw code   : S1098168
+URL property code     : S1100168
+Title                 : 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+Listing type          : sale
+Property type         : Condo
+Price                 : 55000
+Size                  : 38.5
+Price/m²              : 1428.57
+Bedrooms              : 1
+Title bedrooms        : 1
+Structured bedrooms   : 1
+Bathrooms             : 1
+Unit floor            : 10
+Building total floors : None
+District              : None
+Commune               : None
+Manual review         : False
+Out of scope          : None
+URL                   : https://camrealtyservice.com/property/7-makara-area-brand-new-1-bedroom-condominium-for-sale-in-phnom-penh-s1100168/
+
+==============================================================================================================
+DUPLICATE VALID RAW PROPERTY CODE: 3 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1098168
+Records  : 3
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-b3faf0dbe92b | raw_code= S1098168 | url_code= None | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-a085cb9f952c | raw_code= S1098168 | url_code= S1100168 | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-8bb608df1a2b | raw_code= S1098168 | url_code= None | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1454168
+Records  : 2
+  - camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-c3bb4d2743e2 | raw_code= S1454168 | url_code= S1454168 | price= 145000 | size= 45.89 | title= 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+  - camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-57028701b9cd | raw_code= S1454168 | url_code= S1453168 | price= 145000 | size= 45.89 | title= 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1376168
+Records  : 2
+  - camrealtyservice.com_2-bedrooms-condo-for-sale-on-street-2004-s137616-3746632e84ac | raw_code= S1376168 | url_code= None | price= 298000 | size= 89.9 | title= 2 Bedrooms Condo For Sale on Street 2004
+  - camrealtyservice.com_2-bedrooms-condo-for-sale-on-street-2004-s137616-21bed0521f0f | raw_code= S1376168 | url_code= S1376168 | price= 298000 | size= 89.9 | title= 2 Bedrooms Condo For Sale on Street 2004
+
+==============================================================================================================
+DUPLICATE URL PROPERTY CODE: 3 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1468168
+Records  : 2
+  - camrealtyservice.com_1-bedroom-condo-for-sale-near-aeon-mall-sen-sok--afe44609a3b1 | raw_code= S1469168 | url_code= S1468168 | price= 87400 | size= 56.22 | title= 1 Bedroom Condo For Sale near AEON Mall Sen Sok City
+  - camrealtyservice.com_36th-floor-luxurious-4-bedroom-penthouse-for-sal-74551e42f538 | raw_code= S1468168 | url_code= S1468168 | price= 3100000 | size= 588.0 | title= 36th Floor Luxurious 4 Bedroom Penthouse For Sale in Tonle Basak
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1320168
+Records  : 2
+  - camrealtyservice.com_for-sale-in-wealth-mansion-s1320168-d180d51b9780 | raw_code= S1321168 | url_code= S1320168 | price= 275000 | size= 92.34 | title= 26th Floor 2 Bedroom Condo For Sale in Wealth Mansion
+  - camrealtyservice.com_l-tower-boeng-tumpun-s1320168-fcd8aa9c13d1 | raw_code= S1320168 | url_code= S1320168 | price= 63000 | size= 52.5 | title= 2 Bedroom Loft Condo For Sale in L Tower Boeng Tumpun
+
+--------------------------------------------------------------------------------------------------------------
+Signature: S1137168
+Records  : 2
+  - camrealtyservice.com_5th-floor-3-bedroom-condo-for-sale-in-embassy-ce-370e846bdd8d | raw_code= S1137168 | url_code= S1137168 | price= 478500 | size= 145.0 | title= 5th Floor 3 Bedroom Condo For Sale in Embassy Central
+  - camrealtyservice.com_24th-floor-3-bedroom-condo-for-sale-in-embassy-c-3475fa267d3c | raw_code= S1243168 | url_code= S1137168 | price= 795000 | size= 203.0 | title= 24th Floor 3 Bedroom Condo For Sale in Embassy Central
+
+==============================================================================================================
+EXACT LISTING SIGNATURE: 6 groups
+==============================================================================================================
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('7 makara area brand new 1 bedroom condominium on 10th floor for sale in phnom penh swimming pool gym and sauna', 55000.0, 38.5, 1.0, 1.0)
+Records  : 3
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-b3faf0dbe92b | raw_code= S1098168 | url_code= None | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-a085cb9f952c | raw_code= S1098168 | url_code= S1100168 | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+  - camrealtyservice.com_7-makara-area-brand-new-1-bedroom-condominium-fo-8bb608df1a2b | raw_code= S1098168 | url_code= None | price= 55000 | size= 38.5 | title= 7 Makara area| Brand new 1 bedroom condominium on 10th floor for sale in Phnom Penh| Swimming pool, gym and sauna
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('17th floor studio room serviced apartment for sale in wealth mansion', 145000.0, 45.89, 0.0, 1.0)
+Records  : 2
+  - camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-c3bb4d2743e2 | raw_code= S1454168 | url_code= S1454168 | price= 145000 | size= 45.89 | title= 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+  - camrealtyservice.com_17th-floor-studio-room-serviced-apartment-for-sa-57028701b9cd | raw_code= S1454168 | url_code= S1453168 | price= 145000 | size= 45.89 | title= 17th Floor Studio Room Serviced Apartment For Sale in Wealth Mansion
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('2 bedrooms condo for sale on street 2004', 298000.0, 89.9, 2.0, 2.0)
+Records  : 2
+  - camrealtyservice.com_2-bedrooms-condo-for-sale-on-street-2004-s137616-3746632e84ac | raw_code= S1376168 | url_code= None | price= 298000 | size= 89.9 | title= 2 Bedrooms Condo For Sale on Street 2004
+  - camrealtyservice.com_2-bedrooms-condo-for-sale-on-street-2004-s137616-21bed0521f0f | raw_code= S1376168 | url_code= S1376168 | price= 298000 | size= 89.9 | title= 2 Bedrooms Condo For Sale on Street 2004
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('13th floor 1 bedroom condo for sale in tk lane', 55000.0, 32.86, 1.0, 1.0)
+Records  : 2
+  - camrealtyservice.com_condo-for-sale-in-tk-lane-s1287168-d678e37c8bff | raw_code= S1287168 | url_code= S1287168 | price= 55000 | size= 32.86 | title= 13th Floor 1 Bedroom Condo For Sale in TK Lane
+  - camrealtyservice.com_condo-for-sale-in-tk-lane-s1286168-df44fb5613c0 | raw_code= S1286168 | url_code= S1286168 | price= 55000 | size= 32.86 | title= 13th Floor 1 Bedroom Condo For Sale in TK Lane
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('17th floor 2 bedroom condo for sale in time square 3', 85000.0, 50.0, 2.0, 1.0)
+Records  : 2
+  - camrealtyservice.com_2-bedroom-condo-for-sale-in-time-square-3-s12271-ae94a6a8174f | raw_code= S1227168 | url_code= S1227168 | price= 85000 | size= 50.0 | title= 17th Floor 2 Bedroom Condo For Sale in Time Square 3
+  - camrealtyservice.com_2-bedroom-condo-for-sale-in-time-square-3-s12261-f6a0e3672d0f | raw_code= S1226168 | url_code= S1226168 | price= 85000 | size= 50.0 | title= 17th Floor 2 Bedroom Condo For Sale in Time Square 3
+
+--------------------------------------------------------------------------------------------------------------
+Signature: ('30th floor 1 bedroom condo for sale in time square 3', 75000.0, 32.0, 1.0, 1.0)
+Records  : 2
+  - camrealtyservice.com_30th-floor-1-bedroom-condo-for-sale-in-time-squa-d7468a92352c | raw_code= S1167168 | url_code= None | price= 75000 | size= 32.0 | title= 30th Floor 1 Bedroom Condo For Sale in Time Square 3
+  - camrealtyservice.com_30th-floor-1-bedroom-condo-for-sale-in-time-squa-de4ce282a087 | raw_code= S1166168 | url_code= None | price= 75000 | size= 32.0 | title= 30th Floor 1 Bedroom Condo For Sale in Time Square 3
+
+==============================================================================================================
+CamRealty decision audit completed.
+==============================================================================================================
