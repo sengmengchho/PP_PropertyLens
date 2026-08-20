@@ -12,7 +12,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="Model Performance | PP PropertyLens",
-    page_icon="🤖",
+    page_icon=":material/model_training:",
     layout="wide",
 )
 
@@ -202,7 +202,7 @@ model_comparison = pd.DataFrame(
 # =========================================================
 
 st.title(
-    "🤖 Model Performance"
+    ":material/model_training: Model Performance"
 )
 
 st.write(
@@ -322,7 +322,6 @@ comparison_display = (
 
 st.dataframe(
     comparison_display,
-    use_container_width=True,
     hide_index=True,
     column_config={
         "RMSE":
@@ -421,7 +420,6 @@ with chart_col1:
 
     st.altair_chart(
         log_rmse_chart,
-        use_container_width=True,
     )
 
 
@@ -483,7 +481,6 @@ with chart_col2:
 
     st.altair_chart(
         mape_chart,
-        use_container_width=True,
     )
 
 
@@ -810,7 +807,6 @@ if (
 
     st.altair_chart(
         shap_chart,
-        use_container_width=True,
     )
 
 
@@ -838,22 +834,22 @@ if (
 
     icons = {
         "Property Size":
-            "📐",
+            ":material/square_foot:",
 
         "Bedrooms":
-            "🛏️",
+            ":material/bed:",
 
         "Bathrooms":
-            "🚿",
+            ":material/shower:",
 
         "Floor Level":
-            "🏢",
+            ":material/stairs:",
 
         "Location (District)":
-            "📍",
+            ":material/place:",
 
         "Property Type":
-            "🏠",
+            ":material/home:",
     }
 
 
@@ -870,7 +866,7 @@ if (
 
         icon = icons.get(
             feature_name,
-            "📊",
+            ":material/bar_chart:",
         )
 
 
@@ -1096,7 +1092,6 @@ if (
 
             st.dataframe(
                 qa_display,
-                use_container_width=True,
                 hide_index=True,
                 column_config={
                     "Advertised Price":

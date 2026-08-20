@@ -13,7 +13,7 @@ from src.prediction.predict import (
 
 st.set_page_config(
     page_title="PP PropertyLens",
-    page_icon="🏠",
+    page_icon=":material/real_estate_agent:",
     layout="wide",
 )
 
@@ -23,12 +23,12 @@ st.set_page_config(
 # =========================================================
 
 FACTOR_ICONS = {
-    "district": "📍",
-    "bedrooms": "🛏️",
-    "bathrooms": "🚿",
-    "size_m2": "📐",
-    "unit_floor": "🏢",
-    "property_type": "🏠",
+    "district": ":material/place:",
+    "bedrooms": ":material/bed:",
+    "bathrooms": ":material/shower:",
+    "size_m2": ":material/square_foot:",
+    "unit_floor": ":material/stairs:",
+    "property_type": ":material/home:",
 }
 
 
@@ -47,22 +47,20 @@ if "prediction_inputs" not in st.session_state:
 # PAGE HEADER
 # =========================================================
 
-st.title("🏠 PP PropertyLens")
+st.title("PP PropertyLens")
 
 st.markdown(
     """
-    Estimate the advertised asking price of a **Condo or Penthouse**
-    in Phnom Penh.
+    Estimate the asking price of a **Condo or Penthouse**
+    in Phnom Penh. Enter what you know and get a
+    data-based estimate in seconds.
     """
 )
 
 st.caption(
-    "Enter the property details below to receive an estimated "
-    "asking price, estimated price range, and the main factors "
-    "that influenced the result."
+    "You'll get a central estimate, a realistic price range, "
+    "and a plain-English breakdown of what drove the price."
 )
-
-st.divider()
 
 
 # =========================================================
@@ -72,8 +70,9 @@ st.divider()
 st.subheader("Property Details")
 
 st.caption(
-    "Enter the information you know. "
-    "Optional details can be marked as unknown."
+    "Fill in what you know. Not sure about a detail? "
+    "Tick the box next to it and the model will take "
+    "it from there."
 )
 
 
@@ -217,8 +216,9 @@ with st.container(border=True):
     # =====================================================
 
     submitted = st.button(
-        "Estimate Property Price",
-        use_container_width=True,
+        "Estimate property price",
+        icon=":material/calculate:",
+        width="stretch",
         type="primary",
     )
 
@@ -312,19 +312,17 @@ if st.session_state.prediction_result is not None:
 
         st.info(
             "You changed the property details after the last "
-            "estimate. Click **Estimate Property Price** again "
+            "estimate. Click **Estimate property price** again "
             "to update the result."
         )
 
 
-    # =====================================================
+# =====================================================
     # RESULT HEADER
     # =====================================================
 
-    st.divider()
-
     st.header(
-        "🏠 Property Price Estimate"
+        ":material/home: Property Price Estimate"
     )
 
     st.caption(
@@ -338,7 +336,8 @@ if st.session_state.prediction_result is not None:
     # =====================================================
 
     with st.container(
-        border=True
+        border=True,
+        horizontal_alignment="center",
     ):
 
         st.caption(
@@ -349,8 +348,9 @@ if st.session_state.prediction_result is not None:
             f"# ${result['estimated_price_usd']:,.0f}"
         )
 
+
         st.caption(
-            "The system's best estimate based on "
+            "The system's estimate based on "
             "the property details provided."
         )
 
@@ -377,7 +377,8 @@ if st.session_state.prediction_result is not None:
     with lower_col:
 
         with st.container(
-            border=True
+            border=True,
+            horizontal_alignment="center",
         ):
 
             st.caption(
@@ -388,6 +389,8 @@ if st.session_state.prediction_result is not None:
                 f"## ${result['lower_price_usd']:,.0f}"
             )
 
+            
+
 
     # -----------------------------------------------------
     # UPPER RANGE
@@ -396,7 +399,8 @@ if st.session_state.prediction_result is not None:
     with upper_col:
 
         with st.container(
-            border=True
+            border=True,
+            horizontal_alignment="center",
         ):
 
             st.caption(
@@ -407,11 +411,10 @@ if st.session_state.prediction_result is not None:
                 f"## ${result['upper_price_usd']:,.0f}"
             )
 
+        
 
-    
 
-
-    st.info(
+    st.caption(
         "The price range reflects uncertainty in the estimate "
         "and gives a more realistic view than a single predicted "
         "price alone."
@@ -504,7 +507,7 @@ if st.session_state.prediction_result is not None:
     if missing_factors:
 
         st.subheader(
-            "⚠️ Missing Information"
+            ":material/error: Missing Information"
         )
 
 
@@ -551,7 +554,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **🏠 Property Type**  
+                :material/home: **Property Type**  
                 {saved_inputs["property_type"]}
                 """
             )
@@ -566,7 +569,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **📍 District**  
+                :material/place: **District**  
                 {district_display}
                 """
             )
@@ -580,7 +583,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **📐 Property Size**  
+                :material/square_foot: **Property Size**  
                 {saved_inputs["size_m2"]:g} m²
                 """
             )
@@ -595,7 +598,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **🛏️ Bedrooms**  
+                :material/bed: **Bedrooms**  
                 {bedrooms_display}
                 """
             )
@@ -616,7 +619,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **🚿 Bathrooms**  
+                :material/shower: **Bathrooms**  
                 {bathrooms_display}
                 """
             )
@@ -631,7 +634,7 @@ if st.session_state.prediction_result is not None:
 
             st.markdown(
                 f"""
-                **🏢 Floor Level**  
+                :material/stairs: **Floor Level**  
                 {floor_display}
                 """
             )
@@ -667,11 +670,11 @@ if st.session_state.prediction_result is not None:
     # DISCLAIMER
     # =====================================================
 
-    st.divider()
+    st.space("medium")
 
 
     st.caption(
-        "⚠️ PropertyLens provides a data-based asking-price "
+        ":material/info: PropertyLens provides a data-based asking-price "
         "estimate using advertised property listing data. "
         "It is not an official property valuation and may "
         "not capture factors such as interior condition, "
