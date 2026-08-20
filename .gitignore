@@ -3,35 +3,57 @@
 venv/
 env/
 ENV/
+.python-version
 __pycache__/
 *.py[cod]
 *.pyo
 *.pyd
+*.egg-info/
 .pytest_cache/
 .mypy_cache/
 .ruff_cache/
 .coverage
+.coverage.*
 htmlcov/
+
+# Jupyter / notebook checkpoints
 .ipynb_checkpoints/
 
-# Generated data / ETL layers
+# Generated ETL / data artifacts
+# Keep source config files in config/ tracked; ignore output datasets and derived layers.
 data/bronze/
 data/silver/
 data/gold/
+data/geo/
+data/qa/
 geo/*.csv
+geo/*.parquet
 
-# Model and output artifacts
+# Model artifacts and generated predictions
 models/
-*.pkl
 *.joblib
+*.pkl
 *.pickle
-outputs/figures/
+*.h5
+*.keras
+*.onnx
+
+# Output reports / figures
+outputs/
+!outputs/README*
+!outputs/.gitkeep
 
 # Frontend build output
 frontend/node_modules/
 frontend/dist/
 frontend/.next/
+frontend/.cache/
 frontend/coverage/
+
+# Streamlit / local app settings
+.streamlit/
+*.sqlite
+*.db
 
 # Secrets / local config
 .env
@@ -42,8 +64,16 @@ frontend/coverage/
 .DS_Store
 Thumbs.db
 .vscode/
+.idea/
 
 # Logs and temp files
 *.log
 *.tmp
 *.temp
+*.bak
+
+# Ignore common large files if they are generated locally
+*.zip
+*.tar
+*.gz
+*.csv~
