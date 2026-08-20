@@ -12,7 +12,7 @@ import streamlit as st
 
 st.set_page_config(
     page_title="About & Methodology | PP PropertyLens",
-    page_icon="ℹ️",
+    page_icon=":material/info:",
     layout="wide",
 )
 
@@ -78,7 +78,7 @@ metadata = load_metadata()
 # =========================================================
 
 st.title(
-    "ℹ️ About & Methodology"
+    ":material/info: About & Methodology"
 )
 
 st.write(
@@ -141,7 +141,7 @@ with objective_col1:
     ):
 
         st.markdown(
-            "### 📊 Explore the Market"
+            "### :material/insights: Explore the Market"
         )
 
         st.write(
@@ -157,7 +157,7 @@ with objective_col2:
     ):
 
         st.markdown(
-            "### 🏠 Estimate Asking Price"
+            "### :material/calculate: Estimate Asking Price"
         )
 
         st.write(
@@ -173,7 +173,7 @@ with objective_col3:
     ):
 
         st.markdown(
-            "### 🔍 Explain Predictions"
+            "### :material/visibility: Explain Predictions"
         )
 
         st.write(
@@ -321,7 +321,6 @@ source_chart = (
 
 st.altair_chart(
     source_chart,
-    use_container_width=True,
 )
 
 
@@ -380,7 +379,7 @@ with pipeline_col1:
     ):
 
         st.markdown(
-            "### 1️⃣ Collect"
+            "### 1. Collect"
         )
 
         st.write(
@@ -396,7 +395,7 @@ with pipeline_col2:
     ):
 
         st.markdown(
-            "### 2️⃣ Clean"
+            "### 2. Clean"
         )
 
         st.write(
@@ -413,7 +412,7 @@ with pipeline_col3:
     ):
 
         st.markdown(
-            "### 3️⃣ Review"
+            "### 3. Review"
         )
 
         st.write(
@@ -437,7 +436,7 @@ with pipeline_col4:
     ):
 
         st.markdown(
-            "### 4️⃣ Deduplicate"
+            "### 4. Deduplicate"
         )
 
         st.write(
@@ -453,7 +452,7 @@ with pipeline_col5:
     ):
 
         st.markdown(
-            "### 5️⃣ Recover Location"
+            "### 5. Recover Location"
         )
 
         st.write(
@@ -469,7 +468,7 @@ with pipeline_col6:
     ):
 
         st.markdown(
-            "### 6️⃣ Analyze & Model"
+            "### 6. Analyze & Model"
         )
 
         st.write(
@@ -579,7 +578,6 @@ feature_data = pd.DataFrame(
 
 st.dataframe(
     feature_data,
-    use_container_width=True,
     hide_index=True,
 )
 
@@ -660,7 +658,7 @@ with missing_col1:
     ):
 
         st.markdown(
-            "### 🔢 Numeric Features"
+            "### :material/numbers: Numeric Features"
         )
 
         st.write(
@@ -683,7 +681,7 @@ with missing_col2:
     ):
 
         st.markdown(
-            "### 🏷️ Categorical Features"
+            "### :material/label: Categorical Features"
         )
 
         st.write(
@@ -876,13 +874,11 @@ split_chart = (
 
 st.altair_chart(
     split_chart,
-    use_container_width=True,
 )
 
 
 st.dataframe(
     split_df,
-    use_container_width=True,
     hide_index=True,
     column_config={
         "Rows":
@@ -985,7 +981,7 @@ with model_col3:
     ):
 
         st.markdown(
-            "### ✅ XGBoost"
+            "### :material/check_circle: XGBoost"
         )
 
         st.write(
@@ -1037,7 +1033,7 @@ with range_col1:
     ):
 
         st.markdown(
-            "### 1️⃣ Central Estimate"
+            "### 1. Central Estimate"
         )
 
         st.write(
@@ -1053,7 +1049,7 @@ with range_col2:
     ):
 
         st.markdown(
-            "### 2️⃣ Calibration"
+            "### 2. Calibration"
         )
 
         st.write(
@@ -1069,7 +1065,7 @@ with range_col3:
     ):
 
         st.markdown(
-            "### 3️⃣ Price Range"
+            "### 3. Price Range"
         )
 
         st.write(
@@ -1144,7 +1140,7 @@ with explain_col1:
     ):
 
         st.markdown(
-            "### 🌍 Global Explanation"
+            "### :material/public: Global Explanation"
         )
 
         st.write(
@@ -1160,7 +1156,7 @@ with explain_col2:
     ):
 
         st.markdown(
-            "### 🏠 Individual Explanation"
+            "### :material/home: Individual Explanation"
         )
 
         st.write(
@@ -1199,12 +1195,12 @@ with st.container(
 
     st.markdown(
         """
-        **📋 Advertised prices, not transaction prices**
+        :material/receipt_long: **Advertised prices, not transaction prices**
 
         The dataset contains sellers' advertised asking prices.
         It does not show the final negotiated sale price.
 
-        **🏠 Limited property characteristics**
+        :material/home: **Limited property characteristics**
 
         The model uses six main features. It does not directly
         know the property's interior condition, renovation
@@ -1212,24 +1208,24 @@ with st.container(
         exact building reputation, seller urgency, or
         negotiation circumstances.
 
-        **📍 Limited exact-location coverage**
+        :material/place: **Limited exact-location coverage**
 
         District is the primary location feature because exact
         coordinates were unavailable for most listings.
 
-        **🌆 Luxury properties are less common**
+        :material/villa: **Luxury properties are less common**
 
         There are fewer very high-value properties in the
         dataset, so estimates for unusual luxury properties
         may be less stable.
 
-        **🏢 Property mix**
+        :material/apartment: **Property mix**
 
         The dataset contains many more Condos than Penthouses.
         The split preserved this distribution, but Penthouse
         predictions are supported by fewer examples.
 
-        **🔗 Similar buildings may appear across splits**
+        :material/link: **Similar buildings may appear across splits**
 
         The final split was performed at the listing level.
         Because reliable project names were unavailable for
@@ -1266,7 +1262,7 @@ with use_col1:
     ):
 
         st.markdown(
-            "### ✅ Appropriate Uses"
+            "### :material/check_circle: Appropriate Uses"
         )
 
         st.markdown(
@@ -1287,7 +1283,7 @@ with use_col2:
     ):
 
         st.markdown(
-            "### ⚠️ Do Not Treat It As"
+            "### :material/warning: Do Not Treat It As"
         )
 
         st.markdown(

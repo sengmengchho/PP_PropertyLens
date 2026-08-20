@@ -1,6 +1,7 @@
 import streamlit as st
 import pandas as pd
 import altair as alt
+from pathlib import Path
 
 
 # =========================================================
@@ -9,8 +10,19 @@ import altair as alt
 
 st.set_page_config(
     page_title="Market Insights | PP PropertyLens",
-    page_icon="📊",
+    page_icon=":material/insights:",
     layout="wide",
+)
+
+
+# =========================================================
+# PATHS
+# =========================================================
+
+PROJECT_ROOT = (
+    Path(__file__)
+    .resolve()
+    .parents[1]
 )
 
 
@@ -18,11 +30,19 @@ st.set_page_config(
 # LOAD DATA
 # =========================================================
 
+DATA_PATH = (
+    PROJECT_ROOT
+    / "data"
+    / "gold"
+    / "property_listings_geocoded.csv"
+)
+
+
 @st.cache_data
 def load_data():
 
     return pd.read_csv(
-        "data/gold/property_listings_geocoded.csv"
+        DATA_PATH
     )
 
 
@@ -34,7 +54,7 @@ df = load_data()
 # =========================================================
 
 st.title(
-    "📊 Phnom Penh Market Insights"
+    ":material/insights: Phnom Penh Market Insights"
 )
 
 st.write(
@@ -445,7 +465,6 @@ else:
 
     st.altair_chart(
         district_price_chart,
-        use_container_width=True,
     )
 
 
@@ -545,7 +564,6 @@ else:
 
     st.altair_chart(
         district_m2_chart,
-        use_container_width=True,
     )
 
 
@@ -585,7 +603,6 @@ display_district_summary = (
 
 st.dataframe(
     display_district_summary,
-    use_container_width=True,
     hide_index=True,
     column_config={
         "Listings":
@@ -778,7 +795,6 @@ price_distribution_chart = (
 
 st.altair_chart(
     price_distribution_chart,
-    use_container_width=True,
 )
 
 
@@ -895,55 +911,94 @@ if not property_type_summary.empty:
             == "Condo"
         ):
 
-            icon = "🏢"
+            icon = ":material/apartment:"
 
         else:
 
-            icon = "🌆"
+            icon = ":material/villa:"
 
 
         with column:
 
             with st.container(
-                border=True
+                border=True,
+                horizontal_alignment="center",
             ):
 
+                st.badge(
+                    property_type_name,
+                    icon=icon,
+                    color=(
+                        "blue"
+                        if property_type_name == "Condo"
+                        else "violet"
+                    ),
+                )
+
+                st.space("small")
+
+                st.caption(
+                    "MEDIAN ASKING PRICE"
+                )
+
                 st.markdown(
-                    f"### {icon} "
-                    f"{property_type_name}"
+                    f"# ${row['median_price']:,.0f}"
+                )
+
+                st.caption(
+                    f"Half the {int(row['listings']):,} "
+                    "listings are priced above this line, "
+                    "half below."
+                )
+
+                st.space("medium")
+
+                measure_col1, measure_col2 = (
+                    st.columns(
+                        2,
+                        gap="medium",
+                    )
                 )
 
 
-                st.metric(
-                    "Listings",
-                    (
-                        f"{int(row['listings']):,}"
-                    ),
-                )
+                with measure_col1:
+
+                    # -----------------------------------------
+                    # MEDIAN SIZE
+                    # -----------------------------------------
+
+                    with st.container(
+                        border=True,
+                        horizontal_alignment="center",
+                    ):
+
+                        st.caption(
+                            "Median size"
+                        )
+
+                        st.markdown(
+                            f"**{row['median_size']:,.0f} m²**"
+                        )
 
 
-                st.metric(
-                    "Median Asking Price",
-                    (
-                        f"${row['median_price']:,.0f}"
-                    ),
-                )
+                with measure_col2:
 
+                    # -----------------------------------------
+                    # MEDIAN PRICE PER M2
+                    # -----------------------------------------
 
-                st.metric(
-                    "Median Size",
-                    (
-                        f"{row['median_size']:,.0f} m²"
-                    ),
-                )
+                    with st.container(
+                        border=True,
+                        horizontal_alignment="center",
+                    ):
 
+                        st.caption(
+                            "Price per m²"
+                        )
 
-                st.metric(
-                    "Median Price / m²",
-                    (
-                        f"${row['median_price_per_m2']:,.0f}"
-                    ),
-                )
+                        st.markdown(
+                            f"**${row['median_price_per_m2']:,.0f}**"
+                        )
 
 
 # =========================================================
@@ -1021,7 +1076,6 @@ if not property_type_summary.empty:
 
     st.altair_chart(
         property_type_price_chart,
-        use_container_width=True,
     )
 
 
@@ -1212,7 +1266,7 @@ bed_col, bath_col = st.columns(
 with bed_col:
 
     st.markdown(
-        "#### 🛏️ Median Price by Bedrooms"
+        "#### :material/bed: Median Price by Bedrooms"
     )
 
 
@@ -1280,7 +1334,6 @@ with bed_col:
 
         st.altair_chart(
             bedroom_chart,
-            use_container_width=True,
         )
 
 
@@ -1291,7 +1344,7 @@ with bed_col:
 with bath_col:
 
     st.markdown(
-        "#### 🚿 Median Price by Bathrooms"
+        "#### :material/shower: Median Price by Bathrooms"
     )
 
 
@@ -1359,7 +1412,6 @@ with bath_col:
 
         st.altair_chart(
             bathroom_chart,
-            use_container_width=True,
         )
 
 
