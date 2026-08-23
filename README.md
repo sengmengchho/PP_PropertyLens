@@ -1,59 +1,78 @@
 # PP PropertyLens
 
-PP PropertyLens is a Phnom Penh property data project that collects public condo listings, cleans and standardises them, and prepares the data for pricing analysis and a future prediction app.
+PP PropertyLens is a Streamlit data application for exploring advertised condominium and penthouse prices in Phnom Penh and generating data-based asking-price estimates.
 
-## Project Snapshot
+The project covers the full workflow from public listing collection and cleaning to exploratory market analysis, machine-learning prediction, model explanation, and validation.
 
-Current focus: Phnom Penh condominiums for sale.
+## Current Features
 
-What is already in place:
+- **Property Price Estimate**: estimate an asking price from property type, size, bedrooms, bathrooms, floor level, and district.
+- **Uncertainty range**: display a central estimate and an 80% conformal prediction interval.
+- **Prediction explanation**: show the factors with the greatest influence on each estimate using SHAP-based explanations.
+- **Market Insights**: filter and visualise asking-price patterns by property type, district, and price range.
+- **Model Performance**: review model metrics, global feature importance, and real-world validation results.
+- **About & Methodology**: describe the data, processing workflow, model, and project limitations.
 
-- Public listing sources have been identified, verified, and scraped.
-- Raw data has been inspected source by source.
-- The bronze-to-silver cleaning pipeline is implemented and documented.
-- A cleaned dataset and duplicate log have already been produced.
-- Supporting recon, audit, and inspection reports are saved in `outputs/reports/`.
+## Data Summary
 
-## Completed Work
+The current Gold dataset contains **2,673 deduplicated listings** from six public sources:
 
-### 1. Source discovery and scraping
+| Source | Listings |
+| --- | ---: |
+| realestate.com.kh | 844 |
+| harbor-property.com | 753 |
+| khpropertyhub.com | 675 |
+| camrealtyservice.com | 199 |
+| aps.com.kh | 109 |
+| khmer24.com | 93 |
+| **Total** | **2,673** |
 
-- Site recon and source verification were completed for the target property websites.
-- Scrapers exist for the main sources in `src/`, including realestate.com.kh and Khmer24.
-- Additional agency sources are also present in the project structure for later consolidation.
+The dataset contains 2,482 condos and 191 penthouses. Prices range from $20,000 to $5,000,000, with a mean listing price of approximately $170,818. These are advertised prices, not confirmed transaction prices.
 
-### 2. Raw data inspection
+## Model
 
-- Source-specific inspection scripts were run for raw listing files.
-- The realestate.com.kh raw dataset inspection completed successfully and produced a detailed report.
-- The Khmer24 inspection and decision-audit reports are also saved for review.
+The application uses the trained pipeline in `models/propertylens_xgboost_final.joblib`. Its input features are:
 
-### 3. Cleaning and deduplication
+- Property size in square metres
+- Bedrooms
+- Bathrooms
+- Unit floor
+- District
+- Property type
 
-- The bronze-to-silver cleaning pipeline is implemented in `src/clean.py`.
-- Districts are standardised, missing fields are recovered where possible, and duplicates are removed.
-- Cleaning output and a written report are available in `data/silver/` and `outputs/reports/`.
+The final test results recorded in the model metadata are:
 
-### 4. Current cleaned-data summary
+| Metric | Result |
+| --- | ---: |
+| RMSE | $122,245.87 |
+| MAE | $53,075.18 |
+| MAPE | 26.08% |
+| R² | 0.5529 |
+| Log RMSE | 0.3374 |
 
-- Collected from all sources: 3,476 records
-- After scope filtering and validation: 2,931 records
-- Unique properties after deduplication: 2,463 records
-- Main excluded rows: rentals, outside Phnom Penh, missing or impossible price/size values, and duplicates
+The model was trained on 2,137 rows, calibrated on 268 rows, and evaluated on a final test set of 268 rows. The nominal interval level is 80%; observed validation coverage was 77.61%.
 
 ## Repository Structure
 
 ```text
-config/      Project settings, district mappings, landmark data
-data/        Bronze, silver, and geo datasets
-docs/        Supporting notes and documentation
-outputs/     Reports, audits, recon results, and figures
-src/         Scrapers, recon scripts, cleaning scripts, and utilities
+app.py                  Streamlit prediction page
+pages/                  Market, methodology, and model-performance pages
+src/                    Scrapers, cleaning, recovery, and prediction code
+config/                 Settings, district mappings, landmarks, and URLs
+data/bronze/            Source-level raw listing data
+data/silver/            Cleaned, recovered, and deduplicated data
+data/gold/              Final analytical datasets and summaries
+data/model/             Global SHAP feature importance
+data/qa/                Real-world validation results
+models/                 Trained models and model metadata
+outputs/reports/        Cleaning, audit, and inspection reports
+scripts/                Model, QA, and utility scripts
+notebooks/              EDA, feature engineering, and location notebooks
 ```
 
-## How To Run
+## Setup
 
-Set up the environment:
+Create and activate a virtual environment, then install the dependencies:
 
 ```bash
 python -m venv venv
@@ -62,42 +81,64 @@ pip install -r requirements.txt
 playwright install chromium
 ```
 
-Run the main pipeline steps:
+On Windows PowerShell, activate the environment with:
+
+```powershell
+.\venv\Scripts\Activate.ps1
+```
+
+## Run the Application
+
+From the project root:
+
+```bash
+streamlit run app.py
+```
+
+The application requires the trained model files in `models/` and the Gold listing data in `data/gold/`.
+
+## Data Pipeline
+
+The main collection and cleaning scripts are:
 
 ```bash
 python src/scrape_realestate.py
 python src/scrape_khmer24.py
-python src/clean.py
+python src/scrape_agencies.py
+python src/cleaning/clean_realestate.py
+python src/cleaning/clean_khmer24.py
+python src/cleaning/clean_harbor.py
+python src/cleaning/clean_khpropertyhub.py
+python src/cleaning/clean_camrealty.py
+python src/cleaning/clean_aps.py
+python src/cleaning/merge_silver_sources.py
+python src/cleaning/build_gold_dataset.py
 ```
 
-If you want to generate the realestate inspection report on Windows, use:
+Additional utilities are available for source verification, field inspection, location recovery, geocoding, model prediction tests, SHAP generation, and real-world QA. Review the scripts and reports before rerunning collection or rebuilding derived datasets.
 
-```bash
-PYTHONIOENCODING=utf-8 python src/cleaning/inspect_realestate.py > outputs/reports/realestate_cleaning_inspection.txt
-```
+## Limitations
 
-## What Comes Next
-
-1. Exploratory data analysis on the cleaned silver dataset.
-2. Feature engineering, including location and property features.
-3. Model training and evaluation with a baseline and comparison models.
-4. Build the API and dashboard for price lookup and visualization.
-5. Prepare the final report, screenshots, and demo materials.
-
-## Known Limitations
-
-- The dataset contains asking prices, not final transaction prices.
-- The project scope is condominiums and apartments for sale in Phnom Penh only.
-- Some listings still lack exact coordinates, so district-level fallback logic is used.
+- Estimates describe advertised asking prices and are not official valuations.
+- The project focuses on condo and penthouse listings in Phnom Penh.
+- Listing coverage and data quality vary by source.
+- Some records have missing district, bathroom, floor, project, or coordinate information.
+- The model is intended for exploratory price estimation, not financial, legal, or investment decisions.
 
 ## Data Sources
 
 - realestate.com.kh
-- Khmer24.com
-- OpenStreetMap landmark and boundary data
+- harbor-property.com
+- khpropertyhub.com
+- camrealtyservice.com
+- aps.com.kh
+- khmer24.com
 
-Only publicly visible pages are collected. No personal contact data is stored. Requests are throttled to avoid burdening the source websites.
+
+Only publicly visible listing information is collected. Requests are throttled, and personal contact data is not stored as part of the analytical dataset.
 
 ## Author
 
-CHHO Sengmeng - Institute of Technology of Cambodia (ITC), Department of AMS
+CHHO Sengmeng 
+Data Scientist (Intern) - Data Insight Cambodia, 
+Institute of Technology of Cambodia (ITC), Department of AMS
