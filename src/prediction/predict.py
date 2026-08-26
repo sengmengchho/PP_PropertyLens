@@ -3,7 +3,6 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
-import shap
 import json
 
 
@@ -75,12 +74,20 @@ feature_names = (
 
 
 # =========================================================
-# SHAP EXPLAINER
+# SHAP EXPLAINER (lazy-loaded)
 # =========================================================
 
-shap_explainer = shap.TreeExplainer(
-    xgb_model
-)
+_shap_explainer = None
+
+
+def _get_shap_explainer():
+    global _shap_explainer
+    if _shap_explainer is None:
+        import shap
+        _shap_explainer = shap.TreeExplainer(
+            xgb_model
+        )
+    return _shap_explainer
 
 
 # =========================================================
@@ -419,7 +426,7 @@ def explain_prediction(
     # -------------------------------------------------
 
     shap_values = (
-        shap_explainer(
+        _get_shap_explainer()(
             transformed_df
         )
     )
