@@ -26,10 +26,6 @@ PROJECT_ROOT = (
 )
 
 
-# =========================================================
-# LOAD DATA
-# =========================================================
-
 DATA_PATH = (
     PROJECT_ROOT
     / "data"
@@ -37,6 +33,10 @@ DATA_PATH = (
     / "property_listings_geocoded.csv"
 )
 
+
+# =========================================================
+# LOAD DATA
+# =========================================================
 
 @st.cache_data
 def load_data():
@@ -82,10 +82,6 @@ st.caption(
 with st.container(
     border=True
 ):
-
-    # =====================================================
-    # ROW 1
-    # =====================================================
 
     filter_col1, filter_col2 = st.columns(
         [1, 2],
@@ -141,9 +137,9 @@ with st.container(
         )
 
 
-    # =====================================================
+    # -----------------------------------------------------
     # PRICE RANGE
-    # =====================================================
+    # -----------------------------------------------------
 
     st.markdown("")
 
@@ -239,7 +235,7 @@ if filtered_df.empty:
 
     st.warning(
         "No listings match the selected filters. "
-        "Try expanding the district or price range."
+        "Try expanding the district or asking-price range."
     )
 
     st.stop()
@@ -264,16 +260,48 @@ st.subheader(
 )
 
 
-overview_col1, overview_col2, (
-    overview_col3
-), overview_col4 = st.columns(
-    4
+lowest_price = (
+    filtered_df[
+        "price_usd"
+    ].min()
+)
+
+median_price = (
+    filtered_df[
+        "price_usd"
+    ].median()
+)
+
+highest_price = (
+    filtered_df[
+        "price_usd"
+    ].max()
+)
+
+median_size = (
+    filtered_df[
+        "size_m2"
+    ].median()
+)
+
+district_count = (
+    filtered_df[
+        "district"
+    ].nunique()
 )
 
 
-# ---------------------------------------------------------
-# LISTINGS
-# ---------------------------------------------------------
+# =========================================================
+# OVERVIEW ROW 1
+# =========================================================
+
+overview_col1, overview_col2, overview_col3 = (
+    st.columns(
+        3,
+        gap="large",
+    )
+)
+
 
 with overview_col1:
 
@@ -283,48 +311,513 @@ with overview_col1:
     )
 
 
-# ---------------------------------------------------------
-# MEDIAN PRICE
-# ---------------------------------------------------------
-
 with overview_col2:
 
     st.metric(
-        "Median Asking Price",
-        (
-            f"${filtered_df['price_usd'].median():,.0f}"
-        ),
+        "Lowest Asking Price",
+        f"${lowest_price:,.0f}",
     )
 
-
-# ---------------------------------------------------------
-# MEDIAN SIZE
-# ---------------------------------------------------------
 
 with overview_col3:
 
     st.metric(
-        "Median Size",
-        (
-            f"{filtered_df['size_m2'].median():,.0f} m²"
-        ),
+        "Median Asking Price",
+        f"${median_price:,.0f}",
     )
 
 
-# ---------------------------------------------------------
-# DISTRICTS
-# ---------------------------------------------------------
+# =========================================================
+# OVERVIEW ROW 2
+# =========================================================
+
+overview_col4, overview_col5, overview_col6 = (
+    st.columns(
+        3,
+        gap="large",
+    )
+)
+
 
 with overview_col4:
 
     st.metric(
-        "Districts Covered",
-        (
-            filtered_df[
-                "district"
-            ].nunique()
-        ),
+        "Highest Asking Price",
+        f"${highest_price:,.0f}",
     )
+
+
+with overview_col5:
+
+    st.metric(
+        "Median Size",
+        f"{median_size:,.0f} m²",
+    )
+
+
+with overview_col6:
+
+    st.metric(
+        "Districts Covered",
+        district_count,
+    )
+
+
+st.caption(
+    "Lowest and highest values represent the advertised "
+    "asking-price range among listings matching the "
+    "current filters."
+)
+
+
+st.divider()
+
+
+# =========================================================
+# MOST COMMON PRICE RANGE
+# =========================================================
+
+st.subheader(
+    "Most Common Price Range"
+)
+
+st.caption(
+    "Shows the asking-price range containing the largest "
+    "concentration of listings for each selected property type."
+)
+
+
+# =========================================================
+# PROPERTY TYPES TO DISPLAY
+# =========================================================
+
+if property_type_filter == "All":
+
+    types_to_show = [
+        "Condo",
+        "Penthouse",
+    ]
+
+else:
+
+    types_to_show = [
+        property_type_filter
+    ]
+
+
+# =========================================================
+# COMMON PRICE RANGE FUNCTION
+# =========================================================
+
+def get_common_price_range(
+    data,
+    property_type_name,
+):
+
+    type_df = (
+        data[
+            data[
+                "property_type"
+            ] == property_type_name
+        ]
+        .dropna(
+            subset=[
+                "price_usd"
+            ]
+        )
+        .copy()
+    )
+
+
+    if type_df.empty:
+
+        return None, None
+
+
+    # Condo has more observations, so smaller bands are useful.
+    if property_type_name == "Condo":
+
+        price_band_size = 25_000
+
+    else:
+
+        price_band_size = 50_000
+
+
+    type_df[
+        "price_band_start"
+    ] = (
+        type_df[
+            "price_usd"
+        ]
+        // price_band_size
+        * price_band_size
+    )
+
+
+    type_df[
+        "price_band_end"
+    ] = (
+        type_df[
+            "price_band_start"
+        ]
+        + price_band_size
+    )
+
+
+    band_summary = (
+        type_df
+        .groupby(
+            [
+                "price_band_start",
+                "price_band_end",
+            ]
+        )
+        .size()
+        .reset_index(
+            name="listings"
+        )
+    )
+
+
+    band_summary[
+        "price_band_label"
+    ] = (
+        band_summary
+        .apply(
+            lambda row:
+            (
+                f"${row['price_band_start']:,.0f}"
+                f" – "
+                f"${row['price_band_end']:,.0f}"
+            ),
+            axis=1,
+        )
+    )
+
+
+    most_common_band = (
+        band_summary
+        .sort_values(
+            "listings",
+            ascending=False,
+        )
+        .iloc[0]
+    )
+
+
+    result = {
+        "property_type":
+            property_type_name,
+
+        "total_listings":
+            len(type_df),
+
+        "band_start":
+            most_common_band[
+                "price_band_start"
+            ],
+
+        "band_end":
+            most_common_band[
+                "price_band_end"
+            ],
+
+        "band_count":
+            int(
+                most_common_band[
+                    "listings"
+                ]
+            ),
+
+        "band_share":
+            (
+                most_common_band[
+                    "listings"
+                ]
+                / len(type_df)
+                * 100
+            ),
+    }
+
+
+    return (
+        result,
+        band_summary,
+    )
+
+
+# =========================================================
+# BUILD COMMON RANGE RESULTS
+# =========================================================
+
+common_range_results = []
+
+
+for property_type_name in types_to_show:
+
+    result, band_summary = (
+        get_common_price_range(
+            filtered_df,
+            property_type_name,
+        )
+    )
+
+
+    if result is not None:
+
+        common_range_results.append(
+            (
+                result,
+                band_summary,
+            )
+        )
+
+
+# =========================================================
+# DISPLAY COMMON RANGE
+# =========================================================
+
+if not common_range_results:
+
+    st.info(
+        "No listings are available for this section "
+        "with the current filters."
+    )
+
+else:
+
+    range_columns = st.columns(
+        len(common_range_results),
+        gap="large",
+    )
+
+
+    for column, (
+        result,
+        band_summary,
+    ) in zip(
+        range_columns,
+        common_range_results,
+    ):
+
+        property_type_name = (
+            result[
+                "property_type"
+            ]
+        )
+
+
+        if property_type_name == "Condo":
+
+            icon = ":material/apartment:"
+
+        else:
+
+            icon = ":material/villa:"
+
+
+        with column:
+
+            with st.container(
+                border=True,
+            ):
+
+                st.markdown(
+                    f"### {icon} "
+                    f"{property_type_name}"
+                )
+
+
+                st.caption(
+                    "MOST COMMON ASKING-PRICE RANGE"
+                )
+
+
+                st.markdown(
+                    (
+                        f"## "
+                        f"${result['band_start']:,.0f}"
+                        f" – "
+                        f"${result['band_end']:,.0f}"
+                    )
+                )
+
+
+                range_metric1, range_metric2 = (
+                    st.columns(
+                        2
+                    )
+                )
+
+
+                with range_metric1:
+
+                    st.metric(
+                        "Listings in Range",
+                        f"{result['band_count']:,}",
+                    )
+
+
+                with range_metric2:
+
+                    st.metric(
+                        "Share",
+                        (
+                            f"{result['band_share']:.1f}%"
+                        ),
+                    )
+
+
+                st.caption(
+                    (
+                        f"{result['band_count']:,} of "
+                        f"{result['total_listings']:,} "
+                        f"{property_type_name} listings "
+                        "fall within this price range."
+                    )
+                )
+
+
+                # -----------------------------------------
+                # SMALL SAMPLE WARNING
+                # -----------------------------------------
+
+                if (
+                    result[
+                        "total_listings"
+                    ] < 5
+                ):
+
+                    st.warning(
+                        "Very few listings match the "
+                        "current filters. This range is "
+                        "descriptive only and should not "
+                        "be treated as a market trend."
+                    )
+
+                elif (
+                    result[
+                        "total_listings"
+                    ] < 20
+                ):
+
+                    st.warning(
+                        "This result is based on a small "
+                        "number of listings, so interpret "
+                        "the price concentration carefully."
+                    )
+
+
+# =========================================================
+# COMMON PRICE RANGE CHARTS
+# =========================================================
+
+for (
+    result,
+    band_summary,
+) in common_range_results:
+
+    # Skip distribution chart for extremely small samples
+    if (
+        result[
+            "total_listings"
+        ] < 5
+    ):
+
+        continue
+
+
+    property_type_name = (
+        result[
+            "property_type"
+        ]
+    )
+
+
+    st.markdown(
+        f"#### {property_type_name} Price Distribution"
+    )
+
+
+    top_price_bands = (
+        band_summary
+        .sort_values(
+            "listings",
+            ascending=False,
+        )
+        .head(8)
+        .sort_values(
+            "price_band_start",
+            ascending=True,
+        )
+        .copy()
+    )
+
+
+    price_band_order = (
+        top_price_bands[
+            "price_band_label"
+        ]
+        .tolist()
+    )
+
+
+    common_price_chart = (
+        alt.Chart(
+            top_price_bands
+        )
+        .mark_bar(
+            cornerRadiusTopLeft=5,
+            cornerRadiusTopRight=5,
+        )
+        .encode(
+            x=alt.X(
+                "price_band_label:N",
+                title=(
+                    f"{property_type_name} "
+                    "Asking-Price Range"
+                ),
+                sort=price_band_order,
+                axis=alt.Axis(
+                    labelAngle=-35,
+                ),
+            ),
+
+            y=alt.Y(
+                "listings:Q",
+                title="Number of Listings",
+            ),
+
+            tooltip=[
+                alt.Tooltip(
+                    "price_band_label:N",
+                    title="Price Range",
+                ),
+
+                alt.Tooltip(
+                    "listings:Q",
+                    title="Listings",
+                    format=",",
+                ),
+            ],
+        )
+        .properties(
+            height=340,
+        )
+    )
+
+
+    st.altair_chart(
+        common_price_chart,
+    )
+
+
+st.info(
+    "The most common price range shows where advertised "
+    "listings are most concentrated. It does not represent "
+    "an official property valuation."
+)
 
 
 st.divider()
@@ -380,7 +873,7 @@ st.subheader(
 st.caption(
     "Typical advertised asking price by district. "
     "Only districts with at least 20 matching listings "
-    "are shown to make the comparison more reliable."
+    "are shown for stronger comparisons."
 )
 
 
@@ -424,9 +917,7 @@ else:
 
             x=alt.X(
                 "median_price:Q",
-                title=(
-                    "Median Asking Price (USD)"
-                ),
+                title="Median Asking Price (USD)",
                 axis=alt.Axis(
                     format="$,.0f",
                 ),
@@ -523,9 +1014,7 @@ else:
 
             x=alt.X(
                 "median_price_per_m2:Q",
-                title=(
-                    "Median Price per m² (USD)"
-                ),
+                title="Median Price per m² (USD)",
                 axis=alt.Axis(
                     format="$,.0f",
                 ),
@@ -568,7 +1057,7 @@ else:
 
 
 # =========================================================
-# DISTRICT DETAILS TABLE
+# DISTRICT DETAILS
 # =========================================================
 
 st.subheader(
@@ -576,9 +1065,8 @@ st.subheader(
 )
 
 st.caption(
-    "Detailed market statistics for all districts "
-    "matching the selected filters, including districts "
-    "with smaller sample sizes."
+    "Detailed statistics for districts matching the "
+    "current filters."
 )
 
 
@@ -635,175 +1123,189 @@ st.subheader(
 )
 
 st.caption(
-    "Shows how advertised property prices are distributed "
-    "for the selected market. The chart displays up to "
-    "the 99th percentile so a small number of luxury "
-    "listings do not compress the main distribution."
+    "Shows how advertised prices are distributed for "
+    "the selected market. The chart displays up to the "
+    "99th percentile so extreme luxury listings do not "
+    "compress the main distribution."
 )
 
 
 # =========================================================
-# 99TH PERCENTILE — DISPLAY ONLY
+# ONLY DISPLAY DISTRIBUTION WHEN SAMPLE IS LARGE ENOUGH
 # =========================================================
 
-price_99 = (
-    filtered_df[
-        "price_usd"
-    ]
-    .quantile(
-        0.99
+if len(filtered_df) < 5:
+
+    st.info(
+        "Only a few listings match the current filters. "
+        "A price-distribution chart is not shown because "
+        "there are too few observations for a useful "
+        "distribution."
     )
-)
 
+else:
 
-price_distribution_df = (
-    filtered_df[
+    price_99 = (
         filtered_df[
             "price_usd"
-        ] <= price_99
-    ]
-    .dropna(
-        subset=[
-            "price_usd"
         ]
-    )
-    .copy()
-)
-
-
-median_price = (
-    filtered_df[
-        "price_usd"
-    ]
-    .median()
-)
-
-
-# =========================================================
-# HISTOGRAM
-# =========================================================
-
-histogram = (
-    alt.Chart(
-        price_distribution_df
-    )
-    .mark_bar(
-        opacity=0.8
-    )
-    .encode(
-        x=alt.X(
-            "price_usd:Q",
-            bin=alt.Bin(
-                maxbins=40
-            ),
-            title=(
-                "Advertised Asking Price (USD)"
-            ),
-            axis=alt.Axis(
-                format="$,.0f",
-            ),
-        ),
-
-        y=alt.Y(
-            "count():Q",
-            title=(
-                "Number of Listings"
-            ),
-        ),
-
-        tooltip=[
-            alt.Tooltip(
-                "count():Q",
-                title="Listings",
-            ),
-        ],
-    )
-)
-
-
-# =========================================================
-# MEDIAN LINE
-# =========================================================
-
-median_data = pd.DataFrame({
-    "median_price": [
-        median_price
-    ]
-})
-
-
-median_rule = (
-    alt.Chart(
-        median_data
-    )
-    .mark_rule(
-        strokeWidth=2
-    )
-    .encode(
-        x=alt.X(
-            "median_price:Q"
+        .quantile(
+            0.99
         )
     )
-)
 
 
-median_label_data = pd.DataFrame({
-    "median_price": [
-        median_price
-    ],
-
-    "label": [
-        f"Median: ${median_price:,.0f}"
-    ],
-})
-
-
-median_label = (
-    alt.Chart(
-        median_label_data
+    price_distribution_df = (
+        filtered_df[
+            filtered_df[
+                "price_usd"
+            ] <= price_99
+        ]
+        .dropna(
+            subset=[
+                "price_usd"
+            ]
+        )
+        .copy()
     )
-    .mark_text(
-        align="left",
-        dx=6,
-        dy=-8,
-        fontSize=12,
+
+
+    distribution_median_price = (
+        filtered_df[
+            "price_usd"
+        ]
+        .median()
     )
-    .encode(
-        x=alt.X(
-            "median_price:Q"
-        ),
 
-        y=alt.value(
-            10
-        ),
 
-        text=alt.Text(
-            "label:N"
-        ),
+    # =====================================================
+    # HISTOGRAM
+    # =====================================================
+
+    histogram = (
+        alt.Chart(
+            price_distribution_df
+        )
+        .mark_bar(
+            opacity=0.8
+        )
+        .encode(
+            x=alt.X(
+                "price_usd:Q",
+                bin=alt.Bin(
+                    maxbins=40
+                ),
+                title="Advertised Asking Price (USD)",
+                axis=alt.Axis(
+                    format="$,.0f",
+                ),
+            ),
+
+            y=alt.Y(
+                "count():Q",
+                title="Number of Listings",
+            ),
+
+            tooltip=[
+                alt.Tooltip(
+                    "count():Q",
+                    title="Listings",
+                ),
+            ],
+        )
     )
-)
 
 
-price_distribution_chart = (
-    histogram
-    + median_rule
-    + median_label
-).properties(
-    height=400,
-)
+    # =====================================================
+    # MEDIAN LINE
+    # =====================================================
+
+    median_data = pd.DataFrame(
+        {
+            "median_price": [
+                distribution_median_price
+            ]
+        }
+    )
 
 
-st.altair_chart(
-    price_distribution_chart,
-)
+    median_rule = (
+        alt.Chart(
+            median_data
+        )
+        .mark_rule(
+            strokeWidth=2
+        )
+        .encode(
+            x=alt.X(
+                "median_price:Q"
+            )
+        )
+    )
 
 
-st.info(
-    "Most advertised properties are concentrated in "
-    "the lower and middle price ranges, while a smaller "
-    "number of luxury properties extend far above the "
-    "typical market price."
-)
+    median_label_data = pd.DataFrame(
+        {
+            "median_price": [
+                distribution_median_price
+            ],
+
+            "label": [
+                (
+                    f"Median: "
+                    f"${distribution_median_price:,.0f}"
+                )
+            ],
+        }
+    )
+
+
+    median_label = (
+        alt.Chart(
+            median_label_data
+        )
+        .mark_text(
+            align="left",
+            dx=6,
+            dy=-8,
+            fontSize=12,
+        )
+        .encode(
+            x=alt.X(
+                "median_price:Q"
+            ),
+
+            y=alt.value(
+                10
+            ),
+
+            text=alt.Text(
+                "label:N"
+            ),
+        )
+    )
+
+
+    price_distribution_chart = (
+        histogram
+        + median_rule
+        + median_label
+    ).properties(
+        height=400,
+    )
+
+
+    st.altair_chart(
+        price_distribution_chart,
+    )
+
+
+    st.info(
+        "Most advertised properties are concentrated in "
+        "the lower and middle price ranges, while a smaller "
+        "number of luxury properties extend above the "
+        "typical market price."
+    )
 
 
 st.divider()
@@ -935,7 +1437,9 @@ if not property_type_summary.empty:
                     ),
                 )
 
-                st.space("small")
+                st.space(
+                    "small"
+                )
 
                 st.caption(
                     "MEDIAN ASKING PRICE"
@@ -946,12 +1450,14 @@ if not property_type_summary.empty:
                 )
 
                 st.caption(
-                    f"Half the {int(row['listings']):,} "
-                    "listings are priced above this line, "
-                    "half below."
+                    f"Based on {int(row['listings']):,} "
+                    f"matching {property_type_name} listings."
                 )
 
-                st.space("medium")
+                st.space(
+                    "medium"
+                )
+
 
                 measure_col1, measure_col2 = (
                     st.columns(
@@ -963,10 +1469,6 @@ if not property_type_summary.empty:
 
                 with measure_col1:
 
-                    # -----------------------------------------
-                    # MEDIAN SIZE
-                    # -----------------------------------------
-
                     with st.container(
                         border=True,
                         horizontal_alignment="center",
@@ -977,15 +1479,14 @@ if not property_type_summary.empty:
                         )
 
                         st.markdown(
-                            f"**{row['median_size']:,.0f} m²**"
+                            (
+                                f"**{row['median_size']:,.0f} "
+                                f"m²**"
+                            )
                         )
 
 
                 with measure_col2:
-
-                    # -----------------------------------------
-                    # MEDIAN PRICE PER M2
-                    # -----------------------------------------
 
                     with st.container(
                         border=True,
@@ -997,7 +1498,9 @@ if not property_type_summary.empty:
                         )
 
                         st.markdown(
-                            f"**${row['median_price_per_m2']:,.0f}**"
+                            (
+                                f"**${row['median_price_per_m2']:,.0f}**"
+                            )
                         )
 
 
@@ -1005,7 +1508,7 @@ if not property_type_summary.empty:
 # PROPERTY TYPE PRICE CHART
 # =========================================================
 
-if not property_type_summary.empty:
+if len(filtered_df) >= 5:
 
     property_type_price_chart = (
         alt.Chart(
@@ -1023,9 +1526,7 @@ if not property_type_summary.empty:
 
             y=alt.Y(
                 "median_price:Q",
-                title=(
-                    "Median Asking Price (USD)"
-                ),
+                title="Median Asking Price (USD)",
                 axis=alt.Axis(
                     format="$,.0f",
                 ),
@@ -1034,9 +1535,7 @@ if not property_type_summary.empty:
             tooltip=[
                 alt.Tooltip(
                     "property_type:N",
-                    title=(
-                        "Property Type"
-                    ),
+                    title="Property Type",
                 ),
 
                 alt.Tooltip(
@@ -1047,9 +1546,7 @@ if not property_type_summary.empty:
 
                 alt.Tooltip(
                     "median_price:Q",
-                    title=(
-                        "Median Asking Price"
-                    ),
+                    title="Median Asking Price",
                     format="$,.0f",
                 ),
 
@@ -1061,9 +1558,7 @@ if not property_type_summary.empty:
 
                 alt.Tooltip(
                     "median_price_per_m2:Q",
-                    title=(
-                        "Median Price / m²"
-                    ),
+                    title="Median Price / m²",
                     format="$,.0f",
                 ),
             ],
@@ -1079,13 +1574,10 @@ if not property_type_summary.empty:
     )
 
 
-# =========================================================
-# PROPERTY TYPE EXPLANATION
-# =========================================================
-
 if (
     property_type_filter
     == "All"
+    and len(filtered_df) >= 20
 ):
 
     st.info(
@@ -1113,318 +1605,486 @@ st.caption(
 )
 
 
-# =========================================================
-# BEDROOM SUMMARY
-# =========================================================
-
-bedroom_summary = (
-    filtered_df
-    .dropna(
-        subset=[
-            "bedrooms",
-            "price_usd",
-        ]
+total_filtered_listings = (
+    len(
+        filtered_df
     )
-    .groupby(
-        "bedrooms"
-    )
-    .agg(
-        listings=(
-            "price_usd",
-            "size",
-        ),
-
-        median_price=(
-            "price_usd",
-            "median",
-        ),
-    )
-    .reset_index()
 )
 
 
-# ---------------------------------------------------------
-# REQUIRE AT LEAST 20 LISTINGS
-# ---------------------------------------------------------
+# =========================================================
+# VERY SMALL SAMPLE
+# =========================================================
+#
+# With fewer than 5 listings, showing a market-level
+# bar chart is misleading. Show the characteristics of
+# the matching properties instead.
+#
 
-bedroom_summary = (
-    bedroom_summary[
-        bedroom_summary[
-            "listings"
-        ] >= 20
-    ]
-    .copy()
-)
+if total_filtered_listings < 5:
+
+    st.warning(
+        f"Only {total_filtered_listings} listing"
+        f"{'s' if total_filtered_listings != 1 else ''} "
+        "match the current filters. Individual property "
+        "characteristics are shown instead of market-level "
+        "bedroom and bathroom comparisons."
+    )
 
 
-# ---------------------------------------------------------
-# LABEL 0 BEDROOM AS STUDIO
-# ---------------------------------------------------------
-
-if not bedroom_summary.empty:
-
-    bedroom_summary[
-        "bedroom_label"
-    ] = (
-        bedroom_summary[
+    typical_bedrooms = (
+        filtered_df[
             "bedrooms"
-        ]
-        .astype(int)
-        .astype(str)
+        ].median()
     )
 
 
-    bedroom_order = (
-        bedroom_summary
-        .sort_values(
-            "bedrooms"
-        )[
-            "bedroom_label"
-        ]
-        .tolist()
-    )
-
-
-# =========================================================
-# BATHROOM SUMMARY
-# =========================================================
-
-bathroom_summary = (
-    filtered_df
-    .dropna(
-        subset=[
-            "bathrooms",
-            "price_usd",
-        ]
-    )
-    .groupby(
-        "bathrooms"
-    )
-    .agg(
-        listings=(
-            "price_usd",
-            "size",
-        ),
-
-        median_price=(
-            "price_usd",
-            "median",
-        ),
-    )
-    .reset_index()
-)
-
-
-bathroom_summary = (
-    bathroom_summary[
-        bathroom_summary[
-            "listings"
-        ] >= 20
-    ]
-    .copy()
-)
-
-
-if not bathroom_summary.empty:
-
-    bathroom_summary[
-        "bathroom_label"
-    ] = (
-        bathroom_summary[
+    typical_bathrooms = (
+        filtered_df[
             "bathrooms"
-        ]
-        .astype(int)
-        .astype(str)
+        ].median()
     )
 
 
-    bathroom_order = (
-        bathroom_summary
-        .sort_values(
-            "bathrooms"
-        )[
-            "bathroom_label"
-        ]
-        .tolist()
+    typical_size = (
+        filtered_df[
+            "size_m2"
+        ].median()
     )
 
 
-# =========================================================
-# CHART LAYOUT
-# =========================================================
-
-bed_col, bath_col = st.columns(
-    2,
-    gap="large",
-)
-
-
-# =========================================================
-# BEDROOM CHART
-# =========================================================
-
-with bed_col:
-
-    st.markdown(
-        "#### :material/bed: Median Price by Bedrooms"
+    typical_floor = (
+        filtered_df[
+            "unit_floor"
+        ].median()
     )
 
 
-    if bedroom_summary.empty:
-
-        st.info(
-            "Not enough listings are available "
-            "for bedroom analysis with the "
-            "selected filters."
+    profile_col1, profile_col2, profile_col3, profile_col4 = (
+        st.columns(
+            4,
+            gap="large",
         )
+    )
+
+
+    with profile_col1:
+
+        if pd.notna(
+            typical_bedrooms
+        ):
+
+            if typical_bedrooms == 0:
+
+                bedroom_display = (
+                    "Studio"
+                )
+
+            else:
+
+                bedroom_display = (
+                    f"{typical_bedrooms:.0f}"
+                )
+
+        else:
+
+            bedroom_display = (
+                "Unknown"
+            )
+
+
+        st.metric(
+            "Bedrooms",
+            bedroom_display,
+        )
+
+
+    with profile_col2:
+
+        st.metric(
+            "Bathrooms",
+            (
+                f"{typical_bathrooms:.0f}"
+                if pd.notna(
+                    typical_bathrooms
+                )
+                else "Unknown"
+            ),
+        )
+
+
+    with profile_col3:
+
+        st.metric(
+            "Size",
+            (
+                f"{typical_size:,.0f} m²"
+                if pd.notna(
+                    typical_size
+                )
+                else "Unknown"
+            ),
+        )
+
+
+    with profile_col4:
+
+        st.metric(
+            "Floor Level",
+            (
+                f"{typical_floor:.0f}"
+                if pd.notna(
+                    typical_floor
+                )
+                else "Unknown"
+            ),
+        )
+
+
+    st.info(
+        "These characteristics describe only the small "
+        "number of listings matching the filters and should "
+        "not be interpreted as a wider market trend."
+    )
+
+
+# =========================================================
+# NORMAL / SMALL-SAMPLE ANALYSIS
+# =========================================================
+
+else:
+
+    # -----------------------------------------------------
+    # DYNAMIC MINIMUM GROUP SIZE
+    # -----------------------------------------------------
+
+    if total_filtered_listings >= 100:
+
+        minimum_group_size = 20
+
+    elif total_filtered_listings >= 20:
+
+        minimum_group_size = 5
 
     else:
 
-        bedroom_chart = (
-            alt.Chart(
-                bedroom_summary
-            )
-            .mark_bar(
-                cornerRadiusTopLeft=5,
-                cornerRadiusTopRight=5,
-            )
-            .encode(
-                x=alt.X(
-                    "bedroom_label:N",
-                    title="Bedrooms",
-                    sort=bedroom_order,
-                ),
+        minimum_group_size = 1
 
-                y=alt.Y(
-                    "median_price:Q",
-                    title=(
-                        "Median Asking Price (USD)"
-                    ),
-                    axis=alt.Axis(
-                        format="$,.0f",
-                    ),
-                ),
 
-                tooltip=[
-                    alt.Tooltip(
+    # -----------------------------------------------------
+    # SMALL SAMPLE WARNING
+    # -----------------------------------------------------
+
+    if total_filtered_listings < 20:
+
+        st.warning(
+            f"Only {total_filtered_listings} listings match "
+            "the current filters. Bedroom and bathroom "
+            "results are descriptive and may not represent "
+            "the wider market."
+        )
+
+
+    # =====================================================
+    # BEDROOM SUMMARY
+    # =====================================================
+
+    bedroom_summary = (
+        filtered_df
+        .dropna(
+            subset=[
+                "bedrooms",
+                "price_usd",
+            ]
+        )
+        .groupby(
+            "bedrooms"
+        )
+        .agg(
+            listings=(
+                "price_usd",
+                "size",
+            ),
+
+            median_price=(
+                "price_usd",
+                "median",
+            ),
+        )
+        .reset_index()
+    )
+
+
+    bedroom_summary = (
+        bedroom_summary[
+            bedroom_summary[
+                "listings"
+            ] >= minimum_group_size
+        ]
+        .copy()
+    )
+
+
+    if not bedroom_summary.empty:
+
+        bedroom_summary[
+            "bedroom_label"
+        ] = (
+            bedroom_summary[
+                "bedrooms"
+            ]
+            .astype(int)
+            .apply(
+                lambda value:
+                (
+                    "Studio"
+                    if value == 0
+                    else str(value)
+                )
+            )
+        )
+
+
+        bedroom_order = (
+            bedroom_summary
+            .sort_values(
+                "bedrooms"
+            )[
+                "bedroom_label"
+            ]
+            .tolist()
+        )
+
+
+    # =====================================================
+    # BATHROOM SUMMARY
+    # =====================================================
+
+    bathroom_summary = (
+        filtered_df
+        .dropna(
+            subset=[
+                "bathrooms",
+                "price_usd",
+            ]
+        )
+        .groupby(
+            "bathrooms"
+        )
+        .agg(
+            listings=(
+                "price_usd",
+                "size",
+            ),
+
+            median_price=(
+                "price_usd",
+                "median",
+            ),
+        )
+        .reset_index()
+    )
+
+
+    bathroom_summary = (
+        bathroom_summary[
+            bathroom_summary[
+                "listings"
+            ] >= minimum_group_size
+        ]
+        .copy()
+    )
+
+
+    if not bathroom_summary.empty:
+
+        bathroom_summary[
+            "bathroom_label"
+        ] = (
+            bathroom_summary[
+                "bathrooms"
+            ]
+            .astype(int)
+            .astype(str)
+        )
+
+
+        bathroom_order = (
+            bathroom_summary
+            .sort_values(
+                "bathrooms"
+            )[
+                "bathroom_label"
+            ]
+            .tolist()
+        )
+
+
+    # =====================================================
+    # CHART LAYOUT
+    # =====================================================
+
+    bed_col, bath_col = (
+        st.columns(
+            2,
+            gap="large",
+        )
+    )
+
+
+    # =====================================================
+    # BEDROOM CHART
+    # =====================================================
+
+    with bed_col:
+
+        st.markdown(
+            "#### :material/bed: Median Price by Bedrooms"
+        )
+
+
+        if bedroom_summary.empty:
+
+            st.info(
+                "Bedroom information is not available "
+                "for enough of the matching listings."
+            )
+
+        else:
+
+            bedroom_chart = (
+                alt.Chart(
+                    bedroom_summary
+                )
+                .mark_bar(
+                    cornerRadiusTopLeft=5,
+                    cornerRadiusTopRight=5,
+                )
+                .encode(
+                    x=alt.X(
                         "bedroom_label:N",
                         title="Bedrooms",
+                        sort=bedroom_order,
                     ),
 
-                    alt.Tooltip(
-                        "listings:Q",
-                        title="Listings",
-                        format=",",
-                    ),
-
-                    alt.Tooltip(
+                    y=alt.Y(
                         "median_price:Q",
-                        title=(
-                            "Median Asking Price"
+                        title="Median Asking Price (USD)",
+                        axis=alt.Axis(
+                            format="$,.0f",
                         ),
-                        format="$,.0f",
                     ),
-                ],
+
+                    tooltip=[
+                        alt.Tooltip(
+                            "bedroom_label:N",
+                            title="Bedrooms",
+                        ),
+
+                        alt.Tooltip(
+                            "listings:Q",
+                            title="Listings",
+                            format=",",
+                        ),
+
+                        alt.Tooltip(
+                            "median_price:Q",
+                            title="Median Asking Price",
+                            format="$,.0f",
+                        ),
+                    ],
+                )
+                .properties(
+                    height=350,
+                )
             )
-            .properties(
-                height=350,
+
+
+            st.altair_chart(
+                bedroom_chart,
             )
+
+
+    # =====================================================
+    # BATHROOM CHART
+    # =====================================================
+
+    with bath_col:
+
+        st.markdown(
+            "#### :material/shower: Median Price by Bathrooms"
         )
 
 
-        st.altair_chart(
-            bedroom_chart,
-        )
+        if bathroom_summary.empty:
 
-
-# =========================================================
-# BATHROOM CHART
-# =========================================================
-
-with bath_col:
-
-    st.markdown(
-        "#### :material/shower: Median Price by Bathrooms"
-    )
-
-
-    if bathroom_summary.empty:
-
-        st.info(
-            "Not enough listings are available "
-            "for bathroom analysis with the "
-            "selected filters."
-        )
-
-    else:
-
-        bathroom_chart = (
-            alt.Chart(
-                bathroom_summary
+            st.info(
+                "Bathroom information is not available "
+                "for enough of the matching listings."
             )
-            .mark_bar(
-                cornerRadiusTopLeft=5,
-                cornerRadiusTopRight=5,
-            )
-            .encode(
-                x=alt.X(
-                    "bathroom_label:N",
-                    title="Bathrooms",
-                    sort=bathroom_order,
-                ),
 
-                y=alt.Y(
-                    "median_price:Q",
-                    title=(
-                        "Median Asking Price (USD)"
-                    ),
-                    axis=alt.Axis(
-                        format="$,.0f",
-                    ),
-                ),
+        else:
 
-                tooltip=[
-                    alt.Tooltip(
+            bathroom_chart = (
+                alt.Chart(
+                    bathroom_summary
+                )
+                .mark_bar(
+                    cornerRadiusTopLeft=5,
+                    cornerRadiusTopRight=5,
+                )
+                .encode(
+                    x=alt.X(
                         "bathroom_label:N",
                         title="Bathrooms",
+                        sort=bathroom_order,
                     ),
 
-                    alt.Tooltip(
-                        "listings:Q",
-                        title="Listings",
-                        format=",",
-                    ),
-
-                    alt.Tooltip(
+                    y=alt.Y(
                         "median_price:Q",
-                        title=(
-                            "Median Asking Price"
+                        title="Median Asking Price (USD)",
+                        axis=alt.Axis(
+                            format="$,.0f",
                         ),
-                        format="$,.0f",
                     ),
-                ],
+
+                    tooltip=[
+                        alt.Tooltip(
+                            "bathroom_label:N",
+                            title="Bathrooms",
+                        ),
+
+                        alt.Tooltip(
+                            "listings:Q",
+                            title="Listings",
+                            format=",",
+                        ),
+
+                        alt.Tooltip(
+                            "median_price:Q",
+                            title="Median Asking Price",
+                            format="$,.0f",
+                        ),
+                    ],
+                )
+                .properties(
+                    height=350,
+                )
             )
-            .properties(
-                height=350,
+
+
+            st.altair_chart(
+                bathroom_chart,
             )
-        )
 
 
-        st.altair_chart(
-            bathroom_chart,
-        )
-
-
-# =========================================================
-# ROOM ANALYSIS NOTE
-# =========================================================
-
-st.info(
-    "Properties with more bedrooms and bathrooms generally "
-    "have higher asking prices. However, room count is only "
-    "one factor — property size, location, floor level, and "
-    "property type also affect price."
-)
+    st.info(
+        "Properties with more bedrooms and bathrooms "
+        "generally have higher asking prices. However, "
+        "room count is only one factor — property size, "
+        "location, floor level, and property type also "
+        "affect price."
+    )
 
 
 # =========================================================
