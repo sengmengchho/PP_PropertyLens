@@ -1,17 +1,17 @@
 # PP PropertyLens
 
-PP PropertyLens is a Streamlit data application for exploring advertised condominium and penthouse prices in Phnom Penh and generating data-based asking-price estimates.
+PP PropertyLens is a Streamlit application for exploring advertised condominium and penthouse prices in Phnom Penh. It combines public listing data, a machine-learning price estimator, uncertainty estimates, market exploration, and model validation in one interface.
 
-The project covers the full workflow from public listing collection and cleaning to exploratory market analysis, machine-learning prediction, model explanation, and validation.
+## What You Can Do
 
-## Current Features
+- **Estimate a property price** from property type, size, bedrooms, bathrooms, floor level, and district.
+- **See an uncertainty range** with an 80% conformal prediction interval.
+- **Understand each estimate** through SHAP-based factor explanations.
+- **Explore the market** by property type, district, asking-price range, and budget.
+- **Review model quality** through test metrics, global feature importance, and real-world validation results.
+- **Read the methodology** behind collection, cleaning, recovery, geocoding, modelling, and validation.
 
-- **Property Price Estimate**: estimate an asking price from property type, size, bedrooms, bathrooms, floor level, and district.
-- **Uncertainty range**: display a central estimate and an 80% conformal prediction interval.
-- **Prediction explanation**: show the factors with the greatest influence on each estimate using SHAP-based explanations.
-- **Market Insights**: filter and visualise asking-price patterns by property type, district, and price range.
-- **Model Performance**: review model metrics, global feature importance, and real-world validation results.
-- **About & Methodology**: describe the data, processing workflow, model, and project limitations.
+The Streamlit sidebar provides these views: the main estimator, **Budget Advisor**, **Market Insights**, **Model Performance**, and **About & Methodology**.
 
 ## Data Summary
 
@@ -49,6 +49,7 @@ The final test results recorded in the model metadata are:
 | MAPE | 26.08% |
 | R² | 0.5529 |
 | Log RMSE | 0.3374 |
+| Log R² | 0.8164 |
 
 The model was trained on 2,137 rows, calibrated on 268 rows, and evaluated on a final test set of 268 rows. The nominal interval level is 80%; observed validation coverage was 77.61%.
 
@@ -70,36 +71,53 @@ scripts/                Model, QA, and utility scripts
 notebooks/              EDA, feature engineering, and location notebooks
 ```
 
-## Setup
+## Quick Start
 
-Create and activate a virtual environment, then install the dependencies:
+Python 3.11 or newer is recommended. Create and activate a virtual environment, then install the dependencies.
+
+### Windows PowerShell
+
+```powershell
+python -m venv venv
+.\venv\Scripts\Activate.ps1
+python -m pip install -r requirements.txt streamlit
+playwright install chromium
+```
+
+### macOS/Linux or Git Bash
 
 ```bash
 python -m venv venv
 source venv/Scripts/activate
-pip install -r requirements.txt
+python -m pip install -r requirements.txt streamlit
 playwright install chromium
 ```
 
-On Windows PowerShell, activate the environment with:
+For macOS/Linux, use `source venv/bin/activate` instead.
 
-```powershell
-.\venv\Scripts\Activate.ps1
-```
+If PowerShell blocks script activation, enable it for the current user or activate the environment from a Command Prompt with `venv\\Scripts\\activate.bat`.
 
 ## Run the Application
 
-From the project root:
+From the project root, with the virtual environment active:
 
 ```bash
 streamlit run app.py
 ```
 
-The application requires the trained model files in `models/` and the Gold listing data in `data/gold/`.
+The application expects these generated assets to be present:
+
+- `models/propertylens_xgboost_final.joblib`
+- `models/propertylens_xgboost_final_metadata.json`
+- `data/gold/property_listings_geocoded.csv`
+
+Open the local URL printed by Streamlit, usually `http://localhost:8501`.
 
 ## Data Pipeline
 
-The main collection and cleaning scripts are:
+The repository contains the full collection and transformation workflow. Scraping requires network access and may need adjustments when source websites change. Run source collection before cleaning, and rebuild derived datasets in order.
+
+### Collection and cleaning
 
 ```bash
 python src/scrape_realestate.py
@@ -115,7 +133,17 @@ python src/cleaning/merge_silver_sources.py
 python src/cleaning/build_gold_dataset.py
 ```
 
-Additional utilities are available for source verification, field inspection, location recovery, geocoding, model prediction tests, SHAP generation, and real-world QA. Review the scripts and reports before rerunning collection or rebuilding derived datasets.
+The repository also includes utilities for source verification, field inspection, location recovery, geocoding, cross-source deduplication, model prediction tests, SHAP generation, and real-world QA. Review the scripts and reports in `outputs/reports/` before rerunning collection or rebuilding derived datasets.
+
+### Existing data layers
+
+- `data/bronze/`: source-level raw listing data.
+- `data/silver/`: cleaned, recovered, reviewed, and deduplicated data.
+- `data/gold/`: final datasets used by the application and analysis.
+- `data/geo/`: geocoding outputs and coordinate validation files.
+- `data/qa/`: real-world validation inputs and results.
+
+Do not treat advertised prices as confirmed transaction prices. Rebuilding the datasets can change the summary statistics and model results reported below.
 
 ## Limitations
 

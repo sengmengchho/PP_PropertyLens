@@ -1,5 +1,16 @@
 import streamlit as st
 
+from components.styles import inject_global_css
+from components.ui import (
+    hero_banner,
+    section_header,
+    price_display,
+    price_range_display,
+    impact_badge,
+    detail_item,
+    disclaimer,
+)
+
 from src.prediction.predict import (
     explain_prediction,
     VALID_DISTRICTS,
@@ -13,9 +24,11 @@ from src.prediction.predict import (
 
 st.set_page_config(
     page_title="PP PropertyLens",
-    page_icon=":material/real_estate_agent:",
+    page_icon="🏠",
     layout="wide",
 )
+
+inject_global_css()
 
 
 # =========================================================
@@ -23,12 +36,12 @@ st.set_page_config(
 # =========================================================
 
 FACTOR_ICONS = {
-    "district": ":material/place:",
-    "bedrooms": ":material/bed:",
-    "bathrooms": ":material/shower:",
-    "size_m2": ":material/square_foot:",
-    "unit_floor": ":material/stairs:",
-    "property_type": ":material/home:",
+    "district": "📍",
+    "bedrooms": "🛏",
+    "bathrooms": "🚿",
+    "size_m2": "📐",
+    "unit_floor": "🏗",
+    "property_type": "🏠",
 }
 
 
@@ -47,19 +60,17 @@ if "prediction_inputs" not in st.session_state:
 # PAGE HEADER
 # =========================================================
 
-st.title("PP PropertyLens")
-
-st.markdown(
-    """
-    Estimate the asking price of a **Condo or Penthouse**
-    in Phnom Penh. Enter what you know and get a
-    data-based estimate in seconds.
-    """
-)
-
-st.caption(
-    "You'll get a central estimate, a realistic price range, "
-    "and a plain-English breakdown of what drove the price."
+hero_banner(
+    title="PP PropertyLens",
+    description=(
+        "Find out the estimated asking price of a **Condo or Penthouse** "
+        "in Phnom Penh. Just fill in what you know about the property "
+        "and get an estimate in seconds."
+    ),
+    caption=(
+        "You'll get an estimated price, a price range, "
+        "and a simple explanation of what affected the estimate."
+    ),
 )
 
 
@@ -67,22 +78,18 @@ st.caption(
 # INPUT SECTION
 # =========================================================
 
-st.subheader("Property Details")
-
-st.caption(
-    "Fill in what you know. Not sure about a detail? "
-    "Tick the box next to it and the model will take "
-    "it from there."
+section_header(
+    "Property Details",
+    subtitle=(
+        "Fill in what you know. Not sure about a detail? "
+        "Just tick the box next to it and the model will handle it."
+    ),
 )
 
 
 with st.container(border=True):
 
-    col1, col2 = st.columns(
-        2,
-        gap="large",
-    )
-
+    col1, col2 = st.columns(2, gap="large")
 
     # =====================================================
     # LEFT COLUMN
@@ -97,41 +104,24 @@ with st.container(border=True):
             key="property_type",
         )
 
-
-        # -------------------------------------------------
-        # DISTRICT
-        # -------------------------------------------------
-
         district_unknown = st.checkbox(
             "District not known",
             key="district_unknown",
         )
 
-        if district_unknown:
-
-            district = None
-
-        else:
-
-            district = st.selectbox(
-                "District",
-                options=VALID_DISTRICTS,
-                key="district",
-            )
-
-
-        # -------------------------------------------------
-        # PROPERTY SIZE
-        # -------------------------------------------------
+        district = None if district_unknown else st.selectbox(
+            "District",
+            options=VALID_DISTRICTS,
+            key="district",
+        )
 
         size_m2 = st.number_input(
-            "Property Size (m²)",
+            "Property Size (m\u00b2)",
             min_value=1.0,
             value=70.0,
             step=1.0,
             key="size_m2",
         )
-
 
     # =====================================================
     # RIGHT COLUMN
@@ -139,77 +129,44 @@ with st.container(border=True):
 
     with col2:
 
-        # -------------------------------------------------
-        # BEDROOMS
-        # -------------------------------------------------
-
         bedrooms_unknown = st.checkbox(
             "Bedrooms not known",
             key="bedrooms_unknown",
         )
 
-        if bedrooms_unknown:
-
-            bedrooms = None
-
-        else:
-
-            bedrooms = st.number_input(
-                "Bedrooms",
-                min_value=0,
-                value=2,
-                step=1,
-                key="bedrooms",
-            )
-
-
-        # -------------------------------------------------
-        # BATHROOMS
-        # -------------------------------------------------
+        bedrooms = None if bedrooms_unknown else st.number_input(
+            "Bedrooms",
+            min_value=0,
+            value=2,
+            step=1,
+            key="bedrooms",
+        )
 
         bathrooms_unknown = st.checkbox(
             "Bathrooms not known",
             key="bathrooms_unknown",
         )
 
-        if bathrooms_unknown:
-
-            bathrooms = None
-
-        else:
-
-            bathrooms = st.number_input(
-                "Bathrooms",
-                min_value=0,
-                value=2,
-                step=1,
-                key="bathrooms",
-            )
-
-
-        # -------------------------------------------------
-        # FLOOR
-        # -------------------------------------------------
+        bathrooms = None if bathrooms_unknown else st.number_input(
+            "Bathrooms",
+            min_value=0,
+            value=2,
+            step=1,
+            key="bathrooms",
+        )
 
         floor_unknown = st.checkbox(
             "Floor level not known",
             key="floor_unknown",
         )
 
-        if floor_unknown:
-
-            unit_floor = None
-
-        else:
-
-            unit_floor = st.number_input(
-                "Floor Level",
-                min_value=0,
-                value=10,
-                step=1,
-                key="unit_floor",
-            )
-
+        unit_floor = None if floor_unknown else st.number_input(
+            "Floor Level",
+            min_value=0,
+            value=10,
+            step=1,
+            key="unit_floor",
+        )
 
     # =====================================================
     # ESTIMATE BUTTON
@@ -217,7 +174,7 @@ with st.container(border=True):
 
     submitted = st.button(
         "Estimate property price",
-        icon=":material/calculate:",
+        icon="🧮",
         width="stretch",
         type="primary",
     )
@@ -243,44 +200,29 @@ current_inputs = {
 
 if submitted:
 
-    try:
+    with st.spinner("Getting your estimate..."):
+        try:
 
-        result = explain_prediction(
-            size_m2=size_m2,
-            bedrooms=bedrooms,
-            bathrooms=bathrooms,
-            unit_floor=unit_floor,
-            district=district,
-            property_type=property_type,
-        )
+            result = explain_prediction(
+                size_m2=size_m2,
+                bedrooms=bedrooms,
+                bathrooms=bathrooms,
+                unit_floor=unit_floor,
+                district=district,
+                property_type=property_type,
+            )
 
+            st.session_state.prediction_result = result
+            st.session_state.prediction_inputs = current_inputs.copy()
 
-        # Save result
-        st.session_state.prediction_result = result
+        except ValueError as error:
 
+            st.error(str(error))
 
-        # Save the exact values used to create this prediction
-        st.session_state.prediction_inputs = (
-            current_inputs.copy()
-        )
+        except Exception as error:
 
-
-    except ValueError as error:
-
-        st.error(
-            str(error)
-        )
-
-
-    except Exception as error:
-
-        st.error(
-            "The prediction could not be completed."
-        )
-
-        st.exception(
-            error
-        )
+            st.error("Something went wrong. Please try again.")
+            st.exception(error)
 
 
 # =========================================================
@@ -289,135 +231,50 @@ if submitted:
 
 if st.session_state.prediction_result is not None:
 
-    result = (
-        st.session_state.prediction_result
-    )
+    result = st.session_state.prediction_result
+    saved_inputs = st.session_state.prediction_inputs
 
-    saved_inputs = (
-        st.session_state.prediction_inputs
-    )
-
-
-    # =====================================================
-    # CHECK WHETHER CURRENT INPUTS HAVE CHANGED
-    # =====================================================
-
-    inputs_changed = (
-        current_inputs
-        != saved_inputs
-    )
-
+    inputs_changed = current_inputs != saved_inputs
 
     if inputs_changed:
-
         st.info(
-            "You changed the property details after the last "
-            "estimate. Click **Estimate property price** again "
-            "to update the result."
+            "You changed the property details. "
+            "Click **Estimate property price** again to get a new estimate."
         )
 
 
-# =====================================================
+    # =====================================================
     # RESULT HEADER
     # =====================================================
 
-    st.header(
-        ":material/home: Property Price Estimate"
+    section_header(
+        "Property Price Estimate",
+        subtitle="Based on advertised property listings in Phnom Penh.",
+        icon="🏠",
+    )
+
+
+    # =====================================================
+    # MAIN PRICE + RANGE
+    # =====================================================
+
+    with st.container(border=True):
+        price_display(
+            result["estimated_price_usd"],
+            label="ESTIMATED ASKING PRICE",
+            subtitle="This is the system's best estimate based on the details you provided.",
+        )
+
+    st.markdown("")
+
+    price_range_display(
+        result["lower_price_usd"],
+        result["upper_price_usd"],
     )
 
     st.caption(
-        "Estimated from advertised Phnom Penh "
-        "property listing data."
-    )
-
-
-    # =====================================================
-    # MAIN ESTIMATED PRICE
-    # =====================================================
-
-    with st.container(
-        border=True,
-        horizontal_alignment="center",
-    ):
-
-        st.caption(
-            "ESTIMATED ASKING PRICE"
-        )
-
-        st.markdown(
-            f"# ${result['estimated_price_usd']:,.0f}"
-        )
-
-
-        st.caption(
-            "The system's estimate based on "
-            "the property details provided."
-        )
-
-
-    # =====================================================
-    # PRICE RANGE
-    # =====================================================
-
-    st.subheader(
-        "Estimated Price Range"
-    )
-
-
-    lower_col, upper_col = st.columns(
-        2,
-        gap="medium",
-    )
-
-
-    # -----------------------------------------------------
-    # LOWER RANGE
-    # -----------------------------------------------------
-
-    with lower_col:
-
-        with st.container(
-            border=True,
-            horizontal_alignment="center",
-        ):
-
-            st.caption(
-                "LOWER ESTIMATE"
-            )
-
-            st.markdown(
-                f"## ${result['lower_price_usd']:,.0f}"
-            )
-
-            
-
-
-    # -----------------------------------------------------
-    # UPPER RANGE
-    # -----------------------------------------------------
-
-    with upper_col:
-
-        with st.container(
-            border=True,
-            horizontal_alignment="center",
-        ):
-
-            st.caption(
-                "UPPER ESTIMATE"
-            )
-
-            st.markdown(
-                f"## ${result['upper_price_usd']:,.0f}"
-            )
-
-        
-
-
-    st.caption(
-        "The price range reflects uncertainty in the estimate "
-        "and gives a more realistic view than a single predicted "
-        "price alone."
+        "The price range shows how much the estimate might vary. "
+        "A range is more useful than a single number."
     )
 
 
@@ -431,7 +288,6 @@ if st.session_state.prediction_result is not None:
         if item["value"] != "Not provided"
     ]
 
-
     missing_factors = [
         item
         for item in result["explanations"]
@@ -443,61 +299,41 @@ if st.session_state.prediction_result is not None:
     # MAIN FACTORS
     # =====================================================
 
-    st.subheader(
-        "Why this estimate?"
+    section_header(
+        "What affected this estimate?",
+        subtitle="These are the main things that influenced the price.",
     )
 
-    st.caption(
-        "These factors had the most influence "
-        "on this estimate."
-    )
-
-
-    top_factors = (
-        provided_factors[:4]
-    )
-
+    top_factors = provided_factors[:4]
 
     if top_factors:
 
         factor_columns = st.columns(
-            len(top_factors),
-            gap="medium",
+            len(top_factors), gap="medium"
         )
 
+        for column, item in zip(factor_columns, top_factors):
 
-        for column, item in zip(
-            factor_columns,
-            top_factors,
-        ):
-
-            icon = FACTOR_ICONS.get(
-                item["feature"],
-                "🔹",
-            )
-
+            icon = FACTOR_ICONS.get(item["feature"], "ℹ️")
 
             with column:
-
-                with st.container(
-                    border=True
-                ):
-
-                    st.markdown(
-                        f"### {icon}"
-                    )
-
-                    st.markdown(
-                        f"**{item['display_feature']}**"
-                    )
-
-                    st.markdown(
-                        f"### {item['value']}"
-                    )
-
-                    st.caption(
-                        f"{item['impact_level']} influence"
-                    )
+                st.markdown(
+                    f'<div class="pp-factor-card">'
+                    f'<div class="pp-factor-icon">'
+                    f"{icon}"
+                    f"</div>"
+                    f'<div class="pp-factor-name">'
+                    f"{item['display_feature']}"
+                    f"</div>"
+                    f'<div class="pp-factor-value">'
+                    f"{item['value']}"
+                    f"</div>"
+                    f'<div class="pp-factor-impact">'
+                    f"{impact_badge(item['impact_level'])}"
+                    f"</div>"
+                    f"</div>",
+                    unsafe_allow_html=True,
+                )
 
 
     # =====================================================
@@ -506,22 +342,19 @@ if st.session_state.prediction_result is not None:
 
     if missing_factors:
 
-        st.subheader(
-            ":material/error: Missing Information"
+        section_header(
+            "Missing Information",
+            icon="⚠️",
         )
-
 
         missing_names = ", ".join(
-            item["display_feature"]
-            for item in missing_factors
+            item["display_feature"] for item in missing_factors
         )
-
 
         st.warning(
             f"{missing_names} were not provided. "
-            "The model handled the missing information "
-            "automatically, but providing these details "
-            "may improve the estimate."
+            "The system handled this automatically, but "
+            "providing these details may give a better estimate."
         )
 
 
@@ -529,114 +362,74 @@ if st.session_state.prediction_result is not None:
     # PROPERTY DETAILS USED
     # =====================================================
 
-    st.subheader(
-        "Property Details Used"
-    )
+    section_header("Property Details Used")
 
+    with st.container(border=True):
 
-    with st.container(
-        border=True
-    ):
-
-        detail1, detail2, detail3 = (
-            st.columns(
-                3,
-                gap="large",
-            )
+        detail_col1, detail_col2, detail_col3 = st.columns(
+            3, gap="large"
         )
 
-
-        # =================================================
-        # COLUMN 1
-        # =================================================
-
-        with detail1:
-
+        with detail_col1:
             st.markdown(
-                f"""
-                :material/home: **Property Type**  
-                {saved_inputs["property_type"]}
-                """
+                detail_item(
+                    "🏠",
+                    "Property Type",
+                    saved_inputs["property_type"],
+                ),
+                unsafe_allow_html=True,
             )
-
-
-            district_display = (
-                saved_inputs["district"]
-                if saved_inputs["district"] is not None
-                else "Not provided"
-            )
-
-
             st.markdown(
-                f"""
-                :material/place: **District**  
-                {district_display}
-                """
+                detail_item(
+                    "📍",
+                    "District",
+                    saved_inputs["district"]
+                    if saved_inputs["district"] is not None
+                    else "Not provided",
+                ),
+                unsafe_allow_html=True,
             )
 
-
-        # =================================================
-        # COLUMN 2
-        # =================================================
-
-        with detail2:
-
+        with detail_col2:
             st.markdown(
-                f"""
-                :material/square_foot: **Property Size**  
-                {saved_inputs["size_m2"]:g} m²
-                """
+                detail_item(
+                    "📐",
+                    "Property Size",
+                    f"{saved_inputs['size_m2']:g} m\u00b2",
+                ),
+                unsafe_allow_html=True,
             )
-
-
-            bedrooms_display = (
-                saved_inputs["bedrooms"]
-                if saved_inputs["bedrooms"] is not None
-                else "Not provided"
-            )
-
-
             st.markdown(
-                f"""
-                :material/bed: **Bedrooms**  
-                {bedrooms_display}
-                """
+                detail_item(
+                    "🛏",
+                    "Bedrooms",
+                    str(saved_inputs["bedrooms"])
+                    if saved_inputs["bedrooms"] is not None
+                    else "Not provided",
+                ),
+                unsafe_allow_html=True,
             )
 
-
-        # =================================================
-        # COLUMN 3
-        # =================================================
-
-        with detail3:
-
-            bathrooms_display = (
-                saved_inputs["bathrooms"]
-                if saved_inputs["bathrooms"] is not None
-                else "Not provided"
-            )
-
-
+        with detail_col3:
             st.markdown(
-                f"""
-                :material/shower: **Bathrooms**  
-                {bathrooms_display}
-                """
+                detail_item(
+                    "🚿",
+                    "Bathrooms",
+                    str(saved_inputs["bathrooms"])
+                    if saved_inputs["bathrooms"] is not None
+                    else "Not provided",
+                ),
+                unsafe_allow_html=True,
             )
-
-
-            floor_display = (
-                saved_inputs["unit_floor"]
-                if saved_inputs["unit_floor"] is not None
-                else "Not provided"
-            )
-
-
             st.markdown(
-                f"""
-                :material/stairs: **Floor Level**  
-                {floor_display}
-                """
+                detail_item(
+                    "🏗",
+                    "Floor Level",
+                    str(saved_inputs["unit_floor"])
+                    if saved_inputs["unit_floor"] is not None
+                    else "Not provided",
+                ),
+                unsafe_allow_html=True,
             )
 
 
@@ -651,33 +444,21 @@ if st.session_state.prediction_result is not None:
         and "not provided" not in warning.lower()
     ]
 
-
     if important_warnings:
 
-        st.subheader(
-            "Important Notes"
-        )
-
+        section_header("Important Notes")
 
         for warning in important_warnings:
-
-            st.warning(
-                warning
-            )
+            st.warning(warning)
 
 
-    # =====================================================
+    # =========================================================
     # DISCLAIMER
-    # =====================================================
+    # =========================================================
 
-    st.space("medium")
-
-
-    st.caption(
-        ":material/info: PropertyLens provides a data-based asking-price "
-        "estimate using advertised property listing data. "
-        "It is not an official property valuation and may "
-        "not capture factors such as interior condition, "
-        "furnishing, view, facilities, building reputation, "
-        "seller urgency, or negotiation."
+    disclaimer(
+        "PropertyLens gives you an estimated asking price based on advertised "
+        "property listings. It is not an official property valuation and may "
+        "not reflect things like interior condition, furnishing, view, "
+        "building quality, or negotiation."
     )
