@@ -3,6 +3,7 @@ from pathlib import Path
 import joblib
 import numpy as np
 import pandas as pd
+import xgboost as xgb
 import json
 
 
@@ -71,23 +72,6 @@ xgb_model = model.named_steps["model"]
 feature_names = (
     preprocessor.get_feature_names_out()
 )
-
-
-# =========================================================
-# SHAP EXPLAINER (lazy-loaded)
-# =========================================================
-
-_shap_explainer = None
-
-
-def _get_shap_explainer():
-    global _shap_explainer
-    if _shap_explainer is None:
-        import shap
-        _shap_explainer = shap.TreeExplainer(
-            xgb_model
-        )
-    return _shap_explainer
 
 
 # =========================================================
@@ -416,27 +400,48 @@ def explain_prediction(
             transformed.toarray()
         )
 
-    transformed_df = pd.DataFrame(
-        transformed,
-        columns=feature_names
+
+    # -------------------------------------------------
+    # XGBOOST NATIVE FEATURE CONTRIBUTIONS
+    # -------------------------------------------------
+
+    dmatrix = xgb.DMatrix(
+        transformed
     )
 
-    # -------------------------------------------------
-    # SHAP
-    # -------------------------------------------------
 
-    shap_values = (
-        _get_shap_explainer()(
-            transformed_df
+    contributions = (
+        xgb_model
+        .get_booster()
+        .predict(
+            dmatrix,
+            pred_contribs=True,
+            validate_features=False,
         )
     )
 
-    row_shap = shap_values[0]
+
+    # Last column is the model baseline / bias.
+    row_shap = (
+        contributions[
+            0,
+            :-1
+        ]
+    )
+
+
+    base_value = float(
+        contributions[
+            0,
+            -1
+        ]
+    )
+
 
     shap_map = dict(
         zip(
             feature_names,
-            row_shap.values
+            row_shap
         )
     )
 
@@ -617,44 +622,47 @@ def explain_prediction(
 
     
     return {
-        "estimated_price_usd":
-            prediction[
-                "estimated_price_usd"
-            ],
+    "estimated_price_usd":
+        prediction[
+            "estimated_price_usd"
+        ],
 
-        "lower_price_usd":
-            prediction[
-                "lower_price_usd"
-            ],
+    "lower_price_usd":
+        prediction[
+            "lower_price_usd"
+        ],
 
-        "upper_price_usd":
-            prediction[
-                "upper_price_usd"
-            ],
+    "upper_price_usd":
+        prediction[
+            "upper_price_usd"
+        ],
 
-        "interval_level":
-            prediction[
-                "interval_level"
-            ],
+    "interval_level":
+        prediction[
+            "interval_level"
+        ],
 
-        "predicted_log_price":
-            prediction[
-                "predicted_log_price"
-            ],
+    "predicted_log_price":
+        prediction[
+            "predicted_log_price"
+        ],
 
-        "warnings":
-            prediction[
-                "warnings"
-            ],
+    "warnings":
+        prediction[
+            "warnings"
+        ],
 
-        "input_data":
-            prediction[
-                "input_data"
-            ],
+    "input_data":
+        prediction[
+            "input_data"
+        ],
 
-        "explanations":
-            explanations,
+    "explanations":
+        explanations,
 
-        "raw_shap":
-            row_shap,
-    }
+    "raw_shap":
+        row_shap,
+
+    "base_value":
+        base_value,
+}
