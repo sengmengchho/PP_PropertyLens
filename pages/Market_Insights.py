@@ -197,6 +197,14 @@ else:
     types_to_show = [property_type_filter]
 
 
+def _fmt_short_price(val):
+    if val >= 1_000_000:
+        return f"${val / 1_000_000:.1f}M"
+    if val >= 1_000:
+        return f"${val / 1_000:.0f}K"
+    return f"${val:,.0f}"
+
+
 def get_common_price_range(data, property_type_name):
     type_df = data[
         data["property_type"] == property_type_name
@@ -222,7 +230,18 @@ def get_common_price_range(data, property_type_name):
     )
 
     band_summary["price_band_label"] = band_summary.apply(
-        lambda row: f"${row['price_band_start']:,.0f} \u2013 ${row['price_band_end']:,.0f}",
+        lambda row: (
+            f"${row['price_band_start']:,.0f} \u2013 "
+            f"${row['price_band_end']:,.0f}"
+        ),
+        axis=1,
+    )
+
+    band_summary["short_label"] = band_summary.apply(
+        lambda row: (
+            f"{_fmt_short_price(row['price_band_start'])}\u2013"
+            f"{_fmt_short_price(row['price_band_end'])}"
+        ),
         axis=1,
     )
 
@@ -320,28 +339,54 @@ for result, band_summary in common_range_results:
         .copy()
     )
 
-    price_band_order = top_price_bands["price_band_label"].tolist()
+    short_label_order = top_price_bands["short_label"].tolist()
 
     common_price_chart = (
         alt.Chart(top_price_bands)
         .mark_bar(cornerRadiusTopLeft=5, cornerRadiusTopRight=5)
         .encode(
             x=alt.X(
-                "price_band_label:N",
+                "short_label:N",
                 title=f"{ptype} Asking-Price Range",
-                sort=price_band_order,
-                axis=alt.Axis(labelAngle=-35),
+                sort=short_label_order,
+                axis=alt.Axis(
+                    labelAngle=0,
+                    labelFontSize=12,
+                    titleFontSize=13,
+                    titlePadding=12,
+                ),
             ),
-            y=alt.Y("listings:Q", title="Number of Listings"),
+            y=alt.Y(
+                "listings:Q",
+                title="Number of Listings",
+                axis=alt.Axis(tickMinStep=1),
+            ),
             tooltip=[
                 alt.Tooltip("price_band_label:N", title="Price Range"),
                 alt.Tooltip("listings:Q", title="Listings", format=","),
             ],
         )
-        .properties(height=340)
+        .properties(height=380)
     )
 
-    st.altair_chart(common_price_chart, use_container_width=True)
+    bar_text = (
+        alt.Chart(top_price_bands)
+        .mark_text(
+            dy=-8,
+            fontSize=12,
+            fontWeight=600,
+            color="#1E293B",
+        )
+        .encode(
+            x=alt.X("short_label:N", sort=short_label_order),
+            y=alt.Y("listings:Q"),
+            text=alt.Text("listings:Q", format=","),
+        )
+    )
+
+    combined = (common_price_chart + bar_text).configure_view(strokeWidth=0)
+
+    st.altair_chart(combined, use_container_width=True)
 
 
 st.info(

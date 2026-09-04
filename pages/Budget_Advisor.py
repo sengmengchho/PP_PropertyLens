@@ -89,12 +89,19 @@ with st.container(border=True):
 
         budget = st.number_input(
             "Maximum Budget (USD)",
-            min_value=int(df["price_usd"].min()),
-            max_value=int(df["price_usd"].max()),
+            min_value=20_000,
+            max_value=5_000_000,
             value=100_000,
             step=10_000,
             format="%d",
             key="advisor_budget",
+            help="Budget must be between $20,000 and $5,000,000, "
+                 "which is the range of advertised prices in the dataset.",
+        )
+
+        st.caption(
+            "Allowed range: **$20,000 – $5,000,000** "
+            "(the range of available listings in the dataset)."
         )
 
     with input_col2:
