@@ -3,6 +3,7 @@
 venv/
 env/
 ENV/
+test_env/
 .python-version
 __pycache__/
 *.py[cod]
@@ -20,17 +21,22 @@ htmlcov/
 .ipynb_checkpoints/
 
 # Generated ETL / data artifacts
-# Keep source config files in config/ tracked; ignore output datasets and derived layers.
 data/bronze/
 data/silver/
-data/gold/
 data/geo/
-data/qa/
+
 geo/*.csv
 geo/*.parquet
 
-# Model artifacts and generated predictions
-models/
+# Gold data
+data/gold/*
+!data/gold/property_listings_geocoded.csv
+
+# QA data
+data/qa/*
+!data/qa/real_world_validation_results.csv
+
+# Generic model artifacts
 *.joblib
 *.pkl
 *.pickle
@@ -38,8 +44,14 @@ models/
 *.keras
 *.onnx
 
+# Models
+models/*
+!models/.gitkeep
+!models/propertylens_xgboost_final.joblib
+!models/propertylens_xgboost_final_metadata.json
+
 # Output reports / figures
-outputs/
+outputs/*
 !outputs/README*
 !outputs/.gitkeep
 
@@ -50,8 +62,8 @@ frontend/.next/
 frontend/.cache/
 frontend/coverage/
 
-# Streamlit / local app settings
-.streamlit/
+# Streamlit local settings / secrets
+.streamlit/secrets.toml
 *.sqlite
 *.db
 
@@ -66,13 +78,13 @@ Thumbs.db
 .vscode/
 .idea/
 
-# Logs and temp files
+# Logs and temporary files
 *.log
 *.tmp
 *.temp
 *.bak
 
-# Ignore common large files if they are generated locally
+# Large generated archives
 *.zip
 *.tar
 *.gz

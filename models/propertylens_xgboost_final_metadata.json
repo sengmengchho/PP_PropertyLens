@@ -1,0 +1,31 @@
+{
+    "model_name": "PP PropertyLens Final XGBoost",
+    "target": "log_price_usd",
+    "features": [
+        "size_m2",
+        "bedrooms",
+        "bathrooms",
+        "unit_floor",
+        "district",
+        "property_type"
+    ],
+    "training_rows": 2137,
+    "calibration_rows": 268,
+    "final_test_rows": 268,
+    "interval_level": 0.8,
+    "q_hat": 0.41534000571589047,
+    "final_test_metrics": {
+        "rmse_usd": 122245.87474230754,
+        "mae_usd": 53075.18252973413,
+        "mape_percent": 26.07975146855216,
+        "r2_usd": 0.5529426562724281,
+        "log_rmse": 0.33742513007414854,
+        "log_mae": 0.25620372190270946,
+        "log_r2": 0.8164237956998401
+    },
+    "interval_validation": {
+        "observed_coverage": 0.7761194029850746,
+        "median_width_usd": 82768.43773100847,
+        "mean_width_usd": 139065.3164515581
+    }
+}
