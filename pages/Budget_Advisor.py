@@ -600,7 +600,7 @@ if not district_profiles.empty:
         .properties(height=380)
     )
 
-    st.altair_chart(district_chart, use_container_width=True)
+    st.altair_chart(district_chart, width="stretch")
 
 
 # =========================================================
