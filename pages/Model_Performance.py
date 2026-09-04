@@ -189,7 +189,7 @@ with chart_col1:
         .properties(height=350)
     )
 
-    st.altair_chart(log_rmse_chart, use_container_width=True)
+    st.altair_chart(log_rmse_chart, width="stretch")
 
 with chart_col2:
     st.markdown("#### Validation MAPE")
@@ -209,7 +209,7 @@ with chart_col2:
         .properties(height=350)
     )
 
-    st.altair_chart(mape_chart, use_container_width=True)
+    st.altair_chart(mape_chart, width="stretch")
 
 
 st.caption(
@@ -326,7 +326,7 @@ if shap_df is not None and not shap_df.empty:
         .properties(height=380)
     )
 
-    st.altair_chart(shap_chart, use_container_width=True)
+    st.altair_chart(shap_chart, width="stretch")
 
     top_features = (
         shap_df

@@ -386,7 +386,7 @@ for result, band_summary in common_range_results:
 
     combined = (common_price_chart + bar_text).configure_view(strokeWidth=0)
 
-    st.altair_chart(combined, use_container_width=True)
+    st.altair_chart(combined, width="stretch")
 
 
 st.info(
@@ -454,7 +454,7 @@ else:
         .properties(height=400)
     )
 
-    st.altair_chart(district_price_chart, use_container_width=True)
+    st.altair_chart(district_price_chart, width="stretch")
 
 
 # =========================================================
@@ -498,7 +498,7 @@ else:
         .properties(height=400)
     )
 
-    st.altair_chart(district_m2_chart, use_container_width=True)
+    st.altair_chart(district_m2_chart, width="stretch")
 
 
 # =========================================================
@@ -600,7 +600,7 @@ else:
         histogram + median_rule + median_label
     ).properties(height=400)
 
-    st.altair_chart(price_distribution_chart, use_container_width=True)
+    st.altair_chart(price_distribution_chart, width="stretch")
 
     st.info(
         "Most advertised properties are concentrated in the lower and middle "
@@ -705,7 +705,7 @@ if len(filtered_df) >= 5:
         .properties(height=350)
     )
 
-    st.altair_chart(property_type_price_chart, use_container_width=True)
+    st.altair_chart(property_type_price_chart, width="stretch")
 
 
 if property_type_filter == "All" and len(filtered_df) >= 20:
@@ -866,7 +866,7 @@ else:
                 .properties(height=350)
             )
 
-            st.altair_chart(bedroom_chart, use_container_width=True)
+            st.altair_chart(bedroom_chart, width="stretch")
 
     with bath_col:
         st.markdown("#### 🚿 Median Price by Bathrooms")
@@ -893,7 +893,7 @@ else:
                 .properties(height=350)
             )
 
-            st.altair_chart(bathroom_chart, use_container_width=True)
+            st.altair_chart(bathroom_chart, width="stretch")
 
     st.info(
         "Properties with more bedrooms and bathrooms generally have higher asking prices. "

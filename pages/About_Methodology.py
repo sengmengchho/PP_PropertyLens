@@ -170,7 +170,7 @@ source_chart = (
     .properties(height=330)
 )
 
-st.altair_chart(source_chart, use_container_width=True)
+st.altair_chart(source_chart, width="stretch")
 
 with st.expander("See the six data sources"):
     st.markdown(
@@ -379,7 +379,7 @@ split_chart = (
     .properties(height=350)
 )
 
-st.altair_chart(split_chart, use_container_width=True)
+st.altair_chart(split_chart, width="stretch")
 
 st.dataframe(
     split_df,
