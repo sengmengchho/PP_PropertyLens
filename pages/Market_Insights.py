@@ -120,9 +120,9 @@ with st.container(border=True):
 
     price_range = st.slider(
         "Asking Price Range",
-        min_value=0,
+        min_value=20_000,
         max_value=max_price,
-        value=(0, max_price),
+        value=(20_000, max_price),
         step=10_000,
         format="$%d",
         key="market_price_range",
@@ -274,11 +274,10 @@ st.caption(
 section_header(
     "Asking Price Distribution",
     subtitle=(
-        "Shows how advertised prices are spread out "
-        "for the selected market."
+        "Shows how advertised prices are distributed "
+        "across the selected market."
     ),
 )
-
 
 if len(filtered_df) < 5:
 
@@ -289,66 +288,119 @@ if len(filtered_df) < 5:
 
 else:
 
-    # Limit the chart to the 99th percentile
-    # so a small number of extreme luxury listings
-    # do not compress the main distribution.
-    price_99 = (
-        filtered_df["price_usd"]
-        .quantile(0.99)
-    )
+    # Minimum asking price displayed
+    chart_min_price = 20_000
+
+    # Use the 99th percentile for visualization
+    # so a few luxury listings do not compress the chart.
+    price_99 = filtered_df["price_usd"].quantile(0.99)
 
     price_distribution_df = (
         filtered_df[
-            filtered_df["price_usd"]
-            <= price_99
+            (filtered_df["price_usd"] >= chart_min_price)
+            & (filtered_df["price_usd"] <= price_99)
         ]
-        .dropna(
-            subset=["price_usd"]
-        )
+        .dropna(subset=["price_usd"])
         .copy()
     )
 
-    distribution_median_price = (
-        filtered_df["price_usd"]
-        .median()
-    )
+    distribution_median_price = filtered_df["price_usd"].median()
 
+
+    # =====================================================
+    # CLEAN X-AXIS TICKS
+    # =====================================================
+
+    tick_values = [20_000]
+
+    next_tick = 200_000
+
+    while next_tick <= price_99:
+        tick_values.append(next_tick)
+        next_tick += 200_000
+
+
+    # =====================================================
+    # HISTOGRAM
+    # =====================================================
 
     histogram = (
-        alt.Chart(
-            price_distribution_df
-        )
+        alt.Chart(price_distribution_df)
         .mark_bar(
-            opacity=0.8,
+            opacity=0.85,
         )
         .encode(
+
             x=alt.X(
                 "price_usd:Q",
+
                 bin=alt.Bin(
-                    maxbins=40
+                    maxbins=30,
+                    extent=[
+                        chart_min_price,
+                        float(price_99),
+                    ],
                 ),
-                title=(
-                    "Advertised Asking Price (USD)"
+
+                title="Advertised Asking Price",
+
+                scale=alt.Scale(
+                    domain=[
+                        chart_min_price,
+                        float(price_99),
+                    ],
+                    nice=False,
+                    zero=False,
                 ),
+
                 axis=alt.Axis(
-                    format="$,.0f"
+                    values=tick_values,
+
+                    # Clean labels:
+                    # $20K, $200K, $400K, $1.0M...
+                    labelExpr=(
+                        "datum.value >= 1000000 "
+                        "? '$' + format(datum.value / 1000000, '.1f') + 'M' "
+                        ": '$' + format(datum.value / 1000, '.0f') + 'K'"
+                    ),
+
+                    labelFontSize=12,
+                    labelPadding=8,
+                    labelAngle=0,
+
+                    titleFontSize=13,
+                    titlePadding=16,
+
+                    grid=False,
                 ),
             ),
+
             y=alt.Y(
                 "count():Q",
-                title=(
-                    "Number of Listings"
+                title="Number of Listings",
+
+                axis=alt.Axis(
+                    labelFontSize=12,
+                    titleFontSize=13,
+                    titlePadding=12,
+                    tickMinStep=1,
                 ),
             ),
+
             tooltip=[
                 alt.Tooltip(
                     "count():Q",
                     title="Listings",
+                    format=",",
                 ),
             ],
         )
     )
 
+
+    # =====================================================
+    # MEDIAN LINE
+    # =====================================================
 
     median_data = pd.DataFrame(
         {
@@ -358,20 +410,46 @@ else:
         }
     )
 
-
     median_rule = (
-        alt.Chart(
-            median_data
-        )
+        alt.Chart(median_data)
         .mark_rule(
-            strokeWidth=2
+            strokeWidth=2,
         )
         .encode(
+
             x=alt.X(
-                "median_price:Q"
+                "median_price:Q",
+
+                scale=alt.Scale(
+                    domain=[
+                        chart_min_price,
+                        float(price_99),
+                    ],
+                    nice=False,
+                    zero=False,
+                ),
             )
         )
     )
+
+
+    # =====================================================
+    # MEDIAN LABEL
+    # =====================================================
+
+    if distribution_median_price >= 1_000_000:
+
+        median_text = (
+            f"Median: "
+            f"${distribution_median_price / 1_000_000:.1f}M"
+        )
+
+    else:
+
+        median_text = (
+            f"Median: "
+            f"${distribution_median_price / 1_000:.0f}K"
+        )
 
 
     median_label_data = pd.DataFrame(
@@ -380,30 +458,38 @@ else:
                 distribution_median_price
             ],
             "label": [
-                (
-                    f"Median: "
-                    f"${distribution_median_price:,.0f}"
-                )
+                median_text
             ],
         }
     )
 
 
     median_label = (
-        alt.Chart(
-            median_label_data
-        )
+        alt.Chart(median_label_data)
         .mark_text(
             align="left",
-            dx=6,
+            dx=7,
             dy=-8,
-            fontSize=12,
+            fontSize=13,
+            fontWeight=600,
         )
         .encode(
+
             x=alt.X(
-                "median_price:Q"
+                "median_price:Q",
+
+                scale=alt.Scale(
+                    domain=[
+                        chart_min_price,
+                        float(price_99),
+                    ],
+                    nice=False,
+                    zero=False,
+                ),
             ),
-            y=alt.value(10),
+
+            y=alt.value(12),
+
             text=alt.Text(
                 "label:N"
             ),
@@ -411,12 +497,18 @@ else:
     )
 
 
+    # =====================================================
+    # FINAL CHART
+    # =====================================================
+
     price_distribution_chart = (
         histogram
         + median_rule
         + median_label
     ).properties(
-        height=400
+        height=420
+    ).configure_view(
+        strokeWidth=0
     )
 
 
@@ -426,11 +518,15 @@ else:
     )
 
 
+    st.caption(
+        "The chart displays asking prices up to the 99th percentile "
+        "to keep the main market distribution easy to read."
+    )
+
     st.info(
-        "Most advertised properties are concentrated "
-        "in the lower and middle price ranges, while "
-        "a smaller number of luxury properties extend "
-        "above the typical market price."
+        "Most advertised properties are concentrated in the lower and "
+        "middle price ranges, while a smaller number of luxury properties "
+        "extend above the typical market price."
     )
 
 
@@ -569,6 +665,7 @@ def get_common_price_range(
 
 
     result = {
+
         "property_type":
             property_type_name,
 
@@ -815,13 +912,17 @@ for (
             cornerRadiusTopRight=5,
         )
         .encode(
+
             x=alt.X(
                 "short_label:N",
+
                 title=(
                     f"{ptype} "
                     "Asking-Price Range"
                 ),
+
                 sort=short_label_order,
+
                 axis=alt.Axis(
                     labelAngle=0,
                     labelFontSize=12,
@@ -829,20 +930,25 @@ for (
                     titlePadding=12,
                 ),
             ),
+
             y=alt.Y(
                 "listings:Q",
+
                 title=(
                     "Number of Listings"
                 ),
+
                 axis=alt.Axis(
                     tickMinStep=1
                 ),
             ),
+
             tooltip=[
                 alt.Tooltip(
                     "price_band_label:N",
                     title="Price Range",
                 ),
+
                 alt.Tooltip(
                     "listings:Q",
                     title="Listings",
@@ -867,13 +973,16 @@ for (
             color="#1E293B",
         )
         .encode(
+
             x=alt.X(
                 "short_label:N",
                 sort=short_label_order,
             ),
+
             y=alt.Y(
                 "listings:Q"
             ),
+
             text=alt.Text(
                 "listings:Q",
                 format=",",
@@ -924,6 +1033,7 @@ district_summary = (
             "price_usd",
             "size",
         ),
+
         median_price=(
             "price_usd",
             "median",
@@ -984,30 +1094,37 @@ else:
             cornerRadiusEnd=5
         )
         .encode(
+
             y=alt.Y(
                 "district:N",
                 sort=None,
                 title=None,
             ),
+
             x=alt.X(
                 "median_price:Q",
+
                 title=(
                     "Median Asking Price (USD)"
                 ),
+
                 axis=alt.Axis(
                     format="$,.0f"
                 ),
             ),
+
             tooltip=[
                 alt.Tooltip(
                     "district:N",
                     title="District",
                 ),
+
                 alt.Tooltip(
                     "listings:Q",
                     title="Listings",
                     format=",",
                 ),
+
                 alt.Tooltip(
                     "median_price:Q",
                     title="Median Asking Price",
@@ -1061,7 +1178,9 @@ st.dataframe(
     display_district_summary,
     hide_index=True,
     width="stretch",
+
     column_config={
+
         "Listings":
             st.column_config.NumberColumn(
                 format="%d"
@@ -1110,18 +1229,22 @@ property_type_summary = (
         "property_type"
     )
     .agg(
+
         listings=(
             "price_usd",
             "size",
         ),
+
         median_price=(
             "price_usd",
             "median",
         ),
+
         median_size=(
             "size_m2",
             "median",
         ),
+
         median_price_per_m2=(
             "price_per_m2",
             "median",
@@ -1271,39 +1394,48 @@ if (
             size=70,
         )
         .encode(
+
             x=alt.X(
                 "property_type:N",
                 title=None,
             ),
+
             y=alt.Y(
                 "median_price:Q",
+
                 title=(
                     "Median Asking Price (USD)"
                 ),
+
                 axis=alt.Axis(
                     format="$,.0f"
                 ),
             ),
+
             tooltip=[
                 alt.Tooltip(
                     "property_type:N",
                     title="Property Type",
                 ),
+
                 alt.Tooltip(
                     "listings:Q",
                     title="Listings",
                     format=",",
                 ),
+
                 alt.Tooltip(
                     "median_price:Q",
                     title="Median Asking Price",
                     format="$,.0f",
                 ),
+
                 alt.Tooltip(
                     "median_size:Q",
                     title="Median Size",
                     format=".0f",
                 ),
+
                 alt.Tooltip(
                     "median_price_per_m2:Q",
                     title="Median Price / m²",
@@ -1534,10 +1666,12 @@ else:
             "bedrooms"
         )
         .agg(
+
             listings=(
                 "price_usd",
                 "size",
             ),
+
             median_price=(
                 "price_usd",
                 "median",
@@ -1601,10 +1735,12 @@ else:
             "bathrooms"
         )
         .agg(
+
             listings=(
                 "price_usd",
                 "size",
             ),
+
             median_price=(
                 "price_usd",
                 "median",
@@ -1684,30 +1820,37 @@ else:
                     cornerRadiusTopRight=5,
                 )
                 .encode(
+
                     x=alt.X(
                         "bedroom_label:N",
                         title="Bedrooms",
                         sort=bedroom_order,
                     ),
+
                     y=alt.Y(
                         "median_price:Q",
+
                         title=(
                             "Median Asking Price (USD)"
                         ),
+
                         axis=alt.Axis(
                             format="$,.0f"
                         ),
                     ),
+
                     tooltip=[
                         alt.Tooltip(
                             "bedroom_label:N",
                             title="Bedrooms",
                         ),
+
                         alt.Tooltip(
                             "listings:Q",
                             title="Listings",
                             format=",",
                         ),
+
                         alt.Tooltip(
                             "median_price:Q",
                             title=(
@@ -1755,30 +1898,37 @@ else:
                     cornerRadiusTopRight=5,
                 )
                 .encode(
+
                     x=alt.X(
                         "bathroom_label:N",
                         title="Bathrooms",
                         sort=bathroom_order,
                     ),
+
                     y=alt.Y(
                         "median_price:Q",
+
                         title=(
                             "Median Asking Price (USD)"
                         ),
+
                         axis=alt.Axis(
                             format="$,.0f"
                         ),
                     ),
+
                     tooltip=[
                         alt.Tooltip(
                             "bathroom_label:N",
                             title="Bathrooms",
                         ),
+
                         alt.Tooltip(
                             "listings:Q",
                             title="Listings",
                             format=",",
                         ),
+
                         alt.Tooltip(
                             "median_price:Q",
                             title=(
