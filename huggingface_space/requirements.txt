@@ -1,0 +1,7 @@
+gradio
+huggingface-hub
+joblib
+pandas
+numpy
+scikit-learn
+xgboost
