@@ -122,7 +122,7 @@ with st.container(border=True):
 
     metric_cards([
         {"label": "Final Model", "value": "XGBoost", "icon": "✅"},
-        {"label": "Training Rows", "value": f"{metadata['training_rows']:,}", "icon": "📋"},
+        {"label": "Final Training Rows", "value": f"{metadata['training_rows']:,}", "icon": "📋"},
         {"label": "Prediction Target", "value": "Asking Price", "icon": "💵"},
     ], columns=st.columns(3))
 
@@ -270,17 +270,16 @@ section_header(
 interval_data = metadata["interval_validation"]
 
 metric_cards([
-    {"label": "Target Range", "value": f"{metadata['interval_level']:.0%}", "icon": "📏"},
+    {"label": "NOMINAL COVERAGE", "value": f"{metadata['interval_level']:.0%}", "icon": "📏"},
     {"label": "Observed Test Coverage", "value": f"{interval_data['observed_coverage']:.2%}", "icon": "✅"},
     {"label": "Median Range Width", "value": f"${interval_data['median_width_usd']:,.0f}", "icon": "📐"},
 ], columns=st.columns(3))
 
 
 st.info(
-    "The range was designed as an 80% estimated range. On the final test data, "
-    "about 78% of advertised asking prices fell inside their model-generated ranges. "
-    "This is why PropertyLens shows both a central estimate and a range instead of "
-    "presenting one number as exact."
+    "The estimated range was calibrated for 80% nominal coverage. "
+    "On the final test set, "
+    "77.61% of advertised asking prices fell within their model-generated ranges."
 )
 
 with st.expander("See prediction-range technical details"):

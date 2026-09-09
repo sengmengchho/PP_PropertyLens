@@ -211,9 +211,16 @@ def detail_item(icon, label, value):
 
 def disclaimer(text):
     st.markdown(
-        f'<div class="pp-disclaimer">'
-        f"ℹ️ {text}"
-        f"</div>",
+        f"""
+        <div class="pp-disclaimer" style="
+            font-size: 12px;
+            line-height: 1.6;
+            color: #64748B;
+            margin-top: 12px;
+        ">
+            ℹ️ {text}
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 

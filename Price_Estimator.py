@@ -81,8 +81,8 @@ hero_banner(
 section_header(
     "Property Details",
     subtitle=(
-        "Fill in what you know. Not sure about a detail? "
-        "Just tick the box next to it and the model will handle it."
+        "Fill in what you know. If a detail is unknown, tick the corresponding box and the "
+        "model will handle the missing value automatically."
     ),
 )
 
@@ -273,8 +273,8 @@ if st.session_state.prediction_result is not None:
     )
 
     st.caption(
-        "The price range shows how much the estimate might vary. "
-        "A range is more useful than a single number."
+        "The estimated range reflects uncertainty in the model prediction and provides "
+        "context around the estimated asking price."
     )
 
 

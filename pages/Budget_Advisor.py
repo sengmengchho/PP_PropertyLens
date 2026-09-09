@@ -283,9 +283,9 @@ if budget_percentile >= 99:
     )
 else:
     st.caption(
-        f"Your budget is higher than about "
+        f"Your budget is at or above "
         f"**{budget_percentile:.0f}%** of advertised "
-        f"prices in the PropertyLens dataset."
+        f"of advertised listing prices in the selected market."
     )
 
 st.caption(
@@ -643,7 +643,7 @@ comparables_display = comparables_display.rename(columns={
     "unit_floor": "Floor",
     "price_usd": "Asking Price",
     "source": "Source",
-    "budget_remaining": "Budget Remaining",
+    "budget_remaining": "Remaining Budget",
 })
 
 st.dataframe(
@@ -651,7 +651,7 @@ st.dataframe(
     hide_index=True,
     column_config={
         "Asking Price": st.column_config.NumberColumn(format="$%.0f"),
-        "Budget Remaining": st.column_config.NumberColumn(format="$%.0f"),
+        "Remaining Budget": st.column_config.NumberColumn(format="$%.0f"),
         "Size (m\u00b2)": st.column_config.NumberColumn(format="%.0f"),
         "Bedrooms": st.column_config.NumberColumn(format="%.0f"),
         "Bathrooms": st.column_config.NumberColumn(format="%.0f"),
