@@ -439,17 +439,11 @@ else:
 
     if distribution_median_price >= 1_000_000:
 
-        median_text = (
-            f"Median: "
-            f"${distribution_median_price / 1_000_000:.1f}M"
-        )
+        median_text = f"Median: ${distribution_median_price:,.0f}"
 
     else:
 
-        median_text = (
-            f"Median: "
-            f"${distribution_median_price / 1_000:.0f}K"
-        )
+        median_text = f"Median: ${distribution_median_price:,.0f}"
 
 
     median_label_data = pd.DataFrame(
@@ -469,7 +463,7 @@ else:
         .mark_text(
             align="left",
             dx=7,
-            dy=-8,
+            dy=10,
             fontSize=13,
             fontWeight=600,
         )
