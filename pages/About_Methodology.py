@@ -85,10 +85,9 @@ section_header("About PP PropertyLens")
 
 st.write(
     """
-    **PP PropertyLens** is a data science project for exploring advertised Condo and "
-    "Penthouse prices in Phnom Penh and estimating an asking price from basic property "
-    "information. The system combines property-listing data, exploratory data analysis, "
-    "machine learning, and model explainability in one interactive application.
+    PP PropertyLens is a data science project for exploring advertised Condo and Penthouse prices in Phnom Penh and estimating 
+    an asking price from basic property information. The system combines property-listing data, exploratory data analysis, 
+    machine learning, and model explainability in one interactive application.
     """
 )
 
@@ -489,7 +488,7 @@ with st.expander("Technical note about the estimated range"):
 section_header("Model Explainability")
 
 st.write(
-    "SHAP is used to help explain how property characteristics influence the XGBoost model."
+    "Model explainability is used to show which property characteristics influence the XGBoost model. Global SHAP analysis summarizes overall feature importance, while individual predictions use XGBoost's native feature-contribution method."
 )
 
 explain_col1, explain_col2 = st.columns(2, gap="large")
